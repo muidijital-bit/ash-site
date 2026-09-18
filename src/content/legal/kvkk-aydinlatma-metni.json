@@ -1,0 +1,89 @@
+{
+  "slug": "kvkk-aydinlatma-metni",
+  "title": "KVKK Aydınlatma Metni",
+  "metaDescription": "6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında AI Solution House web sitesi ziyaretçileri için aydınlatma metni.",
+  "updated": "2026-09-18",
+  "intro": [
+    "Bu aydınlatma metni, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun (KVKK) 10. maddesi ve Aydınlatma Yükümlülüğünün Yerine Getirilmesinde Uyulacak Usul ve Esaslar Hakkında Tebliğ uyarınca, {{UNVAN}} (ASH — AI Solution House) tarafından işletilen bu web sitesinin ziyaretçilerini bilgilendirmek amacıyla hazırlanmıştır.",
+    "Metnin bu sürümü, sitenin bugünkü işleyişini anlatır. Site üzerinde kişisel veri toplayan yeni bir işlev devreye alındığında metin güncellenir ve güncelleme tarihi değiştirilir."
+  ],
+  "sections": [
+    {
+      "heading": "Veri sorumlusunun kimliği",
+      "paragraphs": [
+        "Veri sorumlusu {{UNVAN}}'dir. İletişim adresi {{ADRES}}, elektronik posta adresi {{EPOSTA}}'dir.",
+        "MERSİS numarası: {{MERSIS}} · VERBİS kaydı: {{VERBIS}}"
+      ]
+    },
+    {
+      "heading": "İşlenen kişisel veriler ve toplama yöntemi",
+      "paragraphs": [
+        "Sitedeki iletişim formu ad soyad, e-posta adresi ve serbestçe yazdığınız mesaj metnini içerir. Bültene kayıt alanı ise yalnızca e-posta adresinizi ister.",
+        "Önemli bir ayrım: bu iki form şu anda verinizi tarafımıza iletmemektedir. Girdiğiniz bilgiler yalnızca kendi tarayıcınızın yerel depolamasında (localStorage) taslak olarak tutulur; tarafımıza ulaşmaz, sunucularımızda saklanmaz. Bu nedenle bu alanlar üzerinden şu an tarafımızca gerçekleştirilen bir kişisel veri işleme faaliyeti bulunmamaktadır.",
+        "Formlar bir e-posta veya kayıt servisine bağlandığında bu metin güncellenecek; hangi verinin hangi amaçla tarafımıza iletildiği açıkça belirtilecektir.",
+        "Siteyi ziyaret ettiğinizde, sitenin barındırıldığı altyapı tarafından bağlantının teknik olarak kurulabilmesi için IP adresi, tarayıcı ve işletim sistemi bilgisi, talep edilen adres ve zaman damgası gibi teknik kayıtlar oluşabilir."
+      ]
+    },
+    {
+      "heading": "Kişisel verilerin işlenme amaçları",
+      "bullets": [
+        "Web sitesinin güvenli ve kesintisiz biçimde sunulması",
+        "Sitenin teknik bakımı, hata tespiti ve kötüye kullanımın önlenmesi",
+        "İleride formlar tarafımıza bağlandığında: talebinizin yanıtlanması ve iletişimin yürütülmesi",
+        "İlgili mevzuattan doğan yükümlülüklerin yerine getirilmesi"
+      ]
+    },
+    {
+      "heading": "İşlemenin hukuki sebebi",
+      "paragraphs": [
+        "Sunucu kayıtları, KVKK'nın 5. maddesinin ikinci fıkrasının (ç) bendi uyarınca veri sorumlusunun hukuki yükümlülüğünü yerine getirebilmesi ve (f) bendi uyarınca ilgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla veri sorumlusunun meşru menfaatleri için zorunlu olması hukuki sebeplerine dayanır.",
+        "Formlar tarafımıza bağlandığında, talebinizi iletmek üzere paylaştığınız veriler bakımından (c) bendindeki sözleşmenin kurulması veya ifasıyla doğrudan ilgili olma ve ilgili hâllerde açık rıza hukuki sebepleri esas alınacaktır."
+      ]
+    },
+    {
+      "heading": "Kişisel verilerin aktarılması",
+      "paragraphs": [
+        "Site verilerinin barındırılması için hizmet sağlayıcılardan yararlanılmaktadır; bu kapsamda teknik kayıtlar hizmet sağlayıcının altyapısında oluşabilir.",
+        "Bunun dışında kişisel verileriniz, hukuken yetkili kamu kurum ve kuruluşlarına mevzuatın öngördüğü hâller dışında üçüncü kişilerle paylaşılmaz; pazarlama amacıyla satılmaz veya devredilmez."
+      ]
+    },
+    {
+      "heading": "Saklama süresi",
+      "paragraphs": [
+        "Kişisel veriler, işlendikleri amaç için gerekli olan süre boyunca ve ilgili mevzuatta öngörülen zamanaşımı süreleri saklanır; bu sürenin sonunda silinir, yok edilir veya anonim hâle getirilir.",
+        "Tarayıcınızın yerel depolamasında tutulan form taslakları tamamen sizin kontrolünüzdedir; tarayıcı verilerini temizleyerek bunları istediğiniz an silebilirsiniz."
+      ]
+    },
+    {
+      "heading": "İlgili kişi olarak haklarınız",
+      "paragraphs": [
+        "KVKK'nın 11. maddesi uyarınca veri sorumlusuna başvurarak şu haklara sahipsiniz:"
+      ],
+      "bullets": [
+        "Kişisel verilerinizin işlenip işlenmediğini öğrenme",
+        "İşlenmişse buna ilişkin bilgi talep etme",
+        "İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme",
+        "Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme",
+        "Eksik veya yanlış işlenmiş olması hâlinde düzeltilmesini isteme",
+        "Kanunun 7. maddesinde öngörülen şartlar çerçevesinde silinmesini veya yok edilmesini isteme",
+        "Düzeltme, silme ve yok etme işlemlerinin verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme",
+        "İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme",
+        "Kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme"
+      ]
+    },
+    {
+      "heading": "Başvuru yolu",
+      "paragraphs": [
+        "Haklarınıza ilişkin taleplerinizi, Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ'de belirtilen şartlara uygun olarak {{ADRES}} adresine yazılı biçimde veya {{EPOSTA}} adresine elektronik posta yoluyla iletebilirsiniz.",
+        "Başvurunuzda adınız soyadınız, imzanız (yazılı başvuruda), Türkiye Cumhuriyeti kimlik numaranız veya yabancılar için uyruğu ve pasaport numarası, tebligata esas adresiniz, varsa bildirime esas elektronik posta adresiniz ve talep konunuz yer almalıdır.",
+        "Talebiniz, niteliğine göre en kısa sürede ve en geç otuz gün içinde ücretsiz olarak sonuçlandırılır. İşlemin ayrıca bir maliyet gerektirmesi hâlinde Kurul tarafından belirlenen tarifedeki ücret alınabilir."
+      ]
+    },
+    {
+      "heading": "Metindeki değişiklikler",
+      "paragraphs": [
+        "Bu metin, mevzuattaki değişiklikler veya sitenin işleyişindeki güncellemeler doğrultusunda yenilenebilir. Güncel sürüm her zaman bu sayfada yayımlanır."
+      ]
+    }
+  ]
+}

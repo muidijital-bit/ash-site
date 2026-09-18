@@ -1,0 +1,41 @@
+{
+  "label": "Nasıl çalışıyoruz",
+  "heading": "Keşiften canlı sonrasına beş adım",
+  "intro1": "Bir projeye başlarken neyi yapacağımızdan çok, neyi yapmayacağımızı konuşuruz. Aşağıdaki beş adım, teklif aşamasından canlı sonrası desteğe kadar aldığımız kararların çerçevesi.",
+  "intro2": "Sıra değişmez, süre değişir. Bir adımı atlamak yerine kısaltmayı tercih ederiz; çünkü atlanan adım her zaman bir sonrakinin maliyeti olarak geri gelir.",
+  "steps": [
+    {
+      "no": "01",
+      "title": "Sistemi okuruz",
+      "body": "Geliştirmeye başlamadan önce sistemde ne olduğuna bakarız: hangi objeler yazılmış, hangi kural nerede tanımlı. Kurumun isimlendirme ve geliştirme standartları girdi kabul edilir."
+    },
+    {
+      "no": "02",
+      "title": "Kapsamı ve sınırı çizeriz",
+      "body": "Hangi veriye erişileceği, neyin otomatik yapılacağı ve neyin insan onayından geçeceği sözleşmeden önce netleşir. Rol bazlı yetkilendirme ilk tasarım kararıdır."
+    },
+    {
+      "no": "03",
+      "title": "Üretim koşullarında kurarız",
+      "body": "İlk günden hata durumlarını, yeniden denemeyi ve geri alma yolunu tasarlarız. Entegrasyon sonraya bırakılmaz; bağlantı prototipte de vardır."
+    },
+    {
+      "no": "04",
+      "title": "Kanıtıyla teslim ederiz",
+      "body": "Her çıktının hangi belgeden, kayıttan veya kuraldan geldiği açılabilir. Kod, yapılandırma ve karar gerekçeleri kurumda kalır."
+    },
+    {
+      "no": "05",
+      "title": "Canlı sonrası ölçeriz",
+      "body": "Kullanımı izleriz: kim kullanıyor, nerede vazgeçiyor, hangi adımda geri dönüyor. Kurallar değiştiğinde çözümün güncellenmesi planın parçasıdır."
+    }
+  ],
+  "example": {
+    "label": "Dördüncü adımda ne demek istiyoruz",
+    "avoidLabel": "Kaçındığımız",
+    "avoidQuote": "Sistem bu faturanın onaya düşmesi gerektiğine karar verdi.",
+    "preferLabel": "Tercih ettiğimiz",
+    "preferQuote": "Fatura tutarı siparişten sapıyor; harcama politikasının ilgili maddesi bu farkın üzerindeki kayıtları onaya gönderiyor.",
+    "closing": "Aradaki fark kullanıcının davranışını değiştirir: birincisinde onaylamaktan başka seçenek yoktur, ikincisinde karar verilebilir."
+  }
+}

@@ -1,0 +1,145 @@
+/* The source stylesheet supplies appearance; these rules restore its runtime. */
+[data-home-motion] [data-home-reveal="pending"] {
+  animation: none;
+  opacity: 0;
+}
+
+[data-home-motion] [data-home-reveal="visible"] {
+  opacity: 1;
+}
+
+/* Keep captured offscreen backgrounds and later news covers visible without JS. */
+[data-home-motion] :is(.Growth_background__w_1Nw, .OpenPositions_background__Dx1uo, .LatestNewsItem_cover__sytL0) {
+  opacity: 1;
+}
+
+[data-home-motion] .swiper {
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  cursor: grab;
+  -webkit-overflow-scrolling: touch;
+}
+
+[data-home-motion] .swiper::-webkit-scrollbar { display: none; }
+[data-home-motion] .swiper:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+[data-home-motion] .swiper[data-dragging="true"] { cursor: grabbing; scroll-snap-type: none; user-select: none; }
+[data-home-motion] .swiper-wrapper {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+  height: auto;
+  transform: none;
+}
+
+[data-home-motion] .swiper-slide {
+  flex: 0 0 auto;
+  height: auto;
+  margin-right: 0;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
+
+[data-home-motion] .Investments_card__akzVq { width: 18.75rem; }
+[data-home-motion] .LatestNews_latest-news__news__1zSLo .swiper-slide { width: 100%; }
+[data-home-motion] .LatestNewsItem_cover__sytL0 { flex: 0 0 auto; }
+[data-home-motion] .OpenPositions_card__xumKP { width: 90%; }
+[data-home-motion] .OpenPositions_card__xumKP .Card_card__pfJM5 { height: 100%; }
+[data-home-motion] .CarouselNavigation_carousel-navigation__button___D7UI { padding: 0; border: 0; background: none; }
+[data-home-motion] .CarouselNavigation_carousel-navigation__button___D7UI:focus-visible { outline: 2px solid currentColor; outline-offset: 6px; border-radius: 50%; }
+
+[data-home-motion] .Showcase_revenueSection__jOVVV {
+  overflow: clip;
+  position: relative;
+  isolation: isolate;
+  padding-top: 0;
+}
+
+[data-home-motion] .home-revenue-stage { position: relative; }
+[data-home-motion] .Showcase_overWrap__MMRIq {
+  position: relative;
+  height: clamp(24rem, 75vw, 56rem);
+  isolation: isolate;
+}
+
+[data-home-motion] .Showcase_picturesContainer__kgSem {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  transform: translate(-50%, -50%) scale(.9);
+  width: 100%;
+  max-width: 80rem;
+  height: auto;
+  aspect-ratio: 1600 / 1090;
+}
+
+[data-home-motion] .Showcase_divLitX__Upc3s { display: none; }
+[data-home-motion] .Showcase_litX__31MWW {
+  z-index: 0;
+  top: 0;
+  transform: translateY(-20%) scale(1.1);
+  transform-origin: 50% 0;
+  opacity: .5;
+}
+
+[data-home-motion] .Showcase_picturesContainer__kgSem > :is(picture, svg) {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+[data-home-motion] .Showcase_picturesContainer__kgSem > .Showcase_logoX__7XokK {
+  top: 7%;
+  width: 44%;
+  max-width: 30.6875rem;
+}
+
+[data-home-motion] .Showcase_picturesContainer__kgSem > .appleandgoogle_lines {
+  width: 100%;
+  height: auto;
+}
+
+[data-home-motion] .Showcase_contentAppear__YC7Cz {
+  position: relative;
+  transform: none;
+  opacity: 1;
+}
+
+@media (min-width: 36rem) {
+  [data-home-motion] .OpenPositions_card__xumKP { width: calc((100% - 1.5rem) / 2); }
+}
+
+@media (min-width: 62rem) {
+  [data-home-motion] .OpenPositions_card__xumKP { width: calc((100% - 3rem) / 3); }
+}
+
+@media (min-width: 64rem) {
+  [data-home-motion] .Investments_card__akzVq { width: calc((100% - 3rem) / 3); max-width: 22.5rem; }
+  [data-home-motion] .home-revenue-stage[data-pinned] { height: 200svh; }
+  [data-home-motion] .home-revenue-stage[data-pinned] .Showcase_overWrap__MMRIq {
+    position: sticky;
+    top: var(--header-height);
+    height: calc(100svh - var(--header-height));
+    min-height: 32rem;
+  }
+  [data-home-motion] .Showcase_picturesContainer__kgSem { transform: translate(-50%, -50%) scale(.85); }
+}
+
+@media (max-width: 63.999rem) {
+  [data-home-motion] .LatestNewsItem_cover__sytL0 { width: 100%; }
+  [data-home-motion] .Showcase_contentAppear__YC7Cz { padding-top: 1.5rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-home-motion] [class*="--show__"],
+  [data-home-motion] .Hero_content__Q0Yei {
+    opacity: 1;
+    animation: none;
+    transform: none;
+  }
+  [data-home-motion] .swiper { scroll-behavior: auto; }
+}

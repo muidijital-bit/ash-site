@@ -1,0 +1,259 @@
+{
+  "key": "hubai-x",
+  "name": "HubAI-X",
+  "hero": {
+    "eyebrow": "HUBAI-X · KURUMSAL YAPAY ZEKÂ MERKEZİ",
+    "title": "Araç Biriktirmeyi Bırakın. <span>Yapay Zekânızın Merkezini Kurun.</span>",
+    "lead": "Çalışanlarınız sorsun, asistanlar kurumsal belgelerinizden yanıtlasın, siz her isteği tek ekrandan denetleyin. HubAI-X; modelleri, departman asistanlarını, bütçeleri ve yetkileri sizin seçtiğiniz altyapıda çalışan tek bir yapay zekâ katmanında birleştirir.",
+    "cta": "Demo Planlayın",
+    "visual": "Deep Navy #050A2B zemin. Arkada 132px blueprint ızgarası (rgba(248,248,246,.05), 1px) + mask-image radial-gradient(ellipse 70% 60% at 50% 40%) ile merkezden sönüm + sol üstte 480px Electric Blue (opacity .16) ve sağ altta 360px Violet (opacity .10) blur(120px) küre. Ortalanmış 11px mono eyebrow, iki satırlık H1 (ikinci satır 135deg marka gradyanı, background-clip:text), altında soldan sağa sönen 1px hairline ve tek satır dönen kelime: 'Tek merkez. Her [model / departman / belge / bütçe].' — son kelime 2,8 sn'de rise keyframe ile değişir. CTA ikilisi yan yana: gradyan dolgulu 'Demo Planlayın' (mavi glow) + şeffaf 1px kenarlıklı 'Platformu Keşfedin'. Altında 900px <BrowserFrame url=\"hubai-x.com/calisma-alani\">: solda 156px #080D35 sidebar (Asistanlar, Sohbetler, Belgeler, Konsol; aktif 'Asistanlar' 3px Electric Blue sol çubuk + 5px nokta); ortada sohbet alanı — üstte model seçici hap 'Kurum içi model ▾', kullanıcı balonu 'Devreden yıllık izin hakkım nasıl hesaplanıyor?', yanıt balonunda 3 satır metin ve altında kaynak chip'i 'IK_Yonetmeligi_2026.pdf · s.34'; sağda 180px rail: 'Bu ay · Operasyon · 148 kullanıcı' başlığı ve İK / Finans / Satış / BT için width transition ile dolan 4 yatay bar. Mockup'ın sol üst köşesinde cam chip (backdrop-filter blur(14px), rgba(248,248,246,.06)) 'Yanıt kaynağı: 3 kurumsal belge', sağ alt köşede 'Veri konumu: Özel bulut · Şifreli'. Mockup metinleri 8–10px mono, tabular-nums, aria-hidden. Panelin altında tek geniş yumuşak gölge (0 40px 120px -60px rgba(0,0,0,.85))."
+  },
+  "sections": [
+    {
+      "kind": "farklar",
+      "heading": "Her Ekip Ayrı Araçta. Kontrol Hiçbir Yerde.",
+      "sub": "Yapay zekâ kurumunuza çoktan girdi; sorun kullanımda değil, dağınıklıkta. Aşağıdaki tablolardan biri tanıdık geliyorsa HubAI-X tam olarak bunun için tasarlandı.",
+      "items": [
+        {
+          "title": "Kayıt Dışı Kullanım (Gölge AI)",
+          "body": "Çalışanlar kurumsal belgeleri kişisel hesaplardaki sohbet araçlarına yapıştırıyor ve bunu kimse görmüyor. HubAI-X tüm kullanımı onaylı tek bir giriş noktasına taşır; kayıt dışı yola ihtiyaç kalmaz."
+        },
+        {
+          "title": "Tek Sağlayıcıya Kilitlenme",
+          "body": "Bütün iş akışlarınız tek bir modelin fiyatına, kotasına ve ürün kararlarına bağlı. HubAI-X model katmanını soyutlar; sağlayıcı değiştirdiğinizde asistanlarınız ve akışlarınız yerinde kalır."
+        },
+        {
+          "title": "Kontrolden Çıkan Veri",
+          "body": "Hangi belgenin hangi modele, hangi bölgeye gittiğini kanıtlayamıyorsunuz. HubAI-X'te veri yolunu siz çizersiniz: her istek sizin kurallarınızdan geçer ve kayda girer."
+        },
+        {
+          "title": "Kişi Başı Şişen Lisanslar",
+          "body": "Ayda iki kez kullanan çalışan için de tam koltuk ücreti ödüyorsunuz. HubAI-X kişi başı lisans yerine kurum geneline paylaştırılan havuz kullanımıyla çalışır."
+        },
+        {
+          "title": "Birbirinden Kopuk Araçlar",
+          "body": "Sohbet bir üründe, belge arama başka bir üründe, otomasyon üçüncü bir üründe. HubAI-X sohbeti, kurumsal hafızayı ve aksiyon alan asistanları tek arayüzde birleştirir."
+        },
+        {
+          "title": "Kurumunuzu Tanımayan Yanıtlar",
+          "body": "Genel modeller yönetmeliğinizi, süreçlerinizi ve ERP'deki verinizi bilmez; yanıtlar doğru görünür ama işe yaramaz. HubAI-X yanıtı kendi belgelerinize ve sistemlerinize dayandırır, kaynağını da gösterir."
+        }
+      ],
+      "visual": "Eyebrow: 'DAĞINIK YAPAY ZEKÂNIN BEDELİ'. Midnight Navy #080D35 zemin, SectionHead altında 3×2 birleşik hairline ızgara: kapsayıcı background rgba(248,248,246,.08) + gap:1px, hücreler #050A2B, dış çerçeve 16px radius. Her hücre: 40×40px ikon kutusu (radius 10px, rgba(47,107,255,.10) zemin, outline ikon: eye-off, lock-keyhole, database-zap, users, layers, file-question), sağ üstte 11px mono numara 01…06, hücre genişliğine uzanan ince yatay çizgi, H3 başlık ve tek paragraf. Açıklamanın ilk cümlesi (sorun) rgba(248,248,246,.62), ikinci cümle (çözüm) Soft White %90 ve başında 6px Electric Blue nokta. Kartlardan biri 3,2 sn'de bir sırayla aktif olur: zemini 135deg rgba(255,107,107,.08) → transparent gradyanla dolar, mono numara #FF6B6B'ye döner, dört köşede 10×10px 1.5px L şeklinde crosshair işaretleri (inline SVG, stroke-linecap:square) belirir; diğer hücrelerin metni .35 opaklığa düşer. Geçişler sadece color/background, 300ms. Izgaranın altında ortalanmış 11px mono satır: 'Altı sorun · tek katman · HubAI-X'. Mobilde 1 sütun, tablette 2 sütun."
+    },
+    {
+      "kind": "nasil-calisir",
+      "heading": "Çalışan Sorar. Yönetici Görür. Kurum Kazanır.",
+      "sub": "HubAI-X aynı altyapıyı iki farklı gözle sunar. Çalışma alanı işi hızlandırmak, yönetim konsolu işi denetlemek için tasarlandı; ikisi aynı kurallar ve aynı kayıt üzerinde çalışır.",
+      "items": [
+        {
+          "title": "Çalışan · Departman Asistanları",
+          "body": "İK, finans veya satış için hazırlanmış asistanları tek tıkla açın. Her asistan kendi talimatı, kendi belge seti ve kendi yetkisiyle gelir."
+        },
+        {
+          "title": "Çalışan · Göreve Uygun Model",
+          "body": "Uzun bir rapor özeti için bir model, tablo analizi için başka bir model seçin. Konuşma geçmişi ve ekler yerinde kalır; baştan başlamanız gerekmez."
+        },
+        {
+          "title": "Çalışan · Kaynağı Gösterilen Yanıtlar",
+          "body": "Asistan yanıtın hangi belgenin hangi sayfasından geldiğini gösterir. Doğrulamak için tek tıklama yeterlidir."
+        },
+        {
+          "title": "Yönetici · Rol Bazlı Erişim (RBAC)",
+          "body": "Hangi rolün hangi modele, hangi asistana ve hangi belge klasörüne erişeceğini tek bir matriste tanımlayın."
+        },
+        {
+          "title": "Yönetici · Bütçe ve Kota Kalkanı",
+          "body": "Departman ve kullanıcı bazında aylık limit koyun. Limite yaklaşıldığında uyarı, aşıldığında otomatik durdurma devreye girer."
+        },
+        {
+          "title": "Yönetici · Denetime Hazır İz Kaydı (Audit Log)",
+          "body": "Kim, ne zaman, hangi modelle, hangi veriyle sordu; her istek silinemeyen kayıt olarak saklanır ve denetimde dışa aktarılır."
+        }
+      ],
+      "visual": "Deep Navy zemin. Ortalanmış SectionHead (eyebrow 'NASIL ÇALIŞIR'), altında iki seçenekli segment kontrolü: '01 Çalışma Alanı' / '02 Yönetim Konsolu' — köşeli 1px hairline kutular, aktif olanın altında 3px marka gradyanı çubuk. İçerik paneli iki sütun: solda %55 genişlikte <BrowserFrame>, sağda %45 üst üste 3 CrosshairCard. Sekme 1'de URL 'hubai-x.com/calisma-alani': sol sütunda asistan listesi (İK Asistanı, Bütçe Analisti, Teklif Yazarı, KVKK Kontrol — her biri 20px gradyan avatar + baş harf), ortada sohbet, sağ üstte model seçici açılır listesi ('Kurum içi model ✓', 'Sağlayıcı A', 'Sağlayıcı B', 'Kendi modeliniz (BYOM)'), yanıtın altında 2 kaynak chip'i. Sekme 2'de URL 'hubai-x.com/konsol': RBAC matrisi (satır: Finans Uzmanı, İK Uzmanı, Satış Temsilcisi; sütun: Kurum içi model, Sağlayıcı A, Sağlayıcı B; hücre yeşil tik #28AF6E / gri çarpı #7C85A8), altında departman bütçe barları ('Finans ₺18.400 / ₺25.000' amber uyarı rozeti) ve son 4 satırlık iz kaydı ('14:02 · M.K. · Sağlayıcı A · maskelendi'). Sağdaki 3 kart aktif sekmenin 3 maddesini gösterir; kartlar 4,5 sn'de sırayla crosshair + rgba(47,107,255,.14) köşegen gradyanla vurgulanır ve soldaki mockup'ın ilgili bölgesi aynı anda 1px Electric Blue halkayla işaretlenir. Sekme geçişi: çıkan panel translateX(0→-16px)+fade, giren 16px→0, 280ms. Kullanıcı dokununca otomatik döngü durur. Mobilde mockup üste, kartlar alta; segment tam genişlik."
+    },
+    {
+      "kind": "ozellikler",
+      "heading": "Yanıt Vermekle Kalmaz. İşi Tamamlar.",
+      "sub": "HubAI-X beş yetenek katmanıyla çalışır: modelleri yönlendirir, kurumsal hafızanızdan yanıtlar, asistanları çoğaltır, sistemlerinizde aksiyon alır ve tüm bunları tek bir API ile diğer uygulamalarınıza açar.",
+      "items": [
+        {
+          "title": "Model Bağımsızlığı · Doğru İşe Doğru Modeli Atayın",
+          "body": "Ticari sağlayıcıları, açık kaynak modelleri ve kendi barındırdığınız modeli (BYOM) aynı katmana bağlayın. Yönlendirme kurallarıyla hassas verili istekler kurum içi modele, genel istekler en uygun maliyetli modele kendiliğinden gider."
+        },
+        {
+          "title": "Kurumsal Hafıza · Yönetmeliğinizi Bilen Bir Yapay Zekâ",
+          "body": "Politika, prosedür, sözleşme ve teknik dokümanlarınızı yetki kurallarıyla birlikte dizine ekleyin (RAG). Çalışan yalnızca erişim hakkı olan belgelerden yanıt alır ve her yanıtta kaynak sayfası görünür."
+        },
+        {
+          "title": "Asistan Kütüphanesi · Bir Kez Kurun, Tüm Kurum Kullansın",
+          "body": "Talimatı, belge seti ve yetkisi tanımlanmış asistanları kod yazmadan oluşturun ve departmanlara yayınlayın. Sürüm geçmişiyle değişiklikleri izleyin, gerektiğinde önceki sürüme dönün."
+        },
+        {
+          "title": "Aksiyon Alan Asistanlar · Özette Kalmayın, İşi Sonuçlandırın",
+          "body": "Asistanlar sistemlerinizden rapor çeker, taslak e-posta hazırlar, talep kaydı açar, çıktıyı Excel ya da sunuma dönüştürür. Kritik adımlar insan onayı olmadan ilerlemez."
+        },
+        {
+          "title": "Kurumsal API · Yapay Zekâyı Uygulamalarınıza Tek Uç Noktadan Açın",
+          "body": "İç portallarınız ve iş uygulamalarınız tek bir API ile tüm modellere ve asistanlara erişir. Model değiştiğinde entegrasyon kodu değişmez; yetki, kota ve kayıt kuralları API trafiğine de aynen uygulanır."
+        }
+      ],
+      "visual": "Midnight Navy zemin, beş zig-zag blok; her blok 20px radius 1px hairline çerçeve içinde, sol üst köşede çizgiyi kesen küçük mono kategori etiketi (Electric Blue), taraf her blokta değişir, metin tarafında başlık + 2 cümle + 3 kutulu mikro-kanıt şeridi. (1) Model yönlendirici: soldaki 'Kurumsal istek' düğümünden sağa açılan 4 bezier kol → 'Kurum içi model', 'Sağlayıcı A', 'Sağlayıcı B', 'Kendi modeliniz (BYOM)' kutuları; üstte kural chip'i 'veri sınıfı: GİZLİ → kurum içi'; aktif kol marka gradyanıyla parlar ve beam noktası akar, 4,5 sn'de değişir. Şerit: 'Model sayısı: Sınırsız / Yönlendirme: Kurala bağlı / Geçiş: Konsoldan'. (2) Kurumsal hafıza: solda belge ağacı (Politikalar, Sözleşmeler, Teknik Dokümanlar; kilit ikonlu klasör 'Bordro — yalnızca İK'), sağda yanıt kartı ve altında 3 kaynak chip'i 'IK_Yonetmeligi_2026.pdf · s.34', 'Yan_Haklar_Proseduru.docx · §4.2', 'Seyahat_Politikasi_v3.pdf · s.7'. (3) Asistan kütüphanesi: 2×3 asistan kartı, üst şeritte 135deg soft gradyan kapak (mavi→mor, %18 opak) ortasında outline ikon; kart altında 'v1.4 · Finans · 36 kullanıcı' mono etiketi ve 'Yayında' yeşil rozet. (4) Aksiyon alan asistan: dikey adım listesi — 'ERP'den Q3 masraf raporu çekildi · Tamam', 'Sapmalar analiz edildi · Tamam', 'Sunum_Q3_Finans.pptx oluşturuluyor · Çalışıyor (pulse)', 'Genel müdüre e-posta taslağı · Onay bekliyor (amber)'; adımları bağlayan 2px gradyan ray. Şerit: 'Onay adımı: Zorunlu / Çıktı: PPTX · XLSX · PDF / İz kaydı: Her adım'. (5) Kurumsal API: satır numaralı CodePane, sekme adı 'istek.ts', 9px mono, anahtar kelime #7448E8, string #F08BC2, sayı #2F6BFF; POST hubai-x.com/api/v1/asistan çağrısı ve 'model: \"kurum-ici\"' satırı; yanında 3 kutu 'Uç nokta: Tek / Yetki kuralı: Devralınır / Kayıt: Her çağrı'. Mobilde tüm bloklar tek sütun, mockup metnin altında."
+    },
+    {
+      "kind": "kullanim-senaryolari",
+      "heading": "Altı Departman. Tek Yapay Zekâ Merkezi.",
+      "sub": "Aynı platform her ekipte farklı bir işi üstlenir. Her senaryoda bir kazanım, bir kontrol mekanizması ve somut bir çıktı var.",
+      "items": [
+        {
+          "title": "BT & Bilgi Güvenliği",
+          "body": "Kazanım: Kayıt dışı yapay zekâ kullanımını onaylı tek kanala çekin, erişim ve şifre taleplerini asistana devredin. Kontrol: Onaylı model listesi (Whitelist) ve veri sınıfına göre yönlendirme. Sonuç: Tek kanal, tam görünürlük."
+        },
+        {
+          "title": "İnsan Kaynakları",
+          "body": "Kazanım: İzin, yan hak ve yönetmelik sorularını doğru maddeye atıf yapan bir asistana bırakın. Kontrol: Bordro ve kişisel veri klasörleri yalnızca İK rolüne açık. Sonuç: 7/24 yanıt veren çalışan desteği."
+        },
+        {
+          "title": "Finans & Muhasebe",
+          "body": "Kazanım: Ay sonu kapanış notlarını, bütçe sapma açıklamalarını ve yönetim raporu özetlerini ERP verinizden dakikalar içinde hazırlayın. Kontrol: Finansal veriler yönlendirme kuralıyla yalnızca kurum içi modelde işlenir. Sonuç: Kapanış yorumu beklemeden hazır."
+        },
+        {
+          "title": "Satış & Müşteri İlişkileri",
+          "body": "Kazanım: Teklif taslağını, toplantı özetini ve müşteri geçmişini tek komutla hazırlayın; CRM-X ile fırsat kaydına doğrudan yazın. Kontrol: Müşteri verisi yalnızca ilgili hesap ekibinin yetkisiyle görünür. Sonuç: Her görüşmeye tam bağlamla girin."
+        },
+        {
+          "title": "Tedarik & Operasyon",
+          "body": "Kazanım: Tedarikçi sözleşmelerini karşılaştırın, yazışmaları özetleyin, SAP süreç sorularını SAPAI-X asistanına yönlendirin. Kontrol: Sistemde işlem yapan her adım onay sonrasında yürür. Sonuç: SAP sorusu danışman kuyruğunda beklemez."
+        },
+        {
+          "title": "Hukuk & Uyum",
+          "body": "Kazanım: Sözleşme incelemelerini ve KVKK kontrol listelerini kaynak atıflı biçimde hazırlayın. Kontrol: Gizli dosyalar izole çalışma alanında tutulur, her erişim iz kaydına düşer. Sonuç: Denetime hazır, izlenebilir dosya."
+        }
+      ],
+      "visual": "Deep Navy zemin, SectionHead (eyebrow 'DEPARTMAN SENARYOLARI'). Solda 236px dikey sekme kolonu: 6 departman, her biri 20px outline ikon (server-cog, users, calculator, handshake, truck, scale) + etiket; aktif sekme rgba(47,107,255,.12) zemin + sol kenarda 3px marka gradyanı çubuk. Sağda geniş 1px hairline panel üç bölgeye ayrılır: üstte 11px mono 'KURUMSAL KAZANIM' etiketi + fayda cümlesi; ortada departmana özel mini mockup (<BrowserFrame url=\"hubai-x.com/asistan/ik\"> gibi URL sekmeyle değişir — İK: yönetmelik yanıtı + kaynak chip'i; Finans: 'Q3 bütçe sapması' tablosu, 3 satır, sapma sütunu amber/yeşil; Satış: 'Fırsat #OPP-2140 · ₺320.000 · Teklif aşaması' kartı ve oluşturulan teklif taslağı; Tedarik: iki sözleşme maddesinin yan yana diff görünümü, farklı satır amber kenarlıklı; Hukuk: KVKK kontrol listesi 5 madde tik/uyarı; BT: 'Onaylı modeller' listesi ve 'Engellenen istek · kişisel hesap' kırmızı rozet); altta iki kutu yan yana — solda kalkan ikonlu 'Kontrol' notu, sağda yeşil %10 zeminli, #28AF6E metinli ortalanmış sonuç rozeti. Sekmeler 5 sn'de otomatik döner, panel rise (14px, 320ms) ile girer; dokunulunca döngü durur. Mobilde sekmeler 2 sütunlu chip ızgarası, mockup gizlenir ve yerine yalnızca 3 metin kutusu kalır."
+    },
+    {
+      "kind": "ozellikler",
+      "heading": "Veri Kurumda Kalır. Her Adım Kayıt Altında.",
+      "sub": "Kurumsal yapay zekâda en zor soru hangi modelin daha iyi olduğu değil, verinin nereye gittiğidir. HubAI-X bu soruya sözleşmeyle değil, mimariyle cevap verir.",
+      "items": [
+        {
+          "title": "Kurulum Tercihi Sizde (On-Premise / Özel Bulut)",
+          "body": "HubAI-X'i kendi sunucularınızda, özel bulutunuzda veya yönetilen ortamda çalıştırın. Hassas iş yüklerini kurum dışına çıkarmadan işleyecek yapıyı siz seçersiniz."
+        },
+        {
+          "title": "Uçtan Uca Şifreleme",
+          "body": "Veriler iletimde ve depolamada AES-256 şifrelemeyle korunur. Anahtar yönetimi kurumunuzun güvenlik politikasına bağlanır."
+        },
+        {
+          "title": "Kurumsal Kimlikle Tek Oturum (SSO)",
+          "body": "Mevcut kimlik sağlayıcınızla (SAML / OIDC) giriş yapılır, roller oradan devralınır. Bir çalışan ayrıldığında HubAI-X erişimi de aynı anda kapanır."
+        },
+        {
+          "title": "Maskeleme ve Silinemeyen İz Kaydı",
+          "body": "T.C. kimlik no, IBAN ve telefon gibi kişisel veriler modele gitmeden maskelenebilir. Her istek ve yanıt değiştirilemez kayıt olarak saklanır, denetimde dışa aktarılır."
+        }
+      ],
+      "visual": "Midnight Navy zemin; bölümün tamamı sol üst köşesinde 11px mono 'GÜVENLİK VE VERİ EGEMENLİĞİ' etiketi taşıyan 1px hairline çerçeve içinde. İki sütun: solda üç satırlık büyük başlık, her satır farklı tonda — 'Veri kurumda kalır.' Electric Blue, 'Kurallar sizde kalır.' Violet, 'Her adım kayıt altında.' Soft White. Altında tek paragraf lead. Sağda 'teknik çizim paneli': 1px rgba(47,107,255,.35) çerçeve, dört köşesinde 14px L işaretleri; içinde <BrowserFrame url=\"hubai-x.com/guvenlik\"> başlıklı dikey zincir — 4 numaralı 44px daire ('01 Kimlik doğrulandı · SSO', '02 Kişisel veri maskelendi · 2 alan', '03 Kurum içi modele yönlendirildi · şifreli', '04 İz kaydına yazıldı · değiştirilemez'), daireleri bağlayan 2px marka gradyanı ray, ray boyunca yukarıdan aşağı 2,6 sn'de akan 6px beam ışık noktası; her adımın sağında 9px mono saat damgası (14:02:07, 14:02:07, 14:02:08, 14:02:09). Panelin altında 2×2 kanıt ızgarası (gap:1px hairline): her hücrede genişçe bir hap kontur (radius 999px) içinde tek outline ikon ve altında gri hapta etiket — mavi kalkan 'Kurum içi kurulum', mor bulut 'Özel bulut', magenta kilit 'AES-256 şifreleme', pembe anahtar 'SSO / kimlik'; her hücre kendi renginde %10 opak radial hale ile yıkanır. Mobilde başlık üstte, zincir dikey, 2×2 ızgara 2 sütun korunur."
+    },
+    {
+      "kind": "farklar",
+      "heading": "Genel Amaçlı Değil. Kurumunuz İçin Kurulur.",
+      "sub": "HubAI-X, ASH'in yıllara dayanan SAP ve kurumsal proje deneyiminden doğdu. Kutudan çıkan bir abonelik değil, sistemlerinize ve standartlarınıza oturan bir yapay zekâ merkezi teslim ediyoruz.",
+      "items": [
+        {
+          "title": "ASH Ürün Ailesinin Merkezi",
+          "body": "SAPAI-X, Masraf-X ve CRM-X, HubAI-X içinde uzman asistan olarak çalışır. Çalışan SAP sorusunu, masraf onayını ve fırsat güncellemesini aynı pencereden yürütür."
+        },
+        {
+          "title": "SAP'yi Sahadan Bilen Ekip",
+          "body": "Yapay zekâyı SAP ve ERP verinize bağlarken yetki objelerini, Z geliştirmelerini ve süreç istisnalarını hesaba katarız. Entegrasyon sunumda değil, üretim ortamında çalışır."
+        },
+        {
+          "title": "Pilotta Kalmayan Kurulum",
+          "body": "Tek bir departmanla başlayın, başarı ölçütlerini birlikte belirleyelim. Pilot aynı altyapı üzerinde kurulduğu için kurum geneline yayılırken yeniden kurulum gerekmez."
+        },
+        {
+          "title": "Kişi Başı Değil, Kullanım Kadar",
+          "body": "Havuz mimarisiyle maliyetinizi çalışan sayısına bağlamazsınız. Harcama gerçek kullanıma ve seçtiğiniz modellere göre şekillenir; kesin teklif kurum yapınıza göre hazırlanır."
+        },
+        {
+          "title": "Standartlarınızın Dışına Çıkmayan Yapı",
+          "body": "Güvenlik, yetkilendirme ve geliştirme standartlarınız girdi olarak alınır. Her entegrasyon adımı denetlenebilir ve onayınızdan geçer."
+        }
+      ],
+      "visual": "Deep Navy zemin, iki sütun. Solda SectionHead (eyebrow 'NEDEN HUBAI-X') ve altında 5 madde, birleşik hairline liste halinde (gap:1px): her satırda 40px ikon kutusu + başlık + açıklama; hover'da satır crosshair ile vurgulanır. Sağda hub-and-spoke inline SVG (aria-hidden): merkezde 96px yuvarlatılmış kare 'HubAI-X' düğümü, 1px marka gradyanı kenarlık ve arkasında blur(14px) mavi hale. İç halkada 3 ürün uydusu — 'SAPAI-X' (Violet kontur), 'Masraf-X' (Magenta kontur), 'CRM-X' (Soft Pink kontur); her birinin altında 9px mono alt domain etiketi (sapai-x.com, masraf-x.co, crm-x.co). Dış halkada kesikli (stroke-dasharray '2 8') bağlantılarla 5 sistem rozeti: 'SAP S/4HANA', 'ERP', 'Doküman arşivi', 'Kimlik sağlayıcı', 'İç portal'. Kavisli bezier bağlantılar üzerinde 3px beam noktaları merkeze doğru akar; 4,5 sn'de bir uydu aktifleşir, bağlantısı kendi renginde parlar ve düğüm yanında tek satırlık görev etiketi belirir ('ME21N sorusu yanıtlandı', 'EXP-2026-0431 onaya gönderildi', 'OPP-2140 aşaması güncellendi'). Arkada 22px nokta dokusu + elips maske. <900px'te SVG gizlenir, yerine 3 ürün + 5 sistem 2 sütunlu kart ızgarası gelir."
+    },
+    {
+      "kind": "sss",
+      "heading": "Karar Vermeden Önce Sorulanlar.",
+      "sub": "BT, güvenlik ve finans ekiplerinin HubAI-X değerlendirmesinde en sık sorduğu sorular.",
+      "items": [
+        {
+          "title": "HubAI-X hangi yapay zekâ modelleriyle çalışır?",
+          "body": "Ticari sağlayıcıların modelleriyle, açık kaynak modellerle ve kurum içinde barındırdığınız kendi modelinizle (BYOM) çalışır. Model listesi konsoldan yönetilir; yeni bir model eklemek mevcut asistanları ve akışları bozmaz."
+        },
+        {
+          "title": "Kurumsal verilerimiz model eğitiminde kullanılır mı?",
+          "body": "HubAI-X kurumsal verinizi model eğitimi amacıyla kullanmaz. Harici bir sağlayıcıya hangi verinin gidebileceğini yönlendirme kurallarıyla siz belirlersiniz; hassas veri sınıfları yalnızca kurum içi modelde işlenecek şekilde yapılandırılabilir."
+        },
+        {
+          "title": "Kurulum ne kadar sürer, nereye yapılır?",
+          "body": "Süre; seçtiğiniz kurulum modeline ve bağlanacak sistem sayısına göre değişir. Yönetilen ortamda pilot hızla başlatılabilir, on-premise ve özel bulut kurulumları BT ekibinizle birlikte planlanır. Kesin takvimi keşif görüşmesinde birlikte çıkarırız."
+        },
+        {
+          "title": "SAP ve mevcut sistemlerimize bağlanabilir mi?",
+          "body": "Evet. HubAI-X, SAP ve diğer ERP sistemlerinize yetki kurallarınızı koruyarak bağlanır. SAP'ye özel geliştirme ve destek senaryoları için SAPAI-X aynı platform içinde uzman asistan olarak çalışır."
+        },
+        {
+          "title": "Fiyatlandırma kişi başı mı?",
+          "body": "Hayır. HubAI-X kişi başı koltuk lisansı yerine kurum geneli havuz kullanımıyla fiyatlandırılır. Teklif; kullanıcı ölçeği, kurulum modeli ve seçilen modellere göre kurumunuza özel hazırlanır."
+        },
+        {
+          "title": "Kurumsal kimlik sistemimiz ve KVKK gereksinimlerimiz destekleniyor mu?",
+          "body": "Evet. SSO ile mevcut kimlik sağlayıcınızdan giriş yapılır ve roller oradan devralınabilir. Kişisel veri maskeleme, erişim kısıtları ve silinemeyen iz kayıtları KVKK yükümlülüklerinize destek olacak şekilde yapılandırılır."
+        },
+        {
+          "title": "Tek bir departmanla pilot başlatabilir miyiz?",
+          "body": "Evet, önerdiğimiz yol da bu. Bir departman ve birkaç asistanla başlanır, başarı ölçütleri baştan birlikte belirlenir; genişleme aynı altyapı üzerinde yapılır."
+        }
+      ],
+      "visual": "Midnight Navy zemin, iki sütun. Solda 320px sabit kolon: 11px mono eyebrow 'SSS', iki satırlık başlık, kısa 'Sorunuz listede yoksa demo görüşmesinde yanıtlayalım.' cümlesi ve tabular-nums '01 / 07' sayacı (açık karta göre güncellenir). Sağda dikey kart destesi: her kart 1px hairline, üstte 11px mono numara rozeti (01…07), tam cümle soru ve kapalıyken 1 satır, açıkken tam cevap. Açık kart rgba(47,107,255,.40) kenarlık + rgba(47,107,255,.06) zemin + dört köşede crosshair işaretleri alır; içerik grid-template-rows 0fr→1fr ile 260ms'de açılır, sağdaki + işareti 45° dönüp × olur. İlk kart varsayılan açık. Sayfaya FAQPage JSON-LD eklenir. Mobilde sol kolon üstte, sayaç gizlenir."
+    },
+    {
+      "kind": "cta",
+      "heading": "Araçları Biriktirmeyin. Merkezinizi Kurun.",
+      "sub": "Mevcut yapay zekâ kullanımınızı, sistemlerinizi ve güvenlik gereksinimlerinizi dinleyelim; kurumunuza uygun kurulum modelini ve ilk departman senaryosunu birlikte çıkaralım.",
+      "items": [
+        {
+          "title": "Demo Planlayın",
+          "body": "Birincil aksiyon. Kurumunuzun kendi senaryosuyla canlı demo; çalışma alanı ve yönetim konsolu birlikte gösterilir."
+        },
+        {
+          "title": "Platformu Keşfedin",
+          "body": "İkincil aksiyon. Asistan kütüphanesini, model yönlendiriciyi ve konsol ekranlarını adım adım inceleyin."
+        },
+        {
+          "title": "Güvence Satırı",
+          "body": "Demo için kurulum gerekmez · Kişi başı lisans yok · Kurumsal veriniz model eğitiminde kullanılmaz"
+        },
+        {
+          "title": "SAPAI-X · sapai-x.com",
+          "body": "SAP danışmanlığını ve ABAP geliştirmeyi doğal dille yürüten uzman yapay zekâ asistanı."
+        },
+        {
+          "title": "Masraf-X · masraf-x.co",
+          "body": "Fişten ERP kaydına kadar harcama sürecini uçtan uca yöneten masraf çözümü."
+        },
+        {
+          "title": "CRM-X · crm-x.co",
+          "body": "İlk temastan müşteri sadakatine kadar satış döngüsünü tek yerde yöneten CRM."
+        }
+      ],
+      "visual": "Deep Navy zemin; hero'nun arka plan üçlüsü birebir tekrarlanır (132px blueprint ızgara + radial maske + sol üst Electric Blue ve sağ alt Violet blur(120px) küre) ve merkeze doğru ısınan rgba(47,107,255,.12) radyal hale eklenir. Ortalanmış 11px mono eyebrow 'KURUMSAL YAPAY ZEKÂ MERKEZİ', iki satırlık büyük başlık (ikinci satır 'Merkezinizi Kurun.' marka gradyanlı), tek paragraf lead, yan yana iki hap buton: gradyan dolgulu 'Demo Planlayın' (0 10px 28px -12px rgba(47,107,255,.65) glow, hover'da -2px) ve şeffaf 1px kenarlıklı 'Platformu Keşfedin'. Butonların altında 12px, rgba(248,248,246,.45) güvence satırı, maddeler arasında orta nokta. Blueprint alanının altında 'Keşfetmeye devam edin' şeridi: 3 ince kart yan yana — her kartın üst kenarında ortası parlak uçları saydam 1px gradyan çizgi (SAPAI-X Violet, Masraf-X Magenta, CRM-X Soft Pink), 28px outline ürün ikonu, ürün adı, tek satır konum cümlesi ve 10px mono alt domain etiketi; hover'da -4px yükselme, kenarlık kendi aksanına döner, 'İncele →' satırı belirir ve ok 4px salınır. Mobilde kartlar tek sütun."
+    }
+  ],
+  "seoTitle": "HubAI-X | Kurumsal Yapay Zekâ Platformu — ASH",
+  "seoDescription": "HubAI-X ile modelleri, kurumsal belgeleri, departman asistanlarını ve yapay zekâ bütçesini tek merkezden yönetin. On-premise kurulum, SSO, RBAC ve iz kaydı."
+}

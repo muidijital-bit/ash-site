@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="HubAI-X model yönlendirici">
+  <title>HubAI-X — tek kurumsal istek, yetkiye göre doğru modele yönlendirilir</title>
+  <defs>
+    <linearGradient id="hx" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f6bff"/>
+      <stop offset=".55" stop-color="#7448e8"/>
+      <stop offset="1" stop-color="#d946b5"/>
+    </linearGradient>
+    <filter id="hxg" x="-40%" y="-80%" width="180%" height="260%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+
+  <!-- pasif kollar -->
+  <g fill="none" stroke="#b9c1d8" stroke-width="7" stroke-linecap="round">
+    <path d="M214 200 C 300 200, 320 56, 406 56"/>
+    <path d="M214 200 C 300 200, 320 128, 406 128"/>
+    <path d="M214 200 C 300 200, 320 272, 406 272"/>
+    <path d="M214 200 C 300 200, 320 344, 406 344"/>
+  </g>
+
+  <!-- aktif kol -->
+  <path d="M214 200 L 406 200" fill="none" stroke="url(#hx)" stroke-width="26" opacity=".3" filter="url(#hxg)"/>
+  <path d="M214 200 L 406 200" fill="none" stroke="url(#hx)" stroke-width="9" stroke-linecap="round"/>
+  <circle r="9" fill="#7448e8">
+    <animateMotion dur="2.6s" repeatCount="indefinite" path="M214 200 L 406 200"/>
+  </circle>
+
+  <!-- giris dugumu -->
+  <rect x="40" y="152" width="174" height="96" rx="26" fill="#0a143d"/>
+  <rect x="72" y="182" width="110" height="12" rx="6" fill="#f8f8f6" opacity=".92"/>
+  <rect x="72" y="208" width="72" height="10" rx="5" fill="#f8f8f6" opacity=".45"/>
+
+  <!-- model kutulari -->
+  <g>
+    <rect x="406" y="22" width="194" height="68" rx="20" fill="#eef0f7" stroke="#b9c1d8" stroke-width="3"/>
+    <rect x="434" y="48" width="96" height="11" rx="5.5" fill="#8b94b3"/>
+
+    <rect x="406" y="94" width="194" height="68" rx="20" fill="#eef0f7" stroke="#b9c1d8" stroke-width="3"/>
+    <rect x="434" y="120" width="120" height="11" rx="5.5" fill="#8b94b3"/>
+
+    <rect x="406" y="166" width="194" height="68" rx="20" fill="#ffffff" stroke="url(#hx)" stroke-width="5"/>
+    <rect x="434" y="192" width="104" height="12" rx="6" fill="#0a143d"/>
+    <circle cx="574" cy="200" r="9" fill="url(#hx)"/>
+
+    <rect x="406" y="238" width="194" height="68" rx="20" fill="#eef0f7" stroke="#b9c1d8" stroke-width="3"/>
+    <rect x="434" y="264" width="86" height="11" rx="5.5" fill="#8b94b3"/>
+
+    <rect x="406" y="310" width="194" height="68" rx="20" fill="#eef0f7" stroke="#b9c1d8" stroke-width="3"/>
+    <rect x="434" y="336" width="128" height="11" rx="5.5" fill="#8b94b3"/>
+  </g>
+</svg>

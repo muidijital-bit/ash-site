@@ -1,0 +1,247 @@
+{
+  "key": "masraf-x",
+  "name": "Masraf-X",
+  "hero": {
+    "eyebrow": "KURUMSAL HARCAMA YÖNETİMİ PLATFORMU",
+    "title": "Fiş Peşinde Koşmayı Bırakın. Harcamayı Yönetin.",
+    "lead": "Masraf-X; fişi fotoğraftan kayda dönüştüren, şirket kurallarını kayıt anında uygulayan ve onaylı masrafı ERP'nize taşıyan yapay zekâ destekli harcama yönetim platformudur. Manuel veri girişine ayrılan zamanı ekibinize geri verin, kayıt dışı kalan harcamayı ay sonunu beklemeden görün.",
+    "cta": "Demo Planlayın",
+    "visual": "Zemin Deep Navy #050A2B. Arkada <Blueprint/>: 132px kare ızgara (rgba(248,248,246,.05), 1px) + mask-image radial-gradient(ellipse 70% 60% at 50% 40%, #000 25%, transparent 78%) ile merkezden sönüm. <Ambient a=\"magenta\" b=\"pink\"/>: sol üstte 480px rgba(217,70,181,.16), sağ altta 360px rgba(240,139,194,.10), blur(120px), yarısı bölüm dışına taşar, hareket etmez. Ortalanmış blok: 11px mono eyebrow Soft Pink #F08BC2, letter-spacing .18em; H1 iki satır, 1. satır 'Fiş Peşinde Koşmayı Bırakın.' Soft White, 2. satır 'Harcamayı Yönetin.' marka gradyanı background-clip:text, font-weight 500, letter-spacing -0.02em; lead max 62ch rgba(248,248,246,.62); iki pill buton: birincil 'Demo Planlayın' gradyan dolgu + mavi glow, ikincil 'Platformu Keşfedin' şeffaf + 1px hairline; butonun altında 11px mikro metin 'Kapsam ve kurulum takvimi sürecinize özel planlanır.' Başlığın altında 860px <BrowserFrame url=\"masraf-x.co/onay\">: 18px radius, 30px chrome bandı #0A143D, 3 nötr nokta #3D4770, ortada mono URL hapı, sağda yeşil nokta + 'Canlı'. Gövde #080D35 + 22px nokta dokusu. Solda 156px sidebar: Masraflarım, Onay Kuyruğu (aktif; 3px magenta sol çubuk + 5px pembe nokta), Raporlar, Politikalar, Entegrasyon. Sağda 4 KPI kartı (9px mono etiket + 15px tabular-nums değer): 'Onay bekleyen 14', 'Bu ay ₺248.310,40', 'Politika uyarısı 3', 'ERP'ye aktarılan 212'. Altında 4 satırlık tablo, her satırda 20px gradyanlı baş harf avatarı (AK, ZT, MS, EB): 'EXP-2026-0431 · Otel · Ankara · ₺1.487,50 · KDV %20' amber 'Onay bekliyor' rozeti; 'EXP-2026-0428 · Taksi · ₺312,00' yeşil 'Onaylandı'; 'EXP-2026-0425 · Yemek · ₺2.140,00' kırmızı 1px satır kenarlığı + 'Olası mükerrer' rozeti; 'EXP-2026-0419 · Yakıt · ₺1.905,75' nötr 'ERP'ye aktarıldı · GL 770.10'. Mockup'ın sol alt köşesine taşan 132×260px <DeviceFrame> telefon: 9:41 durum çubuğu, vizörde fiş silueti, dört köşede magenta L işaretleri, fiş üzerinde yatay tarama çizgisi (pulse), altta 'Alanlar okunuyor…' rozeti. İki cam chip (backdrop-filter blur(14px), rgba(248,248,246,.06), 1px hairline): sağ üstte '%96 başarılı fiş doğrulama', sol üstte '2 sn'de masraf girişi'. Mockup altında tek izinli geniş gölge 0 40px 120px -60px rgba(0,0,0,.85). Tüm mockup aria-hidden=\"true\"."
+  },
+  "sections": [
+    {
+      "kind": "farklar",
+      "heading": "Excel, E-posta, Kayıp Fiş. Artık Son.",
+      "sub": "Manuel masraf süreci görünmeyen bir maliyet üretir: kaybolan belgeler, iki kez ödenen harcamalar, ay sonunda sıkışan finans ekibi. Masraf-X her darboğazı kaynağında kapatır.",
+      "items": [
+        {
+          "title": "Kaybolan Fişler",
+          "body": "Cepte buruşan, çekmecede unutulan fiş ay sonunda bulunamaz. Masraf-X fişi harcama anında fotoğraftan kayda dönüştürür; kâğıt kaybolsa da kayıt kalır."
+        },
+        {
+          "title": "Her Ay Yeniden Birleştirilen Tablolar",
+          "body": "Departmanlardan gelen dağınık dosyalar her kapanışta elle birleştirilir ve her birleştirme yeni bir hata demektir. Tüm masraflar tek platformda, tek formatta toplanır."
+        },
+        {
+          "title": "İki Kez Ödenen Harcamalar",
+          "body": "Aynı fiş farklı raporlarda tekrar tekrar geri ödenebilir. Tarih, tutar, firma ve fiş bilgileri karşılaştırılır; olası mükerrer kayıt onaydan önce işaretlenir."
+        },
+        {
+          "title": "Ödemeden Sonra Fark Edilen İhlaller",
+          "body": "Limit aşımı geri ödeme yapıldıktan sonra görülürse düzeltmek zordur. Şirket kuralları kayıt oluşturulurken kontrol edilir; ihlal onaycıya ulaşmadan görünür olur."
+        },
+        {
+          "title": "E-postada Bekleyen Onaylar",
+          "body": "Onaycı seyahatteyken süreç durur, çalışan geri ödemesini bekler. Çok seviyeli onay akışı bildirimle ilerler; yönetici nerede olursa olsun telefondan tek dokunuşla karar verir."
+        },
+        {
+          "title": "Sıkışan Ay Sonu Kapanışı",
+          "body": "Finans ekibi son günlerini eksik belge kovalayarak geçirir. Onaylı kayıtlar muhasebe bilgileriyle hazır halde ERP'ye aktarılır; kapanış belge toplama değil kontrol işine dönüşür."
+        }
+      ],
+      "visual": "Zemin Deep Navy. <SectionHead>: mono eyebrow 'MANUEL SÜRECİN BEDELİ' (Soft Pink), H2 iki satır — 'Excel, E-posta, Kayıp Fiş.' Soft White, 'Artık Son.' gradyanlı span; altında soldan sağa sönen 1px gradyan hairline. İçerik: 3×2 <HairGrid> — kapsayıcı background rgba(248,248,246,.08), gap:1px, 16px radius, overflow:hidden; hücreler #050A2B. Her hücre: sol üstte 40×40px ikon kutusu (radius 10px, zemin rgba(217,70,181,.10), 1px rgba(217,70,181,.22)) içinde 1.5px stroke Soft White lucide ikon (receipt, sheet, copy, shield-alert, mail + clock, calendar-x); sağ üstte 11px mono numara 01…06; kart genişliğinde ince yatay çizgi; H3 (1.125rem, weight 500); tek cümle sorun. Hücrenin altında kesikli (border-top dashed rgba(248,248,246,.10)) ayrılmış çözüm satırı: 6px yeşil #28AF6E nokta + 12px metin 'Masraf-X → kayıt anında yakalanır' vb. <CrosshairCard> döngüsü: her 3,2 sn'de bir hücre aktifleşir — zemin 135deg rgba(255,107,107,.08) → transparent, numara #FF6B6B'ye döner, dört köşede 10×10px 1.5px L işaretleri belirir; diğer hücrelerin sorun metni rgba(248,248,246,.35)'e soluklaşır ama çözüm satırı her zaman okunur kalır. Sadece color/background transition 300ms. Mobilde tek sütun, döngü durur, hepsi eşit görünür."
+    },
+    {
+      "kind": "nasil-calisir",
+      "heading": "Harcamadan Muhasebe Kaydına. Tek Akış.",
+      "sub": "Çalışanın fotoğrafı çektiği an ile kaydın ERP'nize düştüğü an arasında hiçbir adım e-postaya, tabloya ya da elle girişe kalmaz.",
+      "items": [
+        {
+          "title": "01 Yakalayın",
+          "body": "Fişi ya da faturayı mobil uygulamadan fotoğraflayın veya web üzerinden yükleyin. Masraf kaydı saniyeler içinde oluşur — ortalama 2 sn'de masraf girişi."
+        },
+        {
+          "title": "02 Ayrıştırın",
+          "body": "Yapay zekâ fiş üzerindeki tutar, tarih, KDV, firma ve kategori alanlarını algılayıp forma yerleştirir. Proje, maliyet merkezi ve şirketinize özel alanlar aynı formda tamamlanır."
+        },
+        {
+          "title": "03 Kontrol Edin",
+          "body": "Kayıt, tanımladığınız harcama politikalarıyla ve geçmiş masraflarla anında karşılaştırılır. Limit aşımı ya da olası mükerrer harcama, gerekçesiyle birlikte işaretlenir."
+        },
+        {
+          "title": "04 Onaylayın",
+          "body": "Kayıt departman, tutar veya masraf türüne göre doğru onaycıya yönlenir. Çok seviyeli onay zinciri bildirimle ilerler, bekleyen adım her an görünür."
+        },
+        {
+          "title": "05 Aktarın ve Raporlayın",
+          "body": "Onaylanan masraf muhasebe bilgileriyle ERP'nize aktarılır ve raporlara aynı anda yansır. Bütçe ile gerçekleşeni dönem kapanmadan görün."
+        }
+      ],
+      "visual": "Zemin Midnight Navy #080D35. Üstte <FlowChain> inline SVG: masaüstünde yatay 5 düğüm, 44px daireler içinde mono 01–05, altlarında fiil etiketleri Yakala → Ayrıştır → Kontrol Et → Onayla → Aktar. Aralarında 2px ray; tamamlanan segment marka gradyanı (135deg #2F6BFF → #7448E8 → #D946B5), bekleyen segment rgba(248,248,246,.12). Aktif düğüm solid gradyan dolgu + arkasında 52px feGaussianBlur(14) magenta hale; ray boyunca 6px ışık noktası offset-path ile 2,6 sn'de akar (beam). Aktif adım 4,5 sn'de bir ilerler, tıklanınca döngü durur. Zincirin altında tek büyük hairline panel (20px radius), iki sütun: solda %45 — 'Adım 3 / 5' mono rozet, H3, açıklama ve iki metrik kutusu (1px hairline, 10px mono etiket + 20px tabular-nums değer; adım 1: '2 sn · Masraf girişi' ve 'Mobil · Web · Masaüstü'; adım 2: '%96 · Başarılı fiş doğrulama' ve '5 alan · Otomatik dolum'; adım 3: 'Kayıt anında · Politika kontrolü' ve 'Tarih · tutar · firma · Mükerrer tarama'; adım 4: 'Çok seviyeli · Onay zinciri'; adım 5: 'Tek tık · ERP aktarımı'). Sağda %55 adıma özel mini mockup, 16px nokta dokulu #080D35 → #050A2B zeminde: (1) telefon vizöründe fiş + köşe işaretleri; (2) solda kesikli kenarlıklı kaynak fiş (mono 'OTEL · ANKARA · 14.09.2026 · TOPLAM ₺1.487,50 · KDV %20'), ortada ok, sağda dolan form alanları, her alanın yanında yeşil tik; (3) kontrol listesi — yeşil 'Kategori limiti uygun', amber 'Belge açıklaması eksik', kırmızı 'EXP-2026-0425 ile olası mükerrer'; (4) <ChevronStages> clip-path polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%) ile 'Oluşturuldu ✓ · Yönetici ✓ · Finans (aktif, magenta dolgu + pembe nokta) · Muhasebe · ERP'; (5) ERP aktarım kartı 'GL 770.10 · Maliyet Merkezi 3100 · ₺1.487,50' + yeşil 'Aktarıldı 14:02' rozeti. Panel geçişi rise (320ms). <900px'te zincir dikeye döner, mockup panelin altına iner."
+    },
+    {
+      "kind": "ozellikler",
+      "heading": "Masraf Girişi Değil, Harcama Kontrolü.",
+      "sub": "Fiş okumak başlangıçtır. Masraf-X her kaydı kurallarınızla sınar, doğru kişiye yönlendirir ve raporlanabilir veriye dönüştürür.",
+      "items": [
+        {
+          "title": "Fişi Çekin. Kaydı Masraf-X Oluştursun.",
+          "body": "Fotoğrafı yüklediğiniz anda yapay zekâ tutar, tarih, KDV, firma ve kategori alanlarını algılar ve forma yerleştirir. Çalışan yalnızca kontrol eder ve gönderir; elle veri girişi tarihe karışır."
+        },
+        {
+          "title": "Aynı Harcamayı İki Kez Ödemeyin.",
+          "body": "Her yeni kayıt tarih, tutar, firma ve fiş bilgileriyle geçmiş masraflara karşı taranır (Duplicate Detection). Şüpheli eşleşme onay ekranında gerekçesiyle gösterilir; son karar onaycıda kalır."
+        },
+        {
+          "title": "Kuralı Bir Kez Yazın, Kontrolü Sisteme Bırakın.",
+          "body": "Kategori limitlerini, belge zorunluluklarını ve harcama kısıtlarını bir kez tanımlayın. Her kayıt bu kurallarla anında karşılaştırılır; uyarı, kayıt onaya gitmeden devreye girer."
+        },
+        {
+          "title": "Onay Akışınızı Organizasyonunuza Göre Çizin.",
+          "body": "Departman, masraf türü, tutar veya politikaya göre farklı onay zincirleri kurun. Proje kodu, araç plakası, müşteri gibi ihtiyaç duyduğunuz alanları forma ekleyin; yazılım sürecinize uysun, süreciniz yazılıma değil."
+        },
+        {
+          "title": "Harcamanın Nereye Gittiğini Tek Ekranda Görün.",
+          "body": "Çalışan, departman, kategori, proje ve dönem kırılımında gerçek zamanlı raporlar alın. Bütçe ile gerçekleşeni aynı panelde karşılaştırın, eğilimi ay sonunu beklemeden yakalayın."
+        },
+        {
+          "title": "Mobilde, Webde, Masaüstünde Aynı Kayıt.",
+          "body": "Sahada çekilen fiş finans ekibinin ekranına anında düşer. Veri, kurallar ve onay durumu her cihazda gerçek zamanlı senkron kalır."
+        }
+      ],
+      "visual": "Zemin Deep Navy. Altı zig-zag blok, her biri kendi 1px hairline çerçevesinde (20px radius), çerçevenin sol üst kenarını kesen küçük mono etiketle (Soft Pink, 10px, .18em): 'YAPAY ZEKÂ İLE FİŞ OKUMA', 'MÜKERRER KAYIT TESPİTİ', 'POLİTİKA KONTROLÜ', 'ÖZEL İŞ AKIŞLARI VE ALANLAR', 'MASRAF RAPORLARI', 'ÇOKLU CİHAZ SENKRONU'. lg'de 2 sütun, order ile taraf her blokta değişir. Metin tarafı: H3 + 2 cümle + 3 kutulu mikro-kanıt şeridi (1px hairline kutular, 10px mono). Mockup tarafı, her blokta farklı tip: (1) <DeviceFrame> telefon — fiş fotoğrafı üstünde 5 alan kutusu magenta konturla vurgulanır, yanında dolan form; şerit 'Giriş: 2 sn / Doğrulama: %96 / Alan: 5'. (2) Yan yana iki kayıt kartı — 'EXP-2026-0425 · ₺2.140,00 · 11.09.2026' ve 'EXP-2026-0402 · ₺2.140,00 · 11.09.2026'; eşleşen alanlar arasında kırmızı #FF6B6B kesikli bağlayıcılar, üstte kırmızı %12 zeminli 'Olası mükerrer — onaycıya bildirildi' bandı; şerit 'Tarih · Tutar · Firma'. (3) Fiş kartı mockup'ı — mono 'FİŞ #EXP-2026-0431', border-dashed ayraç, 4 kalem satırı; limit aşan 'Minibar' satırı kırmızı 1px ring içinde üstü çizili tutarla, altta kırmızı %12 zeminli 'Politika uyarısı — kategori limiti aşıldı' bloğu; şerit 'Kontrol: Kayıt anında / Seviye: Uyarı · Engel / Kural: Size özel'. (4) Akış editörü — dikey bağlantılı düğümler 'Talep → Tutar ≤ ₺5.000 ise Yönetici → Tutar > ₺5.000 ise Direktör → Finans', koşullar hap rozet, dallar kesikli çizgi; yanında sürüklenebilir özel alan listesi 'Proje Kodu · Plaka · Müşteri'. (5) <BrowserFrame url=\"masraf-x.co/raporlar\"> — departman bazlı yatay barlar (draw, 90ms gecikmeli), 6 aylık çizgi grafik bütçe kesikli çizgisiyle, donut kategori dağılımı; renkler #2F6BFF / #7448E8 / #D946B5 / #F08BC2. (6) Telefon + tarayıcı + tablet üçlüsü alta hizalı, her birinin üstünde yeşil '✓ Senkron' rozeti ve üçünde de aynı 'EXP-2026-0431 · Onay bekliyor' satırı. Tüm mockup aria-hidden, mikro metin 7–11px mono tabular-nums."
+    },
+    {
+      "kind": "istatistik",
+      "heading": "Fotoğraftan Kayda. Tek Ekranda Kontrol.",
+      "sub": "Masraf-X'in işi iki yerde yoğunlaşır: harcamayı oluştuğu anda kayda çevirmek ve şirket kurallarını kayıt kapanmadan önce uygulamak.",
+      "items": [
+        {
+          "title": "Fotoğraftan kayda",
+          "body": "Fiş fotoğrafı; tutar, tarih, satıcı ve KDV alanlarına ayrıştırılarak masraf kaydına dönüşür."
+        },
+        {
+          "title": "Kayıt anında kontrol",
+          "body": "Şirket kuralları kayıt kapanmadan önce çalışır; politika dışı giriş daha oluşurken engellenir."
+        },
+        {
+          "title": "Üç cihaz",
+          "body": "Mobil, web ve masaüstünde aynı veri, aynı kurallar, aynı onay durumu."
+        },
+        {
+          "title": "Tek ekran",
+          "body": "Çalışan, departman, kategori, proje ve dönem kırılımında şirketin tüm harcaması."
+        }
+      ],
+      "visual": "Zemin Midnight Navy. Ortada tek hairline panel (16px radius, rgba(248,248,246,.03) dolgu), 4 hücre, aralarında 48px yüksekliğinde 1px dikey ayraç; mobilde 2×2. Hücre 1 <StatDial>: 88px çapında radyal halka, 10px kalınlık, arka halka rgba(248,248,246,.08), dolu yay marka gradyanı (linearGradient defs), yuvarlatılmış uç; ortada 34px tabular-nums '96' + üst simge '%'. Görünür olunca stroke-dashoffset ile 1,1 sn'de çizilir, rakam requestAnimationFrame ile 0'dan sayar. Hücre 2: süre metriği için 6 bölmeli kesikli yay, bölmeler sırayla dolar, ortada '2' + üst simge 'sn'. Hücre 3: halka yerine yan yana üç minik outline cihaz ikonu (smartphone, monitor, laptop) aralarında akan 3px ışık noktası (beam), altında '3 Cihaz'. Hücre 4: 88px kare içinde minyatür 3×3 rapor ızgarası (bar/donut/çizgi mikro grafikleri draw ile çizilir), altında 'Tek Ekran'. Her hücrede başlık altında 13px rgba(248,248,246,.62) etiket. Panelin altında 11px mono dipnot: 'Değerler Masraf-X ürün ölçümlerinden alınmıştır; sonuçlar belge kalitesine göre değişebilir.' Arka planda tek magenta blur küresi (opacity .12) sağ üst köşeden taşar."
+    },
+    {
+      "kind": "kullanim-senaryolari",
+      "heading": "Her Rol İçin Ayrı Kazanım. Tek Platform.",
+      "sub": "Aynı masraf kaydı çalışana hız, yöneticiye kontrol, finansa temiz veri, denetime iz bırakır. Rolünüzü seçin, Masraf-X'in sizin için ne değiştirdiğini görün.",
+      "items": [
+        {
+          "title": "Sahadaki Çalışan",
+          "body": "Fişi harcama anında fotoğraflayın, formu yapay zekâ doldursun. Geri ödemenizin hangi onay adımında beklediğini uygulamadan anlık takip edin."
+        },
+        {
+          "title": "Onaycı Yönetici",
+          "body": "Onay kuyruğunuzu telefondan yönetin. Politika uyarıları ve olası mükerrer işaretleri kararınızı vermeden önce önünüzde olsun."
+        },
+        {
+          "title": "Finans ve Muhasebe",
+          "body": "Onaylı kayıtları KDV, hesap kodu ve maliyet merkezi bilgisiyle eksiksiz alın. Ay sonunda belge kovalamak yerine yalnızca kontrol edin ve aktarın."
+        },
+        {
+          "title": "CFO ve Bütçe Sahipleri",
+          "body": "Departman ve proje bazında bütçe ile gerçekleşen arasındaki farkı anlık izleyin. Sapmayı dönem kapandıktan sonra değil, oluştuğu hafta görün."
+        },
+        {
+          "title": "İç Denetim ve Uyum",
+          "body": "Her kaydın kim tarafından oluşturulduğunu, kimin ne zaman onayladığını ve hangi alanın değiştiğini tek zaman çizelgesinde inceleyin. Denetim hazırlığı dosya toplamaktan çıkar."
+        },
+        {
+          "title": "BT ve Sistem Yönetimi",
+          "body": "Kullanıcı, rol ve yetki tanımlarını tek merkezden yönetin. ERP entegrasyonunu ASH'in kurumsal SAP proje deneyimiyle baştan doğru kurun."
+        }
+      ],
+      "visual": "Zemin Deep Navy. Solda 236px dikey sekme kolonu (role=\"tablist\"): 6 sekme, her biri 20px outline ikon (user, badge-check, calculator, pie-chart, file-search, settings) + etiket; aktif sekme zemini rgba(217,70,181,.12), sol kenarında 3px marka gradyanı çubuk, metin Soft White; pasifler rgba(248,248,246,.45). Sağda geniş hairline panel üç katmanlı: (a) üstte 10px mono Soft Pink 'KURUMSAL KAZANIM' etiketi + H3 rol başlığı + fayda cümlesi; (b) ortada role özel mini mockup — Çalışan: telefonda 'Geri ödeme durumu' chevron şeridi (Oluşturuldu ✓ · Yönetici ✓ · Finans aktif); Yönetici: onay kuyruğu 3 satır, Reddet/Onayla hap butonları, bir satırda amber 'Politika uyarısı'; Finans: muhasebe aktarım tablosu 'GL 770.10 · KDV %20 · MM 3100'; CFO: departman bütçe-gerçekleşen barları, bir departmanda amber sapma işareti; Denetim: zaman damgalı timeline '09:15 Oluşturuldu · AK', '09:16 Alan düzenlendi: Kategori · AK', '14:02 Onaylandı · ZT'; BT: rol × yetki matrisi (satır: Çalışan/Yönetici/Finans/Denetçi, sütun: Görüntüle/Onayla/Aktar/Kural düzenle; hücrede yeşil tik veya gri çarpı). (c) altta iki kutu yan yana: solda kilit ikonlu 'Kontrol' notu (ör. 'Çalışan yalnızca kendi kayıtlarını görür'), sağda yeşil %10 zeminli sonuç rozeti — 'Geri ödeme durumu anlık', 'Onay kuyruğu cepte', 'Kapanışta belge kovalamaca yok', 'Bütçe sapması dönem içinde görünür', 'Onay geçmişi tek zaman çizelgesinde', 'Yetkiler tek merkezden'. Sekmeler 5 sn'de bir otomatik döner, panel rise ile girer; dokunulunca döngü kalıcı durur. Mobilde sekmeler 2 sütunlu chip ızgarasına döner."
+    },
+    {
+      "kind": "ozellikler",
+      "heading": "Her Kayıt İzlenebilir. Her Aktarım Kontrollü.",
+      "sub": "Masraf verisi kişisel bilgi, şirket bütçesi ve vergi kaydı taşır. Masraf-X bu veriyi kimin gördüğünü, kimin değiştirdiğini ve nereye gittiğini kayıt altında tutar.",
+      "items": [
+        {
+          "title": "Uçtan Uca İzlenebilirlik (Audit Trail)",
+          "body": "Oluşturma, düzenleme, onay ve ret adımları kullanıcı ve zaman damgasıyla saklanır. Her masrafın geçmişi tek bir zaman çizelgesinde incelenebilir."
+        },
+        {
+          "title": "Rol Bazlı Yetkilendirme (RBAC)",
+          "body": "Çalışan kendi kaydını, yönetici ekibini, finans şirketin tamamını görür. Kimin neyi görebileceği ve onaylayabileceği rol tanımıyla belirlenir."
+        },
+        {
+          "title": "ERP'ye Hazır Muhasebe Kaydı",
+          "body": "Onaylanan masraf hesap kodu, KDV ve maliyet merkezi bilgisiyle ERP'nize aktarılır. SAP ortamlarında ASH'in kurumsal proje deneyimi entegrasyonu işin kendisinden okuyarak kurar."
+        },
+        {
+          "title": "Kurumunuza Göre Planlanan Kurulum",
+          "body": "Masraf-X'in hangi ortamda çalışacağı ve verinin nerede tutulacağı, kurumunuzun güvenlik ve veri politikalarına göre birlikte planlanır. Genel bir şablon değil, size özel bir mimari."
+        }
+      ],
+      "visual": "Zemin Midnight Navy, çerçevenin sol üstünde mono eyebrow 'GÜVENLİK VE DENETLENEBİLİRLİK' taşıyan tam genişlik hairline şerit. İki sütun: solda üç satırlık H2 — 'Her Kayıt' Electric Blue #2F6BFF, 'İzlenebilir. Her Aktarım' Violet #7448E8, 'Kontrollü.' Soft White; altında sub paragrafı. Sağda 'teknik çizim paneli': 1px rgba(217,70,181,.35) çerçeve, dört köşesinde 14px L işaretleri, üstte mini başlık kartı 'Denetim İzi · #EXP-2026-0431' + sağda 'KAYIT ALTINDA' mono rozet. İçinde dikey bağlantı çizgisiyle birleşen 4 numaralı adım: 01 'Kayıt oluşturuldu · AK · 09:15', 02 'Politika kontrolü · Uygun · 09:15', 03 'Yönetici onayı · ZT · 14:02', 04 'ERP'ye aktarıldı · GL 770.10 · 14:05'; her adımın sağında yeşil tik. Bağlantı çizgisi boyunca yukarıdan aşağı 6px ışık noktası akar (beam, 2,6 sn). Panelin altında 2×2 kanıt ızgarası (gap:1px hairline hilesi); her hücre ayrı marka rengini alır ve kendi renginde çok soluk radyal haleyle yıkanır: magenta hücre history ikonu 'Audit Trail', pembe hücre users ikonu 'RBAC', mavi hücre arrow-right-left ikonu 'ERP Aktarımı', mor hücre server ikonu 'Size Özel Kurulum'. İkonlar geniş pill (radius 999px) konturunun ortasında, kontur hücrenin renginde %45, ikon Soft White. <900px'te iki sütun alt alta, adım zinciri korunur (zaten dikey)."
+    },
+    {
+      "kind": "sss",
+      "heading": "Karar Vermeden Önce Sorulanlar.",
+      "sub": "Masraf-X'i değerlendiren finans, BT ve denetim ekiplerinin en sık sorduğu sorular.",
+      "items": [
+        {
+          "title": "Masraf-X nedir, hangi süreçleri kapsar?",
+          "body": "Masraf-X, yapay zekâ destekli bir kurumsal masraf ve harcama yönetim platformudur. Fiş ve fatura işleme, şirket politikalarının anlık kontrolü, çok seviyeli onay akışları, raporlama ve ERP aktarımını tek platformda birleştirir."
+        },
+        {
+          "title": "Fiş okuma nasıl çalışır, hangi alanları doldurur?",
+          "body": "Fiş fotoğrafı yüklendiğinde yapay zekâ tutar, tarih, KDV, firma ve kategori gibi alanları algılar ve forma yerleştirir. Çalışan kaydı göndermeden önce alanları kontrol eder; şirketinize özel alanlar aynı formda tamamlanır."
+        },
+        {
+          "title": "Onay akışlarını kendi organizasyon yapımıza göre kurabilir miyiz?",
+          "body": "Evet. Departman, masraf türü, tutar veya politika koşuluna göre farklı onay zincirleri tanımlanabilir. İhtiyaç duyduğunuz özel alanları da masraf formlarına ekleyebilirsiniz."
+        },
+        {
+          "title": "Hangi ERP sistemleriyle entegre olur?",
+          "body": "Onaylanan masraflar muhasebe bilgileriyle birlikte ERP'nize aktarılır. SAP ortamlarında ASH'in derin proje deneyimi bulunur; kullandığınız diğer sistemler için entegrasyon kapsamı analiz görüşmesinde birlikte netleştirilir."
+        },
+        {
+          "title": "Verilerimiz nerede saklanıyor, kimler erişebiliyor?",
+          "body": "Erişim rol bazlı yetkilerle sınırlandırılır ve her işlem kullanıcı ile zaman damgasıyla kayıt altına alınır. Barındırma ve kurulum modeli kurumunuzun güvenlik ve veri politikalarına göre birlikte belirlenir."
+        },
+        {
+          "title": "Kurulum ne kadar sürer?",
+          "body": "Süre; onay akışlarınızın yapısına, özel alan sayısına ve ERP entegrasyon kapsamına göre değişir. Demo görüşmesinde mevcut sürecinizi inceleyip size özel bir geçiş takvimi çıkarıyoruz."
+        }
+      ],
+      "visual": "Zemin Deep Navy. Solda 320px sabit kolon (lg:sticky): mono eyebrow 'SSS', H2, kısa sub, altında 11px mono sayaç '01 / 06' (açık soruya göre güncellenir) ve 'Sorunuz burada yok mu? Demo Planlayın' metin linki (ok 4px salınır). Sağda dikey kart destesi: her kart 1px hairline, 16px radius; üstte 11px mono numara rozeti (01…06), yanında tam cümle soru (1rem, weight 500), sağda + işareti. Açılan kartta cevap grid-template-rows 0fr→1fr ile 260ms'de genişler, + 45° dönerek × olur, kart kenarlığı rgba(217,70,181,.40)'a, zemini rgba(217,70,181,.06)'ya geçer. Soru 4 (ERP) kartının cevabında küçük mono etiket satırı 'SAP · Diğer ERP → analizde netleşir'; soru 5 kartında mini RBAC rozeti. İlk kart varsayılan açık. Semantik <details>/<summary> veya [data-open] + klavye erişimi; sayfaya FAQPage JSON-LD şeması eklenir (aynı 6 soru-cevap)."
+    },
+    {
+      "kind": "cta",
+      "heading": "Ay Sonunu Beklemeyin. Harcamayı Bugün Görün.",
+      "sub": "Kendi onay akışınız ve örnek fişlerinizle Masraf-X'i canlı görün; masraf sürecinizin hangi adımlarının otomatikleşeceğini birlikte çıkaralım.",
+      "items": [
+        {
+          "title": "Demo Planlayın",
+          "body": "Uzman ekibimizle masraf sürecinizi inceleyin, Masraf-X'i kendi senaryolarınız üzerinde canlı görün."
+        },
+        {
+          "title": "Platformu Keşfedin",
+          "body": "Fiş yakalamadan ERP aktarımına kadar tüm akışı adım adım inceleyin."
+        },
+        {
+          "title": "SAPAI-X",
+          "body": "SAP sisteminize kıdemli danışman ve ABAP geliştirici yetkinliği ekleyin — sapai-x.com"
+        },
+        {
+          "title": "HubAI-X",
+          "body": "Kurumun tüm yapay zekâ kullanımını tek, yönetilebilir bir platformda toplayın — hubai-x.com"
+        },
+        {
+          "title": "CRM-X",
+          "body": "Potansiyel müşteriden sadık müşteriye uzanan satış döngüsünü tek yerden yönetin — crm-x.co"
+        }
+      ],
+      "visual": "Zemin Midnight Navy. Hero'nun arka planı birebir tekrarlanır (görsel kafiye): aynı 132px <Blueprint/> ızgara + radial mask + magenta/pembe iki blur(120px) küre; ek olarak merkeze doğru ısınan radial-gradient(circle at 50% 45%, rgba(217,70,181,.14), transparent 60%) hale, başlık parlıyormuş gibi durur. Ortalanmış blok, min-height ~520px: mono eyebrow 'MASRAF-X İLE BAŞLAYIN', H2 iki satır ('Ay Sonunu Beklemeyin.' Soft White / 'Harcamayı Bugün Görün.' gradyanlı span), sub, yan yana iki pill buton — birincil 'Demo Planlayın' marka gradyanı dolgu + 0 10px 28px -12px rgba(47,107,255,.65) glow, hover translateY(-2px); ikincil 'Platformu Keşfedin' şeffaf + 1px hairline. Butonların altında 11px mikro metin: 'Kapsam, kurulum modeli ve takvim sürecinize özel planlanır.' Bloğun altında 'KEŞFETMEYE DEVAM EDİN' mono etiketi ve 4 sütunlu (mobilde 2) çapraz satış kart şeridi: her kart üst kenarında ortası parlak uçları saydam 1px gradyan çizgi, 28px outline ürün ikonu, ürün adı, tek satır konum cümlesi, 10px mono alt domain etiketi; her kart kendi --p-accent'ini taşır (HubAI-X mavi, SAPAI-X mor, CRM-X mor-magenta). Dördüncü kart Masraf-X'in kendisi: opacity .4, pointer-events:none, 'Buradasınız' rozeti. Hover'da -4px yükselme + sağ üst köşe glow opacity 0 → .20."
+    }
+  ],
+  "seoTitle": "Masraf-X | Yapay Zekâ Destekli Masraf Yönetimi — ASH",
+  "seoDescription": "Fişi fotoğraflayın, masraf kaydını yapay zekâ oluştursun. Masraf-X politika kontrolü, mükerrer masraf tespiti, çok seviyeli onay ve ERP aktarımını tek platformda birleştirir."
+}

@@ -1,0 +1,18 @@
+/* Tam genislikte harita seridi. Sayfa kabuklarina bagli degil, kenardan
+   kenara uzanir. */
+.ash-map {
+  display: block;
+  width: 100%;
+  line-height: 0;
+  background: #eef0f7;
+}
+.ash-map__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 6;
+  object-fit: cover;
+}
+@media (max-width: 47.99rem) {
+  .ash-map__image { aspect-ratio: 4 / 3; }
+}

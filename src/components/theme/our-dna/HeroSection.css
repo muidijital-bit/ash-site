@@ -1,0 +1,17 @@
+.capture-12488365a9{box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0}
+.capture-0e45414099{opacity:0;transform:scale(1.05);transition-duration:1000ms;transition-property:opacity, transform;position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover}
+
+/* Tema hero gorselini opacity:0 birakip JS ile aciyordu; bu sayfada o JS
+   yok. Kendi cizdigimiz fon yuklenince aciliyor. */
+.Hero_image__FlQan img.capture-0e45414099 {
+  opacity: 1;
+  transform: none;
+  animation: ash-hero-reveal 1100ms ease both;
+}
+@keyframes ash-hero-reveal {
+  from { opacity: 0; transform: scale(1.05); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .Hero_image__FlQan img.capture-0e45414099 { animation: none; }
+}

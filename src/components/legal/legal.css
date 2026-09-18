@@ -1,0 +1,19 @@
+/* Yasal metinler blog yazisi duzenini kullanir; burada yalnizca listeler
+   ve alt baglanti var. */
+.legal-list { margin-top: 1rem; padding-left: 1.25rem; }
+.legal-list li {
+  margin-top: 0.625rem;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--blog-ink-2);
+}
+.legal-list li::marker { color: var(--blog-accent); }
+
+.legal-foot {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--blog-hair);
+  font-size: 1rem;
+}
+.legal-foot a { color: var(--blog-accent); text-decoration: none; font-weight: 500; }
+.legal-foot a:hover { text-decoration: underline; }

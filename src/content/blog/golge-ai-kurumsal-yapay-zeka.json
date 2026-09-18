@@ -1,0 +1,93 @@
+{
+  "slug": "golge-ai-kurumsal-yapay-zeka",
+  "title": "Gölge AI: Kurumsal Yapay Zekânın Görünmeyen Riski",
+  "metaDescription": "Çalışanlar kişisel hesaplardan yapay zekâ kullanıyorsa gölge AI çoktan başlamıştır. Riskleri, nedenleri ve kurumsal yapay zekâya geçiş yolunu anlatıyoruz.",
+  "category": "Kurumsal Yapay Zekâ",
+  "summary": "Çalışanların kişisel hesaplardan yapay zekâ araçları kullanması — yani gölge AI — yasakla değil, görünür ve yönetilebilir bir kurumsal yapay zekâ katmanıyla çözülür. Nedenlerini, dört temel riskini ve kurumun atabileceği ilk adımları ele alıyoruz.",
+  "readingMinutes": 5,
+  "date": "2026-09-15",
+  "author": {
+    "name": "ASH Ekibi",
+    "role": "Kurumsal Yapay Zekâ Çözümleri"
+  },
+  "intro": [
+    "Bir çalışanınız akşam saatlerinde bir sözleşme metnini özetletmek için kişisel hesabıyla girdiği bir yapay zekâ aracına yapıştırıyor. İşini hızlıca bitiriyor, kimseye sormuyor, kimse de haberdar olmuyor. Teknik olarak politika ihlali sayılabilecek bu davranış, çoğu kurumda gün içinde defalarca tekrarlanıyor.",
+    "Bu tabloya \"gölge AI\" (shadow AI) deniyor: kurumun bilgisi, onayı ve denetimi dışında kullanılan yapay zekâ araçları. Gölge AI aslında bir disiplin sorunu değil, karşılanmamış bir ihtiyacın belirtisi. Bu yazıda neden ortaya çıktığını, hangi riskleri doğurduğunu ve yasaklamak yerine nasıl yönetilebilir hale getirilebileceğini ele alıyoruz."
+  ],
+  "sections": [
+    {
+      "heading": "Gölge AI nedir ve kurumlarda nasıl başlar?",
+      "paragraphs": [
+        "Gölge AI, BT envanterinde yer almayan, kurumsal bir sözleşmeyle bağlanmamış ve hiçbir denetim akışına girmeyen her türlü yapay zekâ kullanımını tanımlar. Kişisel aboneliklerle açılan sohbet araçları, tarayıcı eklentileri, telefondaki uygulamalar, bir ekibin kendi imkânlarıyla kurduğu küçük otomasyonlar bu başlığın altına girer. Ortak nokta şudur: kurum, o etkileşimin gerçekleştiğini bilmez.",
+        "Başlangıcı neredeyse her zaman masumdur. Bir toplantı notunu özetlemek, bir e-postayı İngilizceye çevirmek, bir tablo formülünü sormak gibi küçük işlerle başlar. Bu işler kimseye zararlı görünmediği için kimse izin istemeyi de düşünmez.",
+        "Asıl kayma, alışkanlık yerleştikten sonra gelir. Aynı araca bir süre sonra müşteri listesi, fiyat teklifi, kaynak kodu parçası veya personel bilgisi de yapıştırılır. Sınırın nerede aşıldığını fark eden kimse olmaz, çünkü sınırı çizen ve izleyen bir yapı yoktur."
+      ]
+    },
+    {
+      "heading": "Çalışanlar neden kişisel hesaplara yöneliyor?",
+      "paragraphs": [
+        "En yaygın sebep, kurumsal bir alternatifin hiç olmaması ya da erişiminin zor olmasıdır. Talep formu, onay zinciri ve tedarik süreci haftalara yayıldığında, çalışan teslim tarihini bekletmek yerine kendi hesabını açar. Buradaki tercih kural tanımazlık değil, hızdır.",
+        "İkinci sebep daha sinsidir: kurum içi bir araç vardır ama işe yaramaz. Kurumsal belgelere erişmeyen, şirketin kendi terminolojisini bilmeyen, genel geçer cevaplar üreten bir asistan çalışanı ikna etmez. İnsanlar kendilerine gerçekten yardımcı olan aracı kullanır; kurumsal olanı değil.",
+        "Üçüncü sebep, yasakların kendisidir. Kesin bir yasak talebi ortadan kaldırmaz, yalnızca kullanımı şirket cihazından kişisel telefona taşır. Kurum bu noktada hem riski hem de riskin görünürlüğünü aynı anda kaybeder."
+      ]
+    },
+    {
+      "heading": "Gölge AI'ın doğurduğu dört temel risk",
+      "paragraphs": [
+        "Birincisi veri sızıntısıdır. Kişisel bir hesaba girilen veri, kurumun müzakere ettiği kurumsal koşullara değil, çalışanın tek başına kabul ettiği bireysel kullanım koşullarına tabidir. Verinin nerede saklandığı, ne kadar süre tutulduğu ve nasıl işlendiği kurumun kontrolü dışına çıkar; kişisel veri söz konusuysa mesele doğrudan mevzuat uyumu sorununa dönüşür.",
+        "İkincisi denetlenemezliktir. Hangi sorunun sorulduğu, hangi belgenin yüklendiği, hangi modelin yanıt verdiği hiçbir yerde kayıtlı değildir. Bir hata sonradan fark edildiğinde ya da bir iç inceleme başladığında geriye dönüp bakılacak hiçbir iz bulunmaz.",
+        "Üçüncüsü tutarsız yanıtlar, dördüncüsü ise dağınık maliyettir. Aynı politika sorusuna iki farklı departman iki farklı cevap alır ve bu cevaplar zamanla resmî belgelere, tekliflere, müşteri yazışmalarına sızar. Maliyet tarafındaysa onlarca küçük bireysel abonelik masraf kalemlerine dağılır: toplam harcama bilinmez, karşılığında elde edilen fayda hiç ölçülmez."
+      ]
+    },
+    {
+      "heading": "Yasaklamak neden çözüm değil?",
+      "paragraphs": [
+        "Yasak, ihtiyacı değil görünürlüğü yok eder. Kullanım devam eder ama artık kurumun göremediği cihazlarda ve hesaplarda sürer; risk azalmaz, yalnızca ölçülemez hale gelir. Denetim açısından en kötü senaryo budur.",
+        "Yasağın bir de rekabet maliyeti vardır. İşini daha hızlı bitirmenin yolunu bulmuş bir ekibi yavaşlatmak, kısa vadede uyum sağlar gibi görünse de uzun vadede hem verimliliği hem çalışan memnuniyetini aşağı çeker.",
+        "Bu yüzden doğru soru \"yapay zekâ kullanılsın mı\" değildir. Doğru soru şudur: hangi veriyle, hangi yetkiyle, hangi model üzerinden ve hangi kayıtla kullanılsın. Bu dört başlık netleştiği anda konu bir güvenlik tartışması olmaktan çıkıp yönetim meselesine dönüşür."
+      ]
+    },
+    {
+      "heading": "Gölge AI'ı yönetilebilir kılan kurumsal yapay zekâ katmanı",
+      "paragraphs": [
+        "Çözümün özü tek bir giriş kapısı kurmaktır. Çalışan sorusunu tek bir kurumsal arayüzden sorar; arkada hangi modelin çalışacağı, hangi veriye erişileceği ve isteğin nasıl kayda geçeceği kurum tarafından belirlenir. Kullanıcı deneyimi sadeleşirken kurum tarafında görünürlük doğar.",
+        "Bu katmanın ikna edici olması için yanıtların kurumun kendi bilgisine dayanması gerekir. Asistan; prosedürlere, sözleşme şablonlarına, ürün dokümanlarına ve iç politikalara bakarak cevap verdiğinde, dışarıdaki genel amaçlı bir araca gitmenin cazibesi kendiliğinden azalır. HubAI-X gibi kurumsal yapay zekâ platformları tam olarak bu noktayı hedefler: çalışan sorar, asistanlar kurumsal belgelerden yanıtlar, her istek tek ekrandan denetlenir.",
+        "Dört riskin karşılığı da bu katmanda somutlaşır. Rol bazlı yetkilendirme (RBAC) kimin hangi veriye erişeceğini sınırlar, model yönlendirme yanıt tutarlılığını sağlar, bütçe kontrolü harcamayı tek yerde toplar, denetim kaydı ise sonradan geriye bakılabilecek izi üretir."
+      ]
+    },
+    {
+      "heading": "Nereden başlamalı: gölge AI'ı gün ışığına çıkarmak",
+      "paragraphs": [
+        "İlk adım envanterdir ve bu envanter cezalandırıcı olmamalıdır. Kısa bir iç anket, yöneticilerin ekipleriyle yaptığı açık bir konuşma ve mevcut abonelik kalemlerinin gözden geçirilmesi genelde tablonun büyük kısmını ortaya çıkarır. Amaç kimin kuralı çiğnediğini bulmak değil, hangi işlerin yapay zekâya ihtiyaç duyduğunu görmektir.",
+        "İkinci adım, okunabilir bir veri politikasıdır. Hangi veri sınıfının hangi ortamda işlenebileceğini tek sayfada, sade cümlelerle anlatın; kimsenin sonuna kadar okumadığı uzun bir yönerge, pratikte hiç yazılmamış politikayla aynı sonucu verir.",
+        "Üçüncü adım alternatifi gerçekten kullanışlı yapmak ve sonuçları ölçmektir. Tek ekranlı bir platform — HubAI-X bu mantıkla kurgulanmıştır — envanteri zaten kendiliğinden üretir: kimin ne sorduğu, hangi asistanın yanıtladığı ve maliyetin nereye gittiği tek yerden görünür hale gelir. Gölge AI böylece yasaklanarak değil, gün ışığına çıkarılarak çözülür."
+      ]
+    }
+  ],
+  "takeaways": [
+    "Gölge AI bir disiplin sorunu değil, karşılanmamış bir ihtiyacın göstergesidir; çalışanlar kurumsal alternatif yavaş ya da yetersiz olduğu için kişisel hesaplara yönelir.",
+    "Dört temel risk vardır: veri sızıntısı, denetim izinin bulunmaması, departmanlar arası tutarsız yanıtlar ve dağınık, ölçülemeyen maliyet.",
+    "Yasak talebi değil görünürlüğü yok eder; kullanım şirket cihazından kişisel telefona taşınır ve risk ölçülemez hale gelir.",
+    "Yönetilebilirlik üç bileşene dayanır: tek giriş kapısı, rol bazlı yetkilendirme ve her isteğin denetim kaydı.",
+    "İlk adım cezalandırmayan bir envanter çıkarmak, ikincisi kurumsal alternatifi kişisel hesaptan daha kullanışlı hale getirmektir."
+  ],
+  "faq": [
+    {
+      "q": "Gölge AI (shadow AI) nedir?",
+      "a": "Gölge AI, çalışanların kurumun bilgisi, onayı ve denetimi dışında kullandığı yapay zekâ araçlarını tanımlar. Kişisel aboneliklerle açılan sohbet araçları, tarayıcı eklentileri ve ekiplerin kendi imkânlarıyla kurduğu küçük otomasyonlar bu kapsama girer. Ortak özellikleri, BT envanterinde yer almamaları ve hiçbir kayıt bırakmamalarıdır."
+    },
+    {
+      "q": "Gölge AI'ı tamamen yasaklamak doğru bir strateji mi?",
+      "a": "Yasak, ihtiyacı ortadan kaldırmadığı için genelde beklenen sonucu vermez; kullanım yalnızca kurumun göremediği kişisel cihazlara kayar. Bu durumda risk azalmaz, sadece ölçülemez hale gelir. Daha etkili yaklaşım, kullanımı denetlenebilir bir kurumsal katmana taşımak ve hangi verinin nerede işlenebileceğini net biçimde tanımlamaktır."
+    },
+    {
+      "q": "Kurumda gölge AI kullanımı nasıl tespit edilir?",
+      "a": "Ağ ve proxy kayıtları, kimlik doğrulama günlükleri ve masraf kalemlerindeki bireysel abonelikler ilk ipuçlarını verir. Bunlara tarayıcı eklentisi envanteri ve ekip yöneticileriyle yapılan açık görüşmeler eklenebilir. Tespit sürecinin cezalandırıcı değil, ihtiyaç anlamaya dönük yürütülmesi çok daha doğru bir tablo çıkarır."
+    },
+    {
+      "q": "Kurumsal yapay zekâ platformu gölge AI'ı nasıl azaltır?",
+      "a": "Çalışana tek bir giriş kapısı sunarak, dışarıdaki araçlara gitme ihtiyacını ortadan kaldırır. Yanıtlar kurumun kendi belgelerine dayandığı için sonuç kalitesi genel amaçlı araçlardan daha isabetli olur. Arkada rol bazlı yetkilendirme, model yönlendirme, bütçe kontrolü ve denetim kaydı çalıştığı için kullanım aynı anda hem serbest hem izlenebilir hale gelir."
+    }
+  ],
+  "cover": "/images/ash-blog-golge-ai.svg"
+}

@@ -1,0 +1,76 @@
+/* Original video-overlay styles extracted from the reference stylesheet. */
+.VideoOverlay_dialog__7OQ2s{isolation:isolate;position:relative;width:90%;max-width:var(--site-width);opacity:0}
+.VideoOverlay_dialog__7OQ2s:focus{outline:none}
+.VideoOverlay_dialog--fade-animation__8M8kN[data-state=open]{animation:var(--animation-fade-in)}
+.VideoOverlay_dialog--fade-animation__8M8kN[data-state=closed]{animation:var(--animation-fade-out)}
+.VideoOverlay_dialog--transform-fade-animation__XVlGk{transform:scale(1.05)}
+.VideoOverlay_dialog--transform-fade-animation__XVlGk[data-state=open]{animation:var(--animation-fade-in),VideoOverlay_scale-in__AHINc 1s forwards}
+.VideoOverlay_dialog--transform-fade-animation__XVlGk[data-state=closed]{animation:var(--animation-fade-out),VideoOverlay_scale-out__HLMe5 1s forwards}
+.VideoOverlay_dialog__aspect-ratio-container__JxTUF{--video-width:1280;--video-height:720;position:relative;padding-top:calc(var(--video-height)/var(--video-width)*100%)}
+.VideoOverlay_dialog__video__PJIEE{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;-o-object-fit:cover;object-fit:cover;border-radius:2rem}
+.VideoOverlay_dialog__video--no-border__zE8Wj{border-radius:0}
+.VideoOverlay_dialog__close-button__xaqh4{--size:3rem;--offset:1rem;cursor:pointer;position:absolute;z-index:1;top:calc((var(--size) + var(--offset))*-1);right:0;display:flex;align-items:center;justify-content:center;width:var(--size);height:var(--size);background-color:rgba(0,0,0,.3);border:.0625rem solid rgba(209,209,251,.2);border-radius:6.25rem;transition:background-color .3s}
+.VideoOverlay_dialog__close-button__xaqh4:before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;border-radius:inherit;box-shadow:.3125rem .4375rem 1.125rem rgba(0,0,0,.1),0 .5rem 1.3125rem rgba(1,0,19,.15)}
+.VideoOverlay_dialog__close-button__xaqh4 span{position:absolute;top:50%;left:50%;width:.6875rem;height:.125rem;background-color:var(--color-white);transition:background-color .3s}
+.VideoOverlay_dialog__close-button__xaqh4 span:first-child{transform:translate(-50%,-50%) rotate(45deg)}
+.VideoOverlay_dialog__close-button__xaqh4 span:last-child{transform:translate(-50%,-50%) rotate(-45deg)}
+.VideoOverlay_dialog__close-button__xaqh4.VideoOverlay_focus-visible__iU0cp{outline:none}
+.VideoOverlay_dialog__close-button__xaqh4:focus-visible{outline:none}
+.VideoOverlay_dialog__close-button__xaqh4:hover{background-color:var(--color-white)}
+.VideoOverlay_dialog__close-button__xaqh4:hover span{background-color:var(--color-black)}
+@media(min-width:48rem){.VideoOverlay_dialog__close-button__xaqh4{--offset:1.5rem;top:var(--offset);right:var(--offset);border:none}
+}
+@keyframes VideoOverlay_scale-in__AHINc{0%{transform:scale(1.05)}
+to{transform:scale(1)}
+}
+@keyframes VideoOverlay_scale-out__HLMe5{0%{transform:scale(1)}
+to{transform:scale(1.05)}
+}
+.VideoOverlay_overlay__gkcvQ{position:fixed;top:0;right:0;bottom:0;left:0;display:flex;align-items:center;justify-content:center;background:rgba(5,10,43,.8)}
+.VideoOverlay_overlay__gkcvQ[data-state=open]{animation:var(--animation-fade-in);animation-duration:.5s}
+.VideoOverlay_overlay__gkcvQ[data-state=closed]{animation:var(--animation-fade-out);animation-duration:.5s}
+
+/* Native dialog provides focus containment and an inaccessible background. */
+.theme-video-overlay {
+  z-index: 200;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  border: none;
+}
+
+.theme-video-overlay:not([open]) {
+  display: none;
+}
+
+.theme-video-overlay::backdrop {
+  background: transparent;
+}
+
+.theme-video-overlay .VideoOverlay_dialog__video__PJIEE {
+  background: #050a2b;
+}
+
+.theme-video-overlay .VideoOverlay_dialog__close-button__xaqh4:focus-visible {
+  outline: 2px solid #e685d1;
+  outline-offset: 5px;
+}
+
+.theme-video-error {
+  margin-top: 1rem;
+  color: #f8f8f6;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-video-overlay,
+  .theme-video-overlay .VideoOverlay_dialog__7OQ2s {
+    animation: none;
+    transform: none;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "slug": "gizlilik-politikasi",
+  "title": "Gizlilik Politikası",
+  "metaDescription": "AI Solution House web sitesinde hangi verilerin toplandığı, nasıl kullanıldığı ve hangi haklara sahip olduğunuz.",
+  "updated": "2026-09-18",
+  "intro": [
+    "Bu politika, {{UNVAN}} (ASH — AI Solution House) tarafından işletilen bu web sitesinde gizliliğin nasıl ele alındığını anlatır.",
+    "Kısa özet: bu site bir tanıtım sitesidir. Üye girişi, ödeme veya kullanıcı hesabı yoktur; şu an sunucu tarafında sizden kişisel veri toplanmamaktadır."
+  ],
+  "sections": [
+    {
+      "heading": "Hangi verileri topluyoruz",
+      "paragraphs": [
+        "Sitede iki form vardır: iletişim formu ve bülten kayıt alanı. İkisi de şu anda girdiğiniz bilgiyi tarafımıza göndermez; veriler yalnızca kendi tarayıcınızın yerel depolamasında kalır.",
+        "Bunun pratik anlamı şudur: iletişim formunu doldurup gönderdiğinizde mesajınız bize ulaşmaz; form bunu ekranda açıkça bildirir. Yazdıklarınız yalnızca tarayıcınızda taslak olarak kalır ve sayfaya döndüğünüzde geri yüklenir. Form bir e-posta servisine bağlandığında bu politika güncellenecektir.",
+        "Siteyi barındıran altyapı, bağlantının kurulabilmesi için IP adresi ve tarayıcı bilgisi gibi teknik kayıtlar oluşturabilir."
+      ]
+    },
+    {
+      "heading": "Verileri ne için kullanıyoruz",
+      "bullets": [
+        "Sitenin çalışır ve güvenli kalmasını sağlamak",
+        "Hataları tespit etmek ve gidermek",
+        "Kötüye kullanım ve otomatik saldırı girişimlerini önlemek"
+      ]
+    },
+    {
+      "heading": "Ne yapmıyoruz",
+      "bullets": [
+        "Kişisel verilerinizi satmıyor, kiralamıyor veya pazarlama amacıyla devretmiyoruz",
+        "Sitede reklam ağı veya profilleme amaçlı izleme kullanmıyoruz",
+        "Ziyaretçi davranışını kişiye bağlayan bir analitik çözümü çalıştırmıyoruz"
+      ]
+    },
+    {
+      "heading": "Tarayıcınızda saklananlar",
+      "paragraphs": [
+        "Form taslakları ve benzeri tercihler tarayıcınızın yerel depolamasında tutulur. Bu veriler cihazınızdan çıkmaz ve tarafımızca okunamaz.",
+        "Tarayıcınızın site verilerini temizleyerek bunları istediğiniz an silebilirsiniz. Ayrıntı için çerez politikamıza bakabilirsiniz."
+      ]
+    },
+    {
+      "heading": "Üçüncü taraflar",
+      "paragraphs": [
+        "Sitenin barındırılması için hizmet sağlayıcılardan yararlanılır. Bu sağlayıcılar, hizmetin sunulması için gereken teknik kayıtlara erişebilir.",
+        "Sitede yer alan dış bağlantılara tıkladığınızda ilgili sitenin kendi gizlilik uygulamaları geçerli olur; bu politikanın kapsamı dışındadır."
+      ]
+    },
+    {
+      "heading": "Güvenlik",
+      "paragraphs": [
+        "Site HTTPS üzerinden sunulur. Erişim yetkileri sınırlı tutulur ve bileşenler güncel sürümleriyle çalıştırılır.",
+        "Hiçbir sistemin mutlak güvenlik sağlayamayacağını biliyoruz; bu nedenle toplamadığımız veriyi en güvenli veri olarak görüyoruz."
+      ]
+    },
+    {
+      "heading": "Haklarınız",
+      "paragraphs": [
+        "Kişisel verilerinize ilişkin haklarınız ve başvuru yolu KVKK aydınlatma metnimizde ayrıntılı olarak açıklanmıştır.",
+        "Sorularınız için {{EPOSTA}} adresine yazabilirsiniz."
+      ]
+    },
+    {
+      "heading": "Politikadaki değişiklikler",
+      "paragraphs": [
+        "Sitenin işleyişi değiştiğinde bu politika güncellenir. Sayfanın başındaki güncelleme tarihi, metnin hangi tarihten itibaren geçerli olduğunu gösterir."
+      ]
+    }
+  ]
+}

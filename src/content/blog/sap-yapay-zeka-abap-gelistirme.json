@@ -1,0 +1,93 @@
+{
+  "slug": "sap-yapay-zeka-abap-gelistirme",
+  "title": "SAP Yapay Zekâ: ABAP Geliştirmede Gerçekte Ne Değişir",
+  "metaDescription": "SAP yapay zekâ girişimlerinde asıl fark ABAP geliştirme ve birinci seviye destekte görülür. Z objeleri, kurum standartları ve onay neden belirleyici?",
+  "category": "SAP ve Yapay Zekâ",
+  "summary": "SAP ekiplerinde yapay zekânın asıl etkisi birinci seviye destek yükünde ve tekrarlayan ABAP geliştirme taleplerinde görünür. Genel amaçlı modellerin Z objeleri karşısında neden yetersiz kaldığını ve üretilen her geliştirmenin neden onaydan geçmesi gerektiğini ele alıyoruz.",
+  "readingMinutes": 4,
+  "date": "2026-09-04",
+  "author": {
+    "name": "ASH Ekibi",
+    "role": "SAP Çözümleri Birimi"
+  },
+  "intro": [
+    "SAP yapay zekâ başlığı çoğu kurumda aynı yerden açılır: ekip yetişemiyordur, talep kuyruğu uzamıştır ve herkes bir kısayol arar. Oysa bu ekiplerde günü asıl tüketen şey tek tek zor işler değil, aynı işin defalarca tekrarlanmasıdır.",
+    "Bu yazıda yapay zekânın SAP ekiplerinde gerçekte neyi değiştirdiğine bakıyoruz: birinci seviye destek yükü, tekrarlayan ABAP geliştirme talepleri, genel amaçlı modellerin Z objeleri karşısında neden takıldığı ve üretilen her çıktının neden onaydan geçmesi gerektiği."
+  ],
+  "sections": [
+    {
+      "heading": "SAP ekiplerinde zaman nereye gidiyor?",
+      "paragraphs": [
+        "Bir SAP ekibinin takvimine bakıldığında iş genellikle üç yığına ayrılır: kullanıcıdan gelen günlük destek talepleri, değişiklik talepleri ve uzun soluklu projeler. İlk iki yığın kesintisiz akar; üçüncüsü ise çoğu zaman geriye kalan zamandan beslenir.",
+        "Asıl sorun, akan işin çoğunlukla yeni olmamasıdır. Aynı hata mesajı farklı kullanıcılardan tekrar tekrar gelir, aynı rapor ihtiyacı birkaç alan farkıyla yeniden yazılır. Ekibin uzmanlığı, uzmanlık gerektirmeyen işe harcanır.",
+        "Yapay zekânın bu tabloda anlamlı olduğu yer de tam burasıdır. Kıymetli olan, zor bir problemi tek başına çözmesi değil; tekrar eden işin uzmanın masasına gelmeden karşılanabilmesidir."
+      ]
+    },
+    {
+      "heading": "Birinci seviye destek: tekrarın görünmeyen maliyeti",
+      "paragraphs": [
+        "Birinci seviye talepler tek tek bakıldığında küçüktür: bir yetki hatası, bir hesap tayini uyarısı, kapanmayan bir belge, kullanıcının bulamadığı bir alan. Her biri birkaç dakika sürer, ama maliyeti dakikayla ölçülmez.",
+        "Derin odak gerektiren bir işten koparılıp beş dakikalık bir soruya bakmak, pratikte çok daha uzun bir kesintidir. Gün içinde bu kesintiler üst üste bindiğinde ekibin proje kapasitesi görünmeden erir.",
+        "Yapay zekâ destekli bir asistan bu taleplerin bir bölümünü kaynağında karşılayabilir: hata mesajını yorumlar, ilgili yapılandırmayı işaret eder, benzer geçmiş talepleri hatırlar. Geriye gerçekten uzman gerektiren talepler kalır."
+      ]
+    },
+    {
+      "heading": "Tekrarlayan ABAP geliştirme talepleri neden birikir?",
+      "paragraphs": [
+        "ABAP geliştirme taleplerinin önemli bir bölümü yapısal olarak birbirine benzer: bir sorgu, birkaç tablo birleşimi, bir yetki kontrolü, bir çıktı ekranı. Yeni olan şey iş ihtiyacıdır, teknik kalıp değil.",
+        "Buna rağmen her talep baştan başlar; analiz, tasarım, geliştirme, test ve taşıma adımları yeniden kurulur. Takvimi uzatan şey çoğu zaman kodu yazmak değil, kuyruğa girip sıra beklemektir.",
+        "Kalıbın tekrar ettiği yerde yapay zekâ gerçek bir hızlanma sağlar. İhtiyacı doğal dille tarif etmek ile incelemeye hazır bir taslak geliştirme arasındaki mesafe kısalır; ekip yazmak yerine değerlendirmeye odaklanır."
+      ]
+    },
+    {
+      "heading": "Genel amaçlı modeller Z objelerinde neden takılır?",
+      "paragraphs": [
+        "Genel amaçlı bir dil modeli ABAP sözdizimini bilir; standart tabloları, yaygın kalıpları ve belgelenmiş davranışları tanır. Bilmediği tek şey sizin sisteminizdir.",
+        "Kurumsal SAP ortamları yıllar içinde kendi sözlüğünü üretir: Z tabloları, Z sınıfları, özel isimlendirme kuralları, kurum içi geliştirme standartları ve yeniden kullanılması beklenen mevcut objeler. Bunların hiçbiri genel eğitim verisinde yer almaz.",
+        "Sonuç tanıdıktır: teknik olarak doğru görünen ama ortamınıza ait olmayan kod. Derlenir, hatta çalışır; ancak mevcut bir sınıfı yeniden kullanmaz, isimlendirme kuralınıza uymaz, yetki kontrolünüzü atlar. Kazanılan zaman uyarlama işine geri döner."
+      ]
+    },
+    {
+      "heading": "Kurumun kendi sistemini girdi alan yaklaşım",
+      "paragraphs": [
+        "Farkı yaratan şey modelin kendisi değil, modele ne verdiğinizdir. Sistemdeki Z objeleri, mevcut geliştirmeler ve kurum içi standartlar girdi olarak sunulduğunda üretilen çıktı da ortamınıza ait hale gelir.",
+        "Bu yaklaşımda asistan sıfırdan yazmak yerine önce bakar: bu ihtiyacı karşılayan bir obje zaten var mı, hangi sınıf yeniden kullanılabilir, hangi standart uygulanmalı. SAPAI-X'in çalışma biçimi de buna dayanır; çıktı, kurumun mevcut mimarisinden türetilir.",
+        "Yan fayda, belgelenmemiş bilginin yeniden erişilebilir olmasıdır. Yıllar önce yazılmış bir Z objesinin bugün ne yaptığı ve bir değişikliğin nereye dokunacağı, sorulabilir bir şeye dönüşür."
+      ]
+    },
+    {
+      "heading": "Onay ve denetim neden pazarlık konusu değil?",
+      "paragraphs": [
+        "Üretim SAP sistemi deneme yapılacak bir yer değildir. Yapay zekâ ne kadar isabetli çalışırsa çalışsın, bir geliştirmenin canlıya çıkması insan onayından geçmelidir.",
+        "Bu yüzden değerlendirmede sorulması gereken soru \"ne kadar hızlı üretiyor\" değil, \"ürettiğini nasıl gösteriyor\"dur: hangi objeleri referans aldı, neyi değiştirdi, hangi standardı uyguladı, kim onayladı. Bir aracın izlenebilirliği, hızının kendisinden daha belirleyicidir.",
+        "Denetim kaydı aynı zamanda güvenin inşa edildiği yerdir. Ekip üretilen çıktıyı gözden geçirdikçe hangi işlerde asistana daha çok alan bırakacağını, hangi işlerde kontrolü sıkı tutacağını öğrenir."
+      ]
+    }
+  ],
+  "takeaways": [
+    "SAP ekiplerinde asıl yük tek tek zor işler değil; tekrarlayan destek talepleri ve birbirine benzeyen ABAP geliştirme istekleridir.",
+    "Genel amaçlı modeller ABAP sözdizimini bilir, sizin Z objelerinizi ve kurum standartlarınızı bilmez; bu yüzden ürettikleri kod ek uyarlama işi doğurur.",
+    "Fark modelden değil model girdisinden gelir: mevcut objeler, geliştirmeler ve standartlar girdi olduğunda çıktı da ortamınıza oturur.",
+    "Hız tek başına yeterli değildir; hangi objenin referans alındığı ve kimin onayladığı görünmüyorsa kazanç kalıcı olmaz.",
+    "Üretim sistemine giden her geliştirme insan onayından ve denetim kaydından geçmelidir."
+  ],
+  "faq": [
+    {
+      "q": "SAP yapay zekâ çözümleri ABAP geliştiricilerin yerini alır mı?",
+      "a": "Hayır; değişen şey işin dağılımıdır. Tekrarlayan kalıpların taslağı otomatikleşir, geliştiricinin zamanı tasarıma, gözden geçirmeye ve iş kuralı doğruluğuna kayar. Üretime çıkan kodun sorumluluğu ekipte kalır."
+    },
+    {
+      "q": "Genel amaçlı bir yapay zekâ asistanı ABAP geliştirme için yeterli olmaz mı?",
+      "a": "Sözdizimi için çoğu zaman yeterlidir, ortamınız için değildir. Z objelerinizi, isimlendirme kurallarınızı ve kurum içi geliştirme standartlarınızı bilmediği için üretilen kodu sisteminize uyarlama işi yine ekibinize kalır."
+    },
+    {
+      "q": "Yapay zekânın ürettiği ABAP kodu doğrudan canlıya alınabilir mi?",
+      "a": "Alınmamalıdır. Üretilen geliştirme, mevcut değişiklik süreciniz gibi gözden geçirme, test ve onay adımlarından geçmelidir. Asistanın rolü bu süreci hızlandırmaktır, atlamak değil."
+    },
+    {
+      "q": "Z objeleri belgelenmemişse yapay zekâ yine de işe yarar mı?",
+      "a": "Belgelenmemiş olması okunamaz olduğu anlamına gelmez. Sistemdeki objelerin yapısını girdi alan bir yaklaşım, bir objenin bugün ne yaptığını ve yapılacak bir değişikliğin nereye dokunacağını görünür kılabilir."
+    }
+  ],
+  "cover": "/images/ash-blog-sap-ai.svg"
+}

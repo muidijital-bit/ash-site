@@ -1,0 +1,59 @@
+/* Tema fontu: kendi fontunuzu buraya baglayin (next/font veya @font-face). */
+:root { --font-theme: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+/* Reference styles own layout, type, colors, and breakpoints. */
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+html body, input, button, textarea { font-family: var(--font-theme); }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+/* Odak halkasi: tema HubX pembesi (#fa7184) kullaniyordu; ASH mavisi. */
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, summary:focus-visible {
+  outline: 3px solid #2f6bff;
+  outline-offset: 3px;
+}
+@media(prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+#site-root { isolation: isolate; overflow-x: clip; }
+
+/* Tema, gorsel kutusunu sabit oranli bir bosluk ile cizip img'yi o kutuya
+   gerdiriyor. Degistirdigimiz gorseller farkli oranda oldugu icin eziliyordu;
+   contain ile oran korunur. */
+img.capture-77bda95619 { object-fit: contain; }
+
+/* Logo boyutu ve orani.
+   Tema logo kutusunu 3.78:1 olarak tanimliyordu; ASH logosu 2.44:1 oldugu
+   icin gorsel yatayda geriliyordu (object-fit: fill). Dogru orana getirilip
+   hem header'da hem footer'da buyutuldu. */
+header [class*="Logo_logo__"]:not([class*="Logo_logo__logo__"]) {
+  --logo-actual-height: 1.625rem;
+  --logo-actual-width: 3.9625rem;
+}
+footer [class*="Logo_logo__"]:not([class*="Logo_logo__logo__"]) {
+  --logo-actual-height: 2rem;
+  --logo-actual-width: 4.875rem;
+}
+img[class*="Logo_logo__logo__"] { object-fit: contain; }
+
+/* Sosyal ikonlar kaldirildi; alt satirdaki ayrac cizgisi ve ona ayrilan
+   bosluk artik gereksiz. */
+.Copyright_copyright__privacy-link__Sg5lF.Copyright_copyright__privacy-link__Sg5lF { margin-right: 0; }
+.Copyright_copyright__privacy-link__Sg5lF:after { content: none; }
+
+/* "İçeriğe geç" bağlantısı: yalnızca klavye odağında görünür. */
+.ash-skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 1000;
+  padding: 0.75rem 1.125rem;
+  border-radius: 0.5rem;
+  background: #050a2b;
+  color: #f8f8f6;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+  transform: translateY(-160%);
+  transition: transform 160ms ease;
+}
+.ash-skip-link:focus-visible { transform: translateY(0); }
+#ana-icerik:focus { outline: none; }

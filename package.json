@@ -1,0 +1,38 @@
+{
+  "name": "site-theme",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Karanlik temali, bolum tabanli Next.js site temasi. Tum metin ve gorseller icerik dosyalarindan beslenir.",
+  "license": "MIT",
+  "keywords": [
+    "nextjs",
+    "theme",
+    "template",
+    "dark",
+    "landing-page"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run lint && npm run typecheck && npm run build"
+  },
+  "dependencies": {
+    "next": "16.3.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.0",
+    "typescript": "^5"
+  }
+}

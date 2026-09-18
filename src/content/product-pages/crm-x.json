@@ -1,0 +1,255 @@
+{
+  "key": "crm-x",
+  "name": "CRM-X",
+  "hero": {
+    "eyebrow": "CRM-X · YAPAY ZEKÂ DESTEKLİ SATIŞ VE MÜŞTERİ YÖNETİMİ",
+    "title": "Dağınık Kayıtlara Son Verin. Her Fırsatı Tek Ekranda Yönetin.",
+    "lead": "CRM-X; müşteri bilgilerini, satış fırsatlarını ve ekip aktivitelerini tek platformda birleştirir. Yapay zekâ takip bekleyen fırsatı işaretler, tekrarlayan işi üstlenir; ekibiniz müşteriyle konuşmaya ve satışı kapatmaya odaklanır.",
+    "cta": "Demo Planlayın",
+    "visual": "Zemin Deep Navy #050A2B. Arka planda 132px blueprint ızgarası (rgba(248,248,246,.05), 1px), üstünde mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 25%, transparent 78%) ile merkezden dışa sönüm. Sol üstte 480px Violet (rgba(116,72,232,.16)), sağ altta 360px Magenta (rgba(217,70,181,.12)) blur(120px) ışık küresi, yarıları dışarı taşar. Başlığın ikinci satırı ('Her Fırsatı Tek Ekranda Yönetin.') 135deg marka gradyanıyla background-clip:text. Altında yan yana iki hap buton: gradyan dolgulu 'Demo Planlayın' (mavi glow) ve şeffaf + 1px kenarlıklı 'Platformu Keşfedin'. Butonların altında 880px genişliğinde <BrowserFrame url='crm-x.co/pipeline'>: 30px #0A143D chrome bandı, 3 nötr nokta, ortada mono URL hapı, sağda yeşil nokta + 'Canlı'. Solda 156px #080D35 sidebar (Panolar, Müşteriler, Fırsatlar, Aktiviteler, Raporlar); aktif 'Fırsatlar' satırında 3px gradyan sol çubuk + 5px violet nokta. Gövde 3 sekmeli ve 4,5 sn'de bir döner (çıkan panel translateX 0→-16px, giren 16px→0, 280ms): (1) Pipeline — 5 sütunlu kanban (Temas / Nitelendirme / Fırsat / Teklif / Kazanım), sütun başında mono toplam tutar, kartlarda '#OPP-2140 · ₺320.000 · %60' ve gradyanlı 20px baş harf avatarı; (2) Satış Panosu — 4 mini KPI kartı (Açık fırsat, Teklif aşamasında, Bu ay kazanılan, Takip bekleyen), stroke-dashoffset ile çizilen alan grafiği ve width ile dolan yatay huni barları; (3) Fırsat Detayı — clip-path chevron aşama şeridi (tamamlananlar yeşil %12 zemin, aktif 'Teklif' violet dolgu + pembe nokta, bekleyenler rgba(248,248,246,.06)) ve altında zaman damgalı aktivite listesi. Mockup'ın sol üst köşesinde backdrop-filter: blur(14px) cam chip 'AI önerisi · Bugün 3 takip', sağ alt köşesinde amber noktalı chip 'OPP-2140 · 9 gündür yanıtsız'. Mockup altında çok geniş-yumuşak tek gölge (0 40px 120px -60px rgba(0,0,0,.85)). Tüm mockup metinleri 7–11px mono, tabular-nums, aria-hidden='true'."
+  },
+  "sections": [
+    {
+      "kind": "farklar",
+      "heading": "Satışı Yavaşlatan Kör Noktalara Son Verin.",
+      "sub": "Müşteri bilgisi dağınık olduğunda satış hafızaya ve tahmine dayanır. Aşağıdaki tablolardan biri tanıdık geliyorsa, CRM-X tam bu noktada devreye girer.",
+      "items": [
+        {
+          "title": "Tablolarda Kalan Müşteri Listeleri",
+          "body": "Her temsilcinin kendi dosyası, her dosyanın farklı bir sürümü var. CRM-X tüm müşteri ve kişi kayıtlarını tek, güncel bir kaynakta toplar."
+        },
+        {
+          "title": "Unutulan Takipler",
+          "body": "Teklif gönderildi, dönüş yapılmadı ve fırsat sessizce soğudu. CRM-X bekleyen her takibi sorumlusu ve tarihiyle birlikte hatırlatır."
+        },
+        {
+          "title": "Kişiye Bağlı Müşteri Hafızası",
+          "body": "Bir ekip üyesi ayrıldığında görüşme geçmişi de onunla gidiyor. CRM-X her teması kuruma ait, erişilebilir bir müşteri geçmişine dönüştürür."
+        },
+        {
+          "title": "Tahmine Dayalı Satış Hunisi",
+          "body": "Hangi fırsatın gerçekten ilerlediği toplantıda sözlü olarak soruluyor. CRM-X her fırsatın aşamasını ve son hareketini tek panoda gösterir."
+        },
+        {
+          "title": "Bitmeyen Manuel Veri Girişi",
+          "body": "Satış ekibi müşteriyle konuşmak yerine kayıt güncellemekle uğraşıyor. CRM-X tekrarlayan giriş ve güncelleme işlerini otomasyona devreder."
+        },
+        {
+          "title": "Satış Sonrasında Kopan İlişki",
+          "body": "Satış kapandığı anda müşteri görünmez oluyor, tekrar satın alma şansı kaçıyor. CRM-X yolculuğu satış sonrasında da izleyerek bağlılık fırsatlarını görünür kılar."
+        }
+      ],
+      "visual": "Midnight Navy #080D35 zemin, sol üstte tek bir 420px Violet blur(120px) küre (opacity .12). Bölüm başında ortalanmış mono eyebrow 'ARTIK SON': magenta %12 zeminli hap içinde, dört köşesinde 10px Magenta L işareti. Altında 3×2 birleşik hairline panel: kapsayıcı background rgba(248,248,246,.08) + gap:1px, hücreler #050A2B, dış çerçeve 16px radius. Her hücre: 40×40px ikon kutusu (outline ikonlar: file-spreadsheet, bell-off, user-minus, circle-help, keyboard, unlink; stroke 1.5, Soft White), sağ üstte 11px mono numara (01…06), hücre genişliğinde ince yatay çizgi, H3 ve iki parçalı metin — problem cümlesi rgba(248,248,246,.62), çözüm cümlesi ise solunda 2px gradyan çizgi olan ayrı satır. Kartlardan biri 3,2 sn'de bir sırayla aktif olur: zemin 135deg rgba(255,107,107,.08)→transparent dolar, numara #FF6B6B'ye döner, dört köşede 10px crosshair belirir ve çözüm satırının gradyan çizgisi tam opak olur; diğer hücreler .35 opaklığa soluklaşır. Yalnızca renk/zemin geçişi (300ms), pozisyon animasyonu yok. Mobilde tek sütun, otomatik vurgu kapalı."
+    },
+    {
+      "kind": "nasil-calisir",
+      "heading": "Tek Döngü. İlk Temastan Sadakate.",
+      "sub": "CRM-X müşteri ilişkisini kopuk kayıtlar olarak değil, kendini besleyen altı aşamalı bir döngü olarak ele alır. Her aşama bir sonrakine veri bırakır.",
+      "items": [
+        {
+          "title": "Temas",
+          "body": "Müşteri adayı (lead) ilk kez görünür olur; nereden geldiği ve neye ilgi gösterdiği kayda geçer."
+        },
+        {
+          "title": "Nitelendirme",
+          "body": "İhtiyaç, bütçe ve zamanlama netleşir; ekip önceliği hissiyata değil veriye göre belirler."
+        },
+        {
+          "title": "Fırsat",
+          "body": "İlgi somut bir satış fırsatına dönüşür; sorumlusu, tahmini tutarı ve aşaması atanır."
+        },
+        {
+          "title": "Teklif",
+          "body": "Görüşmeler, revizyonlar ve takip tarihleri tek fırsat kaydının altında ilerler."
+        },
+        {
+          "title": "Kazanım",
+          "body": "Satış kapanır; kazanma ya da kaybetme nedeni sonraki kararlar için saklanır."
+        },
+        {
+          "title": "Sadakat",
+          "body": "Satış sonrası temaslar izlenir; tekrar satın alma ve çapraz satış (cross-sell) fırsatları döngüyü yeniden başlatır."
+        }
+      ],
+      "visual": "CRM-X imza görseli — yörünge diyagramı, Deep Navy #050A2B zemin. 1100×880 viewBox tek inline SVG: r=283 noktalı dış halka (stroke-dasharray '2 11', rgba(248,248,246,.10)), r=255 tam halka (rgba(248,248,246,.14), 1.5px), üzerinde aralarında boşluk bırakılmış 6 yay — renkler sırasıyla #2F6BFF, #4A5BF4, #7448E8, #A947D0, #D946B5, #F08BC2, stroke-linecap round. Pasif yay 2px / opacity .45; aktif yay 5px + aynı path'in 16px, %17 opak, feGaussianBlur(13) kopyası ile neon parıltı. Merkezde r=168 #080D35 disk, üstünde aktif adımın renginde %13→%0 radyal boyama ve r=164 noktalı iç çember (dasharray '3 9', opacity .2). Diskin ortasında küçük mono 'CRM-X' (letter-spacing .25em), altında aktif aşama adı + kısa açıklama ve 6 noktalı pager. 6 düğüm r=32: pasifler #050A2B dolgu + 2px renkli kontur, aktif düğüm solid renk + arkasında r=52 blur(14) hale; düğüm içinde 11px mono '01' ve outline ikon (user-plus, filter, target, file-text, trophy, repeat). Sadakat yayından Temas düğümüne dönen kesikli ok döngüyü kapatır. Düğüm etiketleri SVG dışında yüzdeyle konumlanmış HTML butonları; tıklanınca aktif olur, otomatik ilerleme 4,5 sn ve ilk dokunuşta kalıcı olarak durur. Fill/opacity/stroke-width geçişleri .4s. <900px'te SVG display:none; aynı 6 aşama 2 sütunlu dokunmatik kart ızgarasına döner (her kartın üst kenarında aşamanın renginde 2px çizgi)."
+    },
+    {
+      "kind": "ozellikler",
+      "heading": "Dört Yetenek. Tek Müşteri Görünümü.",
+      "sub": "Müşteri kaydı, otomasyon, raporlama ve yolculuk analizi ayrı araçlarda değil, aynı kaydın etrafında çalışır.",
+      "items": [
+        {
+          "title": "Müşteri ve Fırsatları Birlikte Yönetin",
+          "body": "Firma kartı, iletişim kişileri, görüşme notları ve açık fırsatlar aynı ekranda durur. Hangi fırsatın hangi aşamada olduğunu ve son temasın ne zaman yapıldığını tek bakışta görün."
+        },
+        {
+          "title": "Tekrarlayan İşleri Otomasyona Bırakın",
+          "body": "Aşama değişince görev açılsın, takip tarihi gelince sorumlusu uyarılsın. Kuralı bir kez tanımlayın; sistem her kayıtta aynı disiplinle uygulasın."
+        },
+        {
+          "title": "Performansı Güncel Veriyle Okuyun",
+          "body": "Satış hunisini, ekip ve temsilci bazında fırsat gelişimini hazır panolarda izleyin. Takılan aşamayı toplantıdan önce görün, öncelikleri buna göre planlayın."
+        },
+        {
+          "title": "Müşteri Yolculuğunu Uçtan Uca İzleyin",
+          "body": "İlk etkileşimden satış sonrasına kadar tüm temas noktalarını tek zaman çizelgesinde birleştirin. Yolculuğun koptuğu yeri bulun, deneyimi o noktadan tutarlı hale getirin."
+        }
+      ],
+      "visual": "Midnight Navy #080D35 zemin, sağ altta 400px Magenta blur(120px) küre (opacity .10). <SectionHead/>: mono eyebrow 'PLATFORM' (Soft Pink), 2 satırlık H2 (ikinci öbek gradyanlı), altında soldan sağa sönen 1px gradyan hairline. 2×2 <CrosshairCard> ızgarası; her kartın sol üst çerçevesine oturan mono köşe etiketi: 'TEK KAYNAK', 'OTOPİLOT', 'NET TABLO', 'YOLCULUK HARİTASI'. Kartın üst %55'i mini mockup alanı (#080D35→#050A2B gradyan + 16px nokta dokusu), alt %45'i ince ayraçla ayrılmış metin. Mockup'lar: (1) firma kartı 'Anadolu Makine A.Ş.' benzeri anonim ad yerine 'Firma · Endüstriyel Ekipman', altında 3 baş harf avatarlı kişi satırı ve 2 açık fırsat hapı (#OPP-2140 Teklif, #OPP-2157 Nitelendirme); (2) kural zinciri: 'Aşama = Teklif' → 'Görev oluştur: Takip araması' → '3 gün sonra hatırlat' kutuları, aralarında gradyan ray ve sağda açık konumda toggle; (3) scaleX ile dolan 5 yatay huni barı + temsilci bazlı 4 dikey bar (baş harf etiketli); (4) dikey zaman çizelgesi: 'İlk form · Demo · Teklif · Satış · Memnuniyet görüşmesi' düğümleri, satış sonrası düğümü pembe nokta ile vurgulu. Hover: kart -6px yükselir, kenarlık rgba(116,72,232,.45) olur, sağ üst köşedeki 160px renk küresi opacity 0→.20 ve scale(1.5), altta 'Detayına in →' satırı belirir (ok 4px salınır), 220ms cubic-bezier(.34,1.56,.64,1). Mobilde tek sütun."
+    },
+    {
+      "kind": "ozellikler",
+      "heading": "Veriyi Saklamakla Kalmaz. Sonraki Adımı Önerir.",
+      "sub": "CRM-X'in yapay zekâ katmanı kayıtların üzerinde çalışır: neyin beklediğini, neyin soğuduğunu ve neyin öncelikli olduğunu ekibinize açık bir dille söyler. Karar her zaman ekipte kalır.",
+      "items": [
+        {
+          "title": "Sonraki En İyi Adımı Görün (Next Best Action)",
+          "body": "Son temas tarihi, aşamada geçen süre ve açık görevler birlikte değerlendirilir. CRM-X bugün kimi aramanız, hangi teklifi takip etmeniz gerektiğini gerekçesiyle önerir."
+        },
+        {
+          "title": "Görüşme Notlarını Düzenli Kayda Dönüştürün",
+          "body": "Toplantı sonrası serbest metinle yazdığınız nottan karar, itiraz ve sonraki tarih ayıklanır. Kayıt alanları sizin onayınızla dolar; kopyala–yapıştır aradan çıkar."
+        },
+        {
+          "title": "Soğuyan Fırsatları Erken Fark Edin",
+          "body": "Uzun süredir hareket görmeyen ya da takibi geciken fırsatlar panoda işaretlenir. Kaybedilmeden önce sorumlusu uyarılır, yönetici aynı tabloyu eş zamanlı görür."
+        },
+        {
+          "title": "Raporu Soru Sorarak Alın",
+          "body": "'Teklif aşamasında iki haftadır bekleyen fırsatlar hangileri?' diye yazın, filtre kurmakla uğraşmayın. CRM-X yanıtı tabloyla ve ilgili kayıtlara bağlantılarla getirir."
+        },
+        {
+          "title": "Yetki ve İz Kaydıyla Kontrolü Elde Tutun",
+          "body": "Hangi ekibin hangi müşteri verisini görüp düzenleyebileceğini rol bazında belirleyin (RBAC). Onaylanan her öneri ve değişiklik zaman damgasıyla kayda geçer."
+        }
+      ],
+      "visual": "Deep Navy #050A2B zemin, sol üstte Violet, sağ ortada Magenta iki blur(120px) küre (.14/.10). Zig-zag özellik blokları: her blok kendi 1px rgba(248,248,246,.08) çerçevesi içinde (20px radius), sol-sağ dönüşümlü; çerçevenin sol üst kenarını kesen mono köşe etiketi: 'SIRADAKİ HAMLE', 'NOTTAN KAYDA', 'ERKEN UYARI', 'DOĞAL DİLDE RAPOR', 'KONTROL SİZDE'. Metin tarafında başlık + açıklama + 3 kutulu mikro-kanıt şeridi (sayısız ifadeler: 'Gerekçe: Görünür / Karar: Ekipte / Kaynak: Kayıt geçmişi', 'Alan doldurma: Onaylı / Serbest metin: Desteklenir / Tekrar giriş: Yok', 'Uyarı: Sorumluya / Görünürlük: Yöneticiye / Zamanlama: Kural bazlı' gibi). Mockup tarafı, her blokta farklı tip: (1) 'Bugün' öncelik listesi — 3 kart, her birinde violet%12 gerekçe hapı ('Teklif 6 gündür yanıtsız', 'Demo sonrası dönüş bekleniyor') ve küçük 'Ara' / 'E-posta' butonları; (2) ikiye bölünmüş panel — solda mono serif olmayan serbest not metni, önemli ifadeler magenta alt çizgiyle işaretli; sağda 'Karar', 'İtiraz', 'Sonraki tarih' alanları sırayla dolar, alan kenarlıkları violet%45 yanıp söner, altta gradyan 'Onayla' butonu; (3) fırsat tablosu — iki satırın sol kenarında 2px amber #FFC46B çizgi, satır sonunda pulse animasyonlu amber nokta ve '12 gündür hareketsiz' rozeti; (4) sohbet giriş kutusu içinde yazılı soru, altında 4 satırlık yanıt tablosu (#OPP-2140 ₺320.000 Teklif · #OPP-2163 ₺185.000 Teklif …) ve her satırda '↗' kayıt bağlantısı; (5) rol × veri alanı erişim matrisi (Temsilci / Yönetici / Destek × İletişim, Tutar, Notlar; hücrelerde yeşil tik veya gri çarpı) ve yanında 'DEĞİŞTİRİLEMEZ' rozetli zaman damgalı iz kaydı listesi (14:02 · Aşama güncellendi · A.K.). Tüm mockup'lar <BrowserFrame url='crm-x.co/asistan'> içinde, 7–11px mono, aria-hidden. Mobilde metin üstte, mockup altta tek sütun."
+    },
+    {
+      "kind": "kullanim-senaryolari",
+      "heading": "Her Ekip Aynı Müşteriyi Görür. Kendi Gözünden.",
+      "sub": "Satış temsilcisinden yöneticiye, destek ekibinden pazarlamaya; CRM-X aynı müşteri kaydını her rol için ayrı bir çalışma alanına dönüştürür.",
+      "items": [
+        {
+          "title": "Satış Ekipleri",
+          "body": "Güne öncelikli arama ve takip listesiyle başlayın. Fırsat aşamalarını sürükleyerek güncelleyin, teklif sürecini tek kayıttan yürütün."
+        },
+        {
+          "title": "Satış Yöneticileri",
+          "body": "Ekip bazında huni sağlığını ve takılan aşamaları izleyin. Tahmin toplantılarını sözlü aktarım yerine güncel pano üzerinden yönetin."
+        },
+        {
+          "title": "Müşteri İlişkileri ve Destek",
+          "body": "Müşteri aradığında satın alma geçmişi, açık talepler ve son görüşme önünüzde olsun. Satış sonrası deneyimi satış ekibiyle aynı bilgiden yönetin."
+        },
+        {
+          "title": "Pazarlama",
+          "body": "Hangi kaynaktan gelen müşteri adayının fırsata dönüştüğünü görün. Kampanya bütçesini hissiyata değil, huni verisine göre yönlendirin."
+        },
+        {
+          "title": "Hızla Büyüyen Şirketler",
+          "body": "Ekip büyürken süreci kişilere değil sisteme bağlayın. Yeni katılan temsilci, müşteri geçmişini ilk günden devralsın."
+        },
+        {
+          "title": "Yeni Ürün Lansmanları",
+          "body": "Lansmana ilgi gösteren adayları ayrı bir huni altında toplayın. İlk geri bildirimleri ve dönüşüm aşamalarını ürün ekibiyle aynı panoda paylaşın."
+        }
+      ],
+      "visual": "Midnight Navy #080D35 zemin. Solda 236px dikey sekme kolonu: 6 satır, her biri 20px outline ikon (briefcase, gauge, headset, megaphone, trending-up, rocket) + etiket; aktif sekme rgba(116,72,232,.12) zemin + sol kenarda 3px marka gradyanı çubuk, pasifler rgba(248,248,246,.45). Sağda 1px hairline çerçeveli geniş panel, 'rise' keyframe ile girer (opacity + translateY 14px→0, 320ms): üstte mono 'EKİP KAZANIMI' etiketi (Soft Pink) + fayda cümlesi; ortada role özel mini mockup — Satış: 'Bugün' arama listesi; Yönetici: aşama bazlı huni barları + temsilci karşılaştırma barları; Destek: müşteri özet kartı (satın alma geçmişi, 2 açık talep, son görüşme notu); Pazarlama: kaynak bazlı tablo (Web formu / Fuar / Referans → Aday → Fırsat sütunları, sadece mockup verisi); Büyüyen şirket: 'Devralınan portföy' listesi ve yeni temsilci avatarı; Lansman: 'Lansman-2026' etiketli ayrı huni. Altta iki kutu yan yana: solda kilit ikonlu kontrol notu (ör. 'Temsilci yalnızca kendi portföyünü düzenler', 'Destek notları satış ekibine salt okunur açılır'), sağda yeşil %10 zeminli sonuç rozeti, rakamsız (ör. 'Tek ekranda günlük öncelik listesi', 'Toplantıya hazır güncel huni'). Sekmeler 5 sn'de bir otomatik döner, ilk tıklamada durur; role='tablist', ok tuşlarıyla gezilebilir. Mobilde sekmeler 2 sütunlu chip ızgarasına döner, panel altına iner."
+    },
+    {
+      "kind": "farklar",
+      "heading": "Dağınık Araçlar Yerine Tek Kaynak.",
+      "sub": "CRM-X'i bir markayla değil, çoğu ekibin bugün çalıştığı düzenle yan yana koyduk: tablolar, e-posta kutuları ve hafızaya bağlı takipler.",
+      "items": [
+        {
+          "title": "Müşteri Bilgisi",
+          "body": "Klasik düzende kişisel dosyalara ve e-posta kutularına dağılır. CRM-X'te tek, güncel ve kuruma ait bir kayıttır."
+        },
+        {
+          "title": "Takip Disiplini",
+          "body": "Klasik düzende hafızaya ve kişisel takvime bağlıdır. CRM-X'te aşamaya bağlı otomatik görev ve hatırlatmayla işler."
+        },
+        {
+          "title": "Satış Tahmini",
+          "body": "Klasik düzende toplantıda sözlü aktarılır. CRM-X'te aşama ve son hareket verisinden beslenen güncel bir panodur."
+        },
+        {
+          "title": "Yapay Zekâ Desteği",
+          "body": "Klasik düzende ya yoktur ya da ayrı bir araçtadır. CRM-X'te kayıtların üzerinde çalışır ve her önerinin gerekçesini gösterir."
+        },
+        {
+          "title": "Satış Sonrası İlişki",
+          "body": "Klasik düzende satış kapanınca görünmez olur. CRM-X'te yolculuk izlenmeye devam eder, tekrar satın alma fırsatları öne çıkar."
+        },
+        {
+          "title": "Veri Erişimi ve Kayıt",
+          "body": "Klasik düzende dosyayı alan her şeyi görür. CRM-X'te rol bazlı yetki (RBAC) ve zaman damgalı değişiklik geçmişi vardır."
+        }
+      ],
+      "visual": "Deep Navy #050A2B zemin, üstte merkezde tek 460px Violet blur(120px) küre (.10). Gerçek semantik <table>, 20px radius'lu 1px hairline kapsayıcı içinde, overflow-x:auto. Satırlar mono uppercase kategori başlıklarıyla üç gruba ayrılır: 'VERİ' (Müşteri Bilgisi, Veri Erişimi ve Kayıt), 'SÜREÇ' (Takip Disiplini, Satış Sonrası İlişki), 'KARAR' (Satış Tahmini, Yapay Zekâ Desteği). Üç sütun: Kriter / 'Klasik düzen' (nötr #7C85A8 metin, hücre başında 14px gri çarpı) / 'CRM-X' (rgba(116,72,232,.06) zemin, üst kenarında ::before ile 2px Violet→Magenta gradyan çizgi, hücre başında #28AF6E tik + kısa metin). Satır zebrası #0A143D çok hafif. Sütun başlığında CRM-X hapı pembe nokta taşır. Görünür olunca satırlar 80ms kademeli 'rise' ile gelir. Mobilde tablo yatay kaydırılır, kriter sütunu sticky sol kalır."
+    },
+    {
+      "kind": "sss",
+      "heading": "Karar Vermeden Önce Sorulanlar.",
+      "sub": "Satın alma sürecinde en sık gelen sorular ve net yanıtları.",
+      "items": [
+        {
+          "title": "CRM-X nedir, klasik bir CRM'den farkı ne?",
+          "body": "CRM-X; müşteri kayıtlarını, satış fırsatlarını ve ekip aktivitelerini tek platformda birleştiren yapay zekâ destekli bir müşteri ilişkileri yönetimi (CRM) platformudur. Kayıt tutmanın ötesine geçer: takip bekleyen fırsatları işaretler ve bir sonraki adımı gerekçesiyle önerir."
+        },
+        {
+          "title": "Mevcut Excel listelerimizi ve müşteri kayıtlarımızı taşıyabilir miyiz?",
+          "body": "Evet. Müşteri, kişi ve fırsat verileriniz geçiş sürecinde CRM-X yapısına aktarılır. Alan eşleştirmesi ve mükerrer kayıt temizliği kurulum aşamasında ekibinizle birlikte planlanır."
+        },
+        {
+          "title": "Yapay zekâ kararları kendi başına mı veriyor?",
+          "body": "Hayır. Yapay zekâ öneri üretir, kayıt alanlarını doldurmayı teklif eder ve riskli fırsatları işaretler; değişiklikler kullanıcı onayıyla kalıcı hale gelir. Her önerinin hangi veriye dayandığı ekranda görünür."
+        },
+        {
+          "title": "Müşteri verilerimiz güvende mi, KVKK açısından nasıl ele alınıyor?",
+          "body": "Kimin hangi müşteri verisini görüp düzenleyebileceğini rol bazında siz belirlersiniz ve değişiklikler zaman damgasıyla kaydedilir. Barındırma ve saklama tercihleri, kurumunuzun KVKK politikalarına göre demo aşamasında birlikte netleştirilir."
+        },
+        {
+          "title": "Kurulum ne kadar sürer?",
+          "body": "Süre; ekip büyüklüğüne, aktarılacak veri hacmine ve satış sürecinizin aşama yapısına göre değişir. Demo görüşmesinde sürecinizi dinleyip size özel bir geçiş planı çıkarıyoruz."
+        },
+        {
+          "title": "Diğer ASH ürünleriyle ve ERP sistemimizle birlikte çalışır mı?",
+          "body": "CRM-X, HubAI-X, SAPAI-X ve Masraf-X ile aynı ürün ailesinin parçasıdır ve aynı kurumsal yaklaşımla tasarlanmıştır. ERP ya da SAP tarafıyla hangi verinin paylaşılacağı, ASH'in SAP deneyimiyle ihtiyacınıza göre planlanır."
+        }
+      ],
+      "visual": "Midnight Navy #080D35 zemin. Solda 320px sticky kolon: mono eyebrow 'SSS' (Soft Pink), 2 satırlık başlık, kısa 'Yanıtını bulamadığınız soru için demo planlayın' cümlesi ve büyük mono sayaç '01 / 06' (açık kartla senkron). Sağda dikey numaralı kart destesi: her kart 1px hairline, 16px radius, üstte 11px mono numara rozeti, tam cümle soru, kapalıyken cevap 3 satıra kırpılmış ve alttan zemin rengine sönen maske. Açık kart rgba(116,72,232,.40) kenarlık + rgba(116,72,232,.06) zemin alır, sol kenarında 3px gradyan çubuk belirir; içerik grid-template-rows 0fr→1fr ile 260ms açılır, sağdaki + işareti 45° dönerek × olur. details/summary ile klavye erişimli. Sayfaya FAQPage JSON-LD şeması gömülür. Mobilde sol kolon üste alınır, sticky kapanır."
+    },
+    {
+      "kind": "cta",
+      "heading": "Takibi Şansa Bırakmayın. Her Fırsatı Sahiplenin.",
+      "sub": "CRM-X'i kendi satış sürecinizin üzerinde görün. Görüşmede aşamalarınızı dinliyor, ekibinize uygun kurguyu birlikte çıkarıyoruz.",
+      "items": [
+        {
+          "title": "Demo Planlayın",
+          "body": "Satış sürecinizi anlatın; CRM-X'in kendi aşamalarınız ve örnek kayıtlarınızla nasıl çalışacağını birlikte inceleyelim."
+        },
+        {
+          "title": "Platformu Keşfedin",
+          "body": "Pipeline, satış panosu ve fırsat detayı ekranlarını adım adım gezin; yapay zekâ önerilerinin nasıl üretildiğini yakından görün."
+        },
+        {
+          "title": "HubAI-X",
+          "body": "Kurumun tüm yapay zekâ kullanımını tek, yönetilebilir bir altyapıda toplayın. hubai-x.com"
+        },
+        {
+          "title": "SAPAI-X",
+          "body": "SAP taleplerini ve ABAP geliştirmelerini doğal dille tarif edin, yapay zekâ işe dönüştürsün. sapai-x.com"
+        },
+        {
+          "title": "Masraf-X",
+          "body": "Fişten onaya, onaydan muhasebe kaydına kadar harcama sürecini tek akışta yönetin. masraf-x.co"
+        }
+      ],
+      "visual": "Deep Navy #050A2B zemin; hero'nun arka plan üçlüsü birebir tekrar eder (132px blueprint ızgarası + radial maske + sol üst Violet / sağ alt Magenta blur(120px) küreleri) ve merkeze doğru ısınan ek radyal hale (rgba(116,72,232,.14)→transparent) başlığı parlatır. Ortalanmış mono eyebrow 'DEMO', 2 satırlık büyük başlık (ikinci satır 'Her Fırsatı Sahiplenin.' marka gradyanlı), tek paragraf lead ve yan yana iki hap buton: gradyan dolgulu 'Demo Planlayın' (0 10px 28px -12px rgba(47,107,255,.65) glow, hover'da -2px) ve şeffaf + 1px kenarlıklı 'Platformu Keşfedin'. Butonların altında tek satır mikro metin: 'Görüşmede kendi satış aşamalarınız üzerinden ilerliyoruz.' Altında 'KEŞFETMEYE DEVAM EDİN' eyebrow'lu 4 kartlık çapraz satış şeridi: HubAI-X (mavi+mor), SAPAI-X (mor+mavi), Masraf-X (magenta+pembe) ve bulunulan sayfa CRM-X (opacity .4, pointer-events:none). Her kartın üst kenarında ortası kendi aksan renginde parlayan, uçları saydam 1px gradyan çizgi; içinde 28px outline ürün ikonu, ürün adı, tek satır konum cümlesi ve 10px mono alt domain etiketi. Hover'da kart -4px yükselir ve köşe glow belirir. Mobilde kartlar 2 sütun."
+    }
+  ],
+  "seoTitle": "CRM-X | Yapay Zekâ Destekli CRM ve Satış Yönetimi – ASH",
+  "seoDescription": "CRM-X ile müşteri kayıtlarını, satış fırsatlarını ve ekip aktivitelerini tek platformda yönetin. Yapay zekâ takipleri hatırlatır, sonraki adımı gerekçesiyle önerir."
+}

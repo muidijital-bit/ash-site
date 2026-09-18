@@ -1,0 +1,30 @@
+/* Temanin hero fonu HubX'in kendi uygulama gorseliydi; yerine anasayfadaki
+   izometrik ASH gorseli konuldu. Konumlandirma tema olcegine gore yeniden
+   ayarlandi (tema degeri 2579x1480 bir SVG icin hesaplanmisti). */
+.Hero_background___6kFe.ash-contact-bg {
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  width: min(72%, 40rem);
+  height: auto;
+  transform: none;
+  opacity: 0.85;
+}
+@media (min-width: 48rem) {
+  .Hero_background___6kFe.ash-contact-bg { width: min(58%, 44rem); bottom: -4%; opacity: 1; }
+}
+@media (min-width: 80rem) {
+  .Hero_background___6kFe.ash-contact-bg { width: min(50%, 48rem); right: -2%; }
+}
+
+/* E-posta / telefon henuz yokken gosterilen sakin rozet. */
+.ash-pending {
+  display: inline-block;
+  padding: 0.375rem 0.875rem;
+  border: 1px dashed rgba(248, 248, 246, 0.35);
+  border-radius: 999px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: rgba(248, 248, 246, 0.6);
+}

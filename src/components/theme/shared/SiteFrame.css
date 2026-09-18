@@ -1,0 +1,25 @@
+/* Interaction states supplement the preserved source design. */
+.theme-subscription-status {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 63.999rem) {
+  .NavMenu_nav-menu__7FTtk {
+    visibility: hidden;
+  }
+
+  .Header_header__omCkM .NavMenu_nav-menu--open__GmntU {
+    height: calc(100dvh - var(--header-height));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    visibility: visible;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .NavMenu_nav-menu__7FTtk,
+  .MenuButton_menu-button__line__pxoEp {
+    transition: none;
+  }
+}

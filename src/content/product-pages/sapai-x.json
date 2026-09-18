@@ -1,0 +1,243 @@
+{
+  "key": "sapai-x",
+  "name": "SAPAI-X",
+  "hero": {
+    "eyebrow": "SAPAI-X · SAP YAPAY ZEKÂ",
+    "title": "Danışman Kuyruğunu Bırakın. SAP Uzmanlığı Artık Ekibinizde.",
+    "lead": "SAPAI-X, kıdemli seviyede SAP danışmanlığını ve ABAP geliştirme yetkinliğini doğrudan ekibinize taşır. Sorunuzu sorun, ihtiyacınızı doğal dille anlatın; SAPAI-X sisteminizi okuyarak onu bir çözüme ya da incelemeye hazır bir SAP geliştirmesine dönüştürsün.",
+    "cta": "Demo Planlayın",
+    "visual": "Zemin Deep Navy #050A2B. Arkada üç katman: 132px blueprint ızgarası (çizgi rgba(248,248,246,.05), mask-image radial-gradient(ellipse 70% 60% at 50% 40%) ile merkezden dışa sönen), sol üstten taşan 480px Violet (rgba(116,72,232,.16)) ve sağ alttan taşan 360px Electric Blue (rgba(47,107,255,.10)) blur(120px) küre. Önde ortalanmış 11px mono eyebrow (Violet, .18em), iki satırlık H1: ilk cümle Soft White, ikinci cümle 'SAP Uzmanlığı Artık Ekibinizde.' 135deg marka gradyanı ile background-clip:text. Altında lead ve yan yana iki pill buton: birincil gradyan dolgulu 'Demo Planlayın' (mavi glow), ikincil şeffaf + 1px hairline 'Ürünü Canlı Keşfedin'. Butonların altında 860px genişliğinde <BrowserFrame url=\"sapai-x.com/asistan\">: 30px chrome bandı #0A143D, üç nötr nokta, sağda yeşil nokta + 'Canlı' rozeti. Gövde üç kolon: (1) 156px #080D35 sidebar — Talepler, Geliştirmeler, Z Objeleri, Standartlar, Onaylar; aktif 'Geliştirmeler' satırında 3px Violet sol çubuk + 5px nokta. (2) Orta kolon sohbet: sağa yaslı kullanıcı balonu (20px gradyan avatar 'M.T.') 'Teslim tarihi geçmiş satınalma kalemlerini tedarikçi bazında listeleyen bir ALV rapor hazırla.'; altında SAPAI-X yanıtı — pulse animasyonlu Violet rozet 'Z objeleri taranıyor', ardından sekme adı 'ZMM_R_GECIKEN_TESLIM.abap' olan 12 satırlık satır numaralı kod paneli (9px mono; anahtar kelime #7448E8, string #F08BC2, sayı #2F6BFF, yorum %35 opak). (3) Sağ kolon 'Uyum kontrolü' listesi: 'Geliştirme standardı uygulandı', 'Mevcut obje yeniden kullanıldı: ZCL_MM_TEDARIKCI', 'Yetki kontrolü eklendi' satırları yeşil #28AF6E tiklerle; en altta amber #FFC46B 'Onay bekliyor' rozeti ve küçük 'İncele ve Onayla' butonu. Mockup'ın sol üst ve sağ alt köşesinde havada duran iki cam chip (backdrop-filter blur(14px), rgba(248,248,246,.06), 1px hairline): '%72 · Birinci seviye talepte azalma' ve '65 gün → 2 gün · CR teslimi'. Tüm mockup metni 7–11px, tabular-nums, aria-hidden=true. Mobilde mockup yalnızca orta sohbet kolonuna indirgenir, chip'ler mockup'ın altında yan yana dizilir."
+  },
+  "sections": [
+    {
+      "kind": "farklar",
+      "heading": "SAP Ekibinizi Yavaşlatan Altı Darboğaz.",
+      "sub": "SAPAI-X'i anlatmadan önce tanıdık tabloya bakın: biriken talepler, haftalara yayılan geliştirmeler ve sisteminizi gerçekten bilen tek kişinin hep meşgul olması.",
+      "items": [
+        {
+          "title": "Dış Danışmana Bağımlılık",
+          "body": "En basit talep bile dışarıdaki bir uzmanın takvimine takılıyor. SAPAI-X sık karşılaşılan sorunları kurum içinde teşhis edip çözerek bu bağımlılığı azaltır."
+        },
+        {
+          "title": "Birinci Seviye Talep Yığını",
+          "body": "Tekrar eden hata mesajları ve bilinen sorunlar uzmanlarınızın gününü tüketiyor. Bu yükü yapay zekâya devredin, ekibiniz asıl işe dönsün."
+        },
+        {
+          "title": "Haftalara Yayılan Değişiklik Talepleri (CR)",
+          "body": "Analiz, tasarım ve geliştirme arasında gidip gelen CR'lar takvimi kilitliyor. İhtiyacı dakikalar içinde tanımlayın, üretilen geliştirmeyi hemen incelemeye alın."
+        },
+        {
+          "title": "Kimsenin Tam Bilmediği Z Objeleri",
+          "body": "Yıllar içinde biriken özel geliştirmeler belgesiz kalıyor ve her değişiklik risk taşıyor. SAPAI-X Z objelerinizi analiz ederek bu bilgiyi yeniden erişilebilir kılar."
+        },
+        {
+          "title": "SAP'yi Tanımayan Genel Yapay Zekâ",
+          "body": "Genel amaçlı asistanlar SAP standartlarında kalır, sizin sisteminizi bilmez; ürettikleri kodu ortamınıza uydurmak yine ekibinize düşer. SAPAI-X mevcut yapınızdan ve standartlarınızdan yola çıkar."
+        },
+        {
+          "title": "Kontrolsüz Token Faturası",
+          "body": "Her soruda bağlamı baştan yüklemek model tüketimini katlıyor. SAPAI-X'in dahili önbellek (cache) mekanizması tekrar eden tüketimi optimize eder."
+        }
+      ],
+      "visual": "Zemin Deep Navy #050A2B; sağ üst köşeden yarısı taşan 480px Violet (rgba(116,72,232,.14)) blur(120px) küre. Bölüm açılışı: 'ARTIK SON' eyebrow'u 11px mono, .18em aralık, #FF6B6B metin, rgba(255,107,107,.08) zeminli küçük etiket içinde ve etiketin dört köşesinde 8px kırmızı L işareti; altında H2 (son öbek 'Altı Darboğaz.' gradyanlı), lead ve soldan sağa sönen 1px gradyan hairline. Altında 3×2 birleşik hairline panel: gap:1px + kapsayıcı zemini rgba(248,248,246,.08), hücreler #050A2B, dış radius 16px, overflow:hidden. Her hücre iki banda bölünür — üst bant: 40×40 ikon kutusu (lucide outline 1.5px, Soft White: user-round-x, inbox, calendar-clock, file-question, bot-off, coins) + sağ üstte 11px mono '01…06' + H3 başlık; ince yatay çizgiden sonra alt bant: açıklama metni, önünde 9px mono Violet 'ÇÖZÜM →' etiketi çözüm cümlesini işaret eder. Her 3,2 sn'de sıradaki hücre aktifleşir: zemini 135deg rgba(255,107,107,.08)→transparent dolar, numara #FF6B6B olur, dört köşesinde 10px crosshair belirir; diğer hücreler %35 opaklığa soluklaşır. Geçiş sadece renk/zemin (300ms), pozisyon animasyonu yok. Mobilde tek sütun, otomatik döngü kapalı, tüm hücreler tam opak."
+    },
+    {
+      "kind": "ozellikler",
+      "heading": "İki Masa. Tek SAP Uzmanı.",
+      "sub": "SAPAI-X aynı sistem bilgisini iki ayrı işte kullanır: kullanıcıdan gelen talebi çözer, ekibinizin tarif ettiği geliştirmeyi üretir. Ticket çözümünden yeni geliştirme talebine kadar tüm süreç tek çatı altında.",
+      "items": [
+        {
+          "title": "Birinci Seviye Talepleri Yapay Zekâya Devredin",
+          "body": "SAPAI-X kullanıcı taleplerini ve SAP süreçlerindeki sorunları yapay zekâ ile analiz eder, hızlı ve doğru çözüm önerileri sunar. Sık tekrarlanan sorunları tanır; aynı talep her seferinde baştan incelenmez."
+        },
+        {
+          "title": "Öneride Kalmayın, İşlemi Tamamlayın",
+          "body": "Uygun durumlarda SAPAI-X çözüm önerisiyle yetinmez, gerekli işlemi doğrudan gerçekleştirir. Talep kapanır, dış danışmana gitmesi gereken iş sayısı azalır."
+        },
+        {
+          "title": "İhtiyacınızı Anlatın, ABAP Geliştirmesi Hazırlansın",
+          "body": "Yeni bir rapor, fonksiyon ya da entegrasyon ihtiyacını doğal dille veya bir prompt ile tarif edin. SAPAI-X talebi analiz eder ve ihtiyacınıza uygun ABAP geliştirmesini dakikalar içinde oluşturur."
+        },
+        {
+          "title": "Genel Kod Değil, Sisteminize Özgü Kod",
+          "body": "SAPAI-X sıfırdan, genel amaçlı kod üretmez; sistemdeki Z objelerini, mevcut geliştirmeleri ve kurumsal geliştirme standartlarınızı referans alır. Ortaya çıkan geliştirme mevcut mimarinize ve geliştirme yaklaşımınıza oturur."
+        },
+        {
+          "title": "Mevcut Z Objelerini Bağlamıyla Değiştirin",
+          "body": "Yalnızca yeni geliştirme değil, var olan bir Z objesindeki değişiklik ihtiyacını da tarif edebilirsiniz. SAPAI-X objenin bugünkü yapısını okuyarak değişikliği bağlamıyla birlikte önerir."
+        }
+      ],
+      "visual": "Zemin Midnight Navy #080D35, sol alt ve sağ üst köşede Violet + Electric Blue blur(120px) küreler (opacity .14/.10). Eyebrow 'YETENEKLER' (11px mono, Violet). Altında üç zig-zag çerçeve; her biri 1px hairline + 20px radius, sol üst köşesinde üst çizgiyi kesen 10px mono etiket. ÇERÇEVE A — etiket 'DESTEK MASASI' (madde 1–2): solda metin, sağda <BrowserFrame url=\"sapai-x.com/destek\">. İçinde gelen talep kartı: 'TKT-2026-0873 · MM · Öncelik: Orta', 20px gradyan avatar 'S.A.', mesaj 'ME21N'de sipariş kaydederken hesap tayini hatası alıyorum.'; altında pulse animasyonlu Violet rozet 'Analiz ediliyor' ve 'Benzer geçmiş talep: 14' satırı; ardından numaralı 3 adımlı çözüm kartı; en altta yeşil %12 zeminli '✓ İşlem uygulandı · Talep kapatıldı · 09:42' satırı. Metnin altında 3 kutulu mikro-kanıt şeridi: 'Girdi: Kullanıcı talebi / Çıktı: Çözüm veya işlem / Uzmana yönlendirme: Gerektiğinde'. ÇERÇEVE B — etiket 'GELİŞTİRME MASASI' (madde 3–4): taraf değişir, solda mockup: satır numaralı kod paneli, sekme 'ZMM_R_GECIKEN_TESLIM.abap', 14 satır, 9px mono, sözdizimi renkleri paletten (anahtar kelime #7448E8, string #F08BC2, sayı #2F6BFF, yorum %35); sağında 150px 'Referans alınanlar' kolonu: 'ZCL_MM_TEDARIKCI · sınıf', 'ZMM_T_TESLIM_PARAM · tablo', 'Geliştirme standardı · v3.2' satırları yeşil tiklerle. Mikro-kanıt şeridi: 'Girdi: Doğal dil / Referans: Z objeleri + standartlar / Çıktı: ABAP geliştirmesi'. ÇERÇEVE C — etiket 'Z OBJESİ DEĞİŞİKLİĞİ' (madde 5): solda metin, sağda iki kolonlu diff görünümü 'ZSD_R_SIPARIS_DURUM · değişiklik önerisi'; silinen satırlar rgba(255,107,107,.10) zemin + 2px kırmızı sol kenar, eklenen satırlar rgba(40,175,110,.10) zemin + 2px yeşil sol kenar; başlık sağında amber 'Onay bekliyor' rozeti. Çerçeveler 'rise' ile (14px, 320ms) bir kez girer. Mobilde her çerçeve metin üstte, mockup altta tek sütun; kod paneli kendi overflow-x:auto kapsayıcısında."
+    },
+    {
+      "kind": "nasil-calisir",
+      "heading": "Siz Anlatın. SAPAI-X Geliştirsin.",
+      "sub": "Bir geliştirme ihtiyacının fikirden kullanıma hazır hale gelmesi beş adımdır. Kontrol her adımda sizde kalır; onay vermediğiniz hiçbir geliştirme sisteminizde kullanıma alınmaz.",
+      "items": [
+        {
+          "title": "Anlatın",
+          "body": "İhtiyacınızı doğal dille ya da bir prompt ile yazın: yeni bir rapor, fonksiyon, entegrasyon veya mevcut bir Z objesinde değişiklik."
+        },
+        {
+          "title": "Analiz Etsin",
+          "body": "SAPAI-X talebi ayrıştırır; ilgili Z objelerini, mevcut geliştirmeleri ve kurumsal geliştirme standartlarınızı tarar."
+        },
+        {
+          "title": "Oluştursun",
+          "body": "Sistem yapınıza ve geliştirme yaklaşımınıza uygun ABAP geliştirmesi üretilir. Genel bir şablon değil, ortamınıza özgü bir çözüm ortaya çıkar."
+        },
+        {
+          "title": "İnceleyin",
+          "body": "Üretilen kodu, referans alınan objeleri ve önerilen değişiklikleri tek ekranda gözden geçirin. Karar vermek için başka bir araca geçmenize gerek kalmaz."
+        },
+        {
+          "title": "Onaylayın",
+          "body": "Geliştirme yalnızca onayınız doğrultusunda SAP sisteminizde kullanılabilir hale gelir. Son söz her zaman ekibinizindir."
+        }
+      ],
+      "visual": "Zemin Deep Navy #050A2B. Eyebrow 'NASIL ÇALIŞIR' + H2 (ikinci cümle 'SAPAI-X Geliştirsin.' gradyanlı) + lead. Altında yatay <FlowChain>: beş adet 44px daire, içinde 11px mono '01…05', aralarında 2px ray; tamamlanan segmentler 135deg marka gradyanıyla tam opak, bekleyenler rgba(248,248,246,.12). Her düğümün altında fiil etiketi (Anlatın → Analiz Etsin → Oluştursun → İnceleyin → Onaylayın) ve tek cümle. 04 ile 05 arasındaki segment kesikli çizilir ve ortasında 22px lucide 'lock' ikonlu küçük kapı rozeti durur; onay adımı aktifleşince kilit 'lock-open'a döner ve segment gradyanla dolar — onay kapısının görsel anlatımı. Aktif düğüm solid gradyan dolgu + arkasında 52px blur(14px) Violet hale; ray boyunca 6px ışık noktası 'beam' animasyonuyla (offset-path, 2,6s) soldan sağa akar. Zincirin altında tek bir <BrowserFrame url=\"sapai-x.com/gelistirme/CR-2026-118\"> aktif adımla senkron değişir (4,5 sn'de bir, çıkan panel -16px, giren 16px→0, 280ms): 01 — prompt giriş kutusu, imleç yanıp söner, metin 'Müşteri kredi limiti kontrolünü satış ve finans programlarında ortak kullanılacak tek fonksiyona taşı.'; 02 — 'Z objeleri taranıyor' pulse rozeti, width animasyonuyla dolan ince ilerleme çubuğu ve altında akan obje listesi (ZSD_*, ZFI_*); 03 — 10 satırlık kod paneli; 04 — iki kolon: solda diff, sağda 'Referans alınan objeler: 6' listesi; 05 — amber 'Onay bekliyor' rozeti yeşil '✓ Onaylandı · Kullanıma hazır' rozetine döner, yanında onaylayan 20px gradyan avatar 'E.K.' ve '14:07' zaman damgası. Kullanıcı bir düğüme tıklayınca otomatik döngü durur. <900px'te zincir dikeye döner (flex-direction:column, ray solda), mockup her adımın altına küçük statik kart olarak paketlenir."
+    },
+    {
+      "kind": "farklar",
+      "heading": "Standartta Kalmayın. Sisteminizi Bilen Yapay Zekâ.",
+      "sub": "Genel amaçlı asistanlar SAP'yi kitaptan bilir, sizin sisteminizi bilmez. SAPAI-X'i ayıran dört temel fark, ekibinizin günlük işinde doğrudan hissedilir.",
+      "items": [
+        {
+          "title": "Z'li Geliştirmelerinizi Okur",
+          "body": "SAP standartlarıyla sınırlı kalan uygulamaların aksine SAPAI-X kurumunuza özel geliştirmeleri ve Z programlarını da analiz eder. Yanıtlar ve kodlar gerçek sisteminizden beslenir."
+        },
+        {
+          "title": "Token Faturanızı Şişirmez",
+          "body": "Dahili önbellek (cache) mekanizması tekrar eden bağlamı yeniden işlemez ve token tüketimini optimize eder. Sonuç, benzer uygulamalara kıyasla belirgin bir maliyet avantajıdır."
+        },
+        {
+          "title": "Üç Günde Sisteminizi Öğrenir",
+          "body": "İlk gün SAP standartlarının tamamı öğrenilir; üçüncü günün sonunda ortamınızdaki tüm özel (custom) objeler analiz edilmiş olur. Uzun bir tanışma dönemi beklemezsiniz."
+        },
+        {
+          "title": "Yalnızca SAP'ye Odaklanır (SAP Native)",
+          "body": "SAPAI-X her konuya yetişmeye çalışan bir asistan değildir. Yalnızca SAP ekosistemine odaklandığı için SAP protokollerinde ve geliştirme standartlarında derin hâkimiyet sunar."
+        }
+      ],
+      "visual": "Zemin Midnight Navy #080D35. Eyebrow 'NEDEN SAPAI-X' + H2 + lead. İki parça. (A) 2×2 kart ızgarası; her kartın üst %55'i mini mockup alanı (135deg #080D35→#050A2B gradyan + 16px aralıklı nokta dokusu), alt %45'i ince ayraçla ayrılmış başlık + açıklama. Kart 1 mockup: ağaç görünümü — 'Z Objeleri' kökü altında 'ZMM_*', 'ZFI_*', 'ZSD_*' klasörleri, her satırda yeşil 'Analiz edildi' mini rozeti. Kart 2 mockup: istek satırları listesi, her satırın sağında 12px lucide 'zap' ikonu ve 'Bağlam: önbellekten' etiketi; bilerek hiç sayı veya yüzde yok. Kart 3 mockup: üç düğümlü yatay mini zaman çizelgesi '1. GÜN · SAP standartları ✓' — '2. GÜN · analiz sürüyor' (pulse) — '3. GÜN · Custom objeler ✓', ray marka gradyanıyla doluyor. Kart 4 mockup: merkezde 'SAP' etiketli yuvarlatılmış kare düğüm, çevresinde 'Rapor', 'Fonksiyon', 'Entegrasyon', 'Z Objesi', 'ABAP' uydu hapları, bezier bağlantılar. Her kartın sağ üst köşesinde yarısı dışarıda 160px Violet küre (opacity .10); hover'da kart -6px yükselir, kenarlık Violet %45'e döner, küre scale(1.5) + opacity .20 olur, altta 'Detayına in →' satırı belirir (ok 4px salınır), 220ms cubic-bezier(.34,1.56,.64,1). (B) Kartların altında <CompareTable>: 20px radius hairline kapsayıcı içinde gerçek <table>, sütunlar 'Kriter' / 'Genel amaçlı yapay zekâ asistanı' / 'SAPAI-X'. SAPAI-X sütunu rgba(116,72,232,.06) zeminli, üst kenarında 2px gradyan çizgi. Satırlar: 'Z'li geliştirmeleri analiz' — gri çarpı / yeşil tik; 'Üretilen kod' — 'Genel şablon' / 'Standartlarınıza özgü'; 'Token tüketimi' — 'Her soruda yeniden bağlam' / 'Önbellekle optimize'; 'Sisteminizi öğrenme' — gri çarpı / '1. gün standartlar, 3. gün custom objeler'; 'Odak' — 'Her alan' / 'Yalnızca SAP'; 'Sisteme alma' — 'Kopyala–yapıştır' / 'İnceleme + onayınızla'. Hiçbir rakip markası adlandırılmaz. Mobilde kartlar tek sütun, tablo kendi overflow-x:auto kapsayıcısında."
+    },
+    {
+      "kind": "istatistik",
+      "heading": "Kısalan Kuyruk. Kısalan Takvim.",
+      "sub": "SAPAI-X iki yerde fark yaratır: tekrar eden birinci seviye talepler ve kalıbı belli olan geliştirme istekleri. İkisi de uzmanın masasına gelmeden karşılanabilir hale gelir.",
+      "items": [
+        {
+          "title": "Birinci seviye destek",
+          "body": "Tekrar eden talepler uzmanlarınızın masasına ulaşmadan çözülür; geriye gerçekten uzmanlık gerektiren işler kalır."
+        },
+        {
+          "title": "Değişiklik talepleri",
+          "body": "Kalıbı tekrar eden geliştirmelerde analiz ve taslak aşaması kısalır; ekip yazmak yerine değerlendirmeye odaklanır."
+        },
+        {
+          "title": "SAP standartları",
+          "body": "Genel SAP bilgisi ve ABAP sözdizimi hazır gelir; kurulumda ayrıca öğretilmesi gerekmez."
+        },
+        {
+          "title": "Sizin objeleriniz",
+          "body": "Ortamınızdaki Z objeleri, mevcut geliştirmeler ve kurum standartları analiz edilerek girdi alınır."
+        }
+      ],
+      "visual": "Zemin Deep Navy #050A2B, merkezin arkasında tek bir 520px Violet blur(120px) küre (opacity .12). Eyebrow 'ETKİ' + H2 + lead. Altında tek hairline panel (16px radius, rgba(248,248,246,.03) zemin), 4 hücre, aralarında 48px yüksekliğinde 1px dikey ayraç. Hücre 1: 88px çaplı radyal halka — arka halka rgba(248,248,246,.08) 10px, dolu yay marka gradyanında yuvarlak uçlu, %72'ye kadar stroke-dashoffset ile 1,1 sn'de çizilir; ortada 34px tabular-nums '72' + üst simge '%', sayı rAF ile 0'dan sayar. Hücre 2: iki yatay çubuk — üstte tam genişlikte soluk rgba(248,248,246,.12) çubuk, sağ ucunda mono '65 gün'; altında aynı ölçekte 2/65 genişliğinde gradyan çubuk, ucunda '2 gün'; görünür olunca üst çubuk soluk kalırken alt çubuk scaleX 0→1 (0,65s) ile dolar — oran gerçek veriyle birebir. Hücre 3 ve 4 birleşik tek görsel: 3 bölmeli kesikli yay (her bölme bir gün); 1. bölme dolunca '1. gün · SAP standartları', 3. bölme dolunca '3. gün · custom objeler' etiketi 'rise' ile belirir. Panelin altında 11px, %45 opak dipnot: 'Rakamlar SAPAI-X ürün verilerinden alınmıştır; kurumunuzdaki olası etki demo görüşmesinde birlikte değerlendirilir.' prefers-reduced-motion'da halka ve çubuklar son kareyle çizili gelir. Mobilde 2×2 ızgara, dikey ayraçlar yatay ayraca döner."
+    },
+    {
+      "kind": "kullanim-senaryolari",
+      "heading": "Tek Cümleyle Başlayan SAP İşleri.",
+      "sub": "SAPAI-X'e neler sorabileceğinizi en iyi örnekler anlatır. Her senaryoda ihtiyaç doğal dille yazılır, sonuç sisteminizin bağlamıyla gelir.",
+      "items": [
+        {
+          "title": "Kullanıcı Talebi Çözümü",
+          "body": "Hata mesajıyla gelen kullanıcıya bekleme süresi yerine çözüm verin. SAPAI-X talebi süreç bağlamında analiz eder, çözümü önerir ve uygun durumda işlemi tamamlar."
+        },
+        {
+          "title": "Yeni Rapor",
+          "body": "Tek cümlelik bir raporlama ihtiyacı, mevcut veri yapınıza ve raporlama standartlarınıza uygun bir ABAP raporuna dönüşür."
+        },
+        {
+          "title": "Yeni Fonksiyon",
+          "body": "Farklı programlarda tekrar kullanılacak bir iş kuralını tarif edin. SAPAI-X onu mevcut geliştirmelerinizle tutarlı bir fonksiyon olarak oluştursun."
+        },
+        {
+          "title": "Entegrasyon Geliştirmesi",
+          "body": "Başka bir sistemle veri alışverişi ihtiyacınızı anlatın. Geliştirme, sisteminizdeki mevcut entegrasyon yaklaşımı referans alınarak hazırlanır."
+        },
+        {
+          "title": "Mevcut Z Objesinde Değişiklik",
+          "body": "Var olan bir Z programına yeni alan, kontrol ya da kural eklemek için objeyi baştan anlatmanıza gerek yok. SAPAI-X yapıyı zaten bilir."
+        },
+        {
+          "title": "SAP Danışmanlığı",
+          "body": "'Bu süreç sistemimizde nasıl kurgulanmış?' gibi sorulara kıdemli bir danışman derinliğinde, kendi ortamınızdan beslenen yanıtlar alın."
+        }
+      ],
+      "visual": "Zemin Midnight Navy #080D35, sağ üstte Violet, sol altta Electric Blue blur(120px) küre. Eyebrow 'KULLANIM SENARYOLARI' + H2 + lead. Solda 236px dikey sekme kolonu: altı satır, her biri 20px lucide outline ikon (life-buoy, file-bar-chart, square-function, arrow-left-right, file-diff, message-square-text) + etiket; aktif sekme rgba(116,72,232,.12) zemin + sol kenarda 3px marka gradyanı çubuk; role=tablist, ok tuşlarıyla gezilebilir. Sağda geniş panel (1px hairline, 20px radius) üç katman: (1) üstte kullanıcı prompt balonu, 10px mono, sekmeye özel örnek metin — 'Fatura kaydında \"Bakiye sıfır değil\" uyarısı alıyorum, belge kaydedilemiyor.' / 'Teslim tarihi geçmiş satınalma kalemlerini tedarikçi ve malzeme grubuna göre gösteren bir ALV rapor hazırla.' / 'Müşteri kredi limiti kontrolünü satış ve finans programlarında ortak kullanılacak bir fonksiyona dönüştür.' / 'Depo sisteminden gelen sevkiyat onaylarını teslimat belgelerine işleyen bir arayüz geliştir.' / 'ZSD_R_SIPARIS_DURUM raporuna bölge müdürü filtresi ve ara toplam satırı ekle.' / 'Satınalma onay stratejimiz hangi tutar eşiklerinde hangi onaycılara gidiyor?'; (2) ortada sekmeye özel SAPAI-X çıktı mockup'ı — çözüm adımları kartı, ALV kolon önizleme tablosu, fonksiyon imzası kod parçası, kaynak→hedef veri akış şeması, diff görünümü, onay eşiklerini gösteren dallanan mini akış diyagramı ('Tutar ≤ eşik' / 'Tutar > eşik' koşul rozetleri); (3) altta iki kutu yan yana — solda 'Kontrol' notu (lucide shield-check, örn. 'Geliştirme onayınızdan önce kullanıma alınmaz'), sağda yeşil %10 zeminli sonuç rozeti, sayı içermeyen durum metinleriyle: 'Talep kapatıldı', 'Rapor incelemeye hazır', 'Fonksiyon incelemeye hazır', 'Arayüz incelemeye hazır', 'Değişiklik onay bekliyor', 'Yanıt kaynaklarıyla hazır'. Sekmeler 5 sn'de bir döner, panel 14px aşağıdan 'rise' ile girer; kullanıcı dokununca döngü durur. Mobilde sekmeler 2 sütunlu chip ızgarasına, panel tek sütuna döner."
+    },
+    {
+      "kind": "sss",
+      "heading": "Karar Vermeden Önce Sorulanlar.",
+      "sub": "SAPAI-X'i değerlendiren SAP ve BT yöneticilerinin en sık sorduğu sorular.",
+      "items": [
+        {
+          "title": "SAPAI-X genel amaçlı bir yapay zekâ asistanından ne farkla çalışır?",
+          "body": "Genel asistanlar SAP standartlarıyla sınırlı kalır. SAPAI-X ise sisteminizdeki Z objelerini, mevcut geliştirmeleri ve kurumsal geliştirme standartlarınızı referans alır; yanıtlarını ve ürettiği kodu sizin ortamınıza göre şekillendirir."
+        },
+        {
+          "title": "SAPAI-X sistemimizi ne kadar sürede öğrenir?",
+          "body": "SAP standartlarının tamamı ilk gün öğrenilir. Üçüncü günün sonunda ortamınızdaki tüm özel (custom) objeler de analiz edilmiş olur."
+        },
+        {
+          "title": "Üretilen geliştirme sisteme kendiliğinden mi aktarılır?",
+          "body": "Hayır. Geliştirmeyi önce inceler, ardından onaylarsınız. Geliştirme yalnızca onayınız doğrultusunda SAP sisteminizde kullanılabilir hale gelir."
+        },
+        {
+          "title": "Hangi tür geliştirmeleri talep edebiliriz?",
+          "body": "Yeni rapor, fonksiyon, entegrasyon ve genel geliştirme ihtiyaçlarının yanı sıra mevcut bir Z objesinde yapılacak değişiklikleri de doğal dille ya da prompt ile tarif edebilirsiniz."
+        },
+        {
+          "title": "Dış SAP danışmanlarına ihtiyacımız tamamen ortadan kalkar mı?",
+          "body": "SAPAI-X sık karşılaşılan sorunları tespit edip çözerek ve uygun durumlarda işlemi doğrudan gerçekleştirerek dış danışmanlara bağımlılığı azaltır. Böylece uzman değerlendirmesi gereken konularda ekibinizin ve danışmanlarınızın zamanı asıl işe kalır."
+        },
+        {
+          "title": "SAPAI-X kurumsal güvenlik ve yetkilendirme standartlarımızın dışına çıkar mı?",
+          "body": "Hayır. ASH çözümleri kurumsal güvenlik, yetkilendirme ve geliştirme standartlarına uyumlu, denetlenebilir bir yapı üzerine kurulur. Geliştirmeler onayınızdan geçmeden kullanıma alınmaz."
+        }
+      ],
+      "visual": "Zemin Deep Navy #050A2B. Solda 320px sticky kolon: eyebrow 'SIK SORULANLAR' (11px mono, Violet), H2, altında büyük mono sayaç '01 / 06' (açık kartın numarasıyla güncellenir) ve %62 opak tek satır 'Sorunuz burada yok mu? Demo görüşmesinde kendi sisteminiz üzerinden yanıtlayalım.' + küçük ikincil pill buton 'Demo Planlayın'. Sağda dikey kart destesi: her kart 1px hairline, 16px radius, üstte 11px mono numara rozeti (01…06), altında tam cümle soru ve sağda 45° dönerek × olan + işareti. Açık kart Violet %40 opak kenarlık + rgba(116,72,232,.06) zemin alır; cevap grid-template-rows 0fr→1fr geçişiyle (260ms) açılır. İlk kart varsayılan açık. Sayfaya FAQPage JSON-LD şeması gömülür; kartlar details/summary ile klavye erişilebilir. Mobilde sol kolon üstte statik başlık bloğuna döner, sayaç gizlenir."
+    },
+    {
+      "kind": "cta",
+      "heading": "Danışman Takvimini Beklemeyin. İlk Talebinizi Bugün Yazın.",
+      "sub": "SAPAI-X'i kendi SAP senaryolarınız üzerinden görün: sık yaşadığınız bir destek talebini ve bekleyen bir geliştirme ihtiyacını birlikte ele alalım.",
+      "items": [
+        {
+          "title": "Demo Planlayın",
+          "body": "Destek ve geliştirme akışlarını kendi sisteminizin bağlamında görün, onay adımının nerede devreye girdiğini birlikte inceleyelim."
+        },
+        {
+          "title": "Ürünü Canlı Keşfedin",
+          "body": "Talepten onaylı geliştirmeye uzanan beş adımı arayüz üzerinde adım adım gezin."
+        },
+        {
+          "title": "HubAI-X",
+          "body": "Yapay zekâyı SAP dışındaki departmanlara da tek çatı altında yaymak için kurumsal yapay zekâ platformunu inceleyin."
+        },
+        {
+          "title": "Masraf-X",
+          "body": "Masraf ve harcama süreçlerinizi yapay zekâ destekli, uçtan uca bir akışla yönetin."
+        },
+        {
+          "title": "CRM-X",
+          "body": "Müşteri ilişkilerinizi ve satış süreçlerinizi tek platformda büyüme odaklı yönetin."
+        }
+      ],
+      "visual": "Hero'nun arka plan üçlüsü birebir tekrarlanır (görsel kafiye): 132px blueprint ızgarası + merkezden sönen radial maske + Violet ve Electric Blue blur(120px) küreler; ek olarak başlığın arkasında merkeze doğru ısınan çok yumuşak rgba(116,72,232,.18) radyal hale. Ortalanmış eyebrow 'SAPAI-X İLE BAŞLAYIN', iki satırlık H2 (ikinci cümle 'İlk Talebinizi Bugün Yazın.' gradyanlı), lead ve yan yana iki pill buton: birincil gradyan dolgulu 'Demo Planlayın' (0 10px 28px -12px rgba(47,107,255,.65) glow, hover'da -2px), ikincil şeffaf + 1px hairline 'Ürünü Canlı Keşfedin'. Butonların altında %45 opak mikro metin: 'Demoyu kendi SAP senaryolarınız üzerinden planlıyoruz.' Başlığın hemen üstünde süs olarak yanıp sönen imleçli mini prompt kutusu (aria-hidden): 'İhtiyacınızı yazın…'. Bölümün alt kısmında hairline ayrılmış 'Keşfetmeye devam edin' şeridi: 4 ince kart yan yana (mobilde 2×2) — HubAI-X (hubai-x.com, Electric Blue), SAPAI-X (sapai-x.com, Violet — bulunulan sayfa olduğu için opacity .4 + pointer-events:none + 'Buradasınız' mono etiketi), Masraf-X (masraf-x.co, Magenta), CRM-X (crm-x.co, Violet→Magenta). Her kartın üst kenarında ortası kendi aksan renginde parlak, uçları saydam 1px çizgi; içinde 28px outline ürün ikonu, ürün adı, tek satırlık konum cümlesi ve 10px mono alt domain etiketi; hover'da -4px yükselme + köşe glow."
+    }
+  ],
+  "seoTitle": "SAPAI-X: Yapay Zekâ ile SAP Destek ve ABAP Geliştirme | ASH",
+  "seoDescription": "SAPAI-X birinci seviye SAP taleplerini yapay zekâ ile çözer; Z objelerinize ve standartlarınıza özgü ABAP geliştirmelerini dakikalar içinde onayınıza sunar."
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 245" fill="none">
+<title>ASH.</title>
+<defs><linearGradient id="ash" x1="391" y1="120" x2="590" y2="120" gradientUnits="userSpaceOnUse"><stop stop-color="#2F6BFF"/><stop offset=".48" stop-color="#7448E8"/><stop offset="1" stop-color="#D946B5"/></linearGradient></defs>
+<g stroke="#F8F8F6" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"><path d="M25 220 107 26Q110 18 114 27L195 220M52 171H166"/><path d="M337 47C308 24 255 24 237 54C211 98 255 112 286 121C320 131 356 143 348 180C338 228 268 240 229 197"/></g>
+<g stroke="url(#ash)" stroke-width="30" stroke-linecap="round"><path d="M393 25V219M521 25V219M395 116Q458 94 520 117"/></g><circle cx="575" cy="211" r="22" fill="url(#ash)"/>
+</svg>

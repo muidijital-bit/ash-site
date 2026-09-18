@@ -1,0 +1,58 @@
+{
+  "slug": "cerez-politikasi",
+  "title": "Çerez Politikası",
+  "metaDescription": "Bu sitede çerez ve tarayıcı depolamasının nasıl kullanıldığı; analitik ve reklam çerezi kullanılmadığına dair açıklama.",
+  "updated": "2026-09-18",
+  "intro": [
+    "Bu politika, bu web sitesinde çerezlerin ve benzeri tarayıcı depolama teknolojilerinin nasıl kullanıldığını anlatır.",
+    "Kısa özet: bu sitede analitik veya reklam çerezi kullanılmamaktadır. Yalnızca sitenin çalışması için gereken işlevsel tarayıcı depolaması vardır."
+  ],
+  "sections": [
+    {
+      "heading": "Çerez ve tarayıcı depolaması nedir",
+      "paragraphs": [
+        "Çerez, bir web sitesinin tarayıcınıza kaydettiği küçük bir metin dosyasıdır. Yerel depolama (localStorage) ise benzer amaçla kullanılan, sunucuya otomatik gönderilmeyen bir tarayıcı alanıdır.",
+        "İkisi de cihazınızda veri saklar; aradaki temel fark, çerezlerin her istekte sunucuya gönderilmesi, yerel depolamanın ise cihazınızda kalmasıdır."
+      ]
+    },
+    {
+      "heading": "Bu sitede neler kullanılıyor",
+      "paragraphs": [
+        "Sitede yalnızca işlevsel amaçlı tarayıcı depolaması kullanılmaktadır:"
+      ],
+      "bullets": [
+        "İletişim formuna yazdığınız metnin taslak olarak saklanması ve sayfaya döndüğünüzde geri yüklenmesi",
+        "Bülten kayıt alanına girdiğiniz e-posta adresinin aynı şekilde tarayıcınızda tutulması"
+      ]
+    },
+    {
+      "heading": "Kullanılmayanlar",
+      "bullets": [
+        "Analitik veya ölçümleme çerezi",
+        "Reklam, yeniden hedefleme veya profilleme çerezi",
+        "Sosyal medya takip pikseli",
+        "Üçüncü taraf izleme betiği"
+      ]
+    },
+    {
+      "heading": "Açık rıza gerekiyor mu",
+      "paragraphs": [
+        "Yalnızca hizmetin sunulabilmesi için zorunlu olan işlevsel depolama kullanıldığından, bu site için ayrı bir çerez onayı penceresi gösterilmemektedir.",
+        "İleride analitik veya pazarlama amaçlı bir teknoloji eklenirse, bu araçlar yalnızca açık rızanız alındıktan sonra çalıştırılacak ve bu politika güncellenecektir."
+      ]
+    },
+    {
+      "heading": "Nasıl temizlenir",
+      "paragraphs": [
+        "Tarayıcınızın ayarlarından site verilerini silerek bu sitede saklanan tüm yerel verileri kaldırabilirsiniz. Gizli / özel pencerede gezindiğinizde ise pencereyi kapattığınızda veriler kendiliğinden silinir.",
+        "Bu verilerin silinmesi sitenin çalışmasını engellemez; yalnızca kaydedilmiş form taslaklarınız kaybolur."
+      ]
+    },
+    {
+      "heading": "Politikadaki değişiklikler",
+      "paragraphs": [
+        "Sitede kullanılan teknolojiler değiştiğinde bu politika güncellenir ve sayfanın başındaki tarih yenilenir."
+      ]
+    }
+  ]
+}
