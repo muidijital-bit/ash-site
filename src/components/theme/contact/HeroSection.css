@@ -9,14 +9,50 @@
   width: min(72%, 40rem);
   height: auto;
   transform: none;
-  /* Mobilde ofis adresleri fonun uzerine geliyor; metnin okunakliligini koru. */
+  /* Dar ekranda ofis adresleri fonun uzerine geliyor; metnin okunakliligini koru. */
   opacity: 0.22;
 }
 @media (min-width: 48rem) {
-  .Hero_background___6kFe.ash-contact-bg { width: min(58%, 44rem); bottom: -4%; opacity: 1; }
+  .Hero_background___6kFe.ash-contact-bg { width: min(58%, 44rem); bottom: -4%; }
 }
-@media (min-width: 80rem) {
-  .Hero_background___6kFe.ash-contact-bg { width: min(50%, 48rem); right: -2%; }
+
+/* Hero iki sutun: form solda, baslik/brief sagda, ofisler ikisinin altinda.
+   Kaynak sirasi baslik, form, ofisler; dar ekranda bu sira aynen korunur. */
+.ash-contact-hero {
+  --ash-contact-gap: clamp(3rem, 5vw, 5rem);
+  display: grid;
+  grid-template-areas: "intro" "form" "offices";
+  gap: 2.5rem;
+}
+.ash-contact-hero__intro { grid-area: intro; }
+.ash-contact-hero .ash-contact-form { grid-area: form; }
+.ash-contact-hero .ash-contact-hero__offices { grid-area: offices; margin-top: 0.5rem; }
+@media (min-width: 64rem) {
+  .ash-contact-hero {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "form intro" "form visual" "offices offices";
+    column-gap: var(--ash-contact-gap);
+    row-gap: 3rem;
+    align-items: start;
+  }
+  /* Ofis sutunlari ust sutunlarla ayni hizada: Istanbul formun, Londra
+     basligin altinda. */
+  .ash-contact-hero .ash-contact-hero__offices {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: var(--ash-contact-gap);
+    margin-top: 0;
+  }
+  /* Gorsel artik fon degil: basligin altindaki bosluga, metnin uzerine
+     binmeden oturur. */
+  .Hero_background___6kFe.ash-contact-bg {
+    position: static;
+    grid-area: visual;
+    justify-self: end;
+    align-self: end;
+    width: min(100%, 26rem);
+    opacity: 1;
+  }
 }
 
 /* Adres satirlari alt alta; tek satira sigmadiginda ortasindan bolunmesin. */

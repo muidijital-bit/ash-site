@@ -1,5 +1,5 @@
-/* Form altinda, tam genislikte ofis haritasi. Baslik yok; adres bilgisi
-   formun yanindaki listede duruyor. */
+/* Hero altinda, tam genislikte ofis haritasi. Baslik yok; adres bilgisi
+   hero'daki ofis listesinde duruyor. */
 import { contact } from "@/content/contact";
 import type { Locale } from "@/i18n/config";
 import { getUi } from "@/i18n/ui";
