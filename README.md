@@ -54,8 +54,9 @@ src/i18n/ui.ts                              menü, etiket, erişim metinleri (ik
 ## Yayına çıkmadan önce
 
 1. **Alan adı `www.aisolutionhouse.com`.** Canonical, hreflang ve site haritası bu adresle
-   üretilir (`src/content/site.ts`). Alan adı henüz bağlanmadı; Vercel projesine bağlanınca
-   SEO adresleri hazırdır. Üretimde `NEXT_PUBLIC_NOINDEX=0`, önizlemede `1` kullanılır.
+   üretilir (`src/content/site.ts`). Ana domain ve `www`, Vercel projesine eklendi;
+   Cloudflare'e nameserver geçişi bekleniyor. [Yayın ve DNS rehberi](docs/deployment.md).
+   Üretimde `NEXT_PUBLIC_NOINDEX=0`, önizlemede `1` kullanılır.
    Vercel adresleri ayrıca `X-Robots-Tag: noindex, follow` başlığı alır. `www` olmadan
    gelen alan adı isteği `www` adresine kalıcı yönlenir. DNS bağlantısı bu kodla yapılmaz.
 2. **Ürün alan adları.** `hubai-x.com`, `sapai-x.com`, `masraf-x.co` ve `crm-x.co`
@@ -67,7 +68,8 @@ src/i18n/ui.ts                              menü, etiket, erişim metinleri (ik
    gönderim yapmaz; yalnızca tarayıcıda taslak tutarlar ve bunu kullanıcıya bildirirler.
 5. **Yasal metinleri hukukçuya okutun.** `src/content/legal/` altındaki üç metin (ve
    İngilizceleri) taslaktır.
-6. **Dağıtım.** Site Vercel'e çıkıyor, ek ayar gerekmez. Kendi sunucunuza taşırsanız
+6. **Dağıtım.** `muidijital-bit/ash-site` deposunun `main` dalı Vercel üretim ortamına
+   bağlıdır; Git push otomatik derleme ve yayın başlatır. Kendi sunucunuza taşırsanız
    `next.config.ts` içindeki nota bakın (`output: "standalone"` + `public/` ve `.next/static`).
 
 ## Notlar
