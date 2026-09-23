@@ -104,8 +104,9 @@ Kurulum:
    olana kadar bekleyin.
 3. **API Keys → Create API Key**: yetki "Sending access", alan adı `aisolutionhouse.com`.
 4. Vercel → ash-site → Settings → **Environment Variables**: `RESEND_API_KEY` adıyla
-   Production ve Preview ortamlarına ekleyin. İsteğe bağlı: `CONTACT_TO_EMAIL`,
-   `CONTACT_FROM_EMAIL`.
+   Production ve Preview ortamlarına ekleyin. İsteğe bağlı: `CONTACT_TO_EMAIL`
+   (virgülle ayrılmış birden fazla alıcı olabilir; tanımlıysa varsayılan `hello@`
+   adresinin yerine geçer, bu yüzden `hello@` de listeye yazılır), `CONTACT_FROM_EMAIL`.
 5. Değişkenler yeni dağıtımda geçerli olur: Deployments → son dağıtım → **Redeploy**.
 
 Kontrol: formu sitede doldurup gönderin; "mesajınız bize ulaştı" yazmalı ve mail

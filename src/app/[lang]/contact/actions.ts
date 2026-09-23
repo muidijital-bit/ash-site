@@ -38,7 +38,8 @@ export async function sendContactMessage(form: FormData): Promise<ContactResult>
       headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
       body: JSON.stringify({
         from: process.env.CONTACT_FROM_EMAIL || "AI Solution House <form@aisolutionhouse.com>",
-        to: [process.env.CONTACT_TO_EMAIL || contact.email],
+        // Birden fazla alici virgulle ayrilir; hepsi ayni maili alir.
+        to: (process.env.CONTACT_TO_EMAIL || contact.email).split(",").map((adres) => adres.trim()).filter(Boolean),
         reply_to: parsed.data.email,
         subject,
         text,
