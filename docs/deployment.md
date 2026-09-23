@@ -46,20 +46,31 @@ Google e-posta MX, SPF ve `google._domainkey` DKIM kayıtları korunur. Eski Squ
 web IP'leri ve `www` hedefi yeni kayıtlara yerini bırakır. Vercel HTTPS sertifikasını
 ve site dağıtımını yönetir; Cloudflare proxy'si bu web kayıtlarında kapalıdır.
 
-## Akşam yapılacak nameserver geçişi
+## Nameserver geçişi (23 Eylül 2026'da tamamlandı)
 
-1. Domainin kayıt firmasındaki **DNSSEC'i kapatın**. Mevcut DNSSEC DS kaydı kaldırılmadan
-   nameserver değiştirmeyin; eski imza zinciri yeni DNS sunucularıyla uyuşmaz.
-2. Eski dört `nse*.squarespacedns.com` nameserver kaydını şu ikisiyle değiştirin:
-   - `cash.ns.cloudflare.com`
-   - `janet.ns.cloudflare.com`
-3. Cloudflare alan adı durumu **Active**, Vercel Domains ekranındaki iki alan adı
-   **Valid Configuration** olduktan sonra HTTPS ve yönlendirmeleri kontrol edin.
+Alan adı Squarespace Domains'te kayıtlı kalır; yalnızca DNS Cloudflare'e taşındı.
 
-Nameserver değişimi 23 Eylül'deki hazırlık sırasında yapılmadı. Bu değişimden önce
-canlı domainin eski siteyi göstermesi beklenir. E-posta ayarları değiştirilmez.
+1. Squarespace → Domains → aisolutionhouse.com → DNS → DNSSEC kapatıldı. Squarespace
+   imzalamayı hemen bıraktı, `.com` DS kaydı ise yaklaşık iki dakika sonra silindi; bu
+   arada DNSSEC doğrulayan çözümleyiciler (8.8.8.8, 9.9.9.9) alan adı için kısa süre
+   SERVFAIL verdi.
+2. Aynı ekranda Domain Nameservers → "Use Custom Nameservers" ile
+   `cash.ns.cloudflare.com` ve `janet.ns.cloudflare.com` girildi. Eski
+   `nse*.squarespacedns.com` kayıtları elle silinemez; kaydedince devre dışı kalır.
+   `.com` kaydı 23:03'te (TSİ) Cloudflare'e geçti.
+3. Vercel iki alan adının Let's Encrypt sertifikasını yaklaşık 10 dakika sonra aldı.
 
-Geçiş kontrolü:
+Vercel alan adını doğrulayıp sertifikayı alana kadar `/` ve `/blog` gibi proxy'de
+yeniden yazılan (rewrite) adresler dış istek gibi işlendi: geçişten önce eski
+Squarespace sayfasını, geçiş sırasında HTTP'de kendine yönlenen bir döngü gösterdi.
+Doğrulamadan sonra kendiliğinden düzeldi; kod değişikliği gerekmedi.
+
+Geçişte doğrulananlar: iki alan adında geçerli HTTPS; `http://` ve `aisolutionhouse.com`
+isteklerinin `https://www.aisolutionhouse.com` adresine 308 yönlenmesi; TR/EN sayfalar,
+blog, yönetim paneli, 404 sayfası, `robots.txt`, `sitemap.xml` (tüm adresler `www`),
+canonical/hreflang etiketleri ve og:image. Gmail MX, SPF ve DKIM kayıtları değişmedi.
+
+Kontrol komutları:
 
 ```bash
 dig +short NS aisolutionhouse.com
@@ -70,10 +81,8 @@ curl -I https://aisolutionhouse.com
 curl -I https://www.aisolutionhouse.com
 ```
 
-Ana domain `www` adresine yönlenmeli; `www`, Türkçe/İngilizce sayfalar, blog ve panel
-geçerli HTTPS ile açılmalıdır. `robots.txt` ve `sitemap.xml` asıl domaini göstermelidir.
-DNSSEC, geçiş tamamlandıktan sonra Cloudflare'in verdiği **yeni** DS kaydıyla yeniden
-etkinleştirilebilir.
+DNSSEC şu an kapalıdır. İstenirse Cloudflare → DNS → Settings → DNSSEC açılır ve
+Cloudflare'in verdiği **yeni** DS kaydı Squarespace'in DNSSEC ekranına girilir.
 
 Kaynaklar: [Vercel domain kurulumu](https://vercel.com/docs/domains/set-up-custom-domain),
 [Vercel Git entegrasyonu](https://vercel.com/docs/git),

@@ -54,8 +54,8 @@ src/i18n/ui.ts                              menü, etiket, erişim metinleri (ik
 ## Yayına çıkmadan önce
 
 1. **Alan adı `www.aisolutionhouse.com`.** Canonical, hreflang ve site haritası bu adresle
-   üretilir (`src/content/site.ts`). Ana domain ve `www`, Vercel projesine eklendi;
-   Cloudflare'e nameserver geçişi bekleniyor. [Yayın ve DNS rehberi](docs/deployment.md).
+   üretilir (`src/content/site.ts`). Ana domain ve `www` Vercel'de yayında; DNS
+   23 Eylül 2026'dan beri Cloudflare'de. [Yayın ve DNS rehberi](docs/deployment.md).
    Üretimde `NEXT_PUBLIC_NOINDEX=0`, önizlemede `1` kullanılır.
    Vercel adresleri ayrıca `X-Robots-Tag: noindex, follow` başlığı alır. `www` olmadan
    gelen alan adı isteği `www` adresine kalıcı yönlenir. DNS bağlantısı bu kodla yapılmaz.
