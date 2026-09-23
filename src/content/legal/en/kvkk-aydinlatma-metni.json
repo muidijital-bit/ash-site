@@ -2,7 +2,7 @@
   "slug": "kvkk-privacy-notice",
   "title": "KVKK Privacy Notice",
   "metaDescription": "Privacy notice for visitors to the AI Solution House website under Turkey's Personal Data Protection Law No. 6698 (KVKK).",
-  "updated": "2026-09-18",
+  "updated": "2026-09-23",
   "intro": [
     "This privacy notice has been prepared by AI Solution House (ASH), which operates this website, to inform its visitors in accordance with Article 10 of the Turkish Personal Data Protection Law No. 6698 (KVKK) and the Communiqué on the Procedures and Principles to Be Followed in Fulfilling the Obligation to Inform.",
     "This version of the notice describes how the site works today. When a new feature that collects personal data is introduced on the site, the notice will be updated and its update date changed."
@@ -17,9 +17,8 @@
     {
       "heading": "Personal data processed and how it is collected",
       "paragraphs": [
-        "The contact form on the site includes your full name, email address and the message text you write freely. The newsletter sign-up field only asks for your email address.",
-        "An important distinction: these two forms do not currently send your data to us. What you enter is kept only as a draft in your own browser's local storage (localStorage); it does not reach us and is not stored on our servers. For this reason, no personal data processing activity is currently carried out by us through these fields.",
-        "When the forms are connected to an email or subscription service, this notice will be updated to state clearly which data is sent to us and for what purpose.",
+        "The contact form on the site includes your full name, email address, optional phone number and the message text you write freely. This data is collected electronically when you fill in and submit the form, and is sent to us by email.",
+        "The newsletter sign-up field only asks for your email address; however, this field is not yet connected to a service and the address you enter does not reach us.",
         "When you visit the site, technical logs such as your IP address, browser and operating system information, the requested address and a timestamp may be created by the infrastructure hosting the site so that the connection can be established."
       ]
     },
@@ -28,7 +27,7 @@
       "bullets": [
         "Providing the website securely and without interruption",
         "Technical maintenance of the site, error detection and prevention of misuse",
-        "Once the forms are connected to us in the future: responding to your request and maintaining communication",
+        "Evaluating and responding to the request you send through the contact form, and maintaining communication",
         "Fulfilling obligations arising from applicable legislation"
       ]
     },
@@ -36,13 +35,14 @@
       "heading": "Legal basis for processing",
       "paragraphs": [
         "Server logs are based on the legal grounds that processing is necessary for the data controller to fulfil its legal obligation under subparagraph (ç), and for the legitimate interests of the data controller under subparagraph (f), provided that it does not harm the fundamental rights and freedoms of the data subject, both in the second paragraph of Article 5 of the KVKK.",
-        "Once the forms are connected to us, the data you share to send your request will be processed on the basis of subparagraph (c), being directly related to the establishment or performance of a contract, and, where relevant, your explicit consent."
+        "The data you share to send your request through the contact form is processed on the basis of subparagraph (c), being directly related to the establishment or performance of a contract, and, where relevant, your explicit consent."
       ]
     },
     {
       "heading": "Transfer of personal data",
       "paragraphs": [
         "Service providers are used to host the site's data; in this context, technical logs may be created on the service provider's infrastructure.",
+        "The data you send through the contact form is delivered through our email delivery provider Resend, Inc. (USA) and stored on the infrastructure of our corporate email provider, Google (Google Workspace). As these providers' servers are located abroad, this data is transferred abroad.",
         "Apart from this, your personal data is not shared with third parties except with legally authorized public institutions and organizations in the cases provided for by law; it is not sold or transferred for marketing purposes."
       ]
     },
@@ -50,7 +50,7 @@
       "heading": "Retention period",
       "paragraphs": [
         "Personal data is retained for as long as necessary for the purpose for which it is processed and for the statutory limitation periods set out in the relevant legislation; at the end of this period it is deleted, destroyed or anonymized.",
-        "Form drafts kept in your browser's local storage are entirely under your control; you can delete them at any time by clearing your browser data."
+        "Drafts kept in your browser's local storage when the contact form cannot be sent are entirely under your control; they are deleted after a successful submission, and you can also delete them at any time by clearing your browser data."
       ]
     },
     {

@@ -20,7 +20,7 @@ Yerelde kod değişikliği doğrulaması:
 ```bash
 npm ci
 npm run check
-node --test tests/cms-validation.test.mjs tests/cms-bilingual.test.mjs
+node --test tests/*.test.mjs
 ```
 
 Vercel Node.js sürümü `24.x`, framework Next.js'tir. Üretim ve önizleme ortamlarında
@@ -28,6 +28,8 @@ Vercel Node.js sürümü `24.x`, framework Next.js'tir. Üretim ve önizleme ort
 Üretim `NEXT_PUBLIC_NOINDEX=0` kullanır; site adresinin varsayılanı
 `https://www.aisolutionhouse.com` olur. `*.vercel.app` adresleri ayrıca
 `X-Robots-Tag: noindex, follow` alır. Yönetim sayfaları indekslenmez.
+
+İletişim formu için `RESEND_API_KEY` gerekir ([aşağıda](#iletişim-formu-resend)).
 
 `.env.local` ve `.vercel` Git'e dahil değildir. Supabase secret/service-role anahtarı
 uygulamanın çalışması için gerekmez ve depoya eklenmemelidir.
@@ -83,6 +85,32 @@ curl -I https://www.aisolutionhouse.com
 
 DNSSEC şu an kapalıdır. İstenirse Cloudflare → DNS → Settings → DNSSEC açılır ve
 Cloudflare'in verdiği **yeni** DS kaydı Squarespace'in DNSSEC ekranına girilir.
+
+## İletişim formu (Resend)
+
+Form, sunucuda çalışan bir Server Action (`src/app/[lang]/contact/actions.ts`) ile
+Resend API'sine istek atar. Mail `hello@aisolutionhouse.com` adresine gider, gönderen
+`AI Solution House <form@aisolutionhouse.com>` olur ve yanıt adresi (reply-to) ziyaretçinin
+e-postasıdır: gelen mail Gmail'de doğrudan yanıtlanabilir. `RESEND_API_KEY` yoksa ya da
+gönderim başarısız olursa form bunu ziyaretçiye söyler ve yazılanları tarayıcıda saklar.
+
+Kurulum:
+
+1. resend.com'da hesap açın → **Domains → Add Domain** → `aisolutionhouse.com`.
+2. Resend'in verdiği DNS kayıtlarını Cloudflare'e ekleyin ("Auto configure" ile
+   Cloudflare'e giriş yapıp tek tıkla eklenebilir). Kayıtlar `resend._domainkey` (DKIM)
+   ve `send` alt alanındaki MX/SPF kayıtlarıdır; kök alan adının Google MX kaydına
+   dokunulmaz. Proxy kapalı ("DNS only") olmalı. Resend ekranında alan adı **Verified**
+   olana kadar bekleyin.
+3. **API Keys → Create API Key**: yetki "Sending access", alan adı `aisolutionhouse.com`.
+4. Vercel → ash-site → Settings → **Environment Variables**: `RESEND_API_KEY` adıyla
+   Production ve Preview ortamlarına ekleyin. İsteğe bağlı: `CONTACT_TO_EMAIL`,
+   `CONTACT_FROM_EMAIL`.
+5. Değişkenler yeni dağıtımda geçerli olur: Deployments → son dağıtım → **Redeploy**.
+
+Kontrol: formu sitede doldurup gönderin; "mesajınız bize ulaştı" yazmalı ve mail
+`hello@` kutusuna düşmelidir. Gelmezse Resend → **Emails** ekranında gönderim ve
+Vercel → Logs ekranında `[iletisim]` ile başlayan satırlar hatanın nedenini gösterir.
 
 Kaynaklar: [Vercel domain kurulumu](https://vercel.com/docs/domains/set-up-custom-domain),
 [Vercel Git entegrasyonu](https://vercel.com/docs/git),

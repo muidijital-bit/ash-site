@@ -2,7 +2,7 @@
   "slug": "kvkk-aydinlatma-metni",
   "title": "KVKK Aydınlatma Metni",
   "metaDescription": "6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında AI Solution House web sitesi ziyaretçileri için aydınlatma metni.",
-  "updated": "2026-09-18",
+  "updated": "2026-09-23",
   "intro": [
     "Bu aydınlatma metni, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun (KVKK) 10. maddesi ve Aydınlatma Yükümlülüğünün Yerine Getirilmesinde Uyulacak Usul ve Esaslar Hakkında Tebliğ uyarınca, AI Solution House (ASH) tarafından işletilen bu web sitesinin ziyaretçilerini bilgilendirmek amacıyla hazırlanmıştır.",
     "Metnin bu sürümü, sitenin bugünkü işleyişini anlatır. Site üzerinde kişisel veri toplayan yeni bir işlev devreye alındığında metin güncellenir ve güncelleme tarihi değiştirilir."
@@ -17,9 +17,8 @@
     {
       "heading": "İşlenen kişisel veriler ve toplama yöntemi",
       "paragraphs": [
-        "Sitedeki iletişim formu ad soyad, e-posta adresi ve serbestçe yazdığınız mesaj metnini içerir. Bültene kayıt alanı ise yalnızca e-posta adresinizi ister.",
-        "Önemli bir ayrım: bu iki form şu anda verinizi tarafımıza iletmemektedir. Girdiğiniz bilgiler yalnızca kendi tarayıcınızın yerel depolamasında (localStorage) taslak olarak tutulur; tarafımıza ulaşmaz, sunucularımızda saklanmaz. Bu nedenle bu alanlar üzerinden şu an tarafımızca gerçekleştirilen bir kişisel veri işleme faaliyeti bulunmamaktadır.",
-        "Formlar bir e-posta veya kayıt servisine bağlandığında bu metin güncellenecek; hangi verinin hangi amaçla tarafımıza iletildiği açıkça belirtilecektir.",
+        "Sitedeki iletişim formu ad soyad, e-posta adresi, isteğe bağlı telefon numarası ve serbestçe yazdığınız mesaj metnini içerir. Bu veriler, formu doldurup göndermenizle elektronik ortamda toplanır ve e-posta yoluyla tarafımıza iletilir.",
+        "Bültene kayıt alanı yalnızca e-posta adresinizi ister; ancak bu alan henüz bir servise bağlı değildir ve girdiğiniz adres tarafımıza ulaşmaz.",
         "Siteyi ziyaret ettiğinizde, sitenin barındırıldığı altyapı tarafından bağlantının teknik olarak kurulabilmesi için IP adresi, tarayıcı ve işletim sistemi bilgisi, talep edilen adres ve zaman damgası gibi teknik kayıtlar oluşabilir."
       ]
     },
@@ -28,7 +27,7 @@
       "bullets": [
         "Web sitesinin güvenli ve kesintisiz biçimde sunulması",
         "Sitenin teknik bakımı, hata tespiti ve kötüye kullanımın önlenmesi",
-        "İleride formlar tarafımıza bağlandığında: talebinizin yanıtlanması ve iletişimin yürütülmesi",
+        "İletişim formu aracılığıyla ilettiğiniz talebin değerlendirilmesi, yanıtlanması ve iletişimin yürütülmesi",
         "İlgili mevzuattan doğan yükümlülüklerin yerine getirilmesi"
       ]
     },
@@ -36,13 +35,14 @@
       "heading": "İşlemenin hukuki sebebi",
       "paragraphs": [
         "Sunucu kayıtları, KVKK'nın 5. maddesinin ikinci fıkrasının (ç) bendi uyarınca veri sorumlusunun hukuki yükümlülüğünü yerine getirebilmesi ve (f) bendi uyarınca ilgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla veri sorumlusunun meşru menfaatleri için zorunlu olması hukuki sebeplerine dayanır.",
-        "Formlar tarafımıza bağlandığında, talebinizi iletmek üzere paylaştığınız veriler bakımından (c) bendindeki sözleşmenin kurulması veya ifasıyla doğrudan ilgili olma ve ilgili hâllerde açık rıza hukuki sebepleri esas alınacaktır."
+        "İletişim formu aracılığıyla talebinizi iletmek üzere paylaştığınız veriler, (c) bendindeki sözleşmenin kurulması veya ifasıyla doğrudan ilgili olma ve ilgili hâllerde açık rıza hukuki sebeplerine dayanılarak işlenir."
       ]
     },
     {
       "heading": "Kişisel verilerin aktarılması",
       "paragraphs": [
         "Site verilerinin barındırılması için hizmet sağlayıcılardan yararlanılmaktadır; bu kapsamda teknik kayıtlar hizmet sağlayıcının altyapısında oluşabilir.",
+        "İletişim formu aracılığıyla ilettiğiniz veriler, e-posta gönderim hizmeti sağlayıcımız Resend, Inc. (ABD) aracılığıyla iletilmekte ve kurumsal e-posta hizmet sağlayıcımız Google'ın (Google Workspace) altyapısında saklanmaktadır. Bu hizmet sağlayıcıların sunucuları yurt dışında bulunduğundan söz konusu veriler yurt dışına aktarılmaktadır.",
         "Bunun dışında kişisel verileriniz, hukuken yetkili kamu kurum ve kuruluşlarına mevzuatın öngördüğü hâller dışında üçüncü kişilerle paylaşılmaz; pazarlama amacıyla satılmaz veya devredilmez."
       ]
     },
@@ -50,7 +50,7 @@
       "heading": "Saklama süresi",
       "paragraphs": [
         "Kişisel veriler, işlendikleri amaç için gerekli olan süre boyunca ve ilgili mevzuatta öngörülen zamanaşımı süreleri saklanır; bu sürenin sonunda silinir, yok edilir veya anonim hâle getirilir.",
-        "Tarayıcınızın yerel depolamasında tutulan form taslakları tamamen sizin kontrolünüzdedir; tarayıcı verilerini temizleyerek bunları istediğiniz an silebilirsiniz."
+        "İletişim formu gönderilemediğinde tarayıcınızın yerel depolamasında tutulan taslaklar tamamen sizin kontrolünüzdedir; başarılı gönderimden sonra silinir, tarayıcı verilerini temizleyerek de istediğiniz an silebilirsiniz."
       ]
     },
     {

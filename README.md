@@ -64,8 +64,10 @@ src/i18n/ui.ts                              menü, etiket, erişim metinleri (ik
    yapın; adresler ürün kartlarında yeniden görünür.
 3. **İletişim bilgileri.** İstanbul/Londra ofisleri ve e-posta tanımlıdır.
    Kurumsal telefon eklenirse `src/content/contact.ts` üzerinden yayınlanabilir; boş alanlar gizlenir.
-4. **İletişim formunu bir servise bağlayın.** Şu an form ve bülten kaydı hiçbir yere
-   gönderim yapmaz; yalnızca tarayıcıda taslak tutarlar ve bunu kullanıcıya bildirirler.
+4. **İletişim formu Resend ile `hello@aisolutionhouse.com` adresine mail atar**
+   (`src/app/[lang]/contact/actions.ts`). Vercel'de `RESEND_API_KEY` tanımlı olmalı;
+   kurulum [yayın rehberinde](docs/deployment.md#iletişim-formu-resend). Bülten kaydı
+   henüz bir servise bağlı değil.
 5. **Yasal metinleri hukukçuya okutun.** `src/content/legal/` altındaki üç metin (ve
    İngilizceleri) taslaktır.
 6. **Dağıtım.** `muidijital-bit/ash-site` deposunun `main` dalı Vercel üretim ortamına
@@ -97,7 +99,7 @@ src/i18n/ui.ts                              menü, etiket, erişim metinleri (ik
   eklenip yeniden dağıtılabilir. Domain bağlandıktan sonra Search Console'a
   `https://www.aisolutionhouse.com/sitemap.xml` gönderilir.
 - Teknik SEO hazırlığı sıralama veya indekslenme garantisi değildir. Alan adı/DNS ve
-  Search Console kurulumu ayrıca yapılır. İletişim formu/bülten servisi henüz bağlı değildir.
+  Search Console kurulumu ayrıca yapılır. Bülten servisi henüz bağlı değildir.
 
 ```bash
 npm run check
@@ -168,4 +170,4 @@ Taslağa alma ve silme de iki dili birlikte etkiler. Yeni bir yazının yalnızc
 başlığı ve metni hazırsa önce taslak kaydedilebilir; İngilizce sürüm aynı editörde eklenir.
 
 Doğrulama: `npm run check` ve
-`node --test tests/cms-validation.test.mjs tests/cms-bilingual.test.mjs`.
+`node --test tests/*.test.mjs`.

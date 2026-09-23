@@ -2,23 +2,25 @@
   "slug": "privacy-policy",
   "title": "Privacy Policy",
   "metaDescription": "What data is collected on the AI Solution House website, how it is used and what rights you have.",
-  "updated": "2026-09-18",
+  "updated": "2026-09-23",
   "intro": [
     "This policy explains how privacy is handled on this website, which is operated by AI Solution House (ASH).",
-    "In short: this is an informational website. There is no member login, payment or user account, and no personal data is currently collected from you on the server side."
+    "In short: this is an informational website. There is no member login, payment or user account. Personal data is collected from you only when you submit the contact form, and only so that we can respond to your request."
   ],
   "sections": [
     {
       "heading": "What data we collect",
       "paragraphs": [
-        "The site has two forms: the contact form and the newsletter sign-up field. Neither of them currently sends what you enter to us; the data stays only in your own browser's local storage.",
-        "In practice this means: when you fill in and submit the contact form, your message does not reach us, and the form tells you so on screen. What you wrote stays only as a draft in your browser and is restored when you return to the page. This policy will be updated when the form is connected to an email service.",
+        "The site has two forms: the contact form and the newsletter sign-up field.",
+        "When you submit the contact form, your full name, email address, optional phone number and message are sent by email to our corporate address (hello@aisolutionhouse.com). This information is not stored in a separate database on the site's servers; the message is kept in our corporate email account.",
+        "The newsletter sign-up field is not yet connected to a service; the email address you enter there is not sent to us.",
         "The infrastructure hosting the site may create technical logs such as your IP address and browser information so that the connection can be established."
       ]
     },
     {
       "heading": "What we use data for",
       "bullets": [
+        "Responding to the request you send through the contact form and communicating with you",
         "Keeping the site running and secure",
         "Detecting and fixing errors",
         "Preventing misuse and automated attack attempts"
@@ -35,7 +37,7 @@
     {
       "heading": "What is stored in your browser",
       "paragraphs": [
-        "Form drafts and similar preferences are kept in your browser's local storage. This data does not leave your device and cannot be read by us.",
+        "If the contact form cannot be sent, what you wrote is kept as a draft in your browser's local storage so that it isn't lost; the draft is deleted once the message is sent successfully. This data does not leave your device and cannot be read by us.",
         "You can delete it at any time by clearing your browser's site data. See our cookie policy for details."
       ]
     },
@@ -43,6 +45,7 @@
       "heading": "Third parties",
       "paragraphs": [
         "Service providers are used to host the site. These providers may access the technical logs needed to deliver the service.",
+        "Contact form messages are delivered through our email delivery provider Resend (Resend, Inc., USA) and stored on our corporate email service, Google Workspace. These providers' servers may be located abroad.",
         "When you click external links on the site, that site's own privacy practices apply; they are outside the scope of this policy."
       ]
     },

@@ -2,23 +2,25 @@
   "slug": "gizlilik-politikasi",
   "title": "Gizlilik Politikası",
   "metaDescription": "AI Solution House web sitesinde hangi verilerin toplandığı, nasıl kullanıldığı ve hangi haklara sahip olduğunuz.",
-  "updated": "2026-09-18",
+  "updated": "2026-09-23",
   "intro": [
     "Bu politika, AI Solution House (ASH) tarafından işletilen bu web sitesinde gizliliğin nasıl ele alındığını anlatır.",
-    "Kısa özet: bu site bir tanıtım sitesidir. Üye girişi, ödeme veya kullanıcı hesabı yoktur; şu an sunucu tarafında sizden kişisel veri toplanmamaktadır."
+    "Kısa özet: bu site bir tanıtım sitesidir. Üye girişi, ödeme veya kullanıcı hesabı yoktur. Sizden kişisel veri yalnızca iletişim formunu gönderdiğinizde ve talebinizi yanıtlayabilmek için alınır."
   ],
   "sections": [
     {
       "heading": "Hangi verileri topluyoruz",
       "paragraphs": [
-        "Sitede iki form vardır: iletişim formu ve bülten kayıt alanı. İkisi de şu anda girdiğiniz bilgiyi tarafımıza göndermez; veriler yalnızca kendi tarayıcınızın yerel depolamasında kalır.",
-        "Bunun pratik anlamı şudur: iletişim formunu doldurup gönderdiğinizde mesajınız bize ulaşmaz; form bunu ekranda açıkça bildirir. Yazdıklarınız yalnızca tarayıcınızda taslak olarak kalır ve sayfaya döndüğünüzde geri yüklenir. Form bir e-posta servisine bağlandığında bu politika güncellenecektir.",
+        "Sitede iki form vardır: iletişim formu ve bülten kayıt alanı.",
+        "İletişim formunu gönderdiğinizde ad soyadınız, e-posta adresiniz, isteğe bağlı telefon numaranız ve mesajınız e-posta olarak kurumsal adresimize (hello@aisolutionhouse.com) iletilir. Bu bilgiler sitenin sunucularında ayrı bir veri tabanında saklanmaz; mesaj kurumsal e-posta hesabımızda tutulur.",
+        "Bülten kayıt alanı henüz bir servise bağlı değildir; bu alana yazdığınız e-posta adresi tarafımıza iletilmez.",
         "Siteyi barındıran altyapı, bağlantının kurulabilmesi için IP adresi ve tarayıcı bilgisi gibi teknik kayıtlar oluşturabilir."
       ]
     },
     {
       "heading": "Verileri ne için kullanıyoruz",
       "bullets": [
+        "İletişim formuyla ilettiğiniz talebi yanıtlamak ve sizinle iletişim kurmak",
         "Sitenin çalışır ve güvenli kalmasını sağlamak",
         "Hataları tespit etmek ve gidermek",
         "Kötüye kullanım ve otomatik saldırı girişimlerini önlemek"
@@ -35,7 +37,7 @@
     {
       "heading": "Tarayıcınızda saklananlar",
       "paragraphs": [
-        "Form taslakları ve benzeri tercihler tarayıcınızın yerel depolamasında tutulur. Bu veriler cihazınızdan çıkmaz ve tarafımızca okunamaz.",
+        "İletişim formu gönderilemezse, yazdıklarınız kaybolmasın diye tarayıcınızın yerel depolamasında taslak olarak tutulur; mesaj başarıyla gönderildiğinde taslak silinir. Bu veriler cihazınızdan çıkmaz ve tarafımızca okunamaz.",
         "Tarayıcınızın site verilerini temizleyerek bunları istediğiniz an silebilirsiniz. Ayrıntı için çerez politikamıza bakabilirsiniz."
       ]
     },
@@ -43,6 +45,7 @@
       "heading": "Üçüncü taraflar",
       "paragraphs": [
         "Sitenin barındırılması için hizmet sağlayıcılardan yararlanılır. Bu sağlayıcılar, hizmetin sunulması için gereken teknik kayıtlara erişebilir.",
+        "İletişim formu mesajları, e-posta gönderim hizmeti sağlayıcımız Resend (Resend, Inc., ABD) aracılığıyla iletilir ve kurumsal e-posta hizmetimiz Google Workspace üzerinde saklanır. Bu sağlayıcıların sunucuları yurt dışında bulunabilir.",
         "Sitede yer alan dış bağlantılara tıkladığınızda ilgili sitenin kendi gizlilik uygulamaları geçerli olur; bu politikanın kapsamı dışındadır."
       ]
     },

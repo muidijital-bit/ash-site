@@ -92,8 +92,13 @@ const tr = {
     office: "Ofis",
     directions: "Haritada aç",
     mapAttribution: "OpenStreetMap katkıda bulunanlar",
-    notSent:
-      "Form henüz bir gönderim servisine bağlı değil, bu yüzden mesajınız bize ulaşmadı. Yazdıklarınız bu tarayıcıda saklandı; bağlantı kurulduğunda tekrar göndermeniz yeterli olacak.",
+    sent: "Teşekkürler, mesajınız bize ulaştı. En kısa sürede size dönüş yapacağız.",
+    invalid:
+      "Lütfen alanları kontrol edin: ad soyad, geçerli bir e-posta adresi ve en az birkaç kelimelik bir mesaj gerekli.",
+    failed:
+      "Mesajınız şu an gönderilemedi. Yazdıklarınız bu tarayıcıda saklandı; biraz sonra tekrar deneyebilir ya da doğrudan bu adrese yazabilirsiniz:",
+    /** Formun altindaki not: [once, baglanti metni, sonra] */
+    privacy: ["Kişisel verileriniz ", "KVKK Aydınlatma Metni", " kapsamında işlenir."],
     mapAria: "Ofis konumu",
   },
   why: {
@@ -193,8 +198,12 @@ const en: Dictionary = {
     office: "Office",
     directions: "Open in maps",
     mapAttribution: "OpenStreetMap contributors",
-    notSent:
-      "This form isn't connected to a delivery service yet, so your message has not reached us. What you wrote has been saved in this browser; once the connection is live, you only need to send it again.",
+    sent: "Thank you, your message has reached us. We'll get back to you as soon as possible.",
+    invalid:
+      "Please check the fields: we need your full name, a valid email address and a message of at least a few words.",
+    failed:
+      "Your message couldn't be sent right now. What you wrote has been saved in this browser; you can try again shortly or write to us directly at:",
+    privacy: ["Your personal data is processed in line with our ", "KVKK Privacy Notice", "."],
     mapAria: "Office location",
   },
   why: {
