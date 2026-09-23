@@ -1,0 +1,58 @@
+{
+  "slug": "cookie-policy",
+  "title": "Cookie Policy",
+  "metaDescription": "How cookies and browser storage are used on this site, and a statement that no analytics or advertising cookies are used.",
+  "updated": "2026-09-18",
+  "intro": [
+    "This policy explains how cookies and similar browser storage technologies are used on this website.",
+    "In short: no analytics or advertising cookies are used on this site. There is only the functional browser storage needed for the site to work."
+  ],
+  "sections": [
+    {
+      "heading": "What cookies and browser storage are",
+      "paragraphs": [
+        "A cookie is a small text file that a website saves in your browser. Local storage (localStorage) is a browser area used for a similar purpose that is not sent to the server automatically.",
+        "Both store data on your device; the main difference is that cookies are sent to the server with every request, while local storage stays on your device."
+      ]
+    },
+    {
+      "heading": "What this site uses",
+      "paragraphs": [
+        "The site uses browser storage for functional purposes only:"
+      ],
+      "bullets": [
+        "Saving the text you write in the contact form as a draft and restoring it when you return to the page",
+        "Keeping the email address you enter in the newsletter field in your browser in the same way"
+      ]
+    },
+    {
+      "heading": "What this site doesn't use",
+      "bullets": [
+        "Analytics or measurement cookies",
+        "Advertising, retargeting or profiling cookies",
+        "Social media tracking pixels",
+        "Third-party tracking scripts"
+      ]
+    },
+    {
+      "heading": "Is consent required?",
+      "paragraphs": [
+        "Because only the functional storage strictly necessary to provide the service is used, no separate cookie consent banner is shown on this site.",
+        "If an analytics or marketing technology is added in the future, it will only run after your explicit consent has been obtained, and this policy will be updated."
+      ]
+    },
+    {
+      "heading": "How to clear it",
+      "paragraphs": [
+        "You can remove all local data stored by this site by deleting site data in your browser settings. When you browse in a private or incognito window, the data is deleted automatically when you close the window.",
+        "Deleting this data doesn't stop the site from working; only your saved form drafts will be lost."
+      ]
+    },
+    {
+      "heading": "Changes to this policy",
+      "paragraphs": [
+        "When the technologies used on the site change, this policy is updated and the date at the top of the page is refreshed."
+      ]
+    }
+  ]
+}

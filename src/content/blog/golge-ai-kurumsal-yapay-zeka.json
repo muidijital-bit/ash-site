@@ -89,5 +89,6 @@
       "a": "Çalışana tek bir giriş kapısı sunarak, dışarıdaki araçlara gitme ihtiyacını ortadan kaldırır. Yanıtlar kurumun kendi belgelerine dayandığı için sonuç kalitesi genel amaçlı araçlardan daha isabetli olur. Arkada rol bazlı yetkilendirme, model yönlendirme, bütçe kontrolü ve denetim kaydı çalıştığı için kullanım aynı anda hem serbest hem izlenebilir hale gelir."
     }
   ],
-  "cover": "/images/ash-blog-golge-ai.svg"
+  "cover": "/images/ash-blog-golge-ai.svg",
+  "seoTitle": "Gölge AI: Kurumsal Yapay Zekâ Riskleri"
 }

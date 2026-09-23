@@ -15,5 +15,5 @@
   border-top: 1px solid var(--blog-hair);
   font-size: 1rem;
 }
-.legal-foot a { color: var(--blog-accent); text-decoration: none; font-weight: 500; }
+.legal-foot a { display: inline-block; padding: 0.3125rem 0; color: var(--blog-accent); text-decoration: none; font-weight: 500; }
 .legal-foot a:hover { text-decoration: underline; }

@@ -1,0 +1,38 @@
+[
+  {
+    "source": "public/images/ash-motion-poster-3.webp",
+    "optimized": "public/images/ash-motion-poster-3.avif",
+    "before": 93026,
+    "after": 45942
+  },
+  {
+    "source": "public/images/masraf-x-belgeden-kayda.webp",
+    "optimized": "public/images/masraf-x-belgeden-kayda.avif",
+    "before": 112004,
+    "after": 59760
+  },
+  {
+    "source": "public/images/masraf-x-akis-merkezi.webp",
+    "optimized": "public/images/masraf-x-akis-merkezi.avif",
+    "before": 96788,
+    "after": 53143
+  },
+  {
+    "source": "public/images/ash-harita-zorlu.webp",
+    "optimized": "public/images/ash-harita-zorlu.avif",
+    "before": 368340,
+    "after": 225061
+  },
+  {
+    "source": "public/images/ash-harita-zorlu-1440.webp",
+    "optimized": "public/images/ash-harita-zorlu-1440.avif",
+    "before": 108318,
+    "after": 78549
+  },
+  {
+    "source": "public/images/ash-harita-zorlu-dar.webp",
+    "optimized": "public/images/ash-harita-zorlu-dar.avif",
+    "before": 90622,
+    "after": 65351
+  }
+]

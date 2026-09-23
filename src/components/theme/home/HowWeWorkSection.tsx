@@ -1,10 +1,67 @@
 /* Browser-extracted source design; editable copy/assets live beside this component. */
-import content from "./HowWeWorkSection.content.json";
-import assets from "./HowWeWorkSection.assets.json";
+import Link from "next/link";
+import type { CSSProperties } from "react";
+import tr from "./HowWeWorkSection.content.json";
+import en from "./HowWeWorkSection.content.en.json";
+import { getProducts } from "@/content/products";
+import { localePath, type Locale } from "@/i18n/config";
+import { FlowDiagram, InputsDiagram, LoadDiagram } from "./HowWeWorkVisuals";
 import "./HowWeWorkSection.css";
+import { ProductName } from "@/components/theme/shared/ProductName";
 
-export function HowWeWorkSection() {
+/**
+ * Baslik ve giris paragrafi temanin kendi duzeninde kaliyor.
+ * Altindaki bolum bir bento izgarasi: uc yetkinlik karti + urun ailesi.
+ * Gorseller kod ile cizildi (HowWeWorkVisuals), stok gorsel yok.
+ */
+export function HowWeWorkSection({ locale }: { locale: Locale }) {
+  const content = locale === "en" ? en : tr;
   return (<>
-    <section className="HowWeWork_how-we-work__zclk_"><div className="HowWeWork_how-we-work__container___rW1K"><div className="HowWeWork_how-we-work__content__72VcT HowWeWork_how-we-work__content--show__MMxSU"><h2 className="Text_text--headline-l__23dDN Text_text--weight-bold__jl20H HowWeWork_how-we-work__title__cvkhc"><span className="">{content.text_001}</span></h2><p className="Text_text--display-s__xN_wr Text_text--weight-bold__jl20H HowWeWork_how-we-work__subtitle__0YDn0"><span className="">{content.text_002}<b>{content.text_003}</b>{content.text_004}<b>{content.text_005}</b>{content.text_006}</span></p></div><div className="HowWeWork_key-components__l5IjL"><div className="KeyComponentItem_key-component-item__OSsFJ"><div className="KeyComponentItem_key-component-item__image__6FDB4 KeyComponentItem_key-component-item__image--show__mXP1T"><div className="KeyComponentItem_key-component-item__image-wrapper__m5WbT"><span className="capture-04520533a0"><span className="capture-4e0eceacca"></span><img alt="" src={assets.image_001} decoding="async" sizes="50vw" className="capture-77bda95619" /></span></div></div><div className="KeyComponentItem_key-component-item__content__t4DK4 KeyComponentItem_key-component-item__content--show__o4Un5"><h3 className="Text_text--display-s__xN_wr Text_text--weight-bold__jl20H KeyComponentItem_key-component-item__title__qAu9a"><span className="">{content.text_007}<br />{content.text_008}</span></h3><p className="Text_text--body-l__nT4jd Text_text--weight-medium__uNX0v KeyComponentItem_key-component-item__description__PigaQ"><span className="">{content.text_009}</span></p></div></div><div className="KeyComponentItem_key-component-item__OSsFJ"><div className="KeyComponentItem_key-component-item__image__6FDB4 KeyComponentItem_key-component-item__image--show__mXP1T"><div className="KeyComponentItem_key-component-item__image-wrapper__m5WbT"><span className="capture-04520533a0"><span className="capture-1d5ce83591"></span><img alt="Bölüm görseli" src={assets.image_002} decoding="async" sizes="50vw" className="capture-77bda95619" /></span></div></div><div className="KeyComponentItem_key-component-item__content__t4DK4 KeyComponentItem_key-component-item__content--show__o4Un5"><h3 className="Text_text--display-s__xN_wr Text_text--weight-bold__jl20H KeyComponentItem_key-component-item__title__qAu9a"><span className="">{content.text_010}</span></h3><p className="Text_text--body-l__nT4jd Text_text--weight-medium__uNX0v KeyComponentItem_key-component-item__description__PigaQ"><span className="">{content.text_011}</span></p></div></div><div className="KeyComponentItem_key-component-item__OSsFJ"><div className="KeyComponentItem_key-component-item__image__6FDB4 KeyComponentItem_key-component-item__image--show__mXP1T"><div className="KeyComponentItem_key-component-item__image-wrapper__m5WbT"><span className="capture-04520533a0"><span className="capture-afff7f3039"></span><img alt="" src={assets.image_003} decoding="async" sizes="50vw" className="capture-77bda95619" /></span></div></div><div className="KeyComponentItem_key-component-item__content__t4DK4 KeyComponentItem_key-component-item__content--show__o4Un5"><h3 className="Text_text--display-s__xN_wr Text_text--weight-bold__jl20H KeyComponentItem_key-component-item__title__qAu9a"><span className="">{content.text_012}</span></h3><p className="Text_text--body-l__nT4jd Text_text--weight-medium__uNX0v KeyComponentItem_key-component-item__description__PigaQ"><span className="">{content.text_013}</span></p><p className="Text_text--body-l__nT4jd Text_text--weight-medium__uNX0v KeyComponentItem_key-component-item__description__PigaQ"><span className="">{content.text_014}</span></p></div></div></div></div></section>
+    <section className="HowWeWork_how-we-work__zclk_"><div className="HowWeWork_how-we-work__container___rW1K"><div className="HowWeWork_how-we-work__content__72VcT HowWeWork_how-we-work__content--show__MMxSU"><h2 className="Text_text--display-s__xN_wr Text_text--weight-bold__jl20H HowWeWork_how-we-work__title__cvkhc"><span className="">{content.text_001}</span>{" "}<span className="ash-grad-text">{content.text_001_accent}</span></h2><p className="Text_text--headline-m__C9G6u Text_text--weight-medium__uNX0v HowWeWork_how-we-work__subtitle__0YDn0"><span className="">{content.text_002}</span></p></div>
+
+      <div className="ash-bento">
+        {/* Genis kart: surecin nerede tikandigini bilmek. */}
+        <article className="ash-bento__card ash-bento__card--wide">
+          <h3 className="ash-bento__title">{content.text_007}{content.text_008}</h3>
+          <p className="ash-bento__body">{content.text_009}</p>
+          <div className="ash-bento__visual">
+            <FlowDiagram steps={content.flow} note={content.flowNote} />
+          </div>
+        </article>
+
+        <article className="ash-bento__card">
+          <h3 className="ash-bento__title">{content.text_010}</h3>
+          <p className="ash-bento__body">{content.text_011}</p>
+          <div className="ash-bento__visual">
+            <InputsDiagram inputs={content.inputs} out={content.inputsOut} />
+          </div>
+        </article>
+
+        <article className="ash-bento__card">
+          <h3 className="ash-bento__title">{content.text_012}</h3>
+          <p className="ash-bento__body">{content.text_013}</p>
+          <div className="ash-bento__visual">
+            <LoadDiagram pilot={content.loadPilot} prod={content.loadProd} />
+          </div>
+        </article>
+
+        {/* Genis kart: urun ailesi, her urun kendi marka renginde. */}
+        <article className="ash-bento__card ash-bento__card--wide ash-bento__card--family">
+          <h3 className="ash-bento__title">{content.familyTitle}</h3>
+          <p className="ash-bento__body">{content.familyBody}</p>
+          <ul className="ash-bento__pills">
+            {getProducts(locale).map((p) => (
+              <li key={p.slug} className="ash-bento__pill" style={{ "--urun-renk": p.accent[0] } as CSSProperties}>
+                <span className="ash-bento__pill-name"><ProductName name={p.name} /></span>
+                <span className="ash-bento__pill-title">{p.title}</span>
+              </li>
+            ))}
+          </ul>
+          <Link className="ash-bento__link" href={localePath(locale, "/products")}>
+            {content.familyLink} <span aria-hidden="true">→</span>
+          </Link>
+        </article>
+      </div>
+    </div></section>
   </>);
 }

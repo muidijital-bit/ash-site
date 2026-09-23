@@ -1,0 +1,26 @@
+[
+  {
+    "test": "Public published posts",
+    "count": 8
+  },
+  {
+    "test": "Public cannot read admin membership",
+    "denied": true,
+    "error": "42501"
+  },
+  {
+    "test": "Anonymous cannot create a draft",
+    "denied": true,
+    "error": "42501"
+  },
+  {
+    "test": "Anonymous cannot update branding",
+    "denied": true,
+    "error": "42501"
+  },
+  {
+    "test": "Anonymous cannot upload files",
+    "denied": true,
+    "error": "new row violates row-level security policy"
+  }
+]

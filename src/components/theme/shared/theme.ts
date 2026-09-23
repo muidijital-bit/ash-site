@@ -1,8 +1,18 @@
+import { splitLocale } from "@/i18n/config";
+
 export type PageTheme = "light" | "dark";
 
+/**
+ * Koyu header kullanacak sayfalar (dilden bagimsiz ic yol, orn. "/contact").
+ * Su an bos: tum sayfalar acik header kullaniyor. Son koyu kalanlar yasal
+ * metinler ve 404'tu; blog'un bant stilini paylasiyorlar ve bant acik griye
+ * donunce koyu header'in altinda acik bir bant kaliyordu. Neden ASH ve
+ * iletisim koyu hero ile aciliyor ama header'lari da bilerek acik.
+ */
+const DARK_HEADER_PATHS = new Set<string>();
+
 export function getPageTheme(pathname: string): PageTheme {
-  // Tum sayfalar koyu header kullaniyor; yalnizca iletisim sayfasi acik kaliyor.
-  return pathname === "/contact" ? "light" : "dark";
+  return DARK_HEADER_PATHS.has(splitLocale(pathname).path) ? "dark" : "light";
 }
 
 const lightClasses: Record<string, string> = {

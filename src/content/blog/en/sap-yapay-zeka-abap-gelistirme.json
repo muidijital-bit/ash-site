@@ -1,0 +1,94 @@
+{
+  "slug": "sap-ai-abap-development",
+  "title": "SAP AI: What Really Changes in ABAP Development",
+  "metaDescription": "In SAP AI initiatives, the real difference shows up in ABAP development and first-level support. Why are Z objects, company standards and approval decisive?",
+  "category": "SAP and AI",
+  "summary": "In SAP teams, the real impact of AI shows up in the first-level support load and in recurring ABAP development requests. We look at why general-purpose models fall short with Z objects, and why every generated development must go through approval.",
+  "readingMinutes": 4,
+  "date": "2026-09-04",
+  "author": {
+    "name": "ASH Team",
+    "role": "SAP Solutions Unit"
+  },
+  "intro": [
+    "In most organizations, the SAP AI conversation starts from the same place: the team can't keep up, the request queue is growing and everyone is looking for a shortcut. Yet what really eats up these teams' days isn't a handful of hard problems; it's the same work being repeated again and again.",
+    "In this post we look at what AI actually changes in SAP teams: the first-level support load, recurring ABAP development requests, why general-purpose models get stuck on Z objects, and why every output must go through approval."
+  ],
+  "sections": [
+    {
+      "heading": "Where does an SAP team's time go?",
+      "paragraphs": [
+        "Look at an SAP team's calendar and the work usually falls into three piles: day-to-day support requests from users, change requests and long-running projects. The first two piles flow without pause; the third usually lives on whatever time is left.",
+        "The real problem is that most of the flowing work isn't new. The same error message comes in again and again from different users, and the same report is rewritten with a few different fields. The team's expertise is spent on work that doesn't require expertise.",
+        "This is exactly where AI makes sense. What matters isn't that it can solve a hard problem on its own; it's that recurring work can be handled before it ever reaches an expert's desk."
+      ]
+    },
+    {
+      "heading": "First-level support: the hidden cost of repetition",
+      "paragraphs": [
+        "Taken one by one, first-level requests are small: an authorization error, an account assignment warning, a document that won't close, a field the user can't find. Each takes a few minutes, but the cost isn't measured in minutes.",
+        "Being pulled out of deep-focus work to look at a five-minute question is, in practice, a much longer interruption. When these interruptions stack up over the day, the team's project capacity quietly melts away.",
+        "An AI-powered assistant can handle part of these requests at the source: it interprets the error message, points to the relevant configuration and recalls similar past requests. What's left are the requests that genuinely need an expert."
+      ]
+    },
+    {
+      "heading": "Why do recurring ABAP development requests pile up?",
+      "paragraphs": [
+        "A large share of ABAP development requests are structurally similar: a query, a few table joins, an authorization check, an output screen. What's new is the business need, not the technical pattern.",
+        "Even so, every request starts from scratch; analysis, design, development, testing and transport are set up all over again. What stretches the timeline is usually not writing the code, but joining the queue and waiting for a turn.",
+        "Where the pattern repeats, AI delivers a real speed-up. The distance between describing a need in natural language and a draft development ready for review gets shorter; the team focuses on evaluating instead of writing."
+      ]
+    },
+    {
+      "heading": "Why do general-purpose models get stuck on Z objects?",
+      "paragraphs": [
+        "A general-purpose language model knows ABAP syntax; it recognizes standard tables, common patterns and documented behavior. The one thing it doesn't know is your system.",
+        "Over the years, enterprise SAP environments build up their own vocabulary: Z tables, Z classes, custom naming rules, in-house development standards and existing objects that are expected to be reused. None of this is in general training data.",
+        "The result is familiar: code that looks technically correct but doesn't belong in your environment. It compiles, it may even run; but it doesn't reuse an existing class, doesn't follow your naming convention and skips your authorization check. The time saved goes straight back into adapting it."
+      ]
+    },
+    {
+      "heading": "An approach that takes the organization's own system as input",
+      "paragraphs": [
+        "What makes the difference isn't the model itself, but what you give the model. When the Z objects in the system, existing developments and in-house standards are provided as inputs, the output also becomes part of your environment.",
+        "In this approach, the assistant looks before it writes: is there already an object that meets this need, which class can be reused, which standard should be applied? This is also how SAPAI-X works; the output is derived from the organization's existing architecture.",
+        "A side benefit is that undocumented knowledge becomes accessible again. What a Z object written years ago does today, and where a change will have an impact, becomes something you can ask about."
+      ]
+    },
+    {
+      "heading": "Why approval and auditability are non-negotiable",
+      "paragraphs": [
+        "A production SAP system is not a place for experiments. However accurate the AI is, a development must go through human approval before it goes live.",
+        "That's why the question to ask in an evaluation isn't \"how fast does it produce?\" but \"how does it show what it produced?\": which objects it referenced, what it changed, which standard it applied, who approved it. A tool's traceability matters more than its speed.",
+        "The audit trail is also where trust is built. As the team reviews the generated output, it learns where to give the assistant more room and where to keep a tight grip."
+      ]
+    }
+  ],
+  "takeaways": [
+    "The real load on SAP teams isn't a few hard problems; it's recurring support requests and ABAP development requests that look alike.",
+    "General-purpose models know ABAP syntax but not your Z objects or company standards, so the code they produce creates extra adaptation work.",
+    "The difference comes from the model's input, not the model: when existing objects, developments and standards are the input, the output fits your environment.",
+    "Speed alone isn't enough; if you can't see which object was referenced and who approved it, the gain won't last.",
+    "Every development heading to the production system must go through human approval and an audit trail."
+  ],
+  "faq": [
+    {
+      "q": "Will SAP AI solutions replace ABAP developers?",
+      "a": "No; what changes is how the work is distributed. Drafting recurring patterns becomes automated, and developers' time shifts to design, review and getting business rules right. Responsibility for the code that goes to production stays with the team."
+    },
+    {
+      "q": "Isn't a general-purpose AI assistant enough for ABAP development?",
+      "a": "It's often enough for syntax, not for your environment. Because it doesn't know your Z objects, naming rules and in-house development standards, adapting the generated code to your system still falls to your team."
+    },
+    {
+      "q": "Can AI-generated ABAP code go straight to production?",
+      "a": "It shouldn't. The generated development should go through the same review, testing and approval steps as your existing change process. The assistant's role is to speed that process up, not to skip it."
+    },
+    {
+      "q": "Is AI still useful if our Z objects aren't documented?",
+      "a": "Undocumented doesn't mean unreadable. An approach that takes the structure of the objects in the system as input can make visible what an object does today and where a planned change will have an impact."
+    }
+  ],
+  "cover": "/images/ash-blog-sap-ai.en.svg",
+  "seoTitle": "SAP AI and ABAP Development"
+}

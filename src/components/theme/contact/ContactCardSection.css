@@ -11,13 +11,8 @@
 }
 .ash-details dt { font-size: 0.875rem; font-weight: 600; color: rgba(10, 20, 61, 0.55); }
 .ash-details dd { margin: 0; display: grid; gap: 0.125rem; font-size: 1rem; line-height: 1.5; color: #0a143d; }
-.ash-details dd a { color: #2f6bff; text-decoration: none; font-weight: 500; }
+.ash-details dd a { color: var(--ash-link); text-decoration: none; font-weight: 500; }
 .ash-details dd a:hover { text-decoration: underline; }
-.ash-details__pending {
-  display: inline-block;
-  padding: 0.125rem 0.625rem;
-  border: 1px dashed rgba(10, 20, 61, 0.25);
-  border-radius: 999px;
-  font-size: 0.8125rem;
-  color: rgba(10, 20, 61, 0.55);
-}
+
+/* Adresin altindaki harita baglantisi. */
+.ash-details__map { margin-top: 0.375rem; justify-self: start; }

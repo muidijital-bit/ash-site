@@ -22,15 +22,15 @@ img.capture-77bda95619 { object-fit: contain; }
 
 /* Logo boyutu ve orani.
    Tema logo kutusunu 3.78:1 olarak tanimliyordu; ASH logosu 2.44:1 oldugu
-   icin gorsel yatayda geriliyordu (object-fit: fill). Dogru orana getirilip
-   hem header'da hem footer'da buyutuldu. */
+   icin gorsel yatayda geriliyordu (object-fit: fill). Dogru oran korunarak
+   olcu buradan verilir (en = boy x 2.4385). */
 header [class*="Logo_logo__"]:not([class*="Logo_logo__logo__"]) {
-  --logo-actual-height: 1.625rem;
-  --logo-actual-width: 3.9625rem;
+  --logo-actual-height: 1.5625rem;
+  --logo-actual-width: 3.81rem;
 }
 footer [class*="Logo_logo__"]:not([class*="Logo_logo__logo__"]) {
-  --logo-actual-height: 2rem;
-  --logo-actual-width: 4.875rem;
+  --logo-actual-height: 1.875rem;
+  --logo-actual-width: 4.572rem;
 }
 img[class*="Logo_logo__logo__"] { object-fit: contain; }
 

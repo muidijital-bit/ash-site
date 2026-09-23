@@ -1,0 +1,70 @@
+{
+  "slug": "privacy-policy",
+  "title": "Privacy Policy",
+  "metaDescription": "What data is collected on the AI Solution House website, how it is used and what rights you have.",
+  "updated": "2026-09-18",
+  "intro": [
+    "This policy explains how privacy is handled on this website, which is operated by AI Solution House (ASH).",
+    "In short: this is an informational website. There is no member login, payment or user account, and no personal data is currently collected from you on the server side."
+  ],
+  "sections": [
+    {
+      "heading": "What data we collect",
+      "paragraphs": [
+        "The site has two forms: the contact form and the newsletter sign-up field. Neither of them currently sends what you enter to us; the data stays only in your own browser's local storage.",
+        "In practice this means: when you fill in and submit the contact form, your message does not reach us, and the form tells you so on screen. What you wrote stays only as a draft in your browser and is restored when you return to the page. This policy will be updated when the form is connected to an email service.",
+        "The infrastructure hosting the site may create technical logs such as your IP address and browser information so that the connection can be established."
+      ]
+    },
+    {
+      "heading": "What we use data for",
+      "bullets": [
+        "Keeping the site running and secure",
+        "Detecting and fixing errors",
+        "Preventing misuse and automated attack attempts"
+      ]
+    },
+    {
+      "heading": "What we don't do",
+      "bullets": [
+        "We don't sell, rent or transfer your personal data for marketing purposes",
+        "We don't use advertising networks or tracking for profiling on the site",
+        "We don't run any analytics solution that links visitor behavior to individuals"
+      ]
+    },
+    {
+      "heading": "What is stored in your browser",
+      "paragraphs": [
+        "Form drafts and similar preferences are kept in your browser's local storage. This data does not leave your device and cannot be read by us.",
+        "You can delete it at any time by clearing your browser's site data. See our cookie policy for details."
+      ]
+    },
+    {
+      "heading": "Third parties",
+      "paragraphs": [
+        "Service providers are used to host the site. These providers may access the technical logs needed to deliver the service.",
+        "When you click external links on the site, that site's own privacy practices apply; they are outside the scope of this policy."
+      ]
+    },
+    {
+      "heading": "Security",
+      "paragraphs": [
+        "The site is served over HTTPS. Access permissions are kept limited, and components are run on up-to-date versions.",
+        "We know that no system can provide absolute security; that is why we consider the data we don't collect to be the safest data."
+      ]
+    },
+    {
+      "heading": "Your rights",
+      "paragraphs": [
+        "Your rights regarding your personal data and how to apply are explained in detail in our KVKK privacy notice.",
+        "For questions, you can reach us through our contact page."
+      ]
+    },
+    {
+      "heading": "Changes to this policy",
+      "paragraphs": [
+        "This policy is updated when the way the site works changes. The update date at the top of the page shows from which date the text applies."
+      ]
+    }
+  ]
+}

@@ -6,7 +6,7 @@ const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
   // Captured responsive images are already optimized; stylesheet links use React precedence.
-  { files: ["src/components/theme/**/*.tsx", "src/app/**/*.tsx"], rules: {
+  { files: ["src/components/theme/**/*.tsx", "src/components/admin/**/*.tsx", "src/app/**/*.tsx"], rules: {
     "@next/next/no-img-element": "off", "@next/next/no-css-tags": "off"
   } },
   // Override default ignores of eslint-config-next.

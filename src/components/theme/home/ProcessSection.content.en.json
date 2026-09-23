@@ -1,0 +1,28 @@
+{
+  "eyebrow": "How we work",
+  "title": "From AI",
+  "titleAccent": "to Real Business Results",
+  "lead": "We take AI from the idea stage to real business results. With solutions that work alongside organizations' existing systems, data and business processes, we deliver AI transformation end to end and at scale.",
+  "steps": [
+    {
+      "title": "Discovery and Prioritisation",
+      "body": "We map out together where your process stalls. Request volume, repeated work and manual steps are measured, and the scenario where AI pays back fastest is chosen up front."
+    },
+    {
+      "title": "Data and System Analysis",
+      "body": "Your existing systems — SAP first among them — data sources and authorisation structure are reviewed. The solution is not a generic template; it is shaped around your enterprise architecture."
+    },
+    {
+      "title": "Setup and Integration",
+      "body": "The solution is integrated with your ERP and enterprise applications. Security, role-based access and data protection requirements are part of the design rather than something added later."
+    },
+    {
+      "title": "Go-Live in Production",
+      "body": "It goes live under real user load, not in a demo environment. Exceptions, failure scenarios and approval flows are already working before the switch is flipped."
+    },
+    {
+      "title": "Measurement and Scaling",
+      "body": "Time saved, requests closed and cost impact are reported. The scenario that has proven itself is then scaled to other departments and processes."
+    }
+  ]
+}

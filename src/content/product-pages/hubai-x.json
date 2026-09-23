@@ -2,17 +2,41 @@
   "key": "hubai-x",
   "name": "HubAI-X",
   "hero": {
-    "eyebrow": "HUBAI-X · KURUMSAL YAPAY ZEKÂ MERKEZİ",
-    "title": "Araç Biriktirmeyi Bırakın. <span>Yapay Zekânızın Merkezini Kurun.</span>",
-    "lead": "Çalışanlarınız sorsun, asistanlar kurumsal belgelerinizden yanıtlasın, siz her isteği tek ekrandan denetleyin. HubAI-X; modelleri, departman asistanlarını, bütçeleri ve yetkileri sizin seçtiğiniz altyapıda çalışan tek bir yapay zekâ katmanında birleştirir.",
+    "eyebrow": "HUBAI-X · KURUMSAL YAPAY ZEKÂ",
+    "title": "Kurumunuzun Yapay Zekâ Merkezi. <span>Tüm Yapay Zekâ İhtiyaçlarınızı Tek Platformda Birleştiriyoruz!</span>",
+    "lead": "HubAI-X, kurumunuzun tüm yapay zekâ ihtiyaçlarını; modeller, uygulamalar, kütüphaneler, entegrasyonlar ve token yönetimiyle tek bir merkezden yönetmenizi sağlar.",
     "cta": "Demo Planlayın",
     "visual": "Deep Navy #050A2B zemin. Arkada 132px blueprint ızgarası (rgba(248,248,246,.05), 1px) + mask-image radial-gradient(ellipse 70% 60% at 50% 40%) ile merkezden sönüm + sol üstte 480px Electric Blue (opacity .16) ve sağ altta 360px Violet (opacity .10) blur(120px) küre. Ortalanmış 11px mono eyebrow, iki satırlık H1 (ikinci satır 135deg marka gradyanı, background-clip:text), altında soldan sağa sönen 1px hairline ve tek satır dönen kelime: 'Tek merkez. Her [model / departman / belge / bütçe].' — son kelime 2,8 sn'de rise keyframe ile değişir. CTA ikilisi yan yana: gradyan dolgulu 'Demo Planlayın' (mavi glow) + şeffaf 1px kenarlıklı 'Platformu Keşfedin'. Altında 900px <BrowserFrame url=\"hubai-x.com/calisma-alani\">: solda 156px #080D35 sidebar (Asistanlar, Sohbetler, Belgeler, Konsol; aktif 'Asistanlar' 3px Electric Blue sol çubuk + 5px nokta); ortada sohbet alanı — üstte model seçici hap 'Kurum içi model ▾', kullanıcı balonu 'Devreden yıllık izin hakkım nasıl hesaplanıyor?', yanıt balonunda 3 satır metin ve altında kaynak chip'i 'IK_Yonetmeligi_2026.pdf · s.34'; sağda 180px rail: 'Bu ay · Operasyon · 148 kullanıcı' başlığı ve İK / Finans / Satış / BT için width transition ile dolan 4 yatay bar. Mockup'ın sol üst köşesinde cam chip (backdrop-filter blur(14px), rgba(248,248,246,.06)) 'Yanıt kaynağı: 3 kurumsal belge', sağ alt köşede 'Veri konumu: Özel bulut · Şifreli'. Mockup metinleri 8–10px mono, tabular-nums, aria-hidden. Panelin altında tek geniş yumuşak gölge (0 40px 120px -60px rgba(0,0,0,.85))."
   },
   "sections": [
     {
+      "kind": "nasil-calisir",
+      "eyebrow": "Token yönetimi",
+      "heading": "Yapay Zekâ Token Maliyetlerinizi HubAI-X ile <span>Kontrol Altına Alın</span>",
+      "sub": "Tüm AI modellerinizin token kullanımını tek merkezden izleyin, yönetin ve optimize edin. Gereksiz tüketimi azaltın, yapay zekâ maliyetlerinizi daha öngörülebilir hale getirin.",
+      "items": [
+        {
+          "title": "İzleyin",
+          "body": "Hangi modelin hangi ekipte, hangi iş için ne kadar token harcadığı tek tabloda görünür. Kullanım tek tek sağlayıcılar üzerinden değil, kurum bütününde okunur."
+        },
+        {
+          "title": "Yönetin",
+          "body": "Departman ve kullanıcı bazında aylık limit tanımlayın. Limite yaklaşıldığında uyarı gider, aşıldığında kullanım otomatik olarak durur."
+        },
+        {
+          "title": "Optimize edin",
+          "body": "Yönlendirme kurallarıyla basit istekler uygun maliyetli modellere, ağır işler güçlü modellere gider. Aynı sonucu daha az token ile alırsınız."
+        },
+        {
+          "title": "Öngörün",
+          "body": "Aylık eğilimi ve sapmaları geçmiş dönemle karşılaştırın. Yapay zekâ gideri sürpriz bir kalem olmaktan çıkar, bütçelenebilir hale gelir."
+        }
+      ]
+    },
+    {
       "kind": "farklar",
-      "heading": "Her Ekip Ayrı Araçta. Kontrol Hiçbir Yerde.",
-      "sub": "Yapay zekâ kurumunuza çoktan girdi; sorun kullanımda değil, dağınıklıkta. Aşağıdaki tablolardan biri tanıdık geliyorsa HubAI-X tam olarak bunun için tasarlandı.",
+      "heading": "Her Ekip Ayrı Araçta. <span>Kontrol HubAI-X'te</span>",
+      "sub": "Farklı ekiplerin kullandığı AI modellerini ve uygulamalarını tek merkezden yönetin. Kullanımı görünür kılın, erişimi kontrol edin ve yapay zekâ kullanımını kurum genelinde standartlaştırın.",
       "items": [
         {
           "title": "Kayıt Dışı Kullanım (Gölge AI)",
@@ -151,8 +175,8 @@
           "body": "Mevcut kimlik sağlayıcınızla (SAML / OIDC) giriş yapılır, roller oradan devralınır. Bir çalışan ayrıldığında HubAI-X erişimi de aynı anda kapanır."
         },
         {
-          "title": "Maskeleme ve Silinemeyen İz Kaydı",
-          "body": "T.C. kimlik no, IBAN ve telefon gibi kişisel veriler modele gitmeden maskelenebilir. Her istek ve yanıt değiştirilemez kayıt olarak saklanır, denetimde dışa aktarılır."
+          "title": "Yapay Zekâ Geçmişi Kendi Veritabanınızda",
+          "body": "Tüm yapay zekâ geçmişiniz yalnızca sizin veritabanınızda tutulur. Veri egemenliği sizde kalır; hangi verinin nerede saklanacağına siz karar verirsiniz."
         }
       ],
       "visual": "Midnight Navy zemin; bölümün tamamı sol üst köşesinde 11px mono 'GÜVENLİK VE VERİ EGEMENLİĞİ' etiketi taşıyan 1px hairline çerçeve içinde. İki sütun: solda üç satırlık büyük başlık, her satır farklı tonda — 'Veri kurumda kalır.' Electric Blue, 'Kurallar sizde kalır.' Violet, 'Her adım kayıt altında.' Soft White. Altında tek paragraf lead. Sağda 'teknik çizim paneli': 1px rgba(47,107,255,.35) çerçeve, dört köşesinde 14px L işaretleri; içinde <BrowserFrame url=\"hubai-x.com/guvenlik\"> başlıklı dikey zincir — 4 numaralı 44px daire ('01 Kimlik doğrulandı · SSO', '02 Kişisel veri maskelendi · 2 alan', '03 Kurum içi modele yönlendirildi · şifreli', '04 İz kaydına yazıldı · değiştirilemez'), daireleri bağlayan 2px marka gradyanı ray, ray boyunca yukarıdan aşağı 2,6 sn'de akan 6px beam ışık noktası; her adımın sağında 9px mono saat damgası (14:02:07, 14:02:07, 14:02:08, 14:02:09). Panelin altında 2×2 kanıt ızgarası (gap:1px hairline): her hücrede genişçe bir hap kontur (radius 999px) içinde tek outline ikon ve altında gri hapta etiket — mavi kalkan 'Kurum içi kurulum', mor bulut 'Özel bulut', magenta kilit 'AES-256 şifreleme', pembe anahtar 'SSO / kimlik'; her hücre kendi renginde %10 opak radial hale ile yıkanır. Mobilde başlık üstte, zincir dikey, 2×2 ızgara 2 sütun korunur."
@@ -212,7 +236,7 @@
         },
         {
           "title": "Kurumsal kimlik sistemimiz ve KVKK gereksinimlerimiz destekleniyor mu?",
-          "body": "Evet. SSO ile mevcut kimlik sağlayıcınızdan giriş yapılır ve roller oradan devralınabilir. Kişisel veri maskeleme, erişim kısıtları ve silinemeyen iz kayıtları KVKK yükümlülüklerinize destek olacak şekilde yapılandırılır."
+          "body": "Evet. SSO ile mevcut kimlik sağlayıcınızdan giriş yapılır ve roller oradan devralınabilir. Erişim kısıtları ve silinemeyen iz kayıtları KVKK yükümlülüklerinize destek olacak şekilde yapılandırılır."
         },
         {
           "title": "Tek bir departmanla pilot başlatabilir miyiz?",
@@ -255,5 +279,5 @@
     }
   ],
   "seoTitle": "HubAI-X | Kurumsal Yapay Zekâ Platformu — ASH",
-  "seoDescription": "HubAI-X ile modelleri, kurumsal belgeleri, departman asistanlarını ve yapay zekâ bütçesini tek merkezden yönetin. On-premise kurulum, SSO, RBAC ve iz kaydı."
+  "seoDescription": "HubAI-X ile modelleri, kurumsal belgeleri, departman asistanlarını ve token maliyetlerini tek merkezden yönetin. On-premise kurulum, SSO, RBAC ve iz kaydı."
 }

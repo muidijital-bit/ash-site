@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="SAP sisteminde yapay zekâ destekli ABAP geliştirme">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f6bff"/><stop offset=".55" stop-color="#7448e8"/><stop offset="1" stop-color="#d946b5"/>
+    </linearGradient>
+    <filter id="bl" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="26"/></filter>
+  </defs>
+  <rect width="1200" height="600" fill="#050a2b"/>
+  <circle cx="980" cy="120" r="150" fill="#7448e8" opacity=".22" filter="url(#bl)"/>
+  <circle cx="200" cy="520" r="130" fill="#2f6bff" opacity=".18" filter="url(#bl)"/>
+
+  <rect x="96" y="120" width="520" height="360" rx="22" fill="#080d35" stroke="#1d3184" stroke-width="2"/>
+  <rect x="96" y="120" width="520" height="46" rx="22" fill="#0a143d"/>
+  <rect x="96" y="150" width="520" height="16" fill="#0a143d"/>
+  <text x="126" y="151" font-family="ui-monospace,Menlo,monospace" font-size="17" fill="#8b94b3">Z_MM_INVOICE_CHECK.abap</text>
+  <g font-family="ui-monospace,Menlo,monospace" font-size="17">
+    <text x="126" y="212" fill="#a98bff">FUNCTION<tspan fill="#8db2ff"> z_mm_invoice_check.</tspan></text>
+    <text x="126" y="250" fill="#5d6688">" company-specific check</text>
+    <text x="126" y="288" fill="#a98bff">SELECT<tspan fill="#cfd6ec"> ebeln, netwr </tspan>FROM<tspan fill="#cfd6ec"> ekpo</tspan></text>
+    <text x="126" y="326" fill="#a98bff">IF<tspan fill="#cfd6ec"> lv_diff &gt; </tspan><tspan fill="#6f9bff">0.05</tspan>.</text>
+    <text x="126" y="364" fill="#cfd6ec">  ls-status = <tspan fill="#f08bc2">'PENDING_APPROVAL'</tspan>.</text>
+    <text x="126" y="402" fill="#a98bff">ENDIF.</text>
+  </g>
+  <path d="M640 300 H736" stroke="url(#g)" stroke-width="3.5" fill="none"/>
+  <path d="M722 288 L738 300 L722 312" stroke="url(#g)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="760" y="212" width="330" height="176" rx="20" fill="#0a143d" stroke="url(#g)" stroke-width="2.5"/>
+  <circle cx="808" cy="268" r="17" fill="none" stroke="#28af6e" stroke-width="3"/>
+  <path d="M800 268 l6 7 11-14" stroke="#28af6e" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="840" y="260" width="180" height="10" rx="5" fill="#f8f8f6" opacity=".82"/>
+  <rect x="792" y="308" width="228" height="9" rx="4.5" fill="#f8f8f6" opacity=".34"/>
+  <rect x="792" y="334" width="150" height="9" rx="4.5" fill="#f8f8f6" opacity=".34"/>
+</svg>

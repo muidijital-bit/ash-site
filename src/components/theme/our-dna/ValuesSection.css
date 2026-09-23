@@ -10,14 +10,16 @@
    ================================================================== */
 
 /* 1) Bolum zemini HubX paletindeydi (sari #ffdf80 ve #628cff).
-      Ayni gradient yapisi, ASH renkleriyle. */
+      Ayni gradient yapisi, ASH renkleriyle. Taban magenta ve en acik
+      pembe katman, uzerindeki beyaz metin WCAG AA'yi gecsin diye
+      koyulastirildi (#d946b5 -> #bd3499: 3.6:1 -> 4.8:1). */
 .Values_values__FfIyQ.Values_values__FfIyQ {
   background:
     radial-gradient(95.36% 156.5% at 104.22% -3.45%, #7448e8 0, rgba(116, 72, 232, 0) 100%),
     radial-gradient(39.3% 85.28% at 0 101.54%, #d947ba 0, rgba(217, 70, 181, 0) 100%),
     radial-gradient(67.74% 76.07% at 100% 100%, #2f6bff 0, rgba(47, 107, 255, .27) 72.92%, rgba(217, 70, 181, 0) 100%),
-    radial-gradient(87.13% 118.28% at 2.7% 4.33%, #f08bc2 0, rgba(240, 139, 194, 0) 100%),
-    #d946b5;
+    radial-gradient(87.13% 118.28% at 2.7% 4.33%, #d96fae 0, rgba(217, 111, 174, 0) 100%),
+    #bd3499;
 }
 
 /* 2) Tema bu gorselleri opacity:0 birakip JS ile aciyordu; bu sayfada

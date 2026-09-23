@@ -2,13 +2,18 @@
 import { useEffect, useRef, useState, type FormEvent } from "react";
 /* Tema kaynagindan cikarilmis bolum. Harita yukaridaki bolume tasindigi icin
    bu sutunda artik harita degil, iletisim bilgileri duruyor. */
-import { contact, YAKINDA } from "@/content/contact";
-import content from "./ContactCardSection.content.json";
+import { contact } from "@/content/contact";
+import type { Locale } from "@/i18n/config";
+import { getUi } from "@/i18n/ui";
+import tr from "./ContactCardSection.content.json";
+import en from "./ContactCardSection.content.en.json";
 import "./ContactCardSection.css";
 
 const TASLAK = "ash-contact-draft";
 
-export function ContactCardSection() {
+export function ContactCardSection({ locale }: { locale: Locale }) {
+  const content = locale === "en" ? en : tr;
+  const ui = getUi(locale).contact;
   const [feedback, setFeedback] = useState("");
   const formRef = useRef<HTMLFormElement>(null);
 
@@ -38,13 +43,8 @@ export function ContactCardSection() {
     } catch {
       // depolama kapaliysa taslak saklanamaz; mesaj yine de gonderilmis olmuyor
     }
-    setFeedback(
-      "Form henüz bir gönderim servisine bağlı değil, bu yüzden mesajınız bize ulaşmadı. " +
-        "Yazdıklarınız bu tarayıcıda saklandı; bağlantı kurulduğunda tekrar göndermeniz yeterli olacak.",
-    );
+    setFeedback(ui.notSent);
   }
-
-  const { office } = contact;
 
   return (
     <section className="ContactCard_card__OA_Rp">
@@ -62,11 +62,15 @@ export function ContactCardSection() {
               <span className="Input_placeholder__TiHzN">{content.text_004}</span>
             </label>
             <label className="Input_input__lvORT">
+              <input autoComplete="tel" name="phone" className="Input_input__input__IBHLz Input_input__input--light__uMEJL" placeholder=" " type="tel" />
+              <span className="Input_placeholder__TiHzN">{content.text_008}</span>
+            </label>
+            <label className="Input_input__lvORT">
               <textarea required minLength={5} name="message" className="Input_input__input__IBHLz Input_input__input--light__uMEJL Input_input__input--textarea__21szO" placeholder=" " rows={6}></textarea>
               <span className="Input_placeholder__TiHzN">{content.text_005}</span>
             </label>
           </div>
-          <button type="submit" className="Button_button__30ukX Button_button--variant-filled-dark__wXoAl Button_button--radius-large__M_ook">
+          <button type="submit" className="Button_button__30ukX Button_button--variant-colorful-dark__CCVPh Button_button--radius-large__M_ook">
             <div className="Button_button__children__eLy5L">{content.text_006}</div>
             <div className="Button_button__spinner__HYDVQ"><span></span><span></span><span></span></div>
           </button>
@@ -75,37 +79,40 @@ export function ContactCardSection() {
 
         <div className="CompanyAddress_map__m1jOW">
           <h2 className="CompanyAddress_map__title___vSVw">{content.text_007}</h2>
+          {/* Yalnizca dolu olan bilgiler listelenir; bos alan satiri hic
+              basilmaz (once "yakinda eklenecek" yaziyordu). */}
           <dl className="ash-details">
-            <div className="ash-details__row">
-              <dt>E-posta</dt>
-              <dd>
-                {contact.email
-                  ? <a href={`mailto:${contact.email}`}>{contact.email}</a>
-                  : <span className="ash-details__pending">{YAKINDA}</span>}
-              </dd>
-            </div>
-            <div className="ash-details__row">
-              <dt>Telefon</dt>
-              <dd>
-                {contact.phone
-                  ? <a href={`tel:${contact.phone.replace(/\s/g, "")}`}>{contact.phone}</a>
-                  : <span className="ash-details__pending">{YAKINDA}</span>}
-              </dd>
-            </div>
-            <div className="ash-details__row">
-              <dt>Adres</dt>
-              <dd>
-                {office.lines.length
-                  ? office.lines.map((line) => <span key={line}>{line}</span>)
-                  : <span className="ash-details__pending">{YAKINDA}</span>}
-              </dd>
-            </div>
-            <div className="ash-details__row">
-              <dt>Çalışma saatleri</dt>
-              <dd>
-                {contact.hours ? contact.hours : <span className="ash-details__pending">{YAKINDA}</span>}
-              </dd>
-            </div>
+            {contact.email && (
+              <div className="ash-details__row">
+                <dt>{ui.email}</dt>
+                <dd><a href={`mailto:${contact.email}`}>{contact.email}</a></dd>
+              </div>
+            )}
+            {contact.phone && (
+              <div className="ash-details__row">
+                <dt>{ui.phone}</dt>
+                <dd><a href={`tel:${contact.phone.replace(/\s/g, "")}`}>{contact.phone}</a></dd>
+              </div>
+            )}
+            {contact.offices.filter((office) => office.lines.length > 0).map((office) => (
+              <div key={office.id} className="ash-details__row">
+                <dt>{office.name[locale]}</dt>
+                <dd>
+                  {office.lines.map((line) => <span key={line}>{line}</span>)}
+                  {office.mapUrl && (
+                    <a className="ash-details__map" href={office.mapUrl} target="_blank" rel="noopener noreferrer">
+                      {ui.directions} <span aria-hidden="true">→</span>
+                    </a>
+                  )}
+                </dd>
+              </div>
+            ))}
+            {contact.hours && (
+              <div className="ash-details__row">
+                <dt>{ui.hours}</dt>
+                <dd>{contact.hours}</dd>
+              </div>
+            )}
           </dl>
         </div>
       </div>

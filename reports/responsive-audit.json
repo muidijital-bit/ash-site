@@ -1,0 +1,514 @@
+[
+  {
+    "path": "/",
+    "available": 375,
+    "h1": "Kurumsal Çözümler, Yapay Zekâ ile Yeniden Tanımlanıyor!",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/urunler",
+    "available": 375,
+    "h1": "Kurumsal süreçleri yeniden tasarlayan ürünler",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/urunler/hubai-x",
+    "available": 375,
+    "h1": "HUBAI-X · KURUMSAL YAPAY ZEKÂKurumunuzun Yapay Zekâ Merkezi. Tüm Yapay Zekâ İhtiyaçlarınızı Tek Platformda Birleştiriyoruz!",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/urunler/sapai-x",
+    "available": 375,
+    "h1": "SAPAI-X · SAP YAPAY ZEKÂSAP Uzmanlığını Yapay Zekâ ile Yeniden Tanımlıyoruz",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/urunler/masraf-x",
+    "available": 375,
+    "h1": "MASRAF-X · HARCAMA YÖNETİMİKurumsal Harcama Yönetim Platformu",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/urunler/crm-x",
+    "available": 375,
+    "h1": "CRM-X · SATIŞ VE MÜŞTERİ YÖNETİMİDağınık Kayıtlara Son Verin. Her Fırsatı Tek Ekranda Yönetin.",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/neden-ash",
+    "available": 375,
+    "h1": "Bizim DNA’mızda Kurumsal Çözümler Var",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/blog",
+    "available": 375,
+    "h1": "Kurumsal yapay zekâya dair saha notları",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/blog/crm-yapay-zeka-satis-otomasyonu",
+    "available": 375,
+    "h1": "CRM Yapay Zekâ: Satış Verisi Neden Güncel Kalmaz?",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/blog/golge-ai-kurumsal-yapay-zeka",
+    "available": 375,
+    "h1": "Gölge AI: Kurumsal Yapay Zekânın Görünmeyen Riski",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/blog/masraf-yonetimi-neden-tikanir",
+    "available": 375,
+    "h1": "Masraf Yönetimi Neden Tıkanır? Harcama Otomasyonunun Asıl Farkı",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/iletisim",
+    "available": 375,
+    "h1": "İletişim",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/yasal/gizlilik-politikasi",
+    "available": 375,
+    "h1": "Gizlilik Politikası",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/yasal/kvkk-aydinlatma-metni",
+    "available": 375,
+    "h1": "KVKK Aydınlatma Metni",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/yasal/cerez-politikasi",
+    "available": 375,
+    "h1": "Çerez Politikası",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/en",
+    "available": 375,
+    "h1": "Enterprise Solutions, Reimagined with AI!",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/en/products",
+    "available": 375,
+    "h1": "Products that redesign enterprise processes",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/en/products/hubai-x",
+    "available": 375,
+    "h1": "HUBAI-X · ENTERPRISE AIYour Organization's AI Hub. Every AI Need on a Single Platform.",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/en/products/sapai-x",
+    "available": 375,
+    "h1": "SAPAI-X · SAP AISAP Expertise, Reimagined with AI.",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/en/products/masraf-x",
+    "available": 375,
+    "h1": "MASRAF-X · SPEND MANAGEMENTEnterprise Spend Management Platform",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/en/products/crm-x",
+    "available": 375,
+    "h1": "CRM-X · SALES AND CUSTOMER MANAGEMENTPut an End to Scattered Records. Manage Every Opportunity on One Screen.",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/en/why-ash",
+    "available": 375,
+    "h1": "Enterprise Solutions Are in Our DNA",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/en/blog/crm-ai-sales-automation",
+    "available": 375,
+    "h1": "CRM AI: Why Doesn't Sales Data Stay Up to Date?",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/en/blog/shadow-ai-enterprise-ai",
+    "available": 375,
+    "h1": "Shadow AI: The Hidden Risk of Enterprise AI",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/en/contact",
+    "available": 375,
+    "h1": "Contact",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/en/legal/privacy-policy",
+    "available": 375,
+    "h1": "Privacy Policy",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/en/legal/cookie-policy",
+    "available": 375,
+    "h1": "Cookie Policy",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/",
+    "available": 1425,
+    "h1": "Kurumsal Çözümler, Yapay Zekâ ile Yeniden Tanımlanıyor!",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/urunler",
+    "available": 1425,
+    "h1": "Kurumsal süreçleri yeniden tasarlayan ürünler",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/urunler/hubai-x",
+    "available": 1425,
+    "h1": "HUBAI-X · KURUMSAL YAPAY ZEKÂKurumunuzun Yapay Zekâ Merkezi. Tüm Yapay Zekâ İhtiyaçlarınızı Tek Platformda Birleştiriyoruz!",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/urunler/sapai-x",
+    "available": 1425,
+    "h1": "SAPAI-X · SAP YAPAY ZEKÂSAP Uzmanlığını Yapay Zekâ ile Yeniden Tanımlıyoruz",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/urunler/masraf-x",
+    "available": 1425,
+    "h1": "MASRAF-X · HARCAMA YÖNETİMİKurumsal Harcama Yönetim Platformu",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/urunler/crm-x",
+    "available": 1425,
+    "h1": "CRM-X · SATIŞ VE MÜŞTERİ YÖNETİMİDağınık Kayıtlara Son Verin. Her Fırsatı Tek Ekranda Yönetin.",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/neden-ash",
+    "available": 1425,
+    "h1": "Bizim DNA’mızda Kurumsal Çözümler Var",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/blog",
+    "available": 1425,
+    "h1": "Kurumsal yapay zekâya dair saha notları",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/blog/crm-yapay-zeka-satis-otomasyonu",
+    "available": 1425,
+    "h1": "CRM Yapay Zekâ: Satış Verisi Neden Güncel Kalmaz?",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/blog/golge-ai-kurumsal-yapay-zeka",
+    "available": 1425,
+    "h1": "Gölge AI: Kurumsal Yapay Zekânın Görünmeyen Riski",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/blog/sap-yapay-zeka-abap-gelistirme",
+    "available": 1425,
+    "h1": "SAP Yapay Zekâ: ABAP Geliştirmede Gerçekte Ne Değişir",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/blog/masraf-yonetimi-neden-tikanir",
+    "available": 1425,
+    "h1": "Masraf Yönetimi Neden Tıkanır? Harcama Otomasyonunun Asıl Farkı",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/iletisim",
+    "available": 1425,
+    "h1": "İletişim",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/yasal/gizlilik-politikasi",
+    "available": 1425,
+    "h1": "Gizlilik Politikası",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/yasal/kvkk-aydinlatma-metni",
+    "available": 1425,
+    "h1": "KVKK Aydınlatma Metni",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/yasal/cerez-politikasi",
+    "available": 1425,
+    "h1": "Çerez Politikası",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/en",
+    "available": 1425,
+    "h1": "Enterprise Solutions, Reimagined with AI!",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/en/products",
+    "available": 1425,
+    "h1": "Products that redesign enterprise processes",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/en/products/hubai-x",
+    "available": 1425,
+    "h1": "HUBAI-X · ENTERPRISE AIYour Organization's AI Hub. Every AI Need on a Single Platform.",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/en/products/sapai-x",
+    "available": 1425,
+    "h1": "SAPAI-X · SAP AISAP Expertise, Reimagined with AI.",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/en/products/masraf-x",
+    "available": 1425,
+    "h1": "MASRAF-X · SPEND MANAGEMENTEnterprise Spend Management Platform",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/en/products/crm-x",
+    "available": 1425,
+    "h1": "CRM-X · SALES AND CUSTOMER MANAGEMENTPut an End to Scattered Records. Manage Every Opportunity on One Screen.",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/en/why-ash",
+    "available": 1425,
+    "h1": "Enterprise Solutions Are in Our DNA",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/en/blog",
+    "available": 1425,
+    "h1": "Field notes on enterprise AI",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/en/blog/crm-ai-sales-automation",
+    "available": 1425,
+    "h1": "CRM AI: Why Doesn't Sales Data Stay Up to Date?",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/en/blog/shadow-ai-enterprise-ai",
+    "available": 1425,
+    "h1": "Shadow AI: The Hidden Risk of Enterprise AI",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/en/blog/sap-ai-abap-development",
+    "available": 1425,
+    "h1": "SAP AI: What Really Changes in ABAP Development",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/en/blog/why-expense-management-gets-stuck",
+    "available": 1425,
+    "h1": "Why Does Expense Management Get Stuck? The Real Difference in Spend Automation",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/en/contact",
+    "available": 1425,
+    "h1": "Contact",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/en/legal/privacy-policy",
+    "available": 1425,
+    "h1": "Privacy Policy",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/en/legal/kvkk-privacy-notice",
+    "available": 1425,
+    "h1": "KVKK Privacy Notice",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/en/legal/cookie-policy",
+    "available": 1425,
+    "h1": "Cookie Policy",
+    "overflow": [],
+    "pageWidth": 1425,
+    "width": 1440
+  },
+  {
+    "path": "/en/blog",
+    "available": 375,
+    "h1": "Field notes on enterprise AI",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/en/blog/sap-ai-abap-development",
+    "available": 375,
+    "h1": "SAP AI: What Really Changes in ABAP Development",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/en/blog/why-expense-management-gets-stuck",
+    "available": 375,
+    "h1": "Why Does Expense Management Get Stuck? The Real Difference in Spend Automation",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/en/legal/kvkk-privacy-notice",
+    "available": 375,
+    "h1": "KVKK Privacy Notice",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  },
+  {
+    "path": "/blog/sap-yapay-zeka-abap-gelistirme",
+    "available": 375,
+    "h1": "SAP Yapay Zekâ: ABAP Geliştirmede Gerçekte Ne Değişir",
+    "overflow": [],
+    "pageWidth": 375,
+    "width": 390
+  }
+]

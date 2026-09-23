@@ -12,11 +12,12 @@
   --ink: #f8f8f6;
   --ink-2: rgba(248, 248, 246, 0.62);
   --ink-3: rgba(248, 248, 246, 0.45);
+  --pp-eyebrow: rgba(248, 248, 246, 0.62);
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 
   /* Temanin Text_text--* adimlari. Tum metinler bunlardan birini kullanir;
      boylece boyut degisse de tipografi ayni kalir. */
-  --t-display-s: clamp(2.25rem, 2.8vw, 3rem);
+  --t-display-s: clamp(2.125rem, 3.6vw, 3.25rem);
   --t-headline-xl: clamp(1.5rem, 2.2vw, 2.25rem);
   --t-headline-l: clamp(1.5rem, 2vw, 1.75rem);
   --t-headline-m: clamp(1.0625rem, 1.4vw, 1.5rem);
@@ -46,13 +47,17 @@
 
 /* --- tipografi ---------------------------------------------------- */
 
+/* Bolum basligi duzeni, apple.com/tr referans alinarak: kucuk gri ust
+   etiket, buyuk ve siki satirli kalin baslik, ortalanmis genis paragraf.
+   Ust etiket artik buyuk-kalin degil; agirlik basliga birakiliyor. */
 .pp-label {
-  font-size: var(--t-headline-l);
-  font-weight: 700;
-  line-height: 1.29;
-  letter-spacing: 0.00875rem;
-  opacity: 0.7;
-  margin-bottom: 1rem;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: normal;
+  opacity: 1;
+  color: var(--pp-eyebrow);
+  margin-bottom: 0.75rem;
 }
 .pp-label--sm {
   font-size: 1.0625rem;
@@ -65,8 +70,33 @@
   max-width: 24ch;
   font-size: var(--t-display-s);
   font-weight: 700;
-  line-height: 1.23;
-  letter-spacing: -0.00875rem;
+  line-height: 1.08;
+  letter-spacing: -0.022em;
+  text-wrap: balance;
+}
+
+/* Hero basligi: ust etiket (urun adi) h1'in ilk satiridir; olculer
+   .pp-label ve .pp-h1 ile ayni tutuldu, gorunum degismez. */
+.pp-hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+.pp-hero-title__eyebrow {
+  margin-bottom: 0.75rem;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: var(--pp-eyebrow);
+}
+.pp-hero-title__main {
+  max-width: 24ch;
+  font-size: var(--t-display-s);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.022em;
   text-wrap: balance;
 }
 
@@ -75,8 +105,8 @@
   max-width: 28ch;
   font-size: var(--t-display-s);
   font-weight: 700;
-  line-height: 1.23;
-  letter-spacing: -0.00875rem;
+  line-height: 1.08;
+  letter-spacing: -0.022em;
   text-wrap: balance;
 }
 
@@ -127,12 +157,29 @@
 /* Acik bolum: anasayfadaki beyaz bolumlerle ayni ritim.
    Zemin degisince metin ve cizgi tonlari da tersine cevrilir. */
 .pp-section--light {
-  --sec-bg: #f8f8f6;
+  --sec-bg: #ffffff;
   --ink: #0a143d;
   --ink-2: rgba(10, 20, 61, 0.72);
   --ink-3: rgba(10, 20, 61, 0.52);
   --hair: rgba(10, 20, 61, 0.12);
   --hair-hover: rgba(10, 20, 61, 0.22);
+  --pp-eyebrow: #5d6688;
+  color: var(--ink);
+}
+
+/* Serit modu (.pp--bands): bolumler koyu/acik yerine beyaz/acik gri
+   sirayla akar - anasayfadaki serit duzeninin aynisi. Hem urunler
+   dizininde hem urun detay sayfalarinda acik. Konsol/tarayici
+   maketleri koyu kalir; kendi ic renk setlerini tasidiklari icin
+   acik seritte de okunur (dosyanin sonundaki maket blogu). */
+.pp--bands .pp-section--alt {
+  --sec-bg: #f5f5f7;
+  --ink: #0a143d;
+  --ink-2: rgba(10, 20, 61, 0.72);
+  --ink-3: rgba(10, 20, 61, 0.52);
+  --hair: rgba(10, 20, 61, 0.12);
+  --hair-hover: rgba(10, 20, 61, 0.22);
+  --pp-eyebrow: #5d6688;
   color: var(--ink);
 }
 @media (min-width: 64rem) { .pp-section { padding-block: calc(var(--spacing-layout-vertical, 6.25rem) * 1.4); } }
@@ -158,6 +205,14 @@
   opacity: 0.12;
 }
 
+/* Serit modunda izgara cizgileri acik zemine gore koyuya doner. */
+.pp--bands .pp-section--alt .pp-blueprint,
+.pp-section--light .pp-blueprint {
+  background-image:
+    linear-gradient(rgba(10, 20, 61, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10, 20, 61, 0.06) 1px, transparent 1px);
+}
+
 .pp-blueprint {
   position: absolute;
   inset: 0;
@@ -172,6 +227,22 @@
 }
 
 /* --- giris: anasayfadaki "Neler Yapiyoruz" blogu gibi ortalanmis ---- */
+
+/* Serit modunda giris de acik zeminli; sayfada koyu bir bolum kalmiyor.
+   Atmosfer isiklari acik zeminde baskin cikmasin diye hafifletiliyor. */
+.pp--bands { background: #ffffff; }
+.pp--bands .pp-intro {
+  --ink: #0a143d;
+  --ink-2: rgba(10, 20, 61, 0.72);
+  --ink-3: rgba(10, 20, 61, 0.52);
+  --hair: rgba(10, 20, 61, 0.12);
+  --hair-hover: rgba(10, 20, 61, 0.22);
+  --pp-eyebrow: #5d6688;
+  background: #ffffff;
+  color: var(--ink);
+}
+.pp--bands .pp-intro .pp-ambient__a { opacity: 0.09; }
+.pp--bands .pp-intro .pp-ambient__b { opacity: 0.06; }
 
 .pp-intro {
   position: relative;
@@ -430,6 +501,28 @@
 
 .pp-zig__text p { margin-top: 0.875rem; font-size: var(--t-body-l); font-weight: 500; line-height: 1.6; color: var(--ink-2); }
 
+/* Featured receipt flow sits directly below the introduction. */
+.pp-intro--featured { padding-bottom: clamp(2rem, 4vw, 3.5rem); }
+.pp-intro-feature {
+  margin-top: clamp(2rem, 4vw, 3.5rem);
+  padding: clamp(1.125rem, 3vw, 3rem);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  background: rgba(255, 255, 255, 0.9);
+}
+.pp-intro-feature > div { min-width: 0; }
+.pp-intro-feature__title {
+  margin: 0;
+  font-size: clamp(1.375rem, 2.5vw, 2.25rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+.pp-intro--featured + .pp-section { padding-block: clamp(2rem, 5vw, 5rem); }
+@media (min-width: 60rem) {
+  .pp-intro-feature { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); }
+}
+
 /* --- farklar: hairline izgara ---------------------------------------- */
 
 .pp-hairgrid {
@@ -443,6 +536,16 @@
 @media (min-width: 40rem) { .pp-hairgrid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 64rem) {
   .pp-hairgrid[data-count="3"], .pp-hairgrid[data-count="5"], .pp-hairgrid[data-count="6"] { grid-template-columns: repeat(3, 1fr); }
+}
+/* Son satirda bos hucre kalmasin: izgaranin zemini cizgi rengi oldugu icin
+   bos hucre gri bir blok olarak gorunuyordu (HubAI-X, 5 kart / 3 sutun).
+   Son kart satirin kalanini doldurur. */
+@media (min-width: 40rem) and (max-width: 63.999rem) {
+  .pp-hairgrid > :last-child:nth-child(odd) { grid-column: span 2; }
+}
+@media (min-width: 64rem) {
+  .pp-hairgrid[data-count="5"] > :last-child { grid-column: span 2; }
+  .pp-hairgrid:not([data-count="3"]):not([data-count="5"]):not([data-count="6"]) > :last-child:nth-child(odd) { grid-column: span 2; }
 }
 .pp-card {
   position: relative;
@@ -552,6 +655,8 @@
   background: var(--pp-grad);
 }
 .pp-tabs__tab:focus-visible { outline: 2px solid var(--p-accent-2); outline-offset: 2px; }
+/* Gizli panel gercekten gizlensin (hidden ozniteligi). */
+.pp-tabs__panel[hidden] { display: none; }
 .pp-tabs__panel {
   padding: 2.5rem;
   border: 1px solid var(--hair);
@@ -665,8 +770,44 @@
 .pp-family__card:focus-visible { outline: 2px solid var(--p-accent-2); outline-offset: 3px; }
 .pp-family__name { font-size: var(--t-headline-m); font-weight: 700; line-height: 1.3; letter-spacing: -0.00875rem; }
 .pp-family__title { font-size: var(--t-body-s); font-weight: 500; color: var(--p-accent-2); }
+/* Acik seritte urun aksan renkleri 14px'te soluk kaliyor (pembe 2.1:1).
+   Renk kimligi korunsun diye tamamen degistirilmiyor, lacivertle
+   karistirilip koyulastiriliyor (en acik aksanda 5.6:1). */
+.pp-section--light .pp-family__title,
+.pp--bands .pp-section--alt .pp-family__title {
+  color: color-mix(in srgb, var(--p-accent-2) 52%, var(--ash-dark-text-navy, #0a143d));
+}
 .pp-family__summary { flex: 1; margin-top: 0.625rem; font-size: var(--t-body-m); font-weight: 400; line-height: 1.5; color: var(--ink-2); }
 .pp-family__domain { margin-top: 1rem; font-family: var(--mono); font-size: 0.625rem; color: var(--ink-3); }
+
+/* --- hazir demo gorselleri ------------------------------------------ */
+
+/* media.ts'ten gelen video/gorsel bloklari. Kayitlarin zemini lacivert
+   basili geldigi icin acik seritte kendi cercevesiyle durmalari gerekir:
+   tarayici maketleriyle ayni kenarlik, radius ve golgeyi tasirlar. */
+.pp-media {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--hair-hover);
+  border-radius: 1.125rem;
+  /* Kayitlarin kendi zemini acik; poster inene kadar ayni tonda bir yer
+     tutucu duruyor ki koyu bir kare parlayip sonmesin. */
+  background: #f2f4fa;
+  box-shadow: 0 1.125rem 3rem -1.5rem rgba(10, 20, 61, 0.3);
+}
+.pp-media video,
+.pp-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Hero'da gorsel tek basina bir serittir; container genisliginde (1116px)
+   16:9 kayit fold'u asiyordu, bu yuzden biraz daraltilip ortalaniyor. */
+.pp-media--hero {
+  max-width: 64rem;
+  margin-inline: auto;
+}
 
 /* --- erisilebilirlik ------------------------------------------------- */
 
@@ -722,7 +863,9 @@
   background: var(--p-accent-2);
 }
 .pp-showcase__go {
+  display: inline-block;
   margin-top: 2rem;
+  padding: 0.5rem 0;
   font-size: var(--t-body-l);
   font-weight: 500;
   color: var(--p-accent);
@@ -763,8 +906,10 @@
   color: var(--ink-2);
 }
 .pp-chev { color: rgba(248, 248, 246, 0.55); background: rgba(248, 248, 246, 0.08); }
-.pp-section--light .pp-chev { background: rgba(10, 20, 61, 0.08); color: rgba(10, 20, 61, 0.6); }
-.pp-section--light .pp-chev--done { background: rgba(40, 175, 110, 0.16); color: #1c7a4c; }
+.pp-section--light .pp-chev,
+.pp--bands .pp-section--alt .pp-chev { background: rgba(10, 20, 61, 0.08); color: rgba(10, 20, 61, 0.6); }
+.pp-section--light .pp-chev--done,
+.pp--bands .pp-section--alt .pp-chev--done { background: rgba(40, 175, 110, 0.16); color: #1c7a4c; }
 .pp-chev--active { color: #fff; }
 
 /* --- sade iletisim seridi ------------------------------------------- */
@@ -773,6 +918,16 @@
   padding-inline: var(--spacing-layout-horizontal, 1.5rem);
   background: #050a2b;
   border-top: 1px solid rgba(248, 248, 246, 0.08);
+}
+/* Serit modunda kapanis seridi de acik: sayfada koyu bir bolum kalmiyor. */
+.pp--bands .pp-contact {
+  background: #f5f5f7;
+  border-top-color: rgba(10, 20, 61, 0.1);
+}
+.pp--bands .pp-contact__text { color: rgba(10, 20, 61, 0.72); }
+/* Aksan rengi acik zeminde soluk kalmasin diye lacivertle koyulastirilir. */
+.pp--bands .pp-contact__link {
+  color: color-mix(in srgb, var(--p-accent, #2f6bff) 62%, var(--ash-dark-text-navy, #0a143d));
 }
 .pp-contact__inner {
   display: flex;
@@ -789,6 +944,8 @@
   color: rgba(248, 248, 246, 0.72);
 }
 .pp-contact__link {
+  display: inline-block;
+  padding: 0.5rem 0;
   font-size: var(--t-body-l);
   font-weight: 500;
   color: var(--p-accent, #2f6bff);

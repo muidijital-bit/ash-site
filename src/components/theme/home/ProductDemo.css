@@ -278,3 +278,26 @@
   margin-top: 0;
   pointer-events: auto;
 }
+
+/* Let the longest prompt size the stack, including translated text. */
+@media (max-width: 45rem) {
+  .ash-demo__prompt {
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 1.125rem;
+  }
+  .ash-demo__prompt-stack {
+    display: grid;
+    height: auto;
+  }
+  .ash-demo__prompt-text {
+    position: static;
+    grid-area: 1 / 1;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+  .ash-demo__caret { display: none; }
+  .ash-demo__cite { overflow-wrap: anywhere; }
+}

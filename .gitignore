@@ -50,3 +50,14 @@ temp/
 
 # Large media (backed up outside the repo)
 public/**/*.mp4
+# Anasayfa "Neler Yapiyoruz" animasyonu kucuk (1,2 MB) ve sitenin parcasi.
+!public/videos/ash-motion-3.mp4
+# Masraf-X urun demolari (270 KB + 363 KB); WebM esleri zaten takip ediliyor.
+!public/videos/masraf-x-akis-merkezi.mp4
+!public/videos/masraf-x-belgeden-kayda.mp4
+.env*
+
+# Local collaboration state and Python cache
+.markdown-collab/
+__pycache__/
+*.pyc

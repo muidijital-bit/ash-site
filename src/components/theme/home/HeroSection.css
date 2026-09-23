@@ -2,3 +2,22 @@
 .capture-26aaf65842{box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;padding-top:40.8333%}
 .capture-71f7ec42f3{transform: translateY(0px); transition-property: opacity, transform; transition-duration: 2000ms; opacity: 1; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;}
 .capture-6b53871076{box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;padding-top:79.70813064628214%}
+
+/* ==================================================================
+   Demo yerlesimi
+   ------------------------------------------------------------------
+   Buton ile demo arasinda 144px bosluk kaliyordu. Bosluk daraltilip
+   kazanilan pay demonun yuksekligine eklendi; hero'nun toplam
+   yuksekligi degismiyor, demo buyuyup butona yaklasiyor.
+
+   Iki sinif: tema CSS'i bu dosyadan sonra yuklendigi icin tek sinifli
+   bir secici ayni agirlikta kalip kaybederdi.
+   ================================================================== */
+
+@media (min-width: 64rem) {
+  .Hero_hero-container__y6xjY .Hero_background__ZMkDI { margin-top: 3.5rem; }
+  .Hero_hero-container__y6xjY .Hero_background__screenshot__0odgX {
+    width: min(100%, 70rem);
+  }
+  .Hero_hero-container__y6xjY .ash-demo__body { min-height: 23.5rem; }
+}

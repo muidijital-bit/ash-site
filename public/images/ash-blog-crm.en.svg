@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Dağınık müşteri temaslarının tek kayda dönüşmesi">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f6bff"/><stop offset=".55" stop-color="#7448e8"/><stop offset="1" stop-color="#d946b5"/>
+    </linearGradient>
+    <filter id="bl" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="26"/></filter>
+  </defs>
+  <rect width="1200" height="600" fill="#050a2b"/>
+  <circle cx="980" cy="120" r="150" fill="#7448e8" opacity=".22" filter="url(#bl)"/>
+  <circle cx="200" cy="520" r="130" fill="#2f6bff" opacity=".18" filter="url(#bl)"/>
+
+  <!-- dagilmis temaslar -->
+  <text x="96" y="132" font-family="ui-monospace,Menlo,monospace" font-size="18" fill="#8b94b3">scattered contact</text>
+  <g font-family="ui-monospace,Menlo,monospace" font-size="16" fill="#8b94b3">
+    <g><rect x="96" y="158" width="210" height="56" rx="14" fill="#080d35" stroke="#1d3184" stroke-width="2" stroke-dasharray="6 6"/><text x="122" y="192">email</text></g>
+    <g><rect x="96" y="238" width="210" height="56" rx="14" fill="#080d35" stroke="#1d3184" stroke-width="2" stroke-dasharray="6 6"/><text x="122" y="272">meeting note</text></g>
+    <g><rect x="96" y="318" width="210" height="56" rx="14" fill="#080d35" stroke="#1d3184" stroke-width="2" stroke-dasharray="6 6"/><text x="122" y="352">meeting</text></g>
+    <g><rect x="96" y="398" width="210" height="56" rx="14" fill="#080d35" stroke="#1d3184" stroke-width="2" stroke-dasharray="6 6"/><text x="122" y="432">spreadsheet</text></g>
+  </g>
+
+  <!-- birlesme -->
+  <g fill="none" stroke="url(#g)" stroke-width="2.5" opacity=".85">
+    <path d="M306 186 C 380 186, 392 280, 460 286"/>
+    <path d="M306 266 C 372 266, 400 288, 460 294"/>
+    <path d="M306 346 C 372 346, 400 312, 460 306"/>
+    <path d="M306 426 C 380 426, 392 320, 460 314"/>
+  </g>
+
+  <!-- tek kayit -->
+  <rect x="460" y="196" width="300" height="208" rx="22" fill="#0a143d" stroke="url(#g)" stroke-width="2.5"/>
+  <text x="492" y="242" font-family="ui-monospace,Menlo,monospace" font-size="16" fill="#8b94b3">single customer record</text>
+  <rect x="492" y="262" width="176" height="12" rx="6" fill="#f8f8f6" opacity=".9"/>
+  <rect x="492" y="290" width="236" height="9" rx="4.5" fill="#f8f8f6" opacity=".34"/>
+  <rect x="492" y="314" width="200" height="9" rx="4.5" fill="#f8f8f6" opacity=".34"/>
+  <g stroke="#2f6bff" stroke-width="2" fill="none">
+    <circle cx="500" cy="362" r="7"/><circle cx="534" cy="362" r="7"/><circle cx="568" cy="362" r="7"/>
+  </g>
+  <path d="M507 362 H527 M541 362 H561" stroke="#2f6bff" stroke-width="2"/>
+
+  <path d="M780 300 H856" stroke="url(#g)" stroke-width="3.5" fill="none"/>
+  <path d="M842 288 L858 300 L842 312" stroke="url(#g)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- firsat skorlari -->
+  <text x="886" y="196" font-family="ui-monospace,Menlo,monospace" font-size="18" fill="#8b94b3">to review today</text>
+  <g font-family="ui-monospace,Menlo,monospace" font-size="15">
+    <g transform="translate(886,218)">
+      <rect width="222" height="58" rx="14" fill="#0a143d" stroke="#1d3184" stroke-width="2"/>
+      <text x="20" y="26" fill="#cfd6ec">OPP-2140</text>
+      <rect x="20" y="36" width="182" height="8" rx="4" fill="#f8f8f6" opacity=".12"/>
+      <rect x="20" y="36" width="160" height="8" rx="4" fill="url(#g)"/>
+    </g>
+    <g transform="translate(886,294)">
+      <rect width="222" height="58" rx="14" fill="#0a143d" stroke="#1d3184" stroke-width="2"/>
+      <text x="20" y="26" fill="#cfd6ec">OPP-2088</text>
+      <rect x="20" y="36" width="182" height="8" rx="4" fill="#f8f8f6" opacity=".12"/>
+      <rect x="20" y="36" width="104" height="8" rx="4" fill="url(#g)"/>
+    </g>
+    <g transform="translate(886,370)">
+      <rect width="222" height="58" rx="14" fill="#0a143d" stroke="#1d3184" stroke-width="2"/>
+      <text x="20" y="26" fill="#cfd6ec">OPP-1974</text>
+      <rect x="20" y="36" width="182" height="8" rx="4" fill="#f8f8f6" opacity=".12"/>
+      <rect x="20" y="36" width="58" height="8" rx="4" fill="url(#g)"/>
+    </g>
+  </g>
+</svg>

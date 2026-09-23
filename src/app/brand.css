@@ -21,6 +21,10 @@
   --ash-violet: #7448e8;         /* Gradient ara tonu, teknoloji aksani */
   --ash-magenta: #d946b5;        /* Gradient bitisi, kucuk vurgular */
   --ash-soft-pink: #f08bc2;      /* Nokta, isik, ikincil dekoratif vurgu */
+  /* Acik zeminde metin baglantisi. Electric blue burada 4.499:1 veriyor ve
+     WCAG'in kucuk yazi icin istedigi 4.5'i kil payi kaciriyordu; bu ton
+     ayni mavi ailesinde kalip 5.7:1 veriyor. */
+  --ash-link: #2559ea;
 
   /* Marka gradyani - logodaki mavi -> mor -> pembe gecisi */
   --ash-gradient: linear-gradient(
@@ -104,11 +108,9 @@
    iki ayar da burada duzeltiliyor.
    ============================================================ */
 
-/* Yuksekligi koru, genisligi en/boy oranindan hesaplat. */
-[class*="Logo_logo__logo"] {
-  width: auto;
-  height: calc(var(--logo-actual-height) * 2.9);
-}
+/* Logo olcusu src/app/globals.css icinde --logo-actual-* degiskenleriyle
+   verilir; tema kurali (width/height: var(...)) bu dosyadan sonra yuklendigi
+   icin burada tekrar tanimlanmaz. */
 
 /* Logo artik dosyadan geliyor; temanin fill tabanli renklendirmesi devre disi. */
 [class*="Logo_logo--variant-dark"],
@@ -116,9 +118,62 @@
   fill: none;
 }
 
+/* Footer'in alt satirindaki gizlilik baglantisi: dokunma hedefi 24px'in
+   altinda kaliyordu (WCAG 2.2 "Target Size (Minimum)"). */
+.Copyright_copyright__Tg_AM .Copyright_copyright__privacy-link__Sg5lF {
+  display: inline-block;
+  padding: 0.25rem 0;
+}
+
+/* ============================================================
+   Anasayfa urun kartlarinin gorselleri
+   ------------------------------------------------------------
+   Gorseller kod ile cizilmis yatay SVG'ler (640x400). Tema kutuya
+   masaustunde 3rem yan bosluk veriyor ve cizim ~100px'e sikisiyordu;
+   yan boslugu daraltip cizime daha genis alan biraktik.
+   ============================================================ */
+
+@media (min-width: 48rem) {
+  /* Tema CSS'i sonra yuklendigi icin iki sinifla ozgullugu artiriyoruz. */
+  .Card_card__pfJM5 .Card_card__image__8P0LP { padding-right: 0.75rem; padding-left: 0.75rem; }
+}
+
+/* ============================================================
+   Header yerlesimi
+   ------------------------------------------------------------
+   Tema, menunun sagina sosyal ikonlar icin 4.375rem bosluk birakiyordu;
+   ikonlar kaldirildigi icin menu ortadan 35px sola kayiyordu. Bosluk
+   sifirlanip menu kapsayicinin tam ortasina getirildi.
+   ============================================================ */
+
+@media (min-width: 64rem) {
+  /* Iki sinif: tema CSS'i bu dosyadan sonra yuklendigi icin ozgulluk gerekiyor. */
+  .Header_header__omCkM .Header_header__container__3CAEl > :nth-child(2) { margin-right: 0; }
+}
+
+/* ============================================================
+   Dil degistirici (TR / EN)
+   Menunun son ogesi; masaustunde ince bir ayracla ayrilir.
+   ============================================================ */
+
+.ash-lang-switch {
+  letter-spacing: 0.06em;
+}
+@media (min-width: 64rem) {
+  /* Tema masaustunde NavLink kenarligini sifirliyor; iki sinifla onu geciyoruz. */
+  .NavLink_nav-link__i4vnc.ash-lang-switch {
+    margin-left: 0.5rem;
+    padding-left: 1rem;
+    border-left: 1px solid currentColor;
+    border-left-color: color-mix(in srgb, currentColor 28%, transparent);
+  }
+}
+
 /* ============================================================
    Urunler acilir menusu
    Tema bu bileseni icermiyordu; marka paletiyle burada kuruldu.
+   Koyu header'in altinda acik bir kart: beyaz zemin, her urun kendi
+   marka renginde. Ozet satiri yok, menu kompakt kalir.
    ============================================================ */
 
 .ash-products-menu {
@@ -151,18 +206,18 @@
 
 .ash-products-menu__panel {
   position: absolute;
-  top: calc(100% + 0.75rem);
+  top: calc(100% + 0.625rem);
   left: 50%;
   translate: -50% 0;
   z-index: 40;
-  width: min(23rem, calc(100vw - 2rem));
+  width: min(17rem, calc(100vw - 2rem));
   display: grid;
-  gap: 0.25rem;
-  padding: 0.5rem;
-  border-radius: 1rem;
-  background: var(--ash-midnight-navy);
-  border: 1px solid #1d3184;
-  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.45);
+  gap: 0.125rem;
+  padding: 0.375rem;
+  border-radius: 0.875rem;
+  background: #ffffff;
+  border: 1px solid var(--color-gallery);
+  box-shadow: 0 1rem 2.25rem rgba(5, 10, 43, 0.22);
   animation: ash-menu-in 160ms ease both;
 }
 
@@ -177,48 +232,55 @@
 
 .ash-products-menu__all {
   display: block;
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.625rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-  line-height: 1.375;
-  color: var(--ash-electric-blue);
+  margin-bottom: 0.125rem;
+  padding: 0.375rem 0.625rem 0.5rem;
+  border-bottom: 1px solid var(--color-gallery);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: var(--ash-link);
   text-decoration: none;
 }
-.ash-products-menu__all:hover { background: rgba(47, 107, 255, 0.12); }
+.ash-products-menu__all:hover,
+.ash-products-menu__all:focus-visible { text-decoration: underline; }
 
 .ash-products-menu__item {
   display: grid;
-  gap: 0.125rem;
-  padding: 0.6875rem 0.75rem;
-  border-radius: 0.75rem;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 0.5rem;
+  padding: 0.4375rem 0.625rem;
+  border-radius: 0.5rem;
   text-decoration: none;
   transition: background 140ms ease;
 }
+/* Urunun marka rengindeki nokta; renk HeaderMarkup'ta --urun-renk ile gelir. */
+.ash-products-menu__item::before {
+  content: "";
+  grid-row: span 2;
+  width: 0.4375rem;
+  height: 0.4375rem;
+  border-radius: 50%;
+  background: var(--urun-renk, #2f6bff);
+}
 .ash-products-menu__item:hover,
 .ash-products-menu__item:focus-visible {
-  background: rgba(116, 72, 232, 0.16);
+  background: color-mix(in srgb, var(--urun-renk, #2f6bff) 10%, transparent);
 }
 
 .ash-products-menu__name {
-  font-size: 1.0625rem;
-  font-weight: 700;
-  line-height: 1.3;
-  letter-spacing: -0.00875rem;
-  color: var(--ash-soft-white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.005em;
+  color: var(--ash-dark-text-navy);
 }
 .ash-products-menu__title {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  line-height: 1.375;
-  color: var(--ash-electric-blue);
-}
-.ash-products-menu__summary {
-  margin-top: 0.25rem;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #9aa2c0;
+  line-height: 1.35;
+  color: var(--urun-renk, #2f6bff);
 }
 
 /* Mobil menude acilir liste yerine akista genisler. */
@@ -235,6 +297,31 @@
     box-shadow: none;
     padding: 0;
   }
+  /* Panel menunun icinde akar, kendi zemini yok; yazi renkleri bu yuzden
+     menunun temasini izler. Koyu menu (varsayilan): acik yazi. */
+  .ash-products-menu__all {
+    border-bottom-color: var(--color-mine-shaft);
+    color: var(--ash-soft-white);
+  }
+  .ash-products-menu__name { color: var(--ash-soft-white); }
+  .ash-products-menu__title { color: color-mix(in srgb, var(--urun-renk, #2f6bff) 55%, #f8f8f6); }
+  .ash-products-menu__item:hover,
+  .ash-products-menu__item:focus-visible {
+    background: color-mix(in srgb, var(--urun-renk, #2f6bff) 22%, transparent);
+  }
+
+  /* Acik menu (anasayfa ve iletisim): ayni yazilar koyu renge doner.
+     Tema sinifi <header> uzerinde oldugu icin sinif adi desenle eslenir. */
+  [class*="Header_header--theme-light"] .ash-products-menu__all {
+    border-bottom-color: var(--color-gallery);
+    color: var(--ash-dark-text-navy);
+  }
+  [class*="Header_header--theme-light"] .ash-products-menu__name {
+    color: var(--ash-dark-text-navy);
+  }
+  [class*="Header_header--theme-light"] .ash-products-menu__title {
+    color: color-mix(in srgb, var(--urun-renk, #2f6bff) 62%, #0a143d);
+  }
 }
 
 /* Tema, mobil menuyu acip kapatmak icin NavMenu'ye overflow:hidden + height:0
@@ -246,3 +333,337 @@
   #theme-navigation[class*="NavMenu_nav-menu"] { overflow: visible; }
 }
 
+
+/* ============================================================
+   Anasayfa: acik zemin
+   ------------------------------------------------------------
+   Tema, koyu bolumleri tek bir kalipla kuruyor:
+     color: var(--color-white); background: var(--color-black);
+   Asagidaki blok anasayfanin uc koyu bolumunde bu iki token'i yer
+   degistirir. Boylece metin, kenarlik ve buton renkleri temanin
+   kendi mantigi icinde kendiliginden tersine doner; tema
+   dosyalarina (public/theme/css/) dokunulmaz.
+
+   Zemin duzeni apple.com/tr/iphone-duo referans alinarak kuruldu:
+   acik gri (#f5f5f7) ve beyaz (#ffffff) seritler sirayla gelir, boylece
+   sayfa duz bir beyaz yuzey gibi durmaz. Metin ASH lacivertinde kalir.
+
+   Hero ve footer koyu kalir; sayfa koyu acilip koyu biter, ortasi
+   acik seritlerle akar.
+
+   Serit sirasi: Hero lacivert / Neler Yapiyoruz beyaz / Urunler gri /
+   Nasil Calisiyoruz beyaz / Nasil Ilerliyoruz gri / Blog beyaz /
+   footer lacivert.
+
+   Geri almak icin: bu blogu sil ve theme.ts'deki anasayfa
+   satirini eski haline getir.
+   ============================================================ */
+
+/* Marka gradyanli metin. Baslik icinde vurgulanacak parcaya verilir;
+   urun sayfalarindaki .pp-grad-text ile ayni is. */
+.ash-grad-text {
+  background: var(--ash-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* Safari'de -webkit-text-fill-color miras kalabiliyor; sifirlaniyor. */
+  -webkit-text-fill-color: transparent;
+}
+
+/* Kucuk puntoda gradyanin uclari acik zeminde 3.6-3.8:1'de kaliyor; WCAG
+   kucuk yazi icin 4.5 ister (buyuk baslikta 3.0 yeterli, orada parlak
+   gradyan kullanilmaya devam ediyor). Asagidaki dort yer 14-17px: ayni
+   renk yolculugunu koruyan, uclari koyulastirilmis bir ramp aliyorlar
+   (en dusuk 5.3:1). Olcum: scratchpad/x-olcu.mjs. */
+.NavigationList_nav__link__RANmq .ash-grad-text,
+.ash-products-menu__name .ash-grad-text,
+.ash-bento__pill-name .ash-grad-text,
+.pp-hero-title__eyebrow .ash-grad-text {
+  background: linear-gradient(90deg, #2557d8 0%, #6a3fd0 50%, #b02f8f 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* Tema token'i cevrilen uc bolum: "white" artik metin, "black" artik zemin. */
+.Hero_hero-container__y6xjY,
+.WhatWeDo_what-we-do__sYjRm,
+.HowWeWork_how-we-work__zclk_ {
+  --color-white: #050a2b;
+  --color-white-rgb: 5 10 43;
+}
+.Hero_hero-container__y6xjY {
+  --color-black: #ffffff;
+  --color-black-rgb: 255 255 255;
+}
+.WhatWeDo_what-we-do__sYjRm,
+.HowWeWork_how-we-work__zclk_ {
+  --color-black: #f5f5f7;
+  --color-black-rgb: 245 245 247;
+}
+/* "Neler Yapiyoruz" seridi videonun zemin tonuna esitlenir. #f5f5f7'nin
+   hafif mavisi 8-bit 4:2:0 videoda temsil edilemiyor, video #f6f6f6'ya
+   cozuluyor; serit farkli olursa videonun cevresinde kenar seziliyor.
+   Bu serit iki yanindan beyaz bolumlerle cevrili, diger gri seritlerle
+   yan yana gelmedigi icin 1 birimlik fark hicbir yerde karsilastirilamaz. */
+.WhatWeDo_what-we-do__sYjRm {
+  --color-black: #f6f6f6;
+  --color-black-rgb: 246 246 246;
+}
+
+/* Zaten acik olan iki bolum de ayni seride katilir. Bu bolumlerin tek
+   sinifi var, tema CSS'i sonra yuklendigi icin ozgulluk #ana-icerik'ten
+   geliyor (SiteFrame'deki icerik kapsayicisi). */
+#ana-icerik .Investments_investments__txwNj { background-color: #ffffff; }
+#ana-icerik .LatestNews_latest-news__wsZ9D { background: #f5f5f7; }
+
+/* Kartlar hem beyaz hem gri seritte ayrissin diye ince bir kenarlik ve
+   yumusak bir golge aliyor (zemine bagli kalmayan tek cozum). */
+#ana-icerik .Investments_card__akzVq .Card_card__pfJM5,
+#ana-icerik .LatestNews_latest-news__wsZ9D .LatestNewsItem_latest-news-item__DWzf0 {
+  background-color: #ffffff;
+  border: 1px solid rgba(10, 20, 61, 0.08);
+  box-shadow: 0 1px 3px rgba(10, 20, 61, 0.05);
+}
+
+/* ------------------------------------------------------------
+   Hero ve "Neler Yapiyoruz" aciklamalari
+   Tema ikisini de 30ch / 52ch'e sikistiriyordu, paragraf 6 satira
+   boluniyordu. Ikisi de "Neler Yapiyoruz" girisindeki gibi genis
+   olcuye alindi. Hero koyu zeminde kaldigi icin temanin kendi
+   gradyanli metni orada korunuyor; acik zemindeki WhatWeDo
+   paragrafinda gradyan kaldirilip duz lacivert yapiliyor.
+   ------------------------------------------------------------ */
+/* Iki sinif: tema CSS'i bu dosyadan sonra yuklendigi icin tek sinifli
+   bir secici ayni agirlikta kalip kaybederdi. */
+.Text_text--headline-m__C9G6u.Hero_content__description__Cbxx5 {
+  background: none;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: currentColor;
+  color: var(--color-dim-grey);
+  max-width: min(100%, 52rem);
+  margin-inline: auto;
+}
+.Text_text--headline-m__C9G6u.WhatWeDo_what-we-do__description__MwTei {
+  background: none;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: currentColor;
+  color: var(--ash-deep-navy);
+  max-width: min(100%, 52rem);
+  margin-inline: auto;
+}
+
+/* ============================================================
+   Form yer tutucu metni
+   ------------------------------------------------------------
+   Tema #6070b1 kullaniyor; acik zeminde 4.44:1 kaliyor ve WCAG AA
+   esigini (4.5) kil payi kaciriyor. Marka gri tonuna cekildi: 5.3:1.
+   Iki sinif, tema CSS'i bu dosyadan sonra yuklendigi icin.
+   ============================================================ */
+.Input_input__lvORT .Input_placeholder__TiHzN {
+  color: var(--color-dim-grey);
+}
+
+/* ============================================================
+   Bolum ust etiketleri
+   ------------------------------------------------------------
+   apple.com/tr referansi: ust etiket kucuk ve soluk, agirlik
+   basliga birakilir. Tema bunlari 24-28px kalin (yer yer gradyanli)
+   yaziyordu. Olcu ve agirlik burada esitleniyor; renk her bolumun
+   zeminine gore ayri veriliyor (kontrast farkli).
+
+   Baslik icindeki renkli/gradyanli vurgulara dokunulmuyor; onlar
+   oldugu gibi kaliyor.
+
+   Ozgulluk #ana-icerik'ten geliyor: bu ogelerin tek sinifi var ve
+   tema CSS'i bu dosyadan sonra yukleniyor.
+   ============================================================ */
+#ana-icerik :is(
+  .WhatWeDo_what-we-do__title__MOf9N,
+  .Investments_title__title__D87hC,
+  .OurMission_our-mission__title__A_oxb,
+  .Values_values__title__Uu33x,
+  .InfoSection_title__top-title__Ha4mp
+) {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: normal;
+  /* Gradyanli metni duz renge cevir (yalnizca "Nasil calisiyoruz"da vardi). */
+  background: none;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: currentColor;
+}
+
+/* Koyu lacivert zemin: soluk acik ton (6.1:1). */
+#ana-icerik .OurMission_our-mission__title__A_oxb { opacity: 0.7; }
+
+/* Magenta zemin: soluklastirilamaz, 0.7 opaklikta 3.1:1'e dusuyor.
+   Tam soft-white ile 4.8:1. */
+#ana-icerik .Values_values__title__Uu33x { color: var(--ash-soft-white); }
+
+/* Acik zemin: marka gri tonu (5.3:1). */
+#ana-icerik :is(
+  .WhatWeDo_what-we-do__title__MOf9N,
+  .Investments_title__title__D87hC,
+  .InfoSection_title__top-title__Ha4mp
+) {
+  color: var(--color-dim-grey);
+  opacity: 1;
+}
+
+
+/* ============================================================
+   Neden ASH: acik zemin
+   ------------------------------------------------------------
+   Sitenin geri kalaniyla ayni serit duzeni. Misyon bolumu temanin
+   "color: var(--color-white); background: var(--color-black)"
+   kalibini kullaniyor, o yuzden iki token yer degistiriliyor.
+
+   Serit sirasi: Hero beyaz / Misyon gri / Degerler magenta (marka
+   seridi, oldugu gibi kaliyor) / Surec beyaz.
+   ============================================================ */
+.OurMission_our-mission__RUrGu {
+  --color-white: #050a2b;
+  --color-white-rgb: 5 10 43;
+  --color-black: #f5f5f7;
+  --color-black-rgb: 245 245 247;
+}
+#ana-icerik .Principles_principles__ib_r_ { background: #ffffff; }
+
+/* ============================================================
+   Anasayfa "Urunler" basligi
+   ------------------------------------------------------------
+   Tema basligi 15ch ile sinirliyordu; "Kurumsal surecleri yeniden
+   tasarlayan urunlerimiz" dort satira boluniyordu. Sinir kaldirildi,
+   baslik kapsayiciyi doldurur ve iki dengeli satira iner. Aciklama
+   diger bolumlerle ayni olcuye (52rem) acildi.
+   ============================================================ */
+#ana-icerik .Investments_title__subtitle__HagA_ {
+  max-width: 100%;
+  text-wrap: balance;
+}
+#ana-icerik .Investments_title__description__olHdP {
+  max-width: min(100%, 52rem);
+}
+
+/* ============================================================
+   Anasayfa: mobil duzen
+   ------------------------------------------------------------
+   Bolum basliklari 36px'te 342px'lik kolona sigmiyor, tek kelime
+   satirda kaliyordu ("Yeniden", "Gercek"). Boyut ekran genisligiyle
+   orantili: 390px'de 32px, 360px'de ~29px; kirilim her telefonda ayni
+   kalir (siyah kisim ust satirda, renkli kisim alt satirlarda).
+   Carpan tarayicida olculerek secildi: kolon genisligi x 0.0935.
+   ============================================================ */
+@media (max-width: 30rem) {
+  #ana-icerik :is(
+    .Hero_content__title__xSQ97,
+    .WhatWeDo_what-we-do__subtitle__NQD8i,
+    .Investments_title__subtitle__HagA_,
+    .HowWeWork_how-we-work__title__cvkhc,
+    .ash-process__title
+  ) {
+    font-size: clamp(1.625rem, calc((100vw - 3rem) * 0.0935), 2.25rem);
+    line-height: 1.12;
+  }
+  /* "Dengeli" kirilim yetim kelimeyi onler. Urunler basligi da dengeli
+     (ekrana yayilma kurali, yukarida): mobilde siyah kisim ilk iki satira,
+     renkli "tasarlayan urunlerimiz" tek basina son satira oturur. */
+  #ana-icerik :is(
+    .Hero_content__title__xSQ97,
+    .HowWeWork_how-we-work__title__cvkhc,
+    .ash-process__title
+  ) {
+    text-wrap: balance;
+  }
+
+  /* Uzun paragraflar: tema 17px metne 21px satir veriyor (1.24); 6-8
+     satirlik ortali paragraflarda okunmuyordu. headline-m bu dort
+     paragraf disinda sitede kullanilmiyor. */
+  #ana-icerik .Text_text--headline-m__C9G6u { line-height: 1.5; }
+
+  /* "Kurumsal Deneyim" basligi ile paragrafi arasinda bosluk yoktu. */
+  #ana-icerik .HowWeWork_how-we-work__title__cvkhc { margin-bottom: 1rem; }
+}
+
+/* Urunler aciklamasi: tema bu paragrafa 1.78 satir araligi veriyordu;
+   diger paragraflarla ayni olcuye cekildi. */
+#ana-icerik .Investments_title__description__olHdP { line-height: 1.55; }
+
+/* Blog karti: tema baslik alti boslugunu yalniz genis ekranda veriyor,
+   mobilde ozet basliga yapisiyordu. Ozet, diger kart metinleri gibi
+   ikincil tonda (#5d6688 beyaz zeminde 5.6:1). */
+@media (max-width: 47.999rem) {
+  #ana-icerik .LatestNewsItem_content__title__FQ11T { margin-bottom: 0.875rem; }
+}
+#ana-icerik .LatestNewsItem_content__gt3y2 > .Text_text--body-l__nT4jd {
+  color: var(--color-dim-grey);
+}
+
+/* "Kurumsal Deneyim" basligi (tablet ve ustu): renkli kisim kendi satirina
+   iner; diger bolum basliklariyla ayni kalip (siyah satir / renkli satir).
+   Aksi halde "Arada" ikinci satirda tek basina kaliyordu. fit-content:
+   gradyan metin genisliginde kalsin, kolon genisligine yayilmasin. */
+@media (min-width: 48rem) {
+  #ana-icerik .HowWeWork_how-we-work__title__cvkhc .ash-grad-text {
+    display: block;
+    width: fit-content;
+    margin-inline: auto;
+  }
+}
+
+/* ============================================================
+   Marka butonu
+   ------------------------------------------------------------
+   Tek buton gorunumu: beyaz hap, ince gradyan kenar, lacivert yazi;
+   hover'da gradyan butonu doldurur. Referans hero'daki "Urunleri
+   Kesfedin" butonu; tum butonlar ayni temanin colorful-dark
+   varyantini kullaniyor.
+
+   Tema bu varyanti --color-white / --color-black uzerinden kuruyor,
+   o token'lar da bolume gore yer degistiriyor (acik seritlerde ters).
+   Ayni buton bolumden bolume farkli gorunmesin diye renkler burada
+   sabitleniyor. #site-root: footer da kapsansin.
+
+   Hover'da tema yazi rengini degistirmiyordu; gradyan zemin uzerinde
+   lacivert yazi 2.4:1'e dusuyordu (WCAG 4.5 ister). Yazi beyaza
+   doner: 6.7:1.
+   ============================================================ */
+#site-root .Button_button--variant-colorful-dark__CCVPh {
+  color: var(--ash-deep-navy);
+  font-weight: 500;
+  /* Kart icindeki "Kesfet" bir baglanti; temanin kart baglantisi hover'da
+     alti cizili oluyor ve cizgi butonun icinden geciyordu. */
+  text-decoration: none;
+}
+#site-root .Button_button--variant-colorful-dark__CCVPh::after {
+  background-color: #ffffff;
+}
+/* Hover: beyaz ic dolgu kalkar, altindaki gradyan gorunur. Ustteki kural
+   id ozgullugunde oldugu icin temanin kendi hover kurali onu ezemiyordu;
+   dolgu burada da acikca saydama cekiliyor. */
+#site-root .Button_button--variant-colorful-dark__CCVPh:hover::after,
+#site-root .Button_button--variant-colorful-dark__CCVPh:focus-visible::after {
+  background-color: transparent;
+}
+#site-root .Button_button--variant-colorful-dark__CCVPh:hover,
+#site-root .Button_button--variant-colorful-dark__CCVPh:focus-visible {
+  color: #ffffff;
+  /* Ince beyaz halka: beyaz/gri seritlerde zeminle ayni renk oldugu icin
+     gorunmez, "Neden ASH"teki renkli bolumde ise gradyan dolgunun kenarini
+     zeminden ayirir (orada buton hover'da zemine karisiyordu). */
+  box-shadow: 0 0 0 2px #ffffff;
+}
+
+/* Urun kartindaki "Kesfet" de ayni buton; kart icinde ortalanir.
+   Bu kapsayici tema kurulumunda metin baglantisiydi ve alti cizgisi
+   kendisinde tanimli; cizgi miras yoluyla butonun icinden geciyordu
+   (yalnizca 2x ekranlarda goruluyordu, 1x'te 0 piksele yuvarlaniyor). */
+#site-root .Card_card__link__gVEN4 {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}

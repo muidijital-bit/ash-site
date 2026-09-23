@@ -1,18 +1,17 @@
 import Link from "next/link";
 import type { CSSProperties } from "react";
-import { products, type Product } from "@/content/products";
-import type { ProductPageContent, ProductSection } from "./types";
+import { getProducts, type Product } from "@/content/products";
+import { SHOW_PRODUCT_DOMAINS } from "@/content/site";
+import { localePath, type Locale } from "@/i18n/config";
+import { getUi } from "@/i18n/ui";
+import { getProductMedia } from "./media";
+import { ProductMedia } from "./ProductMedia";
+import type { ProductPageContent, ProductSection, SectionItem } from "./types";
 import { UseCaseTabs } from "./UseCaseTabs";
 import { Ambient, Blueprint, Crosshair, FeatureMock, HeroSignature } from "./visuals";
 import "./product.css";
-
-/** Her urunun kimligi tek degisken ciftiyle tasinir; bilesenler bunu okur. */
-const ACCENTS: Record<string, [string, string]> = {
-  "hubai-x": ["#2f6bff", "#7448e8"],
-  "sapai-x": ["#7448e8", "#2f6bff"],
-  "masraf-x": ["#d946b5", "#f08bc2"],
-  "crm-x": ["#7448e8", "#d946b5"],
-};
+import { ProductName, ProductEyebrow } from "@/components/theme/shared/ProductName";
+import { jsonLdString } from "@/lib/seo";
 
 /**
  * Basligin vurgulanacak kismini ayirir.
@@ -47,21 +46,18 @@ function SectionHead({ eyebrow, section }: { eyebrow: string; section: ProductSe
   );
 }
 
-const EYEBROW: Record<string, string> = {
-  ozellikler: "Özellikler",
-  "nasil-calisir": "Nasıl çalışır",
-  farklar: "Farkımız",
-  "kullanim-senaryolari": "Kullanım senaryoları",
-  istatistik: "Neler kazanırsınız",
-  sss: "Sık sorulan sorular",
-};
-
 /* ------------------------------------------------------------------ */
 
-function Features({ section, slug }: { section: ProductSection; slug: string }) {
+/** Icerikte hazir demo tanimliysa onu, yoksa bolumun cizim mockup'ini gosterir. */
+function FeatureVisual({ item, slug, variant, locale }: { item: SectionItem; slug: string; variant: number; locale: Locale }) {
+  const media = getProductMedia(item.media);
+  return media ? <ProductMedia media={media} locale={locale} /> : <FeatureMock slug={slug} variant={variant} locale={locale} />;
+}
+
+function Features({ section, slug, eyebrow, locale }: { section: ProductSection; slug: string; eyebrow: string; locale: Locale }) {
   return (
     <>
-      <SectionHead eyebrow={EYEBROW.ozellikler} section={section} />
+      <SectionHead eyebrow={eyebrow} section={section} />
       <div className="pp-zigzag">
         {section.items.map((item, i) => (
           <article key={item.title} className="pp-zig" data-flip={i % 2 ? "" : undefined}>
@@ -69,7 +65,7 @@ function Features({ section, slug }: { section: ProductSection; slug: string }) 
               <h3>{item.title}</h3>
               <p>{item.body}</p>
             </div>
-            <div className="pp-zig__visual"><FeatureMock slug={slug} variant={i} /></div>
+            <div className="pp-zig__visual"><FeatureVisual item={item} slug={slug} variant={i} locale={locale} /></div>
           </article>
         ))}
       </div>
@@ -77,10 +73,10 @@ function Features({ section, slug }: { section: ProductSection; slug: string }) 
   );
 }
 
-function Differences({ section }: { section: ProductSection }) {
+function Differences({ section, eyebrow }: { section: ProductSection; eyebrow: string }) {
   return (
     <>
-      <SectionHead eyebrow={EYEBROW.farklar} section={section} />
+      <SectionHead eyebrow={eyebrow} section={section} />
       <div className="pp-hairgrid" data-count={section.items.length}>
         {section.items.map((item) => (
           <article key={item.title} className="pp-card">
@@ -95,10 +91,10 @@ function Differences({ section }: { section: ProductSection }) {
   );
 }
 
-function Flow({ section }: { section: ProductSection }) {
+function Flow({ section, eyebrow }: { section: ProductSection; eyebrow: string }) {
   return (
     <>
-      <SectionHead eyebrow={EYEBROW["nasil-calisir"]} section={section} />
+      <SectionHead eyebrow={eyebrow} section={section} />
       <ol className="pp-flow" style={{ "--steps": section.items.length } as CSSProperties}>
         {section.items.map((item, i) => (
           <li key={item.title} className="pp-flow__step">
@@ -112,16 +108,24 @@ function Flow({ section }: { section: ProductSection }) {
   );
 }
 
-function Capabilities({ section }: { section: ProductSection }) {
+/** Halkanin cevresi (2 * pi * 38). Yuzde iceren degerde yay o orana kadar dolar. */
+const DIAL = 239;
+
+function dialOffset(value: string): CSSProperties | undefined {
+  const pct = Number(value.match(/%\s*(\d+)|(\d+)\s*%/)?.slice(1).find(Boolean));
+  return Number.isFinite(pct) ? { strokeDashoffset: DIAL * (1 - pct / 100) } : undefined;
+}
+
+function Capabilities({ section, eyebrow }: { section: ProductSection; eyebrow: string }) {
   return (
     <>
-      <SectionHead eyebrow={EYEBROW.istatistik} section={section} />
+      <SectionHead eyebrow={eyebrow} section={section} />
       <div className="pp-band">
         {section.items.map((item) => (
           <div key={item.title} className="pp-band__cell">
             <svg className="pp-dial" viewBox="0 0 88 88" aria-hidden="true">
               <circle cx="44" cy="44" r="38" className="pp-dial__track" />
-              <circle cx="44" cy="44" r="38" className="pp-dial__arc" />
+              <circle cx="44" cy="44" r="38" className="pp-dial__arc" style={dialOffset(item.title)} />
             </svg>
             <strong>{item.title}</strong>
             <p>{item.body}</p>
@@ -132,7 +136,7 @@ function Capabilities({ section }: { section: ProductSection }) {
   );
 }
 
-function Faq({ section, slug }: { section: ProductSection; slug: string }) {
+function Faq({ section, slug, eyebrow }: { section: ProductSection; slug: string; eyebrow: string }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -145,7 +149,7 @@ function Faq({ section, slug }: { section: ProductSection; slug: string }) {
   return (
     <div className="pp-faq">
       <div className="pp-faq__side">
-        <SectionHead eyebrow={EYEBROW.sss} section={section} />
+        <SectionHead eyebrow={eyebrow} section={section} />
       </div>
       <div className="pp-faq__list">
         {section.items.map((q) => (
@@ -158,50 +162,54 @@ function Faq({ section, slug }: { section: ProductSection; slug: string }) {
           </details>
         ))}
       </div>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdString(jsonLd) }} />
     </div>
   );
 }
 
-function renderSection(section: ProductSection, slug: string, index: number) {
+function renderSection(section: ProductSection, slug: string, index: number, locale: Locale) {
+  const { eyebrow, useCaseLabel } = getUi(locale).product;
+  // Icerik kendi ust etiketini verebilir; vermezse bolum turunun etiketi.
+  const etiket = (varsayilan: string) => section.eyebrow || varsayilan;
   switch (section.kind) {
-    case "ozellikler": return <Features section={section} slug={slug} />;
-    case "farklar": return <Differences section={section} />;
-    case "nasil-calisir": return <Flow section={section} />;
+    case "ozellikler": return <Features section={section} slug={slug} eyebrow={etiket(eyebrow.ozellikler)} locale={locale} />;
+    case "farklar": return <Differences section={section} eyebrow={etiket(eyebrow.farklar)} />;
+    case "nasil-calisir": return <Flow section={section} eyebrow={etiket(eyebrow["nasil-calisir"])} />;
     case "kullanim-senaryolari":
-      return (<><SectionHead eyebrow={EYEBROW["kullanim-senaryolari"]} section={section} /><UseCaseTabs items={section.items} id={`uc-${slug}-${index}`} /></>);
-    case "istatistik": return <Capabilities section={section} />;
-    case "sss": return <Faq section={section} slug={slug} />;
-    default: return <Differences section={section} />;
+      return (<><SectionHead eyebrow={etiket(eyebrow["kullanim-senaryolari"])} section={section} /><UseCaseTabs items={section.items} id={`uc-${slug}-${index}`} label={useCaseLabel} /></>);
+    case "istatistik": return <Capabilities section={section} eyebrow={etiket(eyebrow.istatistik)} />;
+    case "sss": return <Faq section={section} slug={slug} eyebrow={etiket(eyebrow.sss)} />;
+    default: return <Differences section={section} eyebrow={etiket(eyebrow.farklar)} />;
   }
 }
 
 /* ------------------------------------------------------------------ */
 
-function CrossSell({ current }: { current: Product }) {
+function CrossSell({ current, locale }: { current: Product; locale: Locale }) {
+  const { familyLabel, familyTitle } = getUi(locale).product;
   return (
     <section className="pp-section pp-section--alt">
       <div className="pp-container">
         <header className="pp-head">
-          <p className="pp-label">Ürün ailesi</p>
-          <h2 className="pp-h2">Keşfetmeye <span className="pp-grad-text">devam edin</span></h2>
+          <p className="pp-label">{familyLabel}</p>
+          <h2 className="pp-h2">{familyTitle[0]}<span className="pp-grad-text">{familyTitle[1]}</span></h2>
         </header>
         <div className="pp-family">
-          {products.map((p) => {
-            const [a, b] = ACCENTS[p.slug] ?? ACCENTS["hubai-x"];
+          {getProducts(locale).map((p) => {
+            const [a, b] = p.accent;
             const isCurrent = p.slug === current.slug;
             return (
               <Link
                 key={p.slug}
-                href={`/products/${p.slug}`}
+                href={localePath(locale, `/products/${p.slug}`)}
                 className="pp-family__card"
                 aria-current={isCurrent ? "page" : undefined}
                 style={{ "--p-accent": a, "--p-accent-2": b } as CSSProperties}
               >
-                <span className="pp-family__name">{p.name}</span>
+                <span className="pp-family__name"><ProductName name={p.name} /></span>
                 <span className="pp-family__title">{p.title}</span>
                 <span className="pp-family__summary">{p.summary}</span>
-                <span className="pp-family__domain">{p.domain}</span>
+                {SHOW_PRODUCT_DOMAINS && <span className="pp-family__domain">{p.domain}</span>}
               </Link>
             );
           })}
@@ -211,27 +219,54 @@ function CrossSell({ current }: { current: Product }) {
   );
 }
 
-export function ProductPage({ product, content }: { product: Product; content: ProductPageContent }) {
-  const [accent, accent2] = ACCENTS[product.slug] ?? ACCENTS["hubai-x"];
+export function ProductPage({ product, content, locale }: { product: Product; content: ProductPageContent; locale: Locale }) {
+  const ui = getUi(locale);
+  const [accent, accent2] = product.accent;
+  const [heroLead, heroAccent] = splitAccent(content.hero.title);
+  const heroMedia = getProductMedia(content.hero.media);
   const body = content.sections.filter((s) => s.kind !== "cta");
 
+  // pp--bands: bolumler beyaz/acik gri sirayla (anasayfadaki serit duzeni).
   return (
-    <main className="pp" style={{ "--p-accent": accent, "--p-accent-2": accent2 } as CSSProperties}>
+    <main className="pp pp--bands" style={{ "--p-accent": accent, "--p-accent-2": accent2 } as CSSProperties}>
       {/* Anasayfadaki "Neler Yapiyoruz" blogu gibi: ortalanmis etiket + baslik + paragraf.
           Breadcrumb ve butonlar yok. */}
-      <section className="pp-intro">
+      <section className={`pp-intro${content.hero.feature ? " pp-intro--featured" : ""}`}>
         <Ambient />
         <div className="pp-container pp-intro__content">
-          <p className="pp-label">{product.title}</p>
-          <Heading as="h1" text={content.hero.title} className="pp-h1" />
+          {/* Urun adi basligin ilk satiri: gorunum aynidir ama marka adi h1'in
+              icinde gecer (arama motorlari ve ekran okuyucular icin). */}
+          <h1 className="pp-hero-title">
+            <span className="pp-hero-title__eyebrow">
+              <ProductEyebrow text={content.hero.eyebrow || `${product.name} · ${product.title}`} />
+            </span>
+            <span className="pp-hero-title__main">
+              {heroLead}<span className="pp-grad-text">{heroAccent}</span>
+            </span>
+          </h1>
           <p className="pp-lead">{content.hero.lead}</p>
         </div>
+        {content.hero.feature && (
+          <div className="pp-container">
+            <article className="pp-zig pp-intro-feature" aria-labelledby="hero-feature-title">
+              <div className="pp-zig__text">
+                <h2 id="hero-feature-title" className="pp-intro-feature__title">{content.hero.feature.title}</h2>
+                <p>{content.hero.feature.body}</p>
+              </div>
+              <div className="pp-zig__visual">
+                <FeatureVisual item={content.hero.feature} slug={product.slug} variant={0} locale={locale} />
+              </div>
+            </article>
+          </div>
+        )}
       </section>
 
       <section className="pp-section pp-section--alt">
         <Blueprint />
         <div className="pp-container">
-          <HeroSignature slug={product.slug} />
+          {heroMedia
+            ? <ProductMedia media={heroMedia} locale={locale} className="pp-media--hero" sizes="(min-width: 68rem) 1024px, calc(100vw - 48px)" />
+            : <HeroSignature slug={product.slug} locale={locale} />}
         </div>
       </section>
 
@@ -241,18 +276,18 @@ export function ProductPage({ product, content }: { product: Product; content: P
           id={`${section.kind}-${i}`}
           className={`pp-section ${i % 2 === 0 ? "pp-section--light" : "pp-section--alt"}`}
         >
-          <div className="pp-container">{renderSection(section, product.slug, i)}</div>
+          <div className="pp-container">{renderSection(section, product.slug, i, locale)}</div>
         </section>
       ))}
 
-      <CrossSell current={product} />
+      <CrossSell current={product} locale={locale} />
 
       {/* Sade iletisim seridi: tek satir, one cikmayan bir baglanti. */}
       <section className="pp-contact">
         <div className="pp-container pp-contact__inner">
-          <p className="pp-contact__text">{product.name} hakkında konuşalım.</p>
-          <Link href="/contact" className="pp-contact__link">
-            İletişime geçin <span aria-hidden="true">→</span>
+          <p className="pp-contact__text">{ui.product.talkAbout(product.name)}</p>
+          <Link href={localePath(locale, "/contact")} className="pp-contact__link">
+            {ui.getInTouch} <span aria-hidden="true">→</span>
           </Link>
         </div>
       </section>

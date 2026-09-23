@@ -2,12 +2,11 @@ import type { NextConfig } from "next";
 import path from "node:path";
 
 /**
- * NOT — output: "standalone":
- * Bu mod yalnizca sunucu dosyalarini .next/standalone altina kopyalar;
- * `public/` ve `.next/static` DAHIL EDILMEZ. Docker gibi bir ortama
- * tasiyacaksaniz ikisini de elle kopyalamaniz gerekir, aksi halde site
- * stilsiz acilir ve gorseller 404 doner. Vercel benzeri bir platforma
- * cikacaksaniz bu satiri tamamen kaldirin.
+ * NOT — dagitim bicimi:
+ * Site Vercel'e cikiyor; orada ek bir ayar gerekmez. Docker gibi kendi
+ * sunucunuza tasiyacaksaniz `output: "standalone"` ekleyin ve `public/`
+ * ile `.next/static` klasorlerini elle kopyalayin (standalone bunlari
+ * icermez; aksi halde site stilsiz acilir, gorseller 404 doner).
  */
 
 const guvenlikBasliklari = [
@@ -20,15 +19,32 @@ const guvenlikBasliklari = [
 
 const nextConfig: NextConfig = {
   turbopack: { root: path.resolve(__dirname) },
+  // Kok layout dile gore ayrildigi icin (app/[lang]) eslesmeyen adreslerin
+  // 404 sayfasi global-not-found.tsx ile sunucuda uretilir.
+  experimental: { globalNotFound: true, serverActions: { bodySizeLimit: "4mb" } },
   devIndicators: false,
-  output: "standalone",
   poweredByHeader: false,
+  images: {
+    formats: ["image/avif", "image/webp"],
+    qualities: [75, 85],
+    remotePatterns: process.env.NEXT_PUBLIC_SUPABASE_URL ? [{
+      protocol: "https",
+      hostname: new URL(process.env.NEXT_PUBLIC_SUPABASE_URL).hostname,
+      pathname: "/storage/v1/object/public/ash-media/**",
+      search: "",
+    }] : [],
+  },
   async headers() {
     return [
       { source: "/:path*", headers: guvenlikBasliklari },
       {
         // Gorseller icerik degisince ad degistigi icin uzun sureli onbelleklenebilir.
         source: "/images/:path*",
+        headers: [{ key: "Cache-Control", value: "public, max-age=2592000" }],
+      },
+      {
+        // Videolar da ayni kurala tabi: icerik degisirse dosya adi degismeli.
+        source: "/videos/:path*",
         headers: [{ key: "Cache-Control", value: "public, max-age=2592000" }],
       },
       {

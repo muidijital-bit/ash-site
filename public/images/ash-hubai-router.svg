@@ -9,6 +9,10 @@
     <filter id="hxg" x="-40%" y="-80%" width="180%" height="260%">
       <feGaussianBlur stdDeviation="9"/>
     </filter>
+    <style>
+      /* Hareketi azaltmayi tercih edenlerde akan nokta gizlenir. */
+      @media (prefers-reduced-motion: reduce) { .akis { display: none } }
+    </style>
   </defs>
 
   <!-- pasif kollar -->
@@ -22,7 +26,7 @@
   <!-- aktif kol -->
   <path d="M214 200 L 406 200" fill="none" stroke="url(#hx)" stroke-width="26" opacity=".3" filter="url(#hxg)"/>
   <path d="M214 200 L 406 200" fill="none" stroke="url(#hx)" stroke-width="9" stroke-linecap="round"/>
-  <circle r="9" fill="#7448e8">
+  <circle class="akis" r="9" fill="#7448e8">
     <animateMotion dur="2.6s" repeatCount="indefinite" path="M214 200 L 406 200"/>
   </circle>
 

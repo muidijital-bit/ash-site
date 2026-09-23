@@ -1,0 +1,28 @@
+{
+  "eyebrow": "Nasıl ilerliyoruz",
+  "title": "Yapay Zekâdan",
+  "titleAccent": "Gerçek İş Sonuçlarına",
+  "lead": "Yapay zekâyı fikir aşamasından gerçek iş sonuçlarına taşıyoruz. Kurumların mevcut sistemleri, verileri ve iş süreçleriyle entegre çalışan çözümlerimizle, AI dönüşümünü uçtan uca ve ölçeklenebilir şekilde hayata geçiriyoruz.",
+  "steps": [
+    {
+      "title": "Keşif ve Önceliklendirme",
+      "body": "Hangi süreçte tıkandığınızı birlikte çıkarırız. Talep hacmi, tekrar eden işler ve manuel adımlar ölçülür; yapay zekânın en hızlı geri dönüş vereceği senaryo baştan seçilir."
+    },
+    {
+      "title": "Veri ve Sistem Analizi",
+      "body": "SAP başta olmak üzere mevcut sistemleriniz, veri kaynaklarınız ve yetki yapınız incelenir. Çözüm genel bir şablon değil, sizin kurumsal mimarinize göre kurgulanır."
+    },
+    {
+      "title": "Kurulum ve Entegrasyon",
+      "body": "Çözüm, ERP ve kurumsal uygulamalarınızla entegre edilir. Güvenlik, rol bazlı yetkilendirme ve KVKK gereklilikleri sonradan eklenmez, tasarımın parçası olur."
+    },
+    {
+      "title": "Üretime Alma",
+      "body": "Demo ortamında değil, gerçek kullanıcı yükü altında devreye alınır. İstisnalar, hata senaryoları ve onay akışları canlıya geçmeden çalışır durumdadır."
+    },
+    {
+      "title": "Ölçüm ve Ölçekleme",
+      "body": "Kazanılan süre, kapanan talep ve maliyet etkisi raporlanır. Çalıştığı kanıtlanan senaryo diğer departmanlara ve süreçlere ölçeklenir."
+    }
+  ]
+}

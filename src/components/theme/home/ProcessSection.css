@@ -1,0 +1,106 @@
+/* Anasayfa "Nasil ilerliyoruz" seridi.
+   Urun sayfalarindaki adim listesiyle (.pp-flow) ayni gorsel dil:
+   numarali halka, baslik, aciklama. Ilk halka marka gradyaniyla dolu.
+   Zemin acik gri serit; olculer tema token'larindan okunur. */
+
+.ash-process {
+  background: #ffffff;
+  color: var(--ash-deep-navy, #050a2b);
+  padding-block: var(--spacing-layout-vertical, 3.5rem);
+  padding-inline: var(--spacing-layout-horizontal, 1.5rem);
+}
+
+.ash-process__inner {
+  max-width: var(--site-width, 75rem);
+  margin-inline: auto;
+}
+
+.ash-process__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Baslik duzeni apple.com/tr referans alinarak: kucuk gri ust etiket,
+   buyuk ve siki satirli kalin baslik, ortalanmis genis paragraf.
+   Baslik olcusu temanin Text_text--display-s adimindan geliyor. */
+.ash-process__eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #5d6688;
+}
+
+.ash-process__title {
+  margin: 0;
+  max-width: 22ch;
+  line-height: 1.08;
+  letter-spacing: -0.022em;
+  text-wrap: balance;
+}
+
+.ash-process__lead {
+  max-width: min(100%, 52rem);
+  margin: 1.25rem auto 0;
+  color: rgba(10, 20, 61, 0.78);
+}
+
+.ash-process__steps {
+  display: grid;
+  gap: 2.5rem 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: ash-step;
+}
+
+/* Uc sutunla sinirli: bes adim 3 + 2 olarak dizilir, dorduncu sutunda
+   tek basina kalan bir adim olusmaz. */
+@media (min-width: 40rem) {
+  .ash-process__steps { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 64rem) {
+  .ash-process__steps { grid-template-columns: repeat(3, 1fr); column-gap: 3rem; }
+}
+
+.ash-process__step { position: relative; }
+
+.ash-process__node {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(10, 20, 61, 0.16);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* Ilk adim vurgulanir: akisin nereden basladigi bir bakista okunur. */
+.ash-process__step:first-child .ash-process__node {
+  background: var(--ash-gradient);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 0 24px rgba(47, 107, 255, 0.45);
+}
+
+.ash-process__step h3 {
+  margin: 1.125rem 0 0;
+  font-size: clamp(1.0625rem, 1.4vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.00875rem;
+  text-wrap: balance;
+}
+
+.ash-process__step p {
+  margin: 0.625rem 0 0;
+  font-size: clamp(0.9375rem, 1vw, 1.0625rem);
+  line-height: 1.55;
+  color: rgba(10, 20, 61, 0.72);
+}

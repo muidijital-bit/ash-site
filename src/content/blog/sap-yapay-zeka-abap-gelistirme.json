@@ -89,5 +89,6 @@
       "a": "Belgelenmemiş olması okunamaz olduğu anlamına gelmez. Sistemdeki objelerin yapısını girdi alan bir yaklaşım, bir objenin bugün ne yaptığını ve yapılacak bir değişikliğin nereye dokunacağını görünür kılabilir."
     }
   ],
-  "cover": "/images/ash-blog-sap-ai.svg"
+  "cover": "/images/ash-blog-sap-ai.svg",
+  "seoTitle": "SAP Yapay Zekâ ve ABAP Geliştirme"
 }

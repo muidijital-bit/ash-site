@@ -5,3 +5,12 @@
    gosteriliyor, bosluk gorselin kendi lacivertiyle ayni renkte. */
 .LatestNewsItem_cover__image-container__cYQi2 { background: var(--ash-deep-navy, #050a2b); }
 .LatestNewsItem_cover__image-container__cYQi2 img.capture-877c27fb16 { object-fit: contain; }
+
+@media (max-width: 63.999rem) {
+  .LatestNews_latest-news__wsZ9D .LatestNewsItem_cover__image-container__cYQi2 {
+    min-height: 0;
+    height: auto;
+    aspect-ratio: 2 / 1;
+  }
+  .LatestNews_latest-news__wsZ9D .LatestNewsItem_content__date__YOsTn { padding-top: 1.5rem; }
+}

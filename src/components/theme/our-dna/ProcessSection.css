@@ -4,49 +4,88 @@
    ================================================================== */
 
 .ash-flow {
-  max-width: var(--site-width);
-  margin: 0 auto;
   padding: 0 var(--spacing-layout-horizontal) var(--spacing-layout-vertical);
   color: #0a143d;
 }
 
+/* Baslik blogu: anasayfadaki "Nasil ilerliyoruz" bolumuyle ayni olculer. */
+.ash-flow__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: var(--site-width);
+  margin: 0 auto 3rem;
+  padding: calc(var(--spacing-layout-vertical, 3.5rem) * 1.2) 0 0;
+}
+.ash-flow__eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #5d6688;
+}
+.ash-flow__heading {
+  margin: 0;
+  max-width: 22ch;
+  line-height: 1.08;
+  letter-spacing: -0.022em;
+  text-wrap: balance;
+}
+.ash-flow__lead {
+  max-width: min(100%, 52rem);
+  margin: 1.25rem auto 0;
+  font-size: clamp(1.0625rem, 1.4vw, 1.25rem);
+  line-height: 1.55;
+  color: rgba(10, 20, 61, 0.78);
+}
+
+/* Ic genislik tema ile ayni. Olcu listenin kendisinde duruyor; .ash-flow'a
+   hem max-width hem kenar boslugu verilince adimlar 140px'e sikisiyordu. */
+.ash-flow__list,
+.ash-flow__example {
+  max-width: var(--site-width);
+  margin-inline: auto;
+}
+
 .ash-flow__list {
   display: grid;
-  gap: 2.5rem 1.75rem;
-  margin: 0;
+  gap: 2.5rem 2rem;
   padding: 0;
   list-style: none;
-  counter-reset: none;
-}
-@media (min-width: 64rem) {
-  .ash-flow__list { grid-template-columns: repeat(5, 1fr); gap: 0 1.5rem; }
 }
 
-.ash-flow__step { position: relative; }
+/* Bes adim tek sirada cok dar kaliyordu; sutun genisligi metne gore
+   belirleniyor (en az 19rem), bu da genis ekranda ucer ucer diziyor. */
+@media (min-width: 48rem) {
+  .ash-flow__list { grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); }
+}
 
-/* --- ray ve dugum --- */
+.ash-flow__step { position: relative; padding-left: 4rem; }
+
+/* --- ray ve dugum: dar ekranda sol tarafta dikey ray --- */
 .ash-flow__rail {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 2.75rem;
-  margin-bottom: 1.25rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.75rem;
+  height: 100%;
 }
 .ash-flow__rail::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 2px;
+  top: 2.75rem;
+  bottom: -2.5rem;
+  left: calc(50% - 1px);
+  width: 2px;
   background: rgba(10, 20, 61, 0.12);
 }
-/* ilk adimin solu ve son adimin sagi acik kalmasin */
-.ash-flow__step:first-child .ash-flow__rail::before { left: 1.375rem; }
-.ash-flow__step:last-child .ash-flow__rail::before { right: calc(100% - 1.375rem); }
+.ash-flow__step:last-child .ash-flow__rail::before { display: none; }
 
 .ash-flow__node {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1;
   display: grid;
   place-items: center;
@@ -61,15 +100,17 @@
   letter-spacing: 0.02em;
 }
 
-/* mobilde dikey ray */
-@media (max-width: 63.99rem) {
-  .ash-flow__list { padding-left: 0; }
-  .ash-flow__step { padding-left: 4rem; }
-  .ash-flow__rail { position: absolute; top: 0; left: 0; width: 2.75rem; height: 100%; margin: 0; }
-  .ash-flow__rail::before { top: 2.75rem; bottom: -2.5rem; left: calc(50% - 1px); right: auto; width: 2px; height: auto; }
-  .ash-flow__step:last-child .ash-flow__rail::before { display: none; }
-  .ash-flow__step:first-child .ash-flow__rail::before { left: calc(50% - 1px); }
-  .ash-flow__node { position: absolute; top: 0; left: 0; }
+/* Sutunlu duzende numara metnin ustunde durur; baglayici ray kalkar. */
+@media (min-width: 48rem) {
+  .ash-flow__step { padding-left: 0; }
+  .ash-flow__rail {
+    position: static;
+    width: auto;
+    height: auto;
+    margin-bottom: 1.25rem;
+  }
+  .ash-flow__rail::before { display: none; }
+  .ash-flow__node { position: static; }
 }
 
 .ash-flow__title {
@@ -82,6 +123,7 @@
 }
 .ash-flow__body {
   margin: 0;
+  max-width: 44ch;
   font-size: 1rem;
   line-height: 1.6;
   color: rgba(10, 20, 61, 0.68);
@@ -102,7 +144,8 @@
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #2f6bff;
+  /* 12px'te elektrik mavisi acik zeminde 4.2:1 kaliyordu. */
+  color: #1e4fd8;
 }
 .ash-flow__example-rows { display: grid; gap: 0.875rem; }
 
@@ -130,6 +173,7 @@
 
 .ash-flow__example-closing {
   margin: 1.5rem 0 0;
+  max-width: 76ch;
   font-size: 1rem;
   line-height: 1.6;
   color: rgba(10, 20, 61, 0.68);

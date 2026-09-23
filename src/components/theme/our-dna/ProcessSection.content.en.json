@@ -1,0 +1,41 @@
+{
+  "label": "How we work",
+  "heading": "Five steps from discovery to post-launch",
+  "intro1": "When we start a project, we talk less about what we will do and more about what we won't. The five steps below frame the decisions we make, from the proposal stage to post-launch support.",
+  "intro2": "The order never changes; the duration does. We would rather shorten a step than skip it, because a skipped step always comes back as the cost of the next one.",
+  "steps": [
+    {
+      "no": "01",
+      "title": "We read the system",
+      "body": "Before we start building, we look at what is already there: which objects have been written and where each rule is defined. The organization's naming and development standards are taken as inputs."
+    },
+    {
+      "no": "02",
+      "title": "We draw the scope and the boundaries",
+      "body": "Which data will be accessed, what will be automated and what will go through human approval are settled before the contract. Role-based access is the first design decision."
+    },
+    {
+      "no": "03",
+      "title": "We build under production conditions",
+      "body": "From day one we design for failure cases, retries and the rollback path. Integration is not left for later; the connection exists in the prototype too."
+    },
+    {
+      "no": "04",
+      "title": "We deliver with evidence",
+      "body": "For every output, you can see which document, record or rule it came from. Code, configuration and the reasoning behind decisions stay with the organization."
+    },
+    {
+      "no": "05",
+      "title": "We measure after launch",
+      "body": "We track usage: who uses it, where they give up and at which step they turn back. Updating the solution when rules change is part of the plan."
+    }
+  ],
+  "example": {
+    "label": "What we mean by step four",
+    "avoidLabel": "What we avoid",
+    "avoidQuote": "The system decided this invoice should go for approval.",
+    "preferLabel": "What we prefer",
+    "preferQuote": "The invoice amount deviates from the purchase order; the relevant clause of the expense policy sends records above this difference for approval.",
+    "closing": "The difference changes how the user behaves: in the first case there is no option but to approve; in the second, a real decision can be made."
+  }
+}

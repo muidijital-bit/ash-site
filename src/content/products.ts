@@ -1,3 +1,5 @@
+import type { Locale } from "@/i18n/config";
+
 /**
  * ASH urun ailesi.
  *
@@ -15,29 +17,34 @@ export type Product = {
   summary: string;
   /** Yayindaki alt domain */
   domain: string;
+  /** Urunun marka rengi (vurgu, gradyan baslangici ve bitisi) */
+  accent: readonly [string, string];
 };
 
 export const products: Product[] = [
   {
     slug: "hubai-x",
     name: "HubAI-X",
-    title: "Kurumsal Yapay Zeka",
+    title: "Kurumsal Yapay Zekâ",
     summary: "Kurumsal süreçleri uçtan uca yapay zekâ ile yöneten şemsiye platform.",
     domain: "hubai-x.com",
+    accent: ["#2f6bff", "#7448e8"],
   },
   {
     slug: "sapai-x",
     name: "SAPAI-X",
-    title: "SAP Yapay Zeka",
+    title: "SAP Yapay Zekâ",
     summary: "SAP danışmanlığı ve ABAP geliştirmeyi yapay zekâ ile dakikalara indirir.",
     domain: "sapai-x.com",
+    accent: ["#7448e8", "#2f6bff"],
   },
   {
     slug: "masraf-x",
     name: "Masraf-X",
-    title: "Masraf Solution",
+    title: "Harcama Yönetimi",
     summary: "Kurumsal harcama yönetimi: fişten onaya, politikadan ay sonu kapanışına.",
     domain: "masraf-x.co",
+    accent: ["#d946b5", "#f08bc2"],
   },
   {
     slug: "crm-x",
@@ -45,7 +52,32 @@ export const products: Product[] = [
     title: "CRM",
     summary: "Müşteri, satış fırsatı ve ekip aktivitelerini tek platformda birleştirir.",
     domain: "crm-x.co",
+    accent: ["#7448e8", "#d946b5"],
   },
 ];
 
-export const getProduct = (slug: string) => products.find((p) => p.slug === slug);
+/** Kategori basligi ve ozetin Ingilizcesi; ad ve alan adi iki dilde ayni. */
+const english: Record<string, Pick<Product, "title" | "summary">> = {
+  "hubai-x": {
+    title: "Enterprise AI",
+    summary: "An umbrella platform that runs enterprise processes end to end with AI.",
+  },
+  "sapai-x": {
+    title: "SAP AI",
+    summary: "Cuts SAP consulting and ABAP development down to minutes with AI.",
+  },
+  "masraf-x": {
+    title: "Spend Management",
+    summary: "Enterprise spend management: from receipt to approval, from policy to month-end close.",
+  },
+  "crm-x": {
+    title: "CRM",
+    summary: "Brings customers, sales opportunities and team activities together on one platform.",
+  },
+};
+
+export function getProducts(locale: Locale): Product[] {
+  return locale === "en" ? products.map((p) => ({ ...p, ...english[p.slug] })) : products;
+}
+
+export const getProduct = (slug: string, locale: Locale) => getProducts(locale).find((p) => p.slug === slug);

@@ -1,0 +1,31 @@
+{
+  "text_001": "Enterprise Experience Meets",
+  "text_001_accent": "AI Expertise",
+  "text_002": "With deep SAP expertise and extensive project experience, we understand the realities of enterprise environments. We combine this experience with AI expertise to transform complex business needs into intelligent, scalable solutions.",
+  "text_007": "Experience from ",
+  "text_008": "the Field",
+  "text_009": "We have years of SAP and enterprise project history behind us. We know where a process gets stuck and why users complain, not from theory, but from the field.",
+  "text_010": "An Approach Built for Your Organization",
+  "text_011": "We don't force a generic solution onto your organization. We work from your system, your existing developments and your standards as inputs.",
+  "text_012": "AI That Runs in Production",
+  "text_013": "Not demos that stall at the pilot stage, but solutions that carry real user load, edge cases and integrations.",
+  "flow": [
+    "Request",
+    "Analysis",
+    "Build",
+    "Approval",
+    "Live"
+  ],
+  "flowNote": "where it stalls",
+  "inputs": [
+    "Your system",
+    "Your developments",
+    "Your standards"
+  ],
+  "inputsOut": "A solution built for you",
+  "loadPilot": "Pilot",
+  "loadProd": "Production",
+  "familyTitle": "Four products, one architecture",
+  "familyBody": "Each was born from a real enterprise need, and they share the same approach to security, authorisation and integration.",
+  "familyLink": "Explore the products"
+}

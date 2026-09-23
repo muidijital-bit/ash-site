@@ -1,0 +1,234 @@
+{
+  "key": "sapai-x",
+  "name": "SAPAI-X",
+  "hero": {
+    "eyebrow": "SAPAI-X · SAP AI",
+    "title": "SAP Expertise, <span>Reimagined with AI.</span>",
+    "lead": "SAPAI-X gives your team instant access to senior-level SAP expertise and ABAP development. From solving complex SAP problems to building new developments, simply describe what you need and let AI turn it into action.",
+    "cta": "Book a Demo"
+  },
+  "sections": [
+    {
+      "kind": "farklar",
+      "heading": "Six Bottlenecks Slowing Down Your SAP Team.",
+      "sub": "Before we talk about SAPAI-X, look at a familiar picture: requests piling up, developments stretching over weeks, and the one person who really knows your system always being busy.",
+      "items": [
+        {
+          "title": "Dependency on External Consultants",
+          "body": "Even the simplest request gets stuck in an outside expert's calendar. SAPAI-X reduces this dependency by diagnosing and solving common problems in-house."
+        },
+        {
+          "title": "A Pile of First-Level Requests",
+          "body": "Recurring error messages and known issues eat up your experts' day. Hand this load over to AI and let your team get back to the work that matters."
+        },
+        {
+          "title": "Change Requests (CRs) That Take Weeks",
+          "body": "CRs bouncing between analysis, design and development lock up the schedule. Define the need in minutes and put the generated development straight into review."
+        },
+        {
+          "title": "Z Objects Nobody Fully Knows",
+          "body": "Custom developments built up over the years remain undocumented, and every change carries risk. SAPAI-X analyzes your Z objects and makes that knowledge accessible again."
+        },
+        {
+          "title": "Generic AI That Doesn't Know SAP",
+          "body": "General-purpose assistants stop at SAP standards and don't know your system; fitting the code they produce into your environment is still your team's job. SAPAI-X starts from your existing structure and standards."
+        },
+        {
+          "title": "Questions Waiting for an Expert's Calendar",
+          "body": "Even a simple question about how the system is configured waits until the right person is available. Ask SAPAI-X in natural language and get an answer in the context of your own SAP environment."
+        }
+      ]
+    },
+    {
+      "kind": "ozellikler",
+      "heading": "Two Desks. One SAP Expert.",
+      "sub": "SAPAI-X uses the same system knowledge for two different jobs: it resolves requests coming from users, and it builds the developments your team describes. From ticket resolution to new development requests, the whole process sits under one roof.",
+      "items": [
+        {
+          "title": "AI-Powered First-Level Support",
+          "body": "SAPAI-X analyzes user requests and issues across SAP processes using AI to deliver fast and accurate solutions. It identifies common problems, provides intelligent recommendations, and, where appropriate, executes actions directly — reducing dependency on external SAP consultants."
+        },
+        {
+          "title": "Don't Stop at a Suggestion, Complete the Action",
+          "body": "Where appropriate, SAPAI-X doesn't settle for recommending a fix; it carries out the required action itself. The request gets closed, and fewer tasks need to go to an external consultant."
+        },
+        {
+          "title": "AI-Powered SAP Development",
+          "body": "SAPAI-X works based on the Z objects, existing developments, and your organization's development standards within your SAP system. Simply describe what you need in natural language or through a prompt."
+        },
+        {
+          "title": "ABAP Development Tailored to Your SAP System",
+          "body": "SAPAI-X analyzes your request, understands your existing system architecture and development approach, and generates the ABAP development required for your specific needs. Instead of generating generic code from scratch, it creates solutions tailored to your SAP system, existing architecture, and development standards."
+        },
+        {
+          "title": "Define, Review, Approve",
+          "body": "Whether you need a new report, function, integration, development, or a modification to an existing Z object, you can define your requirements in minutes, review the generated development, and, upon your approval, make it ready for use in your SAP system."
+        }
+      ]
+    },
+    {
+      "kind": "nasil-calisir",
+      "heading": "Describe What You Need. <span>SAPAI-X Understands Your System and Builds the Development for You.</span>",
+      "sub": "Taking a development need from idea to ready-to-use takes five steps. You stay in control at every step; no development goes live in your system without your approval.",
+      "items": [
+        {
+          "title": "Describe",
+          "body": "Write what you need in natural language or as a prompt: a new report, function, integration or a change to an existing Z object."
+        },
+        {
+          "title": "Analyze",
+          "body": "SAPAI-X breaks down the request and scans the related Z objects, existing developments and your organization's development standards."
+        },
+        {
+          "title": "Build",
+          "body": "An ABAP development that fits your system structure and development approach is generated. Not a generic template, but a solution specific to your environment."
+        },
+        {
+          "title": "Review",
+          "body": "Go through the generated code, the objects it references and the proposed changes on a single screen. You don't need to switch to another tool to make a decision."
+        },
+        {
+          "title": "Approve",
+          "body": "The development only becomes usable in your SAP system upon your approval. The final say always stays with your team."
+        }
+      ]
+    },
+    {
+      "kind": "farklar",
+      "heading": "Go Beyond the Standard. AI That Knows Your System.",
+      "sub": "General-purpose assistants know SAP from the textbook, not your system. The four key differences that set SAPAI-X apart are felt directly in your team's daily work.",
+      "items": [
+        {
+          "title": "Reads Your Z Developments",
+          "body": "Unlike tools limited to SAP standards, SAPAI-X also analyzes your organization's custom developments and Z programs. Answers and code are fed by your real system."
+        },
+        {
+          "title": "Reduces Dependency on External Consultants",
+          "body": "It identifies common problems, provides recommendations and, where appropriate, carries out actions directly. Less work goes to external SAP consultants, and your team can focus on what matters."
+        },
+        {
+          "title": "Nothing Goes Live Without Your Approval",
+          "body": "You review the generated development first. It only becomes usable in your SAP system upon your approval; the final say always stays with your team."
+        },
+        {
+          "title": "Focused Only on SAP (SAP Native)",
+          "body": "SAPAI-X isn't an assistant trying to keep up with every topic. Because it focuses solely on the SAP ecosystem, it offers deep command of SAP protocols and development standards."
+        }
+      ]
+    },
+    {
+      "kind": "istatistik",
+      "heading": "A Shorter Queue. A Shorter Timeline.",
+      "sub": "SAPAI-X makes a difference in two places: recurring first-level requests and development requests that follow a known pattern. Both can be handled before they ever reach an expert's desk.",
+      "items": [
+        {
+          "title": "72%",
+          "body": "Companies that manage their first-level requests with AI reduced their requests by 72%."
+        },
+        {
+          "title": "65 → 2 days",
+          "body": "A 65-day CR was delivered in 2 days."
+        },
+        {
+          "title": "Minutes",
+          "body": "Define a new report, function or integration in minutes; the development arrives ready for your review."
+        },
+        {
+          "title": "Your objects",
+          "body": "The Z objects in your environment, existing developments and company standards are analyzed and taken as inputs."
+        }
+      ]
+    },
+    {
+      "kind": "kullanim-senaryolari",
+      "heading": "SAP Work That Starts with a Single Sentence.",
+      "sub": "The best way to see what you can ask SAPAI-X is through examples. In every scenario the need is written in natural language, and the result comes back in the context of your system.",
+      "items": [
+        {
+          "title": "Resolving User Requests",
+          "body": "Give users who arrive with an error message a solution instead of a waiting time. SAPAI-X analyzes the request in the context of the process, proposes the fix and, where appropriate, completes the action."
+        },
+        {
+          "title": "New Report",
+          "body": "A reporting need described in one sentence becomes an ABAP report that fits your existing data structure and reporting standards."
+        },
+        {
+          "title": "New Function",
+          "body": "Describe a business rule that will be reused across different programs. SAPAI-X builds it as a function consistent with your existing developments."
+        },
+        {
+          "title": "Integration Development",
+          "body": "Describe your need to exchange data with another system. The development is prepared using the existing integration approach in your system as a reference."
+        },
+        {
+          "title": "Changing an Existing Z Object",
+          "body": "To add a new field, check or rule to an existing Z program, you don't need to explain the object from scratch. SAPAI-X already knows the structure."
+        },
+        {
+          "title": "SAP Consulting",
+          "body": "Get answers to questions like 'How is this process configured in our system?' with the depth of a senior consultant, drawn from your own environment."
+        }
+      ]
+    },
+    {
+      "kind": "sss",
+      "heading": "Questions Asked Before Deciding.",
+      "sub": "The questions SAP and IT managers ask most often when evaluating SAPAI-X.",
+      "items": [
+        {
+          "title": "How is SAPAI-X different from a general-purpose AI assistant?",
+          "body": "General assistants are limited to SAP standards. SAPAI-X takes the Z objects, existing developments and development standards in your system as its reference, and shapes its answers and the code it produces to fit your environment."
+        },
+        {
+          "title": "What does SAPAI-X base its work on?",
+          "body": "SAPAI-X works based on the Z objects, existing developments and your organization's development standards within your SAP system. That way it produces solutions specific to your system instead of generic code."
+        },
+        {
+          "title": "Is the generated development transferred to the system automatically?",
+          "body": "No. You review the development first, then approve it. It only becomes usable in your SAP system upon your approval."
+        },
+        {
+          "title": "What kinds of development can we request?",
+          "body": "Besides new reports, functions, integrations and general development needs, you can also describe changes to an existing Z object in natural language or through a prompt."
+        },
+        {
+          "title": "Will we no longer need external SAP consultants at all?",
+          "body": "SAPAI-X reduces dependency on external consultants by identifying and solving common problems and, where appropriate, carrying out actions directly. That leaves your team's and your consultants' time for the topics that truly need expert judgment."
+        },
+        {
+          "title": "Does SAPAI-X step outside our security and authorization standards?",
+          "body": "No. ASH solutions are built on an auditable structure that complies with enterprise security, authorization and development standards. Developments are not put into use without your approval."
+        }
+      ]
+    },
+    {
+      "kind": "cta",
+      "heading": "Don't Wait for a Consultant's Calendar. Write Your First Request Today.",
+      "sub": "See SAPAI-X through your own SAP scenarios: let's take one of your frequent support requests and one pending development need and work through them together.",
+      "items": [
+        {
+          "title": "Book a Demo",
+          "body": "See the support and development flows in the context of your own system, and let's look together at where the approval step comes in."
+        },
+        {
+          "title": "Explore the Product Live",
+          "body": "Walk through the five steps from request to approved development, one by one, on the interface."
+        },
+        {
+          "title": "HubAI-X",
+          "body": "Explore the enterprise AI platform to extend AI to departments beyond SAP under one roof."
+        },
+        {
+          "title": "Masraf-X",
+          "body": "Manage your expense and spending processes with an AI-powered, end-to-end flow."
+        },
+        {
+          "title": "CRM-X",
+          "body": "Manage your customer relationships and sales processes on one growth-focused platform."
+        }
+      ]
+    }
+  ],
+  "seoTitle": "SAPAI-X: AI-Powered SAP Support and ABAP Development | ASH",
+  "seoDescription": "SAPAI-X resolves first-level SAP requests with AI and brings ABAP developments tailored to your Z objects and standards to your approval in minutes."
+}

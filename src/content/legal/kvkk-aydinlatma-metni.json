@@ -4,15 +4,14 @@
   "metaDescription": "6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında AI Solution House web sitesi ziyaretçileri için aydınlatma metni.",
   "updated": "2026-09-18",
   "intro": [
-    "Bu aydınlatma metni, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun (KVKK) 10. maddesi ve Aydınlatma Yükümlülüğünün Yerine Getirilmesinde Uyulacak Usul ve Esaslar Hakkında Tebliğ uyarınca, {{UNVAN}} (ASH — AI Solution House) tarafından işletilen bu web sitesinin ziyaretçilerini bilgilendirmek amacıyla hazırlanmıştır.",
+    "Bu aydınlatma metni, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun (KVKK) 10. maddesi ve Aydınlatma Yükümlülüğünün Yerine Getirilmesinde Uyulacak Usul ve Esaslar Hakkında Tebliğ uyarınca, AI Solution House (ASH) tarafından işletilen bu web sitesinin ziyaretçilerini bilgilendirmek amacıyla hazırlanmıştır.",
     "Metnin bu sürümü, sitenin bugünkü işleyişini anlatır. Site üzerinde kişisel veri toplayan yeni bir işlev devreye alındığında metin güncellenir ve güncelleme tarihi değiştirilir."
   ],
   "sections": [
     {
       "heading": "Veri sorumlusunun kimliği",
       "paragraphs": [
-        "Veri sorumlusu {{UNVAN}}'dir. İletişim adresi {{ADRES}}, elektronik posta adresi {{EPOSTA}}'dir.",
-        "MERSİS numarası: {{MERSIS}} · VERBİS kaydı: {{VERBIS}}"
+        "Kişisel verileriniz bakımından veri sorumlusu AI Solution House'tur (ASH). Bize sitemizdeki iletişim sayfası üzerinden ulaşabilirsiniz."
       ]
     },
     {
@@ -74,7 +73,7 @@
     {
       "heading": "Başvuru yolu",
       "paragraphs": [
-        "Haklarınıza ilişkin taleplerinizi, Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ'de belirtilen şartlara uygun olarak {{ADRES}} adresine yazılı biçimde veya {{EPOSTA}} adresine elektronik posta yoluyla iletebilirsiniz.",
+        "Haklarınıza ilişkin taleplerinizi, Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ'de belirtilen şartlara uygun olarak, sitemizdeki iletişim sayfasında yer alan kanallar aracılığıyla yazılı biçimde AI Solution House'a iletebilirsiniz.",
         "Başvurunuzda adınız soyadınız, imzanız (yazılı başvuruda), Türkiye Cumhuriyeti kimlik numaranız veya yabancılar için uyruğu ve pasaport numarası, tebligata esas adresiniz, varsa bildirime esas elektronik posta adresiniz ve talep konunuz yer almalıdır.",
         "Talebiniz, niteliğine göre en kısa sürede ve en geç otuz gün içinde ücretsiz olarak sonuçlandırılır. İşlemin ayrıca bir maliyet gerektirmesi hâlinde Kurul tarafından belirlenen tarifedeki ücret alınabilir."
       ]

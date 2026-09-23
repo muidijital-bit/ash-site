@@ -2,7 +2,7 @@
   "key": "crm-x",
   "name": "CRM-X",
   "hero": {
-    "eyebrow": "CRM-X · YAPAY ZEKÂ DESTEKLİ SATIŞ VE MÜŞTERİ YÖNETİMİ",
+    "eyebrow": "CRM-X · SATIŞ VE MÜŞTERİ YÖNETİMİ",
     "title": "Dağınık Kayıtlara Son Verin. Her Fırsatı Tek Ekranda Yönetin.",
     "lead": "CRM-X; müşteri bilgilerini, satış fırsatlarını ve ekip aktivitelerini tek platformda birleştirir. Yapay zekâ takip bekleyen fırsatı işaretler, tekrarlayan işi üstlenir; ekibiniz müşteriyle konuşmaya ve satışı kapatmaya odaklanır.",
     "cta": "Demo Planlayın",
@@ -250,6 +250,6 @@
       "visual": "Deep Navy #050A2B zemin; hero'nun arka plan üçlüsü birebir tekrar eder (132px blueprint ızgarası + radial maske + sol üst Violet / sağ alt Magenta blur(120px) küreleri) ve merkeze doğru ısınan ek radyal hale (rgba(116,72,232,.14)→transparent) başlığı parlatır. Ortalanmış mono eyebrow 'DEMO', 2 satırlık büyük başlık (ikinci satır 'Her Fırsatı Sahiplenin.' marka gradyanlı), tek paragraf lead ve yan yana iki hap buton: gradyan dolgulu 'Demo Planlayın' (0 10px 28px -12px rgba(47,107,255,.65) glow, hover'da -2px) ve şeffaf + 1px kenarlıklı 'Platformu Keşfedin'. Butonların altında tek satır mikro metin: 'Görüşmede kendi satış aşamalarınız üzerinden ilerliyoruz.' Altında 'KEŞFETMEYE DEVAM EDİN' eyebrow'lu 4 kartlık çapraz satış şeridi: HubAI-X (mavi+mor), SAPAI-X (mor+mavi), Masraf-X (magenta+pembe) ve bulunulan sayfa CRM-X (opacity .4, pointer-events:none). Her kartın üst kenarında ortası kendi aksan renginde parlayan, uçları saydam 1px gradyan çizgi; içinde 28px outline ürün ikonu, ürün adı, tek satır konum cümlesi ve 10px mono alt domain etiketi. Hover'da kart -4px yükselir ve köşe glow belirir. Mobilde kartlar 2 sütun."
     }
   ],
-  "seoTitle": "CRM-X | Yapay Zekâ Destekli CRM ve Satış Yönetimi – ASH",
+  "seoTitle": "CRM-X | Yapay Zekâ Destekli CRM ve Satış Yönetimi — ASH",
   "seoDescription": "CRM-X ile müşteri kayıtlarını, satış fırsatlarını ve ekip aktivitelerini tek platformda yönetin. Yapay zekâ takipleri hatırlatır, sonraki adımı gerekçesiyle önerir."
 }

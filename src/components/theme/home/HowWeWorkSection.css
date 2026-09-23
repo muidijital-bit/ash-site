@@ -4,3 +4,148 @@
 .capture-1d5ce83591{box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;padding-top:100.0%}
 .capture-afff7f3039{box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;padding-top:80.4721%}
 .capture-928dc7f906{box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;padding-top:80.22598870056498%}
+
+/* Tema bu satiri kisa bir slogan icin 27ch'e sabitliyor; buradaki metin
+   Excel'den gelen paragraf oldugu icin okunakli bir olcude aksin.
+   Iki sinif: tema CSS'i sonra yuklendigi icin ozgulluk gerekiyor. */
+.HowWeWork_how-we-work__content__72VcT .HowWeWork_how-we-work__subtitle__0YDn0 {
+  max-width: 54ch;
+  margin-inline: auto;
+}
+
+/* ==================================================================
+   Bento izgarasi
+   ------------------------------------------------------------------
+   Uc yetkinlik karti + urun ailesi. Masaustunde uc sutun; genis
+   kartlar iki sutun kaplar, boylece 2+1 / 1+2 ritmi olusur.
+   Kartlar acik gri seridin uzerinde beyaz; zeminden ince bir
+   kenarlikla ayrilir (sitedeki diger kartlarla ayni).
+   ================================================================== */
+
+.ash-bento {
+  display: grid;
+  gap: 1.25rem;
+  max-width: var(--site-width);
+  margin: 3.5rem auto 0;
+}
+
+@media (min-width: 48rem) {
+  .ash-bento { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 64rem) {
+  .ash-bento { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+  .ash-bento__card--wide { grid-column: span 2; }
+}
+
+.ash-bento__card {
+  display: flex;
+  flex-direction: column;
+  /* Tema bolumu ortaliyor; kart icerigi sola yaslanir. */
+  text-align: left;
+  padding: 1.75rem;
+  border-radius: 1.25rem;
+  background: #ffffff;
+  border: 1px solid rgba(10, 20, 61, 0.08);
+  box-shadow: 0 1px 3px rgba(10, 20, 61, 0.05);
+}
+
+@media (min-width: 64rem) {
+  .ash-bento__card { padding: 2rem 2.25rem; }
+}
+
+.ash-bento__title {
+  margin: 0;
+  font-size: clamp(1.125rem, 1.5vw, 1.375rem);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.012em;
+  color: var(--ash-dark-text-navy, #0a143d);
+  text-wrap: balance;
+}
+
+.ash-bento__body {
+  margin: 0.75rem 0 0;
+  max-width: 54ch;
+  font-size: clamp(0.9375rem, 1vw, 1.0625rem);
+  line-height: 1.55;
+  color: rgba(10, 20, 61, 0.72);
+}
+
+/* Diyagram kartin altina yaslanir; kart yuksekligi degisse de hizali kalir. */
+.ash-bento__visual {
+  margin-top: auto;
+  padding-top: 1.75rem;
+}
+
+.ash-bento__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: inherit;
+}
+
+/* --- urun ailesi karti --------------------------------------------- */
+
+.ash-bento__pills {
+  display: grid;
+  gap: 0.625rem;
+  margin: auto 0 0;
+  padding: 1.75rem 0 0;
+  list-style: none;
+}
+/* Kutucuklar kart genis oldugunda iki sutun: tek sutunlu bentoda (30-48rem)
+   ve kartin iki sutun kapladigi masaustunde (64rem+). Aradaki tablet
+   araliginda kart yarim genislikte, iki sutun alt basliklari bolyordu. */
+@media (min-width: 30rem) and (max-width: 47.999rem), (min-width: 64rem) {
+  .ash-bento__pills { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.ash-bento__pill {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  padding: 0.75rem 0.875rem 0.75rem 1.125rem;
+  border-radius: 0.75rem;
+  background: color-mix(in srgb, var(--urun-renk, #2f6bff) 5%, #ffffff);
+  border-left: 3px solid var(--urun-renk, #2f6bff);
+}
+
+.ash-bento__pill-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--ash-dark-text-navy, #0a143d);
+}
+
+/* Aksan rengi acik zeminde soluk kalmasin diye lacivertle koyulastirilir. */
+.ash-bento__pill-title {
+  font-size: 0.8125rem;
+  color: color-mix(in srgb, var(--urun-renk, #2f6bff) 52%, #0a143d);
+}
+
+.ash-bento__link {
+  /* Dikey dolgu, dokunma hedefini 24px'in uzerine cikarir
+     (WCAG 2.2 "Target Size (Minimum)"); margin bunu telafi eder. */
+  margin-top: 0.875rem;
+  padding-block: 0.375rem;
+  align-self: flex-start;
+  display: inline-block;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: var(--color-science-blue, #1e4fd8);
+  text-decoration: none;
+}
+.ash-bento__link:hover { text-decoration: underline; }
+.ash-bento__link span { display: inline-block; transition: transform 200ms ease; }
+.ash-bento__link:hover span { transform: translateX(4px); }
+
+@media (prefers-reduced-motion: reduce) {
+  .ash-bento__link span { transition: none; }
+}
+
+/* Surec diyagrami: genis kartta 500, dar kartta 320 birimlik cizim.
+   Bento 64rem alinda iki (ve daha az) sutuna iniyor, kart daraliyor. */
+.ash-bento__svg--dar { display: none; }
+@media (max-width: 63.999rem) {
+  .ash-bento__svg--genis { display: none; }
+  .ash-bento__svg--dar { display: block; }
+}

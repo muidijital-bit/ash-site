@@ -1,0 +1,274 @@
+{
+  "key": "hubai-x",
+  "name": "HubAI-X",
+  "hero": {
+    "eyebrow": "HUBAI-X · ENTERPRISE AI",
+    "title": "Your Organization's AI Hub. <span>Every AI Need on a Single Platform.</span>",
+    "lead": "HubAI-X lets you run every AI need in your organization — models, applications, libraries, integrations and token management — from one place.",
+    "cta": "Book a Demo"
+  },
+  "sections": [
+    {
+      "kind": "nasil-calisir",
+      "eyebrow": "Token management",
+      "heading": "Bring Your AI Token Costs <span>Under Control with HubAI-X.</span>",
+      "sub": "Monitor, govern and optimise token usage across every AI model from one place. Cut needless consumption and make your AI costs predictable.",
+      "items": [
+        {
+          "title": "Monitor",
+          "body": "See which model spent how many tokens, in which team and for which task, in a single table. Usage reads as one organization, not provider by provider."
+        },
+        {
+          "title": "Govern",
+          "body": "Set monthly limits per department and per user. A warning goes out as the limit approaches, and usage stops automatically once it is passed."
+        },
+        {
+          "title": "Optimise",
+          "body": "Routing rules send simple requests to cost-efficient models and heavy work to stronger ones. You get the same result with fewer tokens."
+        },
+        {
+          "title": "Forecast",
+          "body": "Compare the monthly trend and deviations against earlier periods. AI spend stops being a surprise line and becomes something you can budget."
+        }
+      ]
+    },
+    {
+      "kind": "farklar",
+      "heading": "Every Team on a Different Tool. <span>Control in HubAI-X.</span>",
+      "sub": "Govern the AI models and applications your teams already use from a single place. Make usage visible, control access and standardise how AI is used across the organization.",
+      "items": [
+        {
+          "title": "Unsanctioned Use (Shadow AI)",
+          "body": "Employees paste company documents into chat tools on personal accounts, and nobody sees it. HubAI-X moves all usage to a single approved entry point, so there's no need for an unofficial route."
+        },
+        {
+          "title": "Locked into a Single Provider",
+          "body": "All your workflows depend on one model's pricing, quotas and product decisions. HubAI-X abstracts the model layer; when you switch providers, your assistants and workflows stay in place."
+        },
+        {
+          "title": "Data Out of Control",
+          "body": "You can't prove which document went to which model, or to which region. In HubAI-X you draw the data path: every request passes through your rules and is logged."
+        },
+        {
+          "title": "Bloated Per-Seat Licenses",
+          "body": "You pay a full seat even for an employee who uses the tool twice a month. Instead of per-user licenses, HubAI-X works with pooled usage shared across the organization."
+        },
+        {
+          "title": "Disconnected Tools",
+          "body": "Chat in one product, document search in another, automation in a third. HubAI-X brings chat, corporate memory and action-taking assistants together in one interface."
+        },
+        {
+          "title": "Answers That Don't Know Your Organization",
+          "body": "Generic models don't know your policies, your processes or the data in your ERP; their answers look right but don't help. HubAI-X grounds every answer in your own documents and systems, and shows the source."
+        }
+      ]
+    },
+    {
+      "kind": "nasil-calisir",
+      "heading": "Employees Ask. Managers See. The Organization Wins.",
+      "sub": "HubAI-X presents the same infrastructure through two different lenses. The workspace is designed to speed up work, the admin console to govern it; both run on the same rules and the same records.",
+      "items": [
+        {
+          "title": "Employee · Department Assistants",
+          "body": "Open assistants prepared for HR, finance or sales with a single click. Each assistant comes with its own instructions, its own document set and its own permissions."
+        },
+        {
+          "title": "Employee · The Right Model for the Task",
+          "body": "Pick one model to summarize a long report and another to analyze a spreadsheet. Conversation history and attachments stay in place; you don't have to start over."
+        },
+        {
+          "title": "Employee · Answers with Sources",
+          "body": "The assistant shows which page of which document an answer came from. One click is enough to verify it."
+        },
+        {
+          "title": "Admin · Role-Based Access (RBAC)",
+          "body": "Define in a single matrix which role can access which model, which assistant and which document folder."
+        },
+        {
+          "title": "Admin · Budget and Quota Shield",
+          "body": "Set monthly limits by department and user. A warning kicks in as the limit approaches, and an automatic stop when it's exceeded."
+        },
+        {
+          "title": "Admin · Audit-Ready Activity Log",
+          "body": "Who asked, when, with which model and with which data: every request is stored as a record that can't be deleted, and can be exported for audits."
+        }
+      ]
+    },
+    {
+      "kind": "ozellikler",
+      "heading": "It Doesn't Just Answer. It Gets the Work Done.",
+      "sub": "HubAI-X works in five capability layers: it routes models, answers from your corporate memory, multiplies assistants, takes action in your systems and opens all of this to your other applications through a single API.",
+      "items": [
+        {
+          "title": "Model Independence · Assign the Right Model to the Right Job",
+          "body": "Connect commercial providers, open-source models and your own self-hosted model (BYOM) to the same layer. With routing rules, requests with sensitive data automatically go to the in-house model and general requests to the most cost-effective one."
+        },
+        {
+          "title": "Corporate Memory · AI That Knows Your Policies",
+          "body": "Index your policies, procedures, contracts and technical documents together with their access rules (RAG). Employees only get answers from documents they're allowed to access, and every answer shows its source page."
+        },
+        {
+          "title": "Assistant Library · Build Once, Use Across the Organization",
+          "body": "Create assistants with defined instructions, document sets and permissions without writing code, and publish them to departments. Track changes with version history and roll back when needed."
+        },
+        {
+          "title": "Action-Taking Assistants · Don't Stop at a Summary, Finish the Job",
+          "body": "Assistants pull reports from your systems, draft emails, open request tickets and turn the output into Excel or a presentation. Critical steps never move forward without human approval."
+        },
+        {
+          "title": "Enterprise API · Open AI to Your Applications Through a Single Endpoint",
+          "body": "Your internal portals and business applications reach every model and assistant through a single API. When a model changes, the integration code doesn't; permission, quota and logging rules apply to API traffic as well."
+        }
+      ]
+    },
+    {
+      "kind": "kullanim-senaryolari",
+      "heading": "Six Departments. One AI Hub.",
+      "sub": "The same platform takes on a different job in every team. Each scenario has a benefit, a control mechanism and a concrete outcome.",
+      "items": [
+        {
+          "title": "IT & Information Security",
+          "body": "Benefit: Pull unsanctioned AI use into one approved channel and hand access and password requests over to an assistant. Control: An approved model list (whitelist) and routing by data class. Outcome: One channel, full visibility."
+        },
+        {
+          "title": "Human Resources",
+          "body": "Benefit: Hand questions about leave, benefits and policies to an assistant that cites the right clause. Control: Payroll and personal data folders are open only to the HR role. Outcome: Employee support that answers 24/7."
+        },
+        {
+          "title": "Finance & Accounting",
+          "body": "Benefit: Prepare month-end close notes, budget variance explanations and management report summaries from your ERP data in minutes. Control: A routing rule keeps financial data processed only by the in-house model. Outcome: Close commentary ready without the wait."
+        },
+        {
+          "title": "Sales & Customer Relations",
+          "body": "Benefit: Prepare a proposal draft, meeting summary and customer history with a single command, and write straight to the opportunity record with CRM-X. Control: Customer data is visible only with the account team's permission. Outcome: Walk into every meeting with full context."
+        },
+        {
+          "title": "Procurement & Operations",
+          "body": "Benefit: Compare supplier contracts, summarize correspondence and route SAP process questions to the SAPAI-X assistant. Control: Every step that acts in a system runs only after approval. Outcome: SAP questions don't wait in a consultant's queue."
+        },
+        {
+          "title": "Legal & Compliance",
+          "body": "Benefit: Prepare contract reviews and KVKK checklists with cited sources. Control: Confidential files are kept in an isolated workspace, and every access is logged. Outcome: An audit-ready, traceable file."
+        }
+      ]
+    },
+    {
+      "kind": "ozellikler",
+      "heading": "Data Stays In-House. Every Step Is on Record.",
+      "sub": "In enterprise AI, the hardest question isn't which model is better; it's where the data goes. HubAI-X answers that question with architecture, not with a contract clause.",
+      "items": [
+        {
+          "title": "You Choose the Deployment (On-Premise / Private Cloud)",
+          "body": "Run HubAI-X on your own servers, in your private cloud or in a managed environment. You choose the setup that processes sensitive workloads without them leaving the organization."
+        },
+        {
+          "title": "End-to-End Encryption",
+          "body": "Data is protected with AES-256 encryption in transit and at rest. Key management is tied to your organization's security policy."
+        },
+        {
+          "title": "Single Sign-On with Your Corporate Identity (SSO)",
+          "body": "Users sign in with your existing identity provider (SAML / OIDC), and roles are inherited from it. When an employee leaves, their HubAI-X access closes at the same moment."
+        },
+        {
+          "title": "AI History in Your Own Database",
+          "body": "Your entire AI history is kept only in your own database. Data sovereignty stays with you; you decide which data is stored where."
+        }
+      ]
+    },
+    {
+      "kind": "farklar",
+      "heading": "Not General-Purpose. Built for Your Organization.",
+      "sub": "HubAI-X was born from ASH's years of SAP and enterprise project experience. We don't hand over an off-the-shelf subscription; we deliver an AI hub that fits your systems and standards.",
+      "items": [
+        {
+          "title": "The Hub of the ASH Product Family",
+          "body": "SAPAI-X, Masraf-X and CRM-X run inside HubAI-X as expert assistants. Employees handle an SAP question, an expense approval and an opportunity update from the same window."
+        },
+        {
+          "title": "A Team That Knows SAP from the Field",
+          "body": "When we connect AI to your SAP and ERP data, we take authorization objects, Z developments and process exceptions into account. The integration works in production, not just in a presentation."
+        },
+        {
+          "title": "A Rollout That Doesn't Stall at the Pilot",
+          "body": "Start with a single department and let's define the success criteria together. Because the pilot is built on the same infrastructure, no re-installation is needed when you roll out across the organization."
+        },
+        {
+          "title": "Pay for Usage, Not per Seat",
+          "body": "With the pooled architecture, your cost isn't tied to headcount. Spending is shaped by actual usage and the models you choose; a firm quote is prepared for your organizational structure."
+        },
+        {
+          "title": "A Setup That Stays Within Your Standards",
+          "body": "Your security, authorization and development standards are taken as inputs. Every integration step is auditable and goes through your approval."
+        }
+      ]
+    },
+    {
+      "kind": "sss",
+      "heading": "Questions Asked Before Deciding.",
+      "sub": "The questions IT, security and finance teams ask most often when evaluating HubAI-X.",
+      "items": [
+        {
+          "title": "Which AI models does HubAI-X work with?",
+          "body": "It works with commercial providers' models, open-source models and your own model hosted in-house (BYOM). The model list is managed from the console; adding a new model doesn't break existing assistants or workflows."
+        },
+        {
+          "title": "Is our company data used to train models?",
+          "body": "HubAI-X doesn't use your company data for model training. You decide with routing rules which data may go to an external provider; sensitive data classes can be configured to be processed only by the in-house model."
+        },
+        {
+          "title": "How long does deployment take, and where does it run?",
+          "body": "It depends on the deployment model you choose and the number of systems to connect. In a managed environment a pilot can start quickly; on-premise and private cloud deployments are planned together with your IT team. We work out the exact timeline together in a discovery meeting."
+        },
+        {
+          "title": "Can it connect to SAP and our existing systems?",
+          "body": "Yes. HubAI-X connects to SAP and your other ERP systems while preserving your authorization rules. For SAP-specific development and support scenarios, SAPAI-X runs as an expert assistant on the same platform."
+        },
+        {
+          "title": "Is pricing per user?",
+          "body": "No. Instead of per-seat licenses, HubAI-X is priced on organization-wide pooled usage. The quote is tailored to your organization based on user scale, deployment model and the models you choose."
+        },
+        {
+          "title": "Are our corporate identity system and KVKK requirements supported?",
+          "body": "Yes. Users sign in through your existing identity provider with SSO, and roles can be inherited from it. Access restrictions and non-deletable activity logs are configured to support your KVKK obligations."
+        },
+        {
+          "title": "Can we start a pilot with a single department?",
+          "body": "Yes, and that's the path we recommend. You start with one department and a few assistants, the success criteria are agreed together from the outset, and expansion happens on the same infrastructure."
+        }
+      ]
+    },
+    {
+      "kind": "cta",
+      "heading": "Don't Collect Tools. Build Your Hub.",
+      "sub": "Let us hear about your current AI usage, your systems and your security requirements; together we'll work out the right deployment model and the first department scenario for your organization.",
+      "items": [
+        {
+          "title": "Book a Demo",
+          "body": "Primary action. A live demo with your organization's own scenario; the workspace and admin console are shown together."
+        },
+        {
+          "title": "Explore the Platform",
+          "body": "Secondary action. Walk through the assistant library, the model router and the console screens step by step."
+        },
+        {
+          "title": "Assurance Line",
+          "body": "No installation needed for the demo · No per-seat licenses · Your company data is not used for model training"
+        },
+        {
+          "title": "SAPAI-X · sapai-x.com",
+          "body": "An expert AI assistant that handles SAP consulting and ABAP development in natural language."
+        },
+        {
+          "title": "Masraf-X · masraf-x.co",
+          "body": "An expense solution that manages the spending process end to end, from receipt to ERP entry."
+        },
+        {
+          "title": "CRM-X · crm-x.co",
+          "body": "A CRM that manages the sales cycle in one place, from first contact to customer loyalty."
+        }
+      ]
+    }
+  ],
+  "seoTitle": "HubAI-X | Enterprise AI Platform — ASH",
+  "seoDescription": "Manage models, company documents, department assistants and token costs from one hub with HubAI-X. On-premise deployment, SSO, RBAC and activity logs."
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "masraf-desktop-source",
+    "path": "/images/masraf-x-harcama-merkezi-a8d18026.webp",
+    "status": 200,
+    "contentType": "image/webp",
+    "bytes": 111348
+  },
+  {
+    "name": "masraf-mobile",
+    "path": "/_next/image?url=%2Fimages%2Fmasraf-x-harcama-merkezi-a8d18026.webp&w=384&q=85",
+    "status": 200,
+    "contentType": "image/avif",
+    "bytes": 6339
+  },
+  {
+    "name": "contact-mobile",
+    "path": "/_next/image?url=%2Fimages%2Fash-izometrik.webp&w=384&q=75",
+    "status": 200,
+    "contentType": "image/avif",
+    "bytes": 7742
+  }
+]

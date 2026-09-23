@@ -1,4 +1,5 @@
 import { brand } from "@/content/brand";
+import { useSiteSettings } from "@/components/cms/SiteSettingsProvider";
 
 /**
  * ASH logosu.
@@ -15,9 +16,10 @@ import { brand } from "@/content/brand";
  * brand.logoPath doluysa her zeminde SADECE o dosya kullanilir.
  */
 export function BrandLogo({ className }: { className: string }) {
+  const settings = useSiteSettings();
   const onDarkSurface = className.includes("variant-dark");
   const src =
-    brand.logoPath ?? (onDarkSurface ? "/brand/ash-light.svg" : "/brand/ash-dark.svg");
+    brand.logoPath ?? (onDarkSurface ? settings.logoDark : settings.logoLight);
 
   return <img src={src} className={className} alt={brand.name} />;
 }

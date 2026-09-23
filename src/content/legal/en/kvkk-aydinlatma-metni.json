@@ -1,0 +1,88 @@
+{
+  "slug": "kvkk-privacy-notice",
+  "title": "KVKK Privacy Notice",
+  "metaDescription": "Privacy notice for visitors to the AI Solution House website under Turkey's Personal Data Protection Law No. 6698 (KVKK).",
+  "updated": "2026-09-18",
+  "intro": [
+    "This privacy notice has been prepared by AI Solution House (ASH), which operates this website, to inform its visitors in accordance with Article 10 of the Turkish Personal Data Protection Law No. 6698 (KVKK) and the Communiqué on the Procedures and Principles to Be Followed in Fulfilling the Obligation to Inform.",
+    "This version of the notice describes how the site works today. When a new feature that collects personal data is introduced on the site, the notice will be updated and its update date changed."
+  ],
+  "sections": [
+    {
+      "heading": "Identity of the data controller",
+      "paragraphs": [
+        "The data controller for your personal data is AI Solution House (ASH). You can reach us through the contact page on our website."
+      ]
+    },
+    {
+      "heading": "Personal data processed and how it is collected",
+      "paragraphs": [
+        "The contact form on the site includes your full name, email address and the message text you write freely. The newsletter sign-up field only asks for your email address.",
+        "An important distinction: these two forms do not currently send your data to us. What you enter is kept only as a draft in your own browser's local storage (localStorage); it does not reach us and is not stored on our servers. For this reason, no personal data processing activity is currently carried out by us through these fields.",
+        "When the forms are connected to an email or subscription service, this notice will be updated to state clearly which data is sent to us and for what purpose.",
+        "When you visit the site, technical logs such as your IP address, browser and operating system information, the requested address and a timestamp may be created by the infrastructure hosting the site so that the connection can be established."
+      ]
+    },
+    {
+      "heading": "Purposes of processing personal data",
+      "bullets": [
+        "Providing the website securely and without interruption",
+        "Technical maintenance of the site, error detection and prevention of misuse",
+        "Once the forms are connected to us in the future: responding to your request and maintaining communication",
+        "Fulfilling obligations arising from applicable legislation"
+      ]
+    },
+    {
+      "heading": "Legal basis for processing",
+      "paragraphs": [
+        "Server logs are based on the legal grounds that processing is necessary for the data controller to fulfil its legal obligation under subparagraph (ç), and for the legitimate interests of the data controller under subparagraph (f), provided that it does not harm the fundamental rights and freedoms of the data subject, both in the second paragraph of Article 5 of the KVKK.",
+        "Once the forms are connected to us, the data you share to send your request will be processed on the basis of subparagraph (c), being directly related to the establishment or performance of a contract, and, where relevant, your explicit consent."
+      ]
+    },
+    {
+      "heading": "Transfer of personal data",
+      "paragraphs": [
+        "Service providers are used to host the site's data; in this context, technical logs may be created on the service provider's infrastructure.",
+        "Apart from this, your personal data is not shared with third parties except with legally authorized public institutions and organizations in the cases provided for by law; it is not sold or transferred for marketing purposes."
+      ]
+    },
+    {
+      "heading": "Retention period",
+      "paragraphs": [
+        "Personal data is retained for as long as necessary for the purpose for which it is processed and for the statutory limitation periods set out in the relevant legislation; at the end of this period it is deleted, destroyed or anonymized.",
+        "Form drafts kept in your browser's local storage are entirely under your control; you can delete them at any time by clearing your browser data."
+      ]
+    },
+    {
+      "heading": "Your rights as a data subject",
+      "paragraphs": [
+        "Under Article 11 of the KVKK, you have the following rights by applying to the data controller:"
+      ],
+      "bullets": [
+        "To learn whether your personal data is being processed",
+        "To request information about it if it has been processed",
+        "To learn the purpose of processing and whether it is used in line with that purpose",
+        "To know the third parties to whom it is transferred, domestically or abroad",
+        "To request correction if it is incomplete or inaccurate",
+        "To request deletion or destruction under the conditions set out in Article 7 of the Law",
+        "To request that correction, deletion and destruction be notified to third parties to whom the data has been transferred",
+        "To object to an outcome against you arising from the analysis of the processed data exclusively by automated systems",
+        "To request compensation for damages if you suffer loss due to unlawful processing"
+      ]
+    },
+    {
+      "heading": "How to apply",
+      "paragraphs": [
+        "You can submit requests regarding your rights to AI Solution House in writing, through the channels on the contact page of our website, in accordance with the conditions set out in the Communiqué on the Procedures and Principles of Application to the Data Controller.",
+        "Your application must include your full name, your signature (for written applications), your Turkish national ID number or, for foreign nationals, your nationality and passport number, your address for notification, your email address for notification if any, and the subject of your request.",
+        "Your request will be concluded free of charge as soon as possible according to its nature, and within thirty days at the latest. If the process requires an additional cost, a fee may be charged according to the tariff set by the Personal Data Protection Board."
+      ]
+    },
+    {
+      "heading": "Changes to this notice",
+      "paragraphs": [
+        "This notice may be revised in line with changes in legislation or updates to how the site works. The current version is always published on this page."
+      ]
+    }
+  ]
+}

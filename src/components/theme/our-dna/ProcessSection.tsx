@@ -1,27 +1,26 @@
 /* Ilkeler akordeonunun yerini alan surec seridi.
    Bolum basligi temanin InfoSection duzenini aynen kullanir; zaman seridi
    ASH'e ozel cizildi. */
-import content from "./ProcessSection.content.json";
+import tr from "./ProcessSection.content.json";
+import en from "./ProcessSection.content.en.json";
+import type { Locale } from "@/i18n/config";
 import "./ProcessSection.css";
 
-export function ProcessSection() {
+export function ProcessSection({ locale }: { locale: Locale }) {
+  const content = locale === "en" ? en : tr;
   const { example } = content;
   return (
     <section className="Principles_principles__ib_r_">
-      <div className="InfoSection_info-section__Z_HgN">
-        <div className="InfoSection_info-section__container__YnqlQ">
-          <div className="InfoSection_title__vBoLT">
-            <p className="InfoSection_title__top-title__Ha4mp">{content.label}</p>
-            <h2 className="Text_text--display-m__q0ZjI Text_text--weight-bold__jl20H">
-              <span className="">{content.heading}</span>
-            </h2>
-          </div>
-          <div className="InfoSection_content__CuNdq">
-            <p>{content.intro1}</p>
-            <p>{content.intro2}</p>
-          </div>
-        </div>
-      </div>
+      {/* Baslik blogu sitenin geri kalaniyla ayni: ortalanmis kucuk gri ust
+          etiket, buyuk kalin baslik, ortalanmis genis paragraf. */}
+      <header className="ash-flow__head">
+        <p className="ash-flow__eyebrow">{content.label}</p>
+        <h2 className="Text_text--display-s__xN_wr Text_text--weight-bold__jl20H ash-flow__heading">
+          {content.heading}
+        </h2>
+        <p className="ash-flow__lead">{content.intro1}</p>
+        <p className="ash-flow__lead">{content.intro2}</p>
+      </header>
 
       <div className="ash-flow">
         <ol className="ash-flow__list">

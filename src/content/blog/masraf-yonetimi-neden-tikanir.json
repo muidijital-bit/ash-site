@@ -94,5 +94,6 @@
       "a": "Onay tamamlandıktan sonra kaydın muhasebeleştirilmesi sürecin son adımıdır. Bu aktarım elle yapıldığı sürece, önceki adımlarda kazanılan zaman burada geri verilir ve yeni hata riski doğar. Onaylı masrafın ERP'ye akışın doğal bir parçası olarak taşınması, otomasyonun baştan sona anlam kazanmasını sağlar."
     }
   ],
-  "cover": "/images/ash-blog-masraf.svg"
+  "cover": "/images/ash-blog-masraf.svg",
+  "seoTitle": "Masraf Yönetimi ve Harcama Otomasyonu"
 }

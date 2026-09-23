@@ -8,6 +8,8 @@ export type BlogSection = {
 export type BlogPost = {
   slug: string;
   title: string;
+  /** Arama ve paylasim icin kisa baslik; makale basligini degistirmez. */
+  seoTitle?: string;
   metaDescription: string;
   category: string;
   summary: string;
@@ -21,4 +23,6 @@ export type BlogPost = {
   faq: { q: string; a: string }[];
   /** Kapak gorseli: public/ altindaki yol */
   cover: string;
+  coverAlt?: string;
+  bodyMarkdown?: string;
 };

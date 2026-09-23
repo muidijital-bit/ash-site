@@ -95,5 +95,6 @@
       "a": "Doğru kurgulandığında mümkündür, ancak birkaç başlık baştan çözülmelidir. Kayıt başlamadan aydınlatma yapılmalı ve kaydı istemeyen muhatapla kayıtsız devam edebilen bir akış bulunmalıdır. Kayıttan üretilen metin ve özet de kişisel veridir; silme ve düzeltme talepleri ses kaydını, metni, özeti ve arama dizinini birlikte kapsamalıdır. Model ve metne çevirme hizmetleri yurt dışına aktarım doğurabileceğinden alt işleyen zinciri ile saklama süreleri sözleşmede netleşmelidir."
     }
   ],
-  "cover": "/images/ash-blog-crm.svg"
+  "cover": "/images/ash-blog-crm.svg",
+  "seoTitle": "CRM Yapay Zekâ ve Satış Otomasyonu"
 }

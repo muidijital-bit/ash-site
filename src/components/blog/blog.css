@@ -7,8 +7,10 @@
 .blog {
   --blog-ink: var(--ash-dark-text-navy, #0a143d);
   --blog-ink-2: #414a6b;
-  --blog-ink-3: #767f9c;
-  --blog-accent: var(--ash-electric-blue, #2f6bff);
+  --blog-ink-3: #5d6688;
+  /* Baglanti mavisi: elektrik mavisi (#2f6bff) beyaz zeminde 4.5:1
+     sinirinda kaliyordu; bir ton koyusu kullaniliyor (6.5:1). */
+  --blog-accent: var(--color-science-blue, #1e4fd8);
   --blog-hair: #e3e6ef;
   --blog-measure: 58rem;
 
@@ -17,27 +19,24 @@
   padding-block: 0 5rem;
 }
 
-/* --- koyu ust bant: header bunun uzerinde duruyor --- */
+/* --- ust bant: header bunun uzerinde duruyor ---
+   Sitenin geri kalaniyla ayni serit duzeni: acik gri bant, altinda
+   beyaz liste/govde. */
 .blog-band {
-  background: var(--ash-deep-navy, #050a2b);
-  color: #f8f8f6;
+  background: #f5f5f7;
+  color: var(--blog-ink);
   padding-top: calc(var(--header-height, 3rem) + 3.5rem);
   padding-bottom: 3.5rem;
 }
-.blog-band .blog-cat {
-  background: linear-gradient(90deg, #6f9bff 0%, #b18bff 55%, #f08bc2 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
+.blog-band .blog-cat { color: var(--blog-ink-3); }
 .blog-band .blog-title,
-.blog-band h1 { color: #f8f8f6; }
+.blog-band h1 { color: var(--blog-ink); }
 .blog-band .blog-meta {
-  color: rgba(248, 248, 246, 0.6);
+  color: var(--blog-ink-3);
   border-bottom: 0;
   padding-bottom: 0;
 }
-.blog-band p { color: rgba(248, 248, 246, 0.72); }
+.blog-band p { color: var(--blog-ink-2); }
 
 .blog-wrap {
   width: 100%;
@@ -48,20 +47,23 @@
 }
 
 /* --- baslik blogu --- */
+/* Ust etiket, apple.com/tr referansi: kucuk buyuk-harf etiketi degil,
+   17px duz gri bir satir. Agirlik basliga birakilir. */
 .blog-cat {
-  font-size: 0.8125rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--blog-accent);
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--blog-ink-3);
 }
 
 .blog-title {
   margin-top: 0.875rem;
   font-size: clamp(2rem, 4.2vw, 3.125rem);
   font-weight: 700;
-  line-height: 1.18;
-  letter-spacing: -0.02em;
+  line-height: 1.08;
+  letter-spacing: -0.022em;
   color: var(--blog-ink);
 }
 
@@ -155,7 +157,9 @@
   align-items: baseline;
   font-size: 1rem;
 }
-.blog-foot a { color: var(--blog-accent); text-decoration: none; font-weight: 500; }
+/* Dokunma hedefi en az 24px yuksek kalsin (WCAG 2.2 "Target Size (Minimum)"). */
+.legal-list a { display: inline-block; padding: 0.3125rem 0; }
+.blog-foot a { display: inline-block; padding: 0.3125rem 0; color: var(--blog-accent); text-decoration: none; font-weight: 500; }
 .blog-foot a:hover { text-decoration: underline; }
 .blog-foot__note { color: var(--blog-ink-3); }
 
@@ -168,10 +172,10 @@
 .blog-index-head h1, .blog-index-head > p { max-width: 42rem; }
 .blog-index-head h1 {
   margin-top: 0.875rem;
-  font-size: clamp(2rem, 4.2vw, 2.75rem);
+  font-size: clamp(2rem, 4.2vw, 3.125rem);
   font-weight: 700;
-  line-height: 1.18;
-  letter-spacing: -0.02em;
+  line-height: 1.08;
+  letter-spacing: -0.022em;
 }
 .blog-index-head p {
   margin-top: 1.125rem;
@@ -211,12 +215,14 @@
   object-fit: cover;
   border-radius: 0.625rem;
 }
+/* Kart kategorisi de ayni dilde: buyuk harf ve harf araligi yok,
+   duz gri. Vurgu baslikta kaliyor. */
 .blog-card__cat {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--blog-accent);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--blog-ink-3);
 }
 .blog-card__title {
   margin-top: 0.5rem;

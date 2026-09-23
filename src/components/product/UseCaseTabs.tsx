@@ -8,7 +8,7 @@ import type { SectionItem } from "./types";
  * 5 saniyede bir kendiliginden ilerler; kullanici dokundugu anda durur.
  * Klavye: sol/sag/yukari/asagi oklari, Home, End.
  */
-export function UseCaseTabs({ items, id }: { items: SectionItem[]; id: string }) {
+export function UseCaseTabs({ items, id, label }: { items: SectionItem[]; id: string; label: string }) {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
   const tabsRef = useRef<(HTMLButtonElement | null)[]>([]);
@@ -38,8 +38,6 @@ export function UseCaseTabs({ items, id }: { items: SectionItem[]; id: string })
     tabsRef.current[next]?.focus();
   };
 
-  const current = items[active];
-
   return (
     <div className="pp-tabs" onPointerEnter={() => setPaused(true)}>
       <div className="pp-tabs__list" role="tablist" aria-orientation="vertical" onKeyDown={onKeyDown}>
@@ -51,7 +49,7 @@ export function UseCaseTabs({ items, id }: { items: SectionItem[]; id: string })
             role="tab"
             id={`${id}-tab-${i}`}
             aria-selected={i === active}
-            aria-controls={`${id}-panel`}
+            aria-controls={`${id}-panel-${i}`}
             tabIndex={i === active ? 0 : -1}
             className="pp-tabs__tab"
             onClick={() => select(i)}
@@ -60,20 +58,25 @@ export function UseCaseTabs({ items, id }: { items: SectionItem[]; id: string })
           </button>
         ))}
       </div>
-      <div
-        key={active}
-        className="pp-tabs__panel"
-        role="tabpanel"
-        id={`${id}-panel`}
-        aria-labelledby={`${id}-tab-${active}`}
-      >
-        <p className="pp-label pp-label--sm">Kurumsal kazanım</p>
-        <h3>{current.title}</h3>
-        <p>{current.body}</p>
-        <div className="pp-tabs__progress" aria-hidden="true">
-          {items.map((item, i) => <i key={item.title} data-on={i <= active ? "" : undefined} />)}
+      {/* Tum paneller sunucu HTML'ine girer; JavaScript calismasa da (ve arama
+          motorlari icin) butun senaryolarin metni sayfada olur. */}
+      {items.map((item, i) => (
+        <div
+          key={`${i}-${i === active}`}
+          className="pp-tabs__panel"
+          role="tabpanel"
+          id={`${id}-panel-${i}`}
+          aria-labelledby={`${id}-tab-${i}`}
+          hidden={i !== active}
+        >
+          <p className="pp-label pp-label--sm">{label}</p>
+          <h3>{item.title}</h3>
+          <p>{item.body}</p>
+          <div className="pp-tabs__progress" aria-hidden="true">
+            {items.map((step, j) => <i key={step.title} data-on={j <= i ? "" : undefined} />)}
+          </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 }

@@ -1,0 +1,246 @@
+{
+  "key": "crm-x",
+  "name": "CRM-X",
+  "hero": {
+    "eyebrow": "CRM-X · SALES AND CUSTOMER MANAGEMENT",
+    "title": "Put an End to Scattered Records. Manage Every Opportunity on One Screen.",
+    "lead": "CRM-X brings customer information, sales opportunities and team activities together on one platform. AI flags the opportunities waiting for follow-up and takes over repetitive work, so your team can focus on talking to customers and closing deals.",
+    "cta": "Book a Demo"
+  },
+  "sections": [
+    {
+      "kind": "farklar",
+      "heading": "Eliminate the Blind Spots That Slow Down Sales.",
+      "sub": "When customer information is scattered, sales runs on memory and guesswork. If any of the situations below sounds familiar, this is exactly where CRM-X comes in.",
+      "items": [
+        {
+          "title": "Customer Lists Stuck in Spreadsheets",
+          "body": "Every rep has their own file, and every file has a different version. CRM-X collects all customer and contact records in a single, up-to-date source."
+        },
+        {
+          "title": "Forgotten Follow-Ups",
+          "body": "The proposal was sent, nobody followed up, and the opportunity quietly went cold. CRM-X reminds you of every pending follow-up, with its owner and date."
+        },
+        {
+          "title": "Customer Memory Tied to Individuals",
+          "body": "When a team member leaves, the conversation history leaves with them. CRM-X turns every interaction into an accessible customer history that belongs to the organization."
+        },
+        {
+          "title": "A Sales Funnel Built on Guesswork",
+          "body": "Which opportunities are really moving forward gets asked out loud in meetings. CRM-X shows the stage and latest activity of every opportunity on a single board."
+        },
+        {
+          "title": "Endless Manual Data Entry",
+          "body": "Instead of talking to customers, the sales team is busy updating records. CRM-X hands repetitive entry and update work over to automation."
+        },
+        {
+          "title": "Relationships That Break After the Sale",
+          "body": "The moment a deal closes, the customer becomes invisible and the chance of a repeat purchase slips away. CRM-X keeps following the journey after the sale and makes loyalty opportunities visible."
+        }
+      ]
+    },
+    {
+      "kind": "nasil-calisir",
+      "heading": "One Cycle. From First Contact to Loyalty.",
+      "sub": "CRM-X treats the customer relationship not as disconnected records, but as a self-reinforcing six-stage cycle. Each stage leaves data for the next.",
+      "items": [
+        {
+          "title": "Contact",
+          "body": "A prospect (lead) becomes visible for the first time; where they came from and what they showed interest in are recorded."
+        },
+        {
+          "title": "Qualification",
+          "body": "Need, budget and timing become clear; the team sets priorities based on data, not gut feeling."
+        },
+        {
+          "title": "Opportunity",
+          "body": "Interest turns into a concrete sales opportunity with an owner, an estimated value and a stage."
+        },
+        {
+          "title": "Proposal",
+          "body": "Meetings, revisions and follow-up dates all move forward under a single opportunity record."
+        },
+        {
+          "title": "Win",
+          "body": "The deal closes; the reason it was won or lost is kept for future decisions."
+        },
+        {
+          "title": "Loyalty",
+          "body": "Post-sale interactions are tracked; repeat purchase and cross-sell opportunities start the cycle again."
+        }
+      ]
+    },
+    {
+      "kind": "ozellikler",
+      "heading": "Four Capabilities. One Customer View.",
+      "sub": "Customer records, automation, reporting and journey analysis don't live in separate tools; they all work around the same record.",
+      "items": [
+        {
+          "title": "Manage Customers and Opportunities Together",
+          "body": "The company card, contacts, meeting notes and open opportunities sit on the same screen. See at a glance which stage each opportunity is at and when the last contact happened."
+        },
+        {
+          "title": "Leave Repetitive Work to Automation",
+          "body": "Open a task when the stage changes, alert the owner when a follow-up date arrives. Define the rule once, and the system applies it with the same discipline to every record."
+        },
+        {
+          "title": "Read Performance from Live Data",
+          "body": "Track the sales funnel and opportunity progress by team and by rep on ready-made dashboards. Spot the stage where deals get stuck before the meeting, and plan priorities accordingly."
+        },
+        {
+          "title": "Follow the Customer Journey End to End",
+          "body": "Bring every touchpoint, from first interaction to after-sales, together on a single timeline. Find where the journey breaks and make the experience consistent from that point on."
+        }
+      ]
+    },
+    {
+      "kind": "ozellikler",
+      "heading": "It Doesn't Just Store Data. It Suggests the Next Step.",
+      "sub": "The AI layer in CRM-X works on top of your records: it tells your team in plain language what's waiting, what's going cold and what's a priority. The decision always stays with the team.",
+      "items": [
+        {
+          "title": "See the Next Best Action",
+          "body": "Last contact date, time spent in the stage and open tasks are evaluated together. CRM-X suggests who to call today and which proposal to follow up on, with the reasoning behind it."
+        },
+        {
+          "title": "Turn Meeting Notes into Structured Records",
+          "body": "Decisions, objections and the next date are extracted from the free-text notes you write after a meeting. Record fields are filled in with your approval; no more copy and paste."
+        },
+        {
+          "title": "Spot Cooling Opportunities Early",
+          "body": "Opportunities with no recent activity or overdue follow-ups are flagged on the board. The owner is alerted before they're lost, and the manager sees the same picture at the same time."
+        },
+        {
+          "title": "Get Reports by Asking",
+          "body": "Type 'Which opportunities have been waiting in the proposal stage for two weeks?' instead of building filters. CRM-X returns the answer as a table, with links to the related records."
+        },
+        {
+          "title": "Stay in Control with Permissions and Activity Logs",
+          "body": "Define by role which team can see and edit which customer data (RBAC). Every approved suggestion and change is recorded with a timestamp."
+        }
+      ]
+    },
+    {
+      "kind": "kullanim-senaryolari",
+      "heading": "Every Team Sees the Same Customer. Through Its Own Eyes.",
+      "sub": "From sales reps to managers, from support to marketing, CRM-X turns the same customer record into a separate workspace for every role.",
+      "items": [
+        {
+          "title": "Sales Teams",
+          "body": "Start the day with a prioritized call and follow-up list. Update opportunity stages by dragging them, and run the proposal process from a single record."
+        },
+        {
+          "title": "Sales Managers",
+          "body": "Monitor funnel health and stuck stages by team. Run forecast meetings from a live dashboard instead of verbal updates."
+        },
+        {
+          "title": "Customer Relations and Support",
+          "body": "When a customer calls, have their purchase history, open requests and latest conversation in front of you. Manage the after-sales experience from the same information as the sales team."
+        },
+        {
+          "title": "Marketing",
+          "body": "See which lead sources turn into opportunities. Steer your campaign budget by funnel data, not by gut feeling."
+        },
+        {
+          "title": "Fast-Growing Companies",
+          "body": "As the team grows, tie the process to the system, not to individuals. A new rep can take over the customer history from day one."
+        },
+        {
+          "title": "New Product Launches",
+          "body": "Gather prospects interested in a launch under a separate funnel. Share early feedback and conversion stages with the product team on the same board."
+        }
+      ]
+    },
+    {
+      "kind": "farklar",
+      "heading": "One Source Instead of Scattered Tools.",
+      "sub": "We didn't compare CRM-X to a brand, but to the setup most teams work with today: spreadsheets, inboxes and follow-ups that depend on memory.",
+      "items": [
+        {
+          "title": "Customer Information",
+          "body": "In the usual setup, it's scattered across personal files and inboxes. In CRM-X, it's a single, up-to-date record that belongs to the organization."
+        },
+        {
+          "title": "Follow-Up Discipline",
+          "body": "In the usual setup, it depends on memory and personal calendars. In CRM-X, it runs on automatic tasks and reminders tied to the stage."
+        },
+        {
+          "title": "Sales Forecast",
+          "body": "In the usual setup, it's reported verbally in meetings. In CRM-X, it's a live dashboard fed by stage and latest-activity data."
+        },
+        {
+          "title": "AI Support",
+          "body": "In the usual setup, it either doesn't exist or lives in a separate tool. In CRM-X, it works on top of your records and shows the reasoning behind every suggestion."
+        },
+        {
+          "title": "After-Sales Relationship",
+          "body": "In the usual setup, it disappears once the deal closes. In CRM-X, the journey keeps being tracked and repeat purchase opportunities come to the fore."
+        },
+        {
+          "title": "Data Access and Records",
+          "body": "In the usual setup, whoever gets the file sees everything. CRM-X has role-based access (RBAC) and a timestamped change history."
+        }
+      ]
+    },
+    {
+      "kind": "sss",
+      "heading": "Questions Asked Before Deciding.",
+      "sub": "The questions we hear most often during the buying process, with clear answers.",
+      "items": [
+        {
+          "title": "What is CRM-X, and how is it different from a classic CRM?",
+          "body": "CRM-X is an AI-powered customer relationship management (CRM) platform that brings customer records, sales opportunities and team activities together on one platform. It goes beyond record-keeping: it flags opportunities waiting for follow-up and suggests the next step with its reasoning."
+        },
+        {
+          "title": "Can we migrate our existing Excel lists and customer records?",
+          "body": "Yes. Your customer, contact and opportunity data are transferred into the CRM-X structure during migration. Field mapping and duplicate cleanup are planned together with your team during setup."
+        },
+        {
+          "title": "Does the AI make decisions on its own?",
+          "body": "No. The AI produces suggestions, offers to fill in record fields and flags risky opportunities; changes only become permanent with user approval. The data behind every suggestion is visible on screen."
+        },
+        {
+          "title": "Is our customer data secure, and how is KVKK handled?",
+          "body": "You decide by role who can see and edit which customer data, and changes are recorded with a timestamp. Hosting and retention preferences are clarified together at the demo stage according to your organization's KVKK policies."
+        },
+        {
+          "title": "How long does implementation take?",
+          "body": "It depends on team size, the volume of data to migrate and the stage structure of your sales process. In the demo meeting we listen to your process and draw up a migration plan tailored to you."
+        },
+        {
+          "title": "Does it work with other ASH products and our ERP system?",
+          "body": "CRM-X is part of the same product family as HubAI-X, SAPAI-X and Masraf-X, and is designed with the same enterprise approach. Which data is shared with the ERP or SAP side is planned around your needs, drawing on ASH's SAP experience."
+        }
+      ]
+    },
+    {
+      "kind": "cta",
+      "heading": "Don't Leave Follow-Up to Chance. Own Every Opportunity.",
+      "sub": "See CRM-X on top of your own sales process. In the meeting we listen to your stages and work out the right setup for your team together.",
+      "items": [
+        {
+          "title": "Book a Demo",
+          "body": "Tell us about your sales process; let's look together at how CRM-X would work with your own stages and sample records."
+        },
+        {
+          "title": "Explore the Platform",
+          "body": "Walk through the pipeline, sales dashboard and opportunity detail screens step by step, and see up close how the AI suggestions are produced."
+        },
+        {
+          "title": "HubAI-X",
+          "body": "Bring all of your organization's AI usage together on one manageable infrastructure. hubai-x.com"
+        },
+        {
+          "title": "SAPAI-X",
+          "body": "Describe SAP requests and ABAP developments in natural language, and let AI turn them into work. sapai-x.com"
+        },
+        {
+          "title": "Masraf-X",
+          "body": "Manage the spending process in one flow, from receipt to approval and from approval to accounting entry. masraf-x.co"
+        }
+      ]
+    }
+  ],
+  "seoTitle": "CRM-X | AI-Powered CRM and Sales Management — ASH",
+  "seoDescription": "Manage customer records, sales opportunities and team activities on one platform with CRM-X. AI reminds you of follow-ups and suggests the next step with its reasoning."
+}

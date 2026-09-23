@@ -1,6 +1,8 @@
 "use client";
 
 import { type ReactNode, useEffect, useRef } from "react";
+import type { Locale } from "@/i18n/config";
+import { getUi } from "@/i18n/ui";
 import "./HomeMotion.css";
 
 const disabledClass = "CarouselNavigation_carousel-navigation__button--disabled__M_9lh";
@@ -8,7 +10,7 @@ const revealClasses = [
   ["LatestNewsItem_cover__sytL0", "LatestNewsItem_cover--show__gKCIi"],
 ] as const;
 
-function setupCarousel(carousel: HTMLElement, reducedMotion: MediaQueryList) {
+function setupCarousel(carousel: HTMLElement, reducedMotion: MediaQueryList, fallbackLabel: string) {
   const section = carousel.closest("section");
   const slides = Array.from(carousel.querySelectorAll<HTMLElement>(".swiper-slide"));
   const previous = section?.querySelector<HTMLButtonElement>('[id$="-navigation-prev"]');
@@ -22,11 +24,11 @@ function setupCarousel(carousel: HTMLElement, reducedMotion: MediaQueryList) {
   carousel.tabIndex = 0;
   carousel.setAttribute("role", "region");
   carousel.setAttribute("aria-roledescription", "carousel");
-  carousel.setAttribute("aria-label", section?.querySelector("h2")?.textContent || "Öne çıkanlar");
+  carousel.setAttribute("aria-label", section?.querySelector("h2")?.textContent || fallbackLabel);
   slides.forEach((slide, index) => {
     slide.setAttribute("role", "group");
     slide.setAttribute("aria-roledescription", "slide");
-    slide.setAttribute("aria-label", `${index + 1} of ${slides.length}`);
+    slide.setAttribute("aria-label", `${index + 1} / ${slides.length}`);
   });
 
   const update = () => {
@@ -178,7 +180,8 @@ function setupRevenue(root: HTMLElement, reducedMotion: MediaQueryList) {
 }
 
 /** Enhances the measured server-rendered homepage without changing its content. */
-export function HomeMotion({ children }: { children: ReactNode }) {
+export function HomeMotion({ children, locale }: { children: ReactNode; locale: Locale }) {
+  const fallbackLabel = getUi(locale).carouselFallback;
   const ref = useRef<HTMLElement>(null);
   useEffect(() => {
     const root = ref.current;
@@ -198,13 +201,13 @@ export function HomeMotion({ children }: { children: ReactNode }) {
       if (!reducedMotion.matches) observer.observe(element);
     });
     const carousels = Array.from(root.querySelectorAll<HTMLElement>(".swiper"));
-    const cleanups = carousels.map((carousel) => setupCarousel(carousel, reducedMotion));
+    const cleanups = carousels.map((carousel) => setupCarousel(carousel, reducedMotion, fallbackLabel));
     cleanups.push(setupRevenue(root, reducedMotion));
     return () => {
       observer.disconnect();
       reveals.forEach((element) => { delete element.dataset.homeReveal; });
       cleanups.forEach((cleanup) => cleanup());
     };
-  }, []);
+  }, [fallbackLabel]);
   return <main ref={ref} data-home-motion="">{children}</main>;
 }

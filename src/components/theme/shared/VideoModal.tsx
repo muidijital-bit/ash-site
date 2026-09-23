@@ -2,13 +2,17 @@
 
 import { useEffect, useRef, useState } from "react";
 import { brand } from "@/content/brand";
+import type { Locale } from "@/i18n/config";
+import { getUi } from "@/i18n/ui";
 import { lockPageScroll } from "./lockPageScroll";
 import "./VideoModal.css";
 
-export function VideoModal({ onClose, trigger }: {
+export function VideoModal({ onClose, trigger, locale }: {
   onClose: () => void;
   trigger: HTMLElement;
+  locale: Locale;
 }) {
+  const { video } = getUi(locale);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const [videoUnavailable, setVideoUnavailable] = useState(false);
@@ -29,7 +33,7 @@ export function VideoModal({ onClose, trigger }: {
   return (
     <dialog
       ref={dialogRef}
-      aria-label={`Discover ${brand.name}`}
+      aria-label={video.dialog}
       className="VideoOverlay_overlay__gkcvQ theme-video-overlay"
       data-state="open"
       onCancel={(event) => { event.preventDefault(); onClose(); }}
@@ -40,7 +44,7 @@ export function VideoModal({ onClose, trigger }: {
           ref={closeRef}
           type="button"
           className="VideoOverlay_dialog__close-button__xaqh4"
-          aria-label="Videoyu kapat"
+          aria-label={video.close}
           onClick={onClose}
         >
           <span /><span />
@@ -53,11 +57,11 @@ export function VideoModal({ onClose, trigger }: {
             autoPlay
             playsInline
             preload="metadata"
-            aria-label={`${brand.name} introduction video`}
+            aria-label={video.title}
             onError={() => setVideoUnavailable(true)}
           />
         </div>
-        {videoUnavailable && <p className="theme-video-error" role="status">This video is currently unavailable.</p>}
+        {videoUnavailable && <p className="theme-video-error" role="status">{video.unavailable}</p>}
       </div>
     </dialog>
   );

@@ -15,3 +15,22 @@
 @media (prefers-reduced-motion: reduce) {
   .Hero_image__FlQan img.capture-0e45414099 { animation: none; }
 }
+
+/* Excel'deki "Neden ASH" alt metni basligin altinda duruyor; tema basliga
+   verdigi alt boslugu (gorselin gorunen kismi) bu paragrafa tasiyoruz. */
+.Hero_content__IPm45 .Hero_content__title__MZlmX { padding-bottom: 0; }
+.ash-dna-lead {
+  max-width: 46rem;
+  margin: 1.25rem auto 0;
+  padding-bottom: 25%;
+  color: var(--color-light);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+  opacity: 0.85;
+}
+@media (min-width: 48rem) {
+  .ash-dna-lead { padding-bottom: 35%; font-size: 1.25rem; }
+}
+

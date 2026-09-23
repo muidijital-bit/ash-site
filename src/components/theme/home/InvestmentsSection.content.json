@@ -1,17 +1,18 @@
 {
   "text_001": "Ürünler",
-  "text_002": "Kurumsal süreçleri yeniden tasarlayan ürünlerimiz",
+  "text_002": "Kurumsal süreçleri yeniden",
+  "text_002_accent": "tasarlayan ürünlerimiz",
   "text_003": "Her biri kurumsal bir ihtiyaçtan doğdu, sahada çalışan ekiplerle birlikte olgunlaştı. Karmaşık operasyonları sadeleştiren, süreçleri otomatikleştiren yapay zekâ destekli çözümler.",
   "text_004": "HubAI-X",
   "text_005": "Kurumsal yapay zekâ platformu. Çalışanlarınız sorsun, asistanlar kurumsal belgelerinizden yanıtlasın; her istek tek ekrandan denetlensin.",
-  "text_006": "İncele",
+  "text_006": "Keşfet",
   "text_007": "SAPAI-X",
   "text_008": "Kıdemli seviyede SAP danışmanlığı ve ABAP geliştirme yetkinliğini ekibinize taşır. İhtiyacınızı anlatın, gerçek SAP geliştirmesine dönüşsün.",
-  "text_009": "İncele",
+  "text_009": "Keşfet",
   "text_010": "Masraf-X",
   "text_011": "Kurumsal harcama yönetimi. Fişi kayda dönüştürür, şirket kurallarını kayıt anında uygular, onaylı masrafı ERP'nize taşır.",
-  "text_012": "İncele",
+  "text_012": "Keşfet",
   "text_013": "CRM-X",
   "text_014": "Müşteri bilgilerini, satış fırsatlarını ve ekip aktivitelerini tek platformda birleştirir; takip bekleyen fırsatı işaretler.",
-  "text_015": "İncele"
+  "text_015": "Keşfet"
 }

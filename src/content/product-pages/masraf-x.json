@@ -2,11 +2,17 @@
   "key": "masraf-x",
   "name": "Masraf-X",
   "hero": {
-    "eyebrow": "KURUMSAL HARCAMA YÖNETİMİ PLATFORMU",
-    "title": "Fiş Peşinde Koşmayı Bırakın. Harcamayı Yönetin.",
-    "lead": "Masraf-X; fişi fotoğraftan kayda dönüştüren, şirket kurallarını kayıt anında uygulayan ve onaylı masrafı ERP'nize taşıyan yapay zekâ destekli harcama yönetim platformudur. Manuel veri girişine ayrılan zamanı ekibinize geri verin, kayıt dışı kalan harcamayı ay sonunu beklemeden görün.",
+    "eyebrow": "MASRAF-X · HARCAMA YÖNETİMİ",
+    "title": "Kurumsal Harcama <span>Yönetim Platformu</span>",
+    "lead": "Manuel süreçlere harcadığınız saatleri geri kazanın. Görünmeyen harcamaları yakalayın, politika ihlallerini önleyin ve ay sonu kapanışını hızlandırın.",
     "cta": "Demo Planlayın",
-    "visual": "Zemin Deep Navy #050A2B. Arkada <Blueprint/>: 132px kare ızgara (rgba(248,248,246,.05), 1px) + mask-image radial-gradient(ellipse 70% 60% at 50% 40%, #000 25%, transparent 78%) ile merkezden sönüm. <Ambient a=\"magenta\" b=\"pink\"/>: sol üstte 480px rgba(217,70,181,.16), sağ altta 360px rgba(240,139,194,.10), blur(120px), yarısı bölüm dışına taşar, hareket etmez. Ortalanmış blok: 11px mono eyebrow Soft Pink #F08BC2, letter-spacing .18em; H1 iki satır, 1. satır 'Fiş Peşinde Koşmayı Bırakın.' Soft White, 2. satır 'Harcamayı Yönetin.' marka gradyanı background-clip:text, font-weight 500, letter-spacing -0.02em; lead max 62ch rgba(248,248,246,.62); iki pill buton: birincil 'Demo Planlayın' gradyan dolgu + mavi glow, ikincil 'Platformu Keşfedin' şeffaf + 1px hairline; butonun altında 11px mikro metin 'Kapsam ve kurulum takvimi sürecinize özel planlanır.' Başlığın altında 860px <BrowserFrame url=\"masraf-x.co/onay\">: 18px radius, 30px chrome bandı #0A143D, 3 nötr nokta #3D4770, ortada mono URL hapı, sağda yeşil nokta + 'Canlı'. Gövde #080D35 + 22px nokta dokusu. Solda 156px sidebar: Masraflarım, Onay Kuyruğu (aktif; 3px magenta sol çubuk + 5px pembe nokta), Raporlar, Politikalar, Entegrasyon. Sağda 4 KPI kartı (9px mono etiket + 15px tabular-nums değer): 'Onay bekleyen 14', 'Bu ay ₺248.310,40', 'Politika uyarısı 3', 'ERP'ye aktarılan 212'. Altında 4 satırlık tablo, her satırda 20px gradyanlı baş harf avatarı (AK, ZT, MS, EB): 'EXP-2026-0431 · Otel · Ankara · ₺1.487,50 · KDV %20' amber 'Onay bekliyor' rozeti; 'EXP-2026-0428 · Taksi · ₺312,00' yeşil 'Onaylandı'; 'EXP-2026-0425 · Yemek · ₺2.140,00' kırmızı 1px satır kenarlığı + 'Olası mükerrer' rozeti; 'EXP-2026-0419 · Yakıt · ₺1.905,75' nötr 'ERP'ye aktarıldı · GL 770.10'. Mockup'ın sol alt köşesine taşan 132×260px <DeviceFrame> telefon: 9:41 durum çubuğu, vizörde fiş silueti, dört köşede magenta L işaretleri, fiş üzerinde yatay tarama çizgisi (pulse), altta 'Alanlar okunuyor…' rozeti. İki cam chip (backdrop-filter blur(14px), rgba(248,248,246,.06), 1px hairline): sağ üstte '%96 başarılı fiş doğrulama', sol üstte '2 sn'de masraf girişi'. Mockup altında tek izinli geniş gölge 0 40px 120px -60px rgba(0,0,0,.85). Tüm mockup aria-hidden=\"true\"."
+    "visual": "Zemin Deep Navy #050A2B. Arkada <Blueprint/>: 132px kare ızgara (rgba(248,248,246,.05), 1px) + mask-image radial-gradient(ellipse 70% 60% at 50% 40%, #000 25%, transparent 78%) ile merkezden sönüm. <Ambient a=\"magenta\" b=\"pink\"/>: sol üstte 480px rgba(217,70,181,.16), sağ altta 360px rgba(240,139,194,.10), blur(120px), yarısı bölüm dışına taşar, hareket etmez. Ortalanmış blok: 11px mono eyebrow Soft Pink #F08BC2, letter-spacing .18em; H1 iki satır, 1. satır 'Fiş Peşinde Koşmayı Bırakın.' Soft White, 2. satır 'Harcamayı Yönetin.' marka gradyanı background-clip:text, font-weight 500, letter-spacing -0.02em; lead max 62ch rgba(248,248,246,.62); iki pill buton: birincil 'Demo Planlayın' gradyan dolgu + mavi glow, ikincil 'Platformu Keşfedin' şeffaf + 1px hairline; butonun altında 11px mikro metin 'Kapsam ve kurulum takvimi sürecinize özel planlanır.' Başlığın altında 860px <BrowserFrame url=\"masraf-x.co/onay\">: 18px radius, 30px chrome bandı #0A143D, 3 nötr nokta #3D4770, ortada mono URL hapı, sağda yeşil nokta + 'Canlı'. Gövde #080D35 + 22px nokta dokusu. Solda 156px sidebar: Masraflarım, Onay Kuyruğu (aktif; 3px magenta sol çubuk + 5px pembe nokta), Raporlar, Politikalar, Entegrasyon. Sağda 4 KPI kartı (9px mono etiket + 15px tabular-nums değer): 'Onay bekleyen 14', 'Bu ay ₺248.310,40', 'Politika uyarısı 3', 'ERP'ye aktarılan 212'. Altında 4 satırlık tablo, her satırda 20px gradyanlı baş harf avatarı (AK, ZT, MS, EB): 'EXP-2026-0431 · Otel · Ankara · ₺1.487,50 · KDV %20' amber 'Onay bekliyor' rozeti; 'EXP-2026-0428 · Taksi · ₺312,00' yeşil 'Onaylandı'; 'EXP-2026-0425 · Yemek · ₺2.140,00' kırmızı 1px satır kenarlığı + 'Olası mükerrer' rozeti; 'EXP-2026-0419 · Yakıt · ₺1.905,75' nötr 'ERP'ye aktarıldı · GL 770.10'. Mockup'ın sol alt köşesine taşan 132×260px <DeviceFrame> telefon: 9:41 durum çubuğu, vizörde fiş silueti, dört köşede magenta L işaretleri, fiş üzerinde yatay tarama çizgisi (pulse), altta 'Alanlar okunuyor…' rozeti. İki cam chip (backdrop-filter blur(14px), rgba(248,248,246,.06), 1px hairline): sağ üstte '%96 başarılı fiş doğrulama', sol üstte '2 sn'de masraf girişi'. Mockup altında tek izinli geniş gölge 0 40px 120px -60px rgba(0,0,0,.85). Tüm mockup aria-hidden=\"true\".",
+    "media": "masraf-harcama-merkezi",
+    "feature": {
+      "title": "Fişi Çekin. Masraf-X Süreci Kendini Yönetsin.",
+      "body": "Fişinizi fotoğraflayın, Masraf-X saniyeler içinde masraf kaydınızı oluştursun. Yapay zekâ, fiş üzerindeki alanları otomatik olarak algılar, ayrıştırır ve doldurur.",
+      "media": "masraf-belge"
+    }
   },
   "sections": [
     {
@@ -48,7 +54,7 @@
       "items": [
         {
           "title": "01 Yakalayın",
-          "body": "Fişi ya da faturayı mobil uygulamadan fotoğraflayın veya web üzerinden yükleyin. Masraf kaydı saniyeler içinde oluşur — ortalama 2 sn'de masraf girişi."
+          "body": "Fişi ya da faturayı mobil uygulamadan fotoğraflayın veya web üzerinden yükleyin. Masraf girişi 2 saniye içinde tamamlanır."
         },
         {
           "title": "02 Ayrıştırın",
@@ -75,28 +81,29 @@
       "sub": "Fiş okumak başlangıçtır. Masraf-X her kaydı kurallarınızla sınar, doğru kişiye yönlendirir ve raporlanabilir veriye dönüştürür.",
       "items": [
         {
-          "title": "Fişi Çekin. Kaydı Masraf-X Oluştursun.",
-          "body": "Fotoğrafı yüklediğiniz anda yapay zekâ tutar, tarih, KDV, firma ve kategori alanlarını algılar ve forma yerleştirir. Çalışan yalnızca kontrol eder ve gönderir; elle veri girişi tarihe karışır."
-        },
-        {
-          "title": "Aynı Harcamayı İki Kez Ödemeyin.",
-          "body": "Her yeni kayıt tarih, tutar, firma ve fiş bilgileriyle geçmiş masraflara karşı taranır (Duplicate Detection). Şüpheli eşleşme onay ekranında gerekçesiyle gösterilir; son karar onaycıda kalır."
+          "title": "Mükerrer Harcamaları Anında Tespit Edin",
+          "body": "Masraf-X, yapay zekâ ile sisteme girilen masraf kayıtlarını ve fişleri analiz ederek aynı harcamanın birden fazla kez kaydedilip kaydedilmediğini otomatik olarak tespit eder. Tarih, tutar, firma, fiş bilgileri ve diğer verileri karşılaştırarak olası mükerrer kayıtları belirler ve onay sürecinde sizi uyarır.",
+          "media": "masraf-mobil-fis-kontrol"
         },
         {
           "title": "Kuralı Bir Kez Yazın, Kontrolü Sisteme Bırakın.",
-          "body": "Kategori limitlerini, belge zorunluluklarını ve harcama kısıtlarını bir kez tanımlayın. Her kayıt bu kurallarla anında karşılaştırılır; uyarı, kayıt onaya gitmeden devreye girer."
+          "body": "Kategori limitlerini, belge zorunluluklarını ve harcama kısıtlarını bir kez tanımlayın. Her kayıt bu kurallarla anında karşılaştırılır; uyarı, kayıt onaya gitmeden devreye girer.",
+          "media": "masraf-butce"
         },
         {
-          "title": "Onay Akışınızı Organizasyonunuza Göre Çizin.",
-          "body": "Departman, masraf türü, tutar veya politikaya göre farklı onay zincirleri kurun. Proje kodu, araç plakası, müşteri gibi ihtiyaç duyduğunuz alanları forma ekleyin; yazılım sürecinize uysun, süreciniz yazılıma değil."
+          "title": "Özel İş Akışları ve Alanlar",
+          "body": "Her şirketin masraf süreci farklıdır. Masraf-X, kurumunuzun ihtiyaçlarına göre özelleştirilebilen iş akışları ve alanlar sunar. Departman, masraf türü, tutar veya şirket politikasına göre farklı onay süreçleri oluşturabilir; ihtiyaç duyduğunuz özel alanları tanımlayarak masraf formlarını kendi operasyonunuza göre şekillendirebilirsiniz.",
+          "media": "masraf-akis"
         },
         {
-          "title": "Harcamanın Nereye Gittiğini Tek Ekranda Görün.",
-          "body": "Çalışan, departman, kategori, proje ve dönem kırılımında gerçek zamanlı raporlar alın. Bütçe ile gerçekleşeni aynı panelde karşılaştırın, eğilimi ay sonunu beklemeden yakalayın."
+          "title": "Masraf Raporları",
+          "body": "Masraf-X, şirket genelindeki masrafları tek merkezde birleştirerek detaylı ve gerçek zamanlı raporlar sunar. Harcamaları çalışan, departman, kategori, proje ve dönem bazında analiz edin; bütçenizi ve harcama eğilimlerinizi tek ekrandan yönetin.",
+          "media": "masraf-harcama-raporlari"
         },
         {
-          "title": "Mobilde, Webde, Masaüstünde Aynı Kayıt.",
-          "body": "Sahada çekilen fiş finans ekibinin ekranına anında düşer. Veri, kurallar ve onay durumu her cihazda gerçek zamanlı senkron kalır."
+          "title": "Her Cihazda Aynı Akış. Her Zaman Güncel.",
+          "body": "Masraf-X; mobil, web ve masaüstünde aynı veriyi, aynı kuralları ve aynı süreçleri gerçek zamanlı olarak bir arada tutar. Masraf-X, harcamanın oluşmasından onaylanmasına, muhasebeleştirilmesinden ERP'ye aktarılmasına kadar tüm süreci uçtan uca yönetir. Yapay zekâ sayesinde manuel kontrol ve operasyonel yükü azaltırken, kurumlara daha hızlı, kontrollü ve görünür bir harcama yönetimi sunar.",
+          "media": "masraf-cihazlar"
         }
       ],
       "visual": "Zemin Deep Navy. Altı zig-zag blok, her biri kendi 1px hairline çerçevesinde (20px radius), çerçevenin sol üst kenarını kesen küçük mono etiketle (Soft Pink, 10px, .18em): 'YAPAY ZEKÂ İLE FİŞ OKUMA', 'MÜKERRER KAYIT TESPİTİ', 'POLİTİKA KONTROLÜ', 'ÖZEL İŞ AKIŞLARI VE ALANLAR', 'MASRAF RAPORLARI', 'ÇOKLU CİHAZ SENKRONU'. lg'de 2 sütun, order ile taraf her blokta değişir. Metin tarafı: H3 + 2 cümle + 3 kutulu mikro-kanıt şeridi (1px hairline kutular, 10px mono). Mockup tarafı, her blokta farklı tip: (1) <DeviceFrame> telefon — fiş fotoğrafı üstünde 5 alan kutusu magenta konturla vurgulanır, yanında dolan form; şerit 'Giriş: 2 sn / Doğrulama: %96 / Alan: 5'. (2) Yan yana iki kayıt kartı — 'EXP-2026-0425 · ₺2.140,00 · 11.09.2026' ve 'EXP-2026-0402 · ₺2.140,00 · 11.09.2026'; eşleşen alanlar arasında kırmızı #FF6B6B kesikli bağlayıcılar, üstte kırmızı %12 zeminli 'Olası mükerrer — onaycıya bildirildi' bandı; şerit 'Tarih · Tutar · Firma'. (3) Fiş kartı mockup'ı — mono 'FİŞ #EXP-2026-0431', border-dashed ayraç, 4 kalem satırı; limit aşan 'Minibar' satırı kırmızı 1px ring içinde üstü çizili tutarla, altta kırmızı %12 zeminli 'Politika uyarısı — kategori limiti aşıldı' bloğu; şerit 'Kontrol: Kayıt anında / Seviye: Uyarı · Engel / Kural: Size özel'. (4) Akış editörü — dikey bağlantılı düğümler 'Talep → Tutar ≤ ₺5.000 ise Yönetici → Tutar > ₺5.000 ise Direktör → Finans', koşullar hap rozet, dallar kesikli çizgi; yanında sürüklenebilir özel alan listesi 'Proje Kodu · Plaka · Müşteri'. (5) <BrowserFrame url=\"masraf-x.co/raporlar\"> — departman bazlı yatay barlar (draw, 90ms gecikmeli), 6 aylık çizgi grafik bütçe kesikli çizgisiyle, donut kategori dağılımı; renkler #2F6BFF / #7448E8 / #D946B5 / #F08BC2. (6) Telefon + tarayıcı + tablet üçlüsü alta hizalı, her birinin üstünde yeşil '✓ Senkron' rozeti ve üçünde de aynı 'EXP-2026-0431 · Onay bekliyor' satırı. Tüm mockup aria-hidden, mikro metin 7–11px mono tabular-nums."
@@ -107,12 +114,12 @@
       "sub": "Masraf-X'in işi iki yerde yoğunlaşır: harcamayı oluştuğu anda kayda çevirmek ve şirket kurallarını kayıt kapanmadan önce uygulamak.",
       "items": [
         {
-          "title": "Fotoğraftan kayda",
-          "body": "Fiş fotoğrafı; tutar, tarih, satıcı ve KDV alanlarına ayrıştırılarak masraf kaydına dönüşür."
+          "title": "%96",
+          "body": "Başarılı doğrulama ile fiş çekimi."
         },
         {
-          "title": "Kayıt anında kontrol",
-          "body": "Şirket kuralları kayıt kapanmadan önce çalışır; politika dışı giriş daha oluşurken engellenir."
+          "title": "2 sn",
+          "body": "2 saniye içinde masraf girişi."
         },
         {
           "title": "Üç cihaz",
@@ -187,8 +194,8 @@
       "sub": "Masraf-X'i değerlendiren finans, BT ve denetim ekiplerinin en sık sorduğu sorular.",
       "items": [
         {
-          "title": "Masraf-X nedir, hangi süreçleri kapsar?",
-          "body": "Masraf-X, yapay zekâ destekli bir kurumsal masraf ve harcama yönetim platformudur. Fiş ve fatura işleme, şirket politikalarının anlık kontrolü, çok seviyeli onay akışları, raporlama ve ERP aktarımını tek platformda birleştirir."
+          "title": "Masraf-X nedir?",
+          "body": "Masraf-X, yapay zekâ destekli kurumsal masraf ve harcama yönetim platformudur. Çalışanların masraf süreçlerini dijitalleştirirken, fiş ve faturaların yapay zekâ ile otomatik işlenmesi, şirket politikalarının anlık kontrolü, çok seviyeli onay akışları ve ERP entegrasyonunu tek bir platformda birleştirir."
         },
         {
           "title": "Fiş okuma nasıl çalışır, hangi alanları doldurur?",

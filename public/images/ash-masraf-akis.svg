@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Masraf-X fişten onaya">
+  <title>Masraf-X — fiş fotoğrafı kayda dönüşür, kurallar kayıt anında çalışır, onay zinciri ilerler</title>
+  <defs>
+    <linearGradient id="mx" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f6bff"/>
+      <stop offset=".55" stop-color="#7448e8"/>
+      <stop offset="1" stop-color="#d946b5"/>
+    </linearGradient>
+    <filter id="mxg" x="-40%" y="-80%" width="180%" height="260%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <style>
+      /* Hareketi azaltmayi tercih edenlerde akan nokta gizlenir. */
+      @media (prefers-reduced-motion: reduce) { .akis { display: none } }
+    </style>
+  </defs>
+
+  <!-- fis: ustu koyu bant, alti testere kenar -->
+  <path d="M40 78 h174 v212 l-14.5 -12 -14.5 12 -14.5 -12 -14.5 12 -14.5 -12 -14.5 12 -14.5 -12 -14.5 12 -14.5 -12 -14.5 12 -14.5 -12 -14.5 12 z"
+        fill="#ffffff" stroke="#b9c1d8" stroke-width="3"/>
+  <path d="M40 78 h174 v34 h-174 z" fill="#0a143d"/>
+  <rect x="64" y="88" width="90" height="12" rx="6" fill="#f8f8f6" opacity=".9"/>
+  <g fill="#b9c1d8">
+    <rect x="64" y="136" width="78" height="10" rx="5"/>
+    <rect x="160" y="136" width="30" height="10" rx="5"/>
+    <rect x="64" y="166" width="94" height="10" rx="5"/>
+    <rect x="160" y="166" width="30" height="10" rx="5"/>
+    <rect x="64" y="196" width="66" height="10" rx="5"/>
+    <rect x="160" y="196" width="30" height="10" rx="5"/>
+  </g>
+  <rect x="64" y="232" width="126" height="12" rx="6" fill="#0a143d"/>
+  <!-- tarama kosegen isaretleri -->
+  <g fill="none" stroke="url(#mx)" stroke-width="5" stroke-linecap="round">
+    <path d="M52 112 v-14 h16"/><path d="M202 112 v-14 h-16"/>
+    <path d="M52 250 v14 h16"/><path d="M202 250 v14 h-16"/>
+  </g>
+
+  <!-- akis -->
+  <path d="M214 200 L 330 200" fill="none" stroke="url(#mx)" stroke-width="26" opacity=".3" filter="url(#mxg)"/>
+  <path d="M214 200 L 330 200" fill="none" stroke="url(#mx)" stroke-width="9" stroke-linecap="round"/>
+  <circle class="akis" r="9" fill="#7448e8">
+    <animateMotion dur="2.6s" repeatCount="indefinite" path="M214 200 L 330 200"/>
+  </circle>
+
+  <!-- dolan form alanlari -->
+  <rect x="330" y="40" width="270" height="182" rx="24" fill="#eef0f7" stroke="#b9c1d8" stroke-width="3"/>
+  <g>
+    <rect x="356" y="70" width="86" height="10" rx="5" fill="#8b94b3"/>
+    <rect x="356" y="88" width="218" height="26" rx="10" fill="#ffffff" stroke="#b9c1d8" stroke-width="2"/>
+    <rect x="368" y="96" width="104" height="10" rx="5" fill="#0a143d"/>
+    <circle cx="556" cy="101" r="9" fill="url(#mx)"/>
+
+    <rect x="356" y="128" width="64" height="10" rx="5" fill="#8b94b3"/>
+    <rect x="356" y="146" width="218" height="26" rx="10" fill="#ffffff" stroke="#b9c1d8" stroke-width="2"/>
+    <rect x="368" y="154" width="74" height="10" rx="5" fill="#0a143d"/>
+    <circle cx="556" cy="159" r="9" fill="url(#mx)"/>
+
+    <rect x="356" y="186" width="120" height="10" rx="5" fill="#8b94b3"/>
+    <rect x="490" y="184" width="84" height="16" rx="8" fill="#d946b5" opacity=".22"/>
+  </g>
+
+  <!-- onay zinciri -->
+  <g>
+    <path d="M330 262 h108 l18 24 -18 24 h-108 z" fill="url(#mx)"/>
+    <rect x="352" y="278" width="62" height="11" rx="5.5" fill="#ffffff" opacity=".92"/>
+    <path d="M446 262 h108 l18 24 -18 24 h-108 z" fill="#eef0f7" stroke="#b9c1d8" stroke-width="3"/>
+    <rect x="470" y="278" width="62" height="11" rx="5.5" fill="#8b94b3"/>
+  </g>
+  <rect x="330" y="326" width="146" height="10" rx="5" fill="#b9c1d8"/>
+</svg>
