@@ -150,7 +150,9 @@ Sayfa açılırken inmez (`preload="none"`): ekrana 100px kala yüklenip oynar, 
 
 ## Blog yönetimi
 
-Panel `/admin/giris` adresindedir. Yerel geliştirmede `.env.local`, Vercel'de
+Panel `/admin/giris` adresindedir ve yalnızca blog yazılarını yönetir. Logo ve favicon
+düzenleme alanı bulunmaz; eski `/admin/gorunum` adresi blog listesine yönlenir.
+Yerel geliştirmede `.env.local`, Vercel'de
 Production/Preview ortamları için `.env.example` içindeki iki Supabase değişkeni gerekir.
 Secret veya service-role anahtarı kullanılmaz.
 

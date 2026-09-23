@@ -8,7 +8,7 @@ import { createSupabaseServer } from "@/lib/supabase/server";
 import { supabaseConfig } from "@/lib/supabase/config";
 import { requireAdmin } from "@/lib/cms/auth";
 import { bilingualPostInputSchema, deletePostPairSchema, validMediaPath } from "@/lib/cms/validation";
-import { defaultBrandSettings, type BrandSettings, type CmsPost } from "@/lib/cms/types";
+import { type CmsPost } from "@/lib/cms/types";
 
 export async function loginAction(_state: { error: string }, form: FormData) {
   if (!supabaseConfig()) return { error: "Supabase bağlantısı henüz tamamlanmadı." };
@@ -81,33 +81,17 @@ export async function uploadMediaAction(form: FormData) {
   const file = form.get("file");
   const kind = form.get("kind");
   if (!(file instanceof File) || !file.size || file.size > 3 * 1024 * 1024) return { error: "En fazla 3 MB boyutunda bir görsel seçin." };
-  if (!["cover", "logo", "favicon"].includes(String(kind))) return { error: "Geçersiz görsel türü." };
+  if (kind !== "cover") return { error: "Yalnızca blog kapak görseli yüklenebilir." };
   const bytes = Buffer.from(await file.arrayBuffer());
   let output: Buffer;
-  const favicon = kind === "favicon";
   try {
     const source = sharp(bytes, { limitInputPixels: 20_000_000, animated: false });
     const meta = await source.metadata();
     if (!meta.format || !["png", "jpeg", "webp", "avif", "heif"].includes(meta.format)) return { error: "PNG, JPG, WebP veya AVIF dosyası kullanın." };
-    if (favicon && meta.width !== meta.height) return { error: "Favicon için kare bir görsel seçin." };
-    output = favicon
-      ? await source.rotate().resize(256, 256, { fit: "contain", background: "#00000000" }).png().toBuffer()
-      : await source.rotate().resize({ width: kind === "logo" ? 1000 : 1600, height: kind === "logo" ? 1000 : 1200, fit: "inside", withoutEnlargement: true }).webp({ quality: 85 }).toBuffer();
+    output = await source.rotate().resize({ width: 1600, height: 1200, fit: "inside", withoutEnlargement: true }).webp({ quality: 85 }).toBuffer();
   } catch { return { error: "Görsel okunamadı. Başka bir PNG, JPG, WebP veya AVIF dosyası deneyin." }; }
-  const path = `${user.id}/${randomUUID()}.${favicon ? "png" : "webp"}`;
-  const { error } = await supabase.storage.from("ash-media").upload(path, output, { contentType: favicon ? "image/png" : "image/webp", cacheControl: "31536000", upsert: false });
+  const path = `${user.id}/${randomUUID()}.webp`;
+  const { error } = await supabase.storage.from("ash-media").upload(path, output, { contentType: "image/webp", cacheControl: "31536000", upsert: false });
   if (error) return { error: "Görsel yüklenemedi. Supabase dosya alanı ayarını kontrol edin." };
   return { url: supabase.storage.from("ash-media").getPublicUrl(path).data.publicUrl };
-}
-
-export async function saveBrandAction(value: BrandSettings) {
-  const { supabase } = await requireAdmin();
-  const config = supabaseConfig();
-  const keys = Object.keys(defaultBrandSettings) as (keyof BrandSettings)[];
-  if (!value || keys.some(key => typeof value[key] !== "string" || !value[key] || !validMediaPath(value[key], config?.url))) return { error: "Lütfen görselleri panelden yükleyin." };
-  const settings = Object.fromEntries(keys.map(key => [key, value[key]]));
-  const { data, error } = await supabase.from("ash_site_settings").update({ settings, updated_at: new Date().toISOString() }).eq("id", "site").select("id").maybeSingle();
-  if (error || !data) return { error: "Görünüm ayarları kaydedilemedi." };
-  refreshContent();
-  return { success: true };
 }
