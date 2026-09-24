@@ -9,6 +9,7 @@ import { INDEXABLE, SITE_URL } from "@/content/site";
 import { getBrandSettings } from "@/lib/cms/public";
 import { SiteSettingsProvider } from "@/components/cms/SiteSettingsProvider";
 import { BlogLanguageProvider } from "@/components/blog/BlogLanguageLinks";
+import { inter } from "../fonts";
 import "../globals.css";
 import "../brand.css";
 // blog.css tek yerden: 404 siniri kok duzenle birlikte yuklendigi icin bu dosya
@@ -56,7 +57,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
   if (!hasLocale(lang)) notFound();
   const settings = await getBrandSettings();
   return (
-    <html lang={lang} data-scroll-behavior="smooth">
+    <html lang={lang} data-scroll-behavior="smooth" className={inter.variable}>
       <head>
         <link rel="stylesheet" href="/theme/css/65b096ee3798f49e-9605c14cc6.css" precedence="base" />
       </head>

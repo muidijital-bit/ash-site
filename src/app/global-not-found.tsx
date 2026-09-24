@@ -6,6 +6,7 @@ import { FooterMarkup } from "@/components/theme/shared/FooterMarkup";
 import { SiteFrame } from "@/components/theme/shared/SiteFrame";
 import { defaultLocale, hasLocale, localePath } from "@/i18n/config";
 import { getUi } from "@/i18n/ui";
+import { inter } from "./fonts";
 import "./globals.css";
 import "./brand.css";
 import "@/components/blog/blog.css";
@@ -27,7 +28,7 @@ export default async function GlobalNotFound() {
     ["/contact", ui.nav.contact],
   ];
   return (
-    <html lang={locale}>
+    <html lang={locale} className={inter.variable}>
       <head>
         <title>{`${ui.notFound.metaTitle} — AI Solution House`}</title>
         {/* Kok layout atlandigi icin tema stilleri burada yuklenir. */}

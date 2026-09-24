@@ -1,5 +1,5 @@
-/* Tema fontu: kendi fontunuzu buraya baglayin (next/font veya @font-face). */
-:root { --font-theme: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+/* Tema fontu: her cihazda Inter (src/app/fonts.ts); next/font yuklenene kadar olculeri Inter'e ayarli bir yedek font gosterir. */
+:root { --font-theme: var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
 /* Reference styles own layout, type, colors, and breakpoints. */
 html { scroll-behavior: smooth; }
 body { margin: 0; }

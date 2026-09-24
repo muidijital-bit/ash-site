@@ -12,7 +12,7 @@ export function HeroSection({ locale }: { locale: Locale }) {
   const content = locale === "en" ? en : tr;
   const ui = getUi(locale).contact;
   return (
-    <section className="Hero_section__TMXZE">
+    <section className="Hero_section__TMXZE ash-contact-section">
       {/* Masaustunde form solda, baslik sagda, ofisler ikisinin altinda. Dar
           ekranda once baslik, sonra form, en son ofisler gelir (sira CSS'te). */}
       <div className="Hero_section__content__M8xdx ash-contact-hero">

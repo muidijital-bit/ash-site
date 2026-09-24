@@ -955,3 +955,18 @@
 .pp-contact__link span { display: inline-block; transition: transform 200ms ease; }
 .pp-contact__link:hover span { transform: translateX(4px); }
 .pp-contact__link:focus-visible { outline: 2px solid var(--p-accent-2); outline-offset: 3px; border-radius: 0.25rem; }
+
+/* --- kisa ekranlar ----------------------------------------------------
+   Windows laptoplarda ekran olcegi %125-150 oldugunda tarayici alani
+   ~650-800px yuksekligine iniyor; ust bosluklar yuzunden urun sayfasinin
+   ust gorseli ve urunler dizinindeki ilk urun ilk ekranin disinda
+   kaliyordu. Yukseklik 896px'in altindaysa bu bosluklar daralir; daha
+   uzun ekranlarda hicbir sey degismez (bkz. anasayfa HeroSection.css). */
+@media (min-width: 64rem) and (max-height: 56rem) {
+  .pp-intro { padding-top: calc(var(--header-height, 3rem) + 2rem); padding-bottom: 2.5rem; }
+  .pp-intro + .pp-section { padding-top: 3.5rem; }
+}
+@media (min-width: 64rem) and (max-height: 44rem) {
+  .pp-intro { padding-top: calc(var(--header-height, 3rem) + 1.25rem); padding-bottom: 2rem; }
+  .pp-intro + .pp-section { padding-top: 2.5rem; }
+}

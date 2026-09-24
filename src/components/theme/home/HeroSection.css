@@ -21,3 +21,26 @@
   }
   .Hero_hero-container__y6xjY .ash-demo__body { min-height: 23.5rem; }
 }
+
+/* ==================================================================
+   Kisa ekranlar
+   ------------------------------------------------------------------
+   Windows laptoplarda ekran olcegi %125-150 oldugunda tarayici alani
+   ~650-800px yuksekligine iniyor ve ilk ekranda demo yarim kaliyordu.
+   Yukseklik 896px'in altindaysa bosluklar daralir, demo govdesi ekran
+   yuksekligine gore kisalir; daha uzun ekranlarda hicbir sey degismez.
+   ================================================================== */
+
+@media (min-width: 64rem) and (max-height: 56rem) {
+  .Hero_hero-container__y6xjY .Hero_content__Q0Yei { margin-top: 2rem; }
+  .Hero_hero-container__y6xjY .Hero_content__description__Cbxx5 { margin-bottom: 2rem; }
+  .Hero_hero-container__y6xjY .Hero_background__ZMkDI { margin-top: 2rem; }
+  .Hero_hero-container__y6xjY .ash-demo__body { min-height: clamp(13rem, calc(100svh - 31.5rem), 23.5rem); }
+}
+@media (min-width: 64rem) and (max-height: 44rem) {
+  .Hero_hero-container__y6xjY .Hero_content__Q0Yei { margin-top: 1rem; }
+  .Hero_hero-container__y6xjY .Hero_content__title__xSQ97 { margin-bottom: 1rem; }
+  .Hero_hero-container__y6xjY .Hero_content__description__Cbxx5 { margin-bottom: 1.5rem; }
+  .Hero_hero-container__y6xjY .Hero_background__ZMkDI { margin-top: 1.5rem; }
+  .Hero_hero-container__y6xjY .ash-demo__body { min-height: clamp(12rem, calc(100svh - 29rem), 23.5rem); }
+}

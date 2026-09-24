@@ -33,3 +33,16 @@
   color: rgba(5, 10, 43, 0.6);
 }
 .ash-contact-form__privacy a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+
+/* Kisa ekranlar: bkz. HeroSection.css. Mesaj kutusu ve bosluklar kisalir. */
+@media (min-width: 64rem) and (max-height: 56rem) {
+  .ash-contact-form { padding-block: 1.75rem; }
+  .ash-contact-form .ContactForm_form__description__wqcbd { margin: 0.75rem 0 1rem; font-size: 1.125rem; }
+  .ash-contact-form .ContactForm_form__inputs__tyMmX { margin-bottom: 1.5rem; }
+  .ash-contact-form .Input_input__input--textarea__21szO { min-height: 7rem; }
+}
+@media (min-width: 64rem) and (max-height: 44rem) {
+  .ash-contact-form { padding-block: 1.5rem; }
+  .ash-contact-form .ContactForm_form__inputs__tyMmX { gap: 0.625rem; }
+  .ash-contact-form .Input_input__input--textarea__21szO { min-height: 5.5rem; }
+}

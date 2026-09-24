@@ -57,3 +57,12 @@
 
 /* Adres satirlari alt alta; tek satira sigmadiginda ortasindan bolunmesin. */
 .ash-address__line { display: block; }
+
+/* Kisa ekranlar (Windows laptoplarda %125-150 olcek): formun tamami, gonder
+   butonu dahil, ilk ekrana sigsin. Formun kendi ic bosluklari ContactForm.css'te. */
+@media (min-width: 64rem) and (max-height: 56rem) {
+  .Hero_section__TMXZE.ash-contact-section { padding-top: 2rem; }
+}
+@media (min-width: 64rem) and (max-height: 44rem) {
+  .Hero_section__TMXZE.ash-contact-section { padding-top: 1.25rem; }
+}
