@@ -2,10 +2,10 @@
   "slug": "cookie-policy",
   "title": "Cookie Policy",
   "metaDescription": "How cookies and browser storage are used on this site, and a statement that no analytics or advertising cookies are used.",
-  "updated": "2026-09-18",
+  "updated": "2026-09-24",
   "intro": [
     "This policy explains how cookies and similar browser storage technologies are used on this website.",
-    "In short: no analytics or advertising cookies are used on this site. There is only the functional browser storage needed for the site to work."
+    "In short: no analytics or advertising cookies are used on this site. There is only the functional browser storage needed for the site to work; the Google Calendar booking screen loads only when you open it."
   ],
   "sections": [
     {
@@ -21,8 +21,15 @@
         "The site uses browser storage for functional purposes only:"
       ],
       "bullets": [
-        "Saving the text you write in the contact form as a draft and restoring it when you return to the page",
+        "Saving the text you write in the contact form as a draft when it cannot be sent, and restoring it when you return to the page",
         "Keeping the email address you enter in the newsletter field in your browser in the same way"
+      ]
+    },
+    {
+      "heading": "Meeting booking (Google Calendar)",
+      "paragraphs": [
+        "When you click the \"Book a Meeting\" button on the contact page, the booking screen is loaded from Google Calendar (Google) in a window on this site. No connection to Google is made unless you click the button.",
+        "Once the booking screen opens, Google may use its own cookies and similar technologies; Google's privacy policy and cookie practices apply on that screen. The details you enter to book are sent to us through Google Calendar; see our KVKK privacy notice for details."
       ]
     },
     {
@@ -37,7 +44,7 @@
     {
       "heading": "Is consent required?",
       "paragraphs": [
-        "Because only the functional storage strictly necessary to provide the service is used, no separate cookie consent banner is shown on this site.",
+        "Because only the functional storage strictly necessary to provide the service is used when pages load, no separate cookie consent banner is shown on this site. The Google Calendar booking screen does not load with the page; it loads only when you click the button.",
         "If an analytics or marketing technology is added in the future, it will only run after your explicit consent has been obtained, and this policy will be updated."
       ]
     },

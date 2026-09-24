@@ -2,7 +2,7 @@
   "slug": "kvkk-aydinlatma-metni",
   "title": "KVKK Aydınlatma Metni",
   "metaDescription": "6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında AI Solution House web sitesi ziyaretçileri için aydınlatma metni.",
-  "updated": "2026-09-23",
+  "updated": "2026-09-24",
   "intro": [
     "Bu aydınlatma metni, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun (KVKK) 10. maddesi ve Aydınlatma Yükümlülüğünün Yerine Getirilmesinde Uyulacak Usul ve Esaslar Hakkında Tebliğ uyarınca, AI Solution House (ASH) tarafından işletilen bu web sitesinin ziyaretçilerini bilgilendirmek amacıyla hazırlanmıştır.",
     "Metnin bu sürümü, sitenin bugünkü işleyişini anlatır. Site üzerinde kişisel veri toplayan yeni bir işlev devreye alındığında metin güncellenir ve güncelleme tarihi değiştirilir."
@@ -18,6 +18,7 @@
       "heading": "İşlenen kişisel veriler ve toplama yöntemi",
       "paragraphs": [
         "Sitedeki iletişim formu ad soyad, e-posta adresi, isteğe bağlı telefon numarası ve serbestçe yazdığınız mesaj metnini içerir. Bu veriler, formu doldurup göndermenizle elektronik ortamda toplanır ve e-posta yoluyla tarafımıza iletilir.",
+        "İletişim sayfasındaki toplantı planlama ekranını kullandığınızda ad soyad, e-posta adresi ve varsa randevu notunuz Google Takvim randevu sayfası aracılığıyla elektronik ortamda toplanır ve kurumsal takvimimize iletilir.",
         "Bültene kayıt alanı yalnızca e-posta adresinizi ister; ancak bu alan henüz bir servise bağlı değildir ve girdiğiniz adres tarafımıza ulaşmaz.",
         "Siteyi ziyaret ettiğinizde, sitenin barındırıldığı altyapı tarafından bağlantının teknik olarak kurulabilmesi için IP adresi, tarayıcı ve işletim sistemi bilgisi, talep edilen adres ve zaman damgası gibi teknik kayıtlar oluşabilir."
       ]
@@ -27,7 +28,7 @@
       "bullets": [
         "Web sitesinin güvenli ve kesintisiz biçimde sunulması",
         "Sitenin teknik bakımı, hata tespiti ve kötüye kullanımın önlenmesi",
-        "İletişim formu aracılığıyla ilettiğiniz talebin değerlendirilmesi, yanıtlanması ve iletişimin yürütülmesi",
+        "İletişim formu veya toplantı planlama ekranı aracılığıyla ilettiğiniz talebin değerlendirilmesi, yanıtlanması, toplantının planlanması ve iletişimin yürütülmesi",
         "İlgili mevzuattan doğan yükümlülüklerin yerine getirilmesi"
       ]
     },
@@ -43,6 +44,7 @@
       "paragraphs": [
         "Site verilerinin barındırılması için hizmet sağlayıcılardan yararlanılmaktadır; bu kapsamda teknik kayıtlar hizmet sağlayıcının altyapısında oluşabilir.",
         "İletişim formu aracılığıyla ilettiğiniz veriler, e-posta gönderim hizmeti sağlayıcımız Resend, Inc. (ABD) aracılığıyla iletilmekte ve kurumsal e-posta hizmet sağlayıcımız Google'ın (Google Workspace) altyapısında saklanmaktadır. Bu hizmet sağlayıcıların sunucuları yurt dışında bulunduğundan söz konusu veriler yurt dışına aktarılmaktadır.",
+        "Toplantı planlama ekranında girdiğiniz veriler de Google Takvim (Google Workspace) altyapısında işlenmekte ve bu nedenle yurt dışına aktarılmaktadır.",
         "Bunun dışında kişisel verileriniz, hukuken yetkili kamu kurum ve kuruluşlarına mevzuatın öngördüğü hâller dışında üçüncü kişilerle paylaşılmaz; pazarlama amacıyla satılmaz veya devredilmez."
       ]
     },

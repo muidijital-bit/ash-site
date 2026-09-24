@@ -104,6 +104,9 @@ const tr = {
     /** Formun altindaki not: [once, baglanti metni, sonra] */
     privacy: ["Kişisel verileriniz ", "KVKK Aydınlatma Metni", " kapsamında işlenir."],
     mapAria: "Ofis konumu",
+    bookMeeting: "Toplantı Planlayın",
+    meetingNewTab: "Takvim açılmazsa yeni sekmede açın",
+    meetingClose: "Kapat",
   },
   why: {
     metaTitle: "Neden ASH? Kurumsal Yapay Zekâ Firması",
@@ -212,6 +215,9 @@ const en: Dictionary = {
       "Your message couldn't be sent right now. What you wrote has been saved in this browser; you can try again shortly or write to us directly at:",
     privacy: ["Your personal data is processed in line with our ", "KVKK Privacy Notice", "."],
     mapAria: "Office location",
+    bookMeeting: "Book a Meeting",
+    meetingNewTab: "Calendar not loading? Open it in a new tab",
+    meetingClose: "Close",
   },
   why: {
     metaTitle: "Why ASH? Enterprise AI and SAP AI Experts",

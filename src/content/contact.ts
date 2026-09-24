@@ -24,6 +24,8 @@ export type ContactInfo = {
   phone: string;
   offices: Office[];
   hours: string;
+  /** Google Takvim randevu sayfasi (?gv=true: gomulu gorunum); bos ise toplanti butonu gizlenir */
+  meetingUrl: string;
 };
 
 export const contact: ContactInfo = {
@@ -48,4 +50,6 @@ export const contact: ContactInfo = {
     },
   ],
   hours: "",
+  meetingUrl:
+    "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0F-YeqTu8K2xNYmOY4crBH5Mx3YL4-JaFSRamNy7kW3ym7W9rBnR3YodLof12XjTzEByIXtufd?gv=true",
 };

@@ -4,6 +4,7 @@ import Image from "next/image";
 import type { Locale } from "@/i18n/config";
 import { getUi } from "@/i18n/ui";
 import { ContactForm } from "./ContactForm";
+import { MeetingButton } from "./MeetingButton";
 import tr from "./HeroSection.content.json";
 import en from "./HeroSection.content.en.json";
 import "./HeroSection.css";
@@ -31,6 +32,7 @@ export function HeroSection({ locale }: { locale: Locale }) {
           {contact.email && (
             <a className="Hero_section__email__nRmut" href={`mailto:${contact.email}`}>{contact.email}</a>
           )}
+          <MeetingButton locale={locale} />
         </div>
 
         <ContactForm locale={locale} />

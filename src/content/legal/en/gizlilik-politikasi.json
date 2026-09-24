@@ -2,7 +2,7 @@
   "slug": "privacy-policy",
   "title": "Privacy Policy",
   "metaDescription": "What data is collected on the AI Solution House website, how it is used and what rights you have.",
-  "updated": "2026-09-23",
+  "updated": "2026-09-24",
   "intro": [
     "This policy explains how privacy is handled on this website, which is operated by AI Solution House (ASH).",
     "In short: this is an informational website. There is no member login, payment or user account. Personal data is collected from you only when you submit the contact form, and only so that we can respond to your request."
@@ -13,6 +13,7 @@
       "paragraphs": [
         "The site has two forms: the contact form and the newsletter sign-up field.",
         "When you submit the contact form, your full name, email address, optional phone number and message are sent by email to our corporate address (hello@aisolutionhouse.com). This information is not stored in a separate database on the site's servers; the message is kept in our corporate email account.",
+        "When you book a meeting through the \"Book a Meeting\" screen on the contact page, your full name, email address and any note you add are sent to our corporate calendar through Google Calendar.",
         "The newsletter sign-up field is not yet connected to a service; the email address you enter there is not sent to us.",
         "The infrastructure hosting the site may create technical logs such as your IP address and browser information so that the connection can be established."
       ]
@@ -46,6 +47,7 @@
       "paragraphs": [
         "Service providers are used to host the site. These providers may access the technical logs needed to deliver the service.",
         "Contact form messages are delivered through our email delivery provider Resend (Resend, Inc., USA) and stored on our corporate email service, Google Workspace. These providers' servers may be located abroad.",
+        "The meeting booking screen is provided by Google Calendar (Google Workspace) and loads only when you click the button; Google's privacy policy applies on that screen.",
         "When you click external links on the site, that site's own privacy practices apply; they are outside the scope of this policy."
       ]
     },
