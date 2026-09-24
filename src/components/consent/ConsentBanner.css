@@ -1,0 +1,49 @@
+/* Sayfanin altinda, icerigi kapatmayan kart. Iki buton ayni gorunumde. */
+.ash-consent {
+  position: fixed;
+  z-index: 60;
+  left: 50%;
+  bottom: 1rem;
+  translate: -50% 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+  width: min(100% - 2rem, 56rem);
+  padding: 1.125rem 1.25rem;
+  border: 1px solid #e3e6ef;
+  border-radius: 1rem;
+  background: #ffffff;
+  color: #0a143d;
+  box-shadow: 0 1.5rem 3rem -1.5rem rgba(5, 10, 43, 0.35);
+}
+.ash-consent__text {
+  flex: 1 1 22rem;
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: #414a6b;
+}
+.ash-consent__text a { color: #1e4fd8; text-decoration: underline; text-underline-offset: 2px; }
+.ash-consent__actions { display: flex; gap: 0.625rem; }
+.ash-consent__button {
+  min-width: 7.5rem;
+  min-height: 2.75rem;
+  padding: 0 1.25rem;
+  border: 1px solid #0a143d;
+  border-radius: 999px;
+  background: #0a143d;
+  color: #ffffff;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+.ash-consent__button:hover { background: #1a2556; }
+@media (max-width: 30rem) {
+  .ash-consent__actions { width: 100%; }
+  .ash-consent__button { flex: 1; }
+}
+
+/* Footer'daki "Cerez tercihleri": gizlilik baglantisiyla ayni gorunum. */
+.ash-consent-link { padding: 0; border: 0; background: none; font: inherit; color: inherit; cursor: pointer; }
+.ash-footer-legal { display: inline-flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; align-items: center; }

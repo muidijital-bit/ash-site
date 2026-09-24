@@ -20,6 +20,7 @@
         "Sitedeki iletişim formu ad soyad, e-posta adresi, isteğe bağlı telefon numarası ve serbestçe yazdığınız mesaj metnini içerir. Bu veriler, formu doldurup göndermenizle elektronik ortamda toplanır ve e-posta yoluyla tarafımıza iletilir.",
         "Sitedeki toplantı planlama ekranını (ana sayfa, iletişim ve ürün sayfaları) kullandığınızda ad soyad, e-posta adresi ve varsa randevu notunuz Google Takvim randevu sayfası aracılığıyla elektronik ortamda toplanır ve kurumsal takvimimize iletilir.",
         "Bültene kayıt alanı yalnızca e-posta adresinizi ister; ancak bu alan henüz bir servise bağlı değildir ve girdiğiniz adres tarafımıza ulaşmaz.",
+        "Çerez şeridinde açık rıza vermeniz hâlinde, Google Analytics aracılığıyla ziyaret ettiğiniz sayfalar, ziyaret süresi, siteye geliş kaynağı, cihaz ve tarayıcı bilgisi, yaklaşık konum ve çevrim içi tanımlayıcılar (çerez kimlikleri) gibi kullanım verileri otomatik yollarla toplanır.",
         "Siteyi ziyaret ettiğinizde, sitenin barındırıldığı altyapı tarafından bağlantının teknik olarak kurulabilmesi için IP adresi, tarayıcı ve işletim sistemi bilgisi, talep edilen adres ve zaman damgası gibi teknik kayıtlar oluşabilir."
       ]
     },
@@ -28,6 +29,7 @@
       "bullets": [
         "Web sitesinin güvenli ve kesintisiz biçimde sunulması",
         "Sitenin teknik bakımı, hata tespiti ve kötüye kullanımın önlenmesi",
+        "Açık rızanız hâlinde, web sitesinin kullanımının istatistiksel olarak analiz edilmesi ve iyileştirilmesi",
         "İletişim formu veya toplantı planlama ekranı aracılığıyla ilettiğiniz talebin değerlendirilmesi, yanıtlanması, toplantının planlanması ve iletişimin yürütülmesi",
         "İlgili mevzuattan doğan yükümlülüklerin yerine getirilmesi"
       ]
@@ -36,7 +38,8 @@
       "heading": "İşlemenin hukuki sebebi",
       "paragraphs": [
         "Sunucu kayıtları, KVKK'nın 5. maddesinin ikinci fıkrasının (ç) bendi uyarınca veri sorumlusunun hukuki yükümlülüğünü yerine getirebilmesi ve (f) bendi uyarınca ilgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla veri sorumlusunun meşru menfaatleri için zorunlu olması hukuki sebeplerine dayanır.",
-        "İletişim formu aracılığıyla talebinizi iletmek üzere paylaştığınız veriler, (c) bendindeki sözleşmenin kurulması veya ifasıyla doğrudan ilgili olma ve ilgili hâllerde açık rıza hukuki sebeplerine dayanılarak işlenir."
+        "İletişim formu aracılığıyla talebinizi iletmek üzere paylaştığınız veriler, (c) bendindeki sözleşmenin kurulması veya ifasıyla doğrudan ilgili olma ve ilgili hâllerde açık rıza hukuki sebeplerine dayanılarak işlenir.",
+        "Google Analytics aracılığıyla işlenen kullanım verileri, KVKK'nın 5. maddesinin birinci fıkrası uyarınca açık rızanıza dayanılarak işlenir. Rızanızı sayfanın altındaki \"Çerez tercihleri\" bağlantısından istediğiniz zaman geri alabilirsiniz; geri alma, o tarihe kadar yapılan işlemleri etkilemez."
       ]
     },
     {
@@ -45,6 +48,7 @@
         "Site verilerinin barındırılması için hizmet sağlayıcılardan yararlanılmaktadır; bu kapsamda teknik kayıtlar hizmet sağlayıcının altyapısında oluşabilir.",
         "İletişim formu aracılığıyla ilettiğiniz veriler, e-posta gönderim hizmeti sağlayıcımız Resend, Inc. (ABD) aracılığıyla iletilmekte ve kurumsal e-posta hizmet sağlayıcımız Google'ın (Google Workspace) altyapısında saklanmaktadır. Bu hizmet sağlayıcıların sunucuları yurt dışında bulunduğundan söz konusu veriler yurt dışına aktarılmaktadır.",
         "Toplantı planlama ekranında girdiğiniz veriler de Google Takvim (Google Workspace) altyapısında işlenmekte ve bu nedenle yurt dışına aktarılmaktadır.",
+        "Açık rızanız hâlinde toplanan Google Analytics kullanım verileri, Google'ın yurt dışındaki sunucularında işlenmekte ve bu nedenle yurt dışına aktarılmaktadır.",
         "Bunun dışında kişisel verileriniz, hukuken yetkili kamu kurum ve kuruluşlarına mevzuatın öngördüğü hâller dışında üçüncü kişilerle paylaşılmaz; pazarlama amacıyla satılmaz veya devredilmez."
       ]
     },

@@ -20,6 +20,7 @@
         "The contact form on the site includes your full name, email address, optional phone number and the message text you write freely. This data is collected electronically when you fill in and submit the form, and is sent to us by email.",
         "When you use the site's meeting booking screen (on the home page, the contact page or the product pages), your full name, email address and any booking note are collected electronically through the Google Calendar booking page and sent to our corporate calendar.",
         "The newsletter sign-up field only asks for your email address; however, this field is not yet connected to a service and the address you enter does not reach us.",
+        "If you give your explicit consent in the cookie bar, usage data such as the pages you visit, visit duration, referral source, device and browser information, approximate location and online identifiers (cookie IDs) is collected automatically through Google Analytics.",
         "When you visit the site, technical logs such as your IP address, browser and operating system information, the requested address and a timestamp may be created by the infrastructure hosting the site so that the connection can be established."
       ]
     },
@@ -28,6 +29,7 @@
       "bullets": [
         "Providing the website securely and without interruption",
         "Technical maintenance of the site, error detection and prevention of misuse",
+        "With your explicit consent, statistical analysis and improvement of how the website is used",
         "Evaluating and responding to the request you send through the contact form or the meeting booking screen, scheduling the meeting and maintaining communication",
         "Fulfilling obligations arising from applicable legislation"
       ]
@@ -36,7 +38,8 @@
       "heading": "Legal basis for processing",
       "paragraphs": [
         "Server logs are based on the legal grounds that processing is necessary for the data controller to fulfil its legal obligation under subparagraph (ç), and for the legitimate interests of the data controller under subparagraph (f), provided that it does not harm the fundamental rights and freedoms of the data subject, both in the second paragraph of Article 5 of the KVKK.",
-        "The data you share to send your request through the contact form is processed on the basis of subparagraph (c), being directly related to the establishment or performance of a contract, and, where relevant, your explicit consent."
+        "The data you share to send your request through the contact form is processed on the basis of subparagraph (c), being directly related to the establishment or performance of a contract, and, where relevant, your explicit consent.",
+        "Usage data processed through Google Analytics is processed on the basis of your explicit consent under the first paragraph of Article 5 of the KVKK. You can withdraw your consent at any time via the \"Cookie preferences\" link at the bottom of the page; withdrawal does not affect processing carried out before then."
       ]
     },
     {
@@ -45,6 +48,7 @@
         "Service providers are used to host the site's data; in this context, technical logs may be created on the service provider's infrastructure.",
         "The data you send through the contact form is delivered through our email delivery provider Resend, Inc. (USA) and stored on the infrastructure of our corporate email provider, Google (Google Workspace). As these providers' servers are located abroad, this data is transferred abroad.",
         "The data you enter on the meeting booking screen is also processed on Google Calendar (Google Workspace) infrastructure and is therefore transferred abroad.",
+        "Google Analytics usage data collected with your explicit consent is processed on Google's servers abroad and is therefore transferred abroad.",
         "Apart from this, your personal data is not shared with third parties except with legally authorized public institutions and organizations in the cases provided for by law; it is not sold or transferred for marketing purposes."
       ]
     },

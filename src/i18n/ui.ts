@@ -114,6 +114,14 @@ const tr = {
       "Türkiye'de kurumsal yapay zekâ çözümleri geliştiren ASH, SAP danışmanlık deneyimini yapay zekâ ile birleştirir. Keşiften canlıya beş adımda üretimde çalışan AI.",
     toMission: "Misyonumuza geç",
   },
+  consent: {
+    label: "Çerez tercihleri",
+    text: "Onay verirseniz, siteyi geliştirmek için Google Analytics ile ziyaret istatistikleri topluyoruz. Reklam çerezi kullanmıyoruz.",
+    policy: "Çerez Politikası",
+    accept: "Kabul et",
+    reject: "Reddet",
+    preferences: "Çerez tercihleri",
+  },
   video: { dialog: "ASH'i keşfedin", close: "Videoyu kapat", title: "ASH tanıtım videosu", unavailable: "Bu video şu anda kullanılamıyor." },
 };
 
@@ -224,6 +232,14 @@ const en: Dictionary = {
     metaDescription:
       "ASH builds enterprise AI solutions and SAP AI from Istanbul and London, combining SAP consulting experience with enterprise AI that reaches production.",
     toMission: "Skip to our mission",
+  },
+  consent: {
+    label: "Cookie preferences",
+    text: "With your consent, we use Google Analytics to collect visit statistics that help us improve the site. We don't use advertising cookies.",
+    policy: "Cookie Policy",
+    accept: "Accept",
+    reject: "Reject",
+    preferences: "Cookie preferences",
   },
   video: { dialog: "Discover ASH", close: "Close video", title: "ASH introduction video", unavailable: "This video is currently unavailable." },
 };

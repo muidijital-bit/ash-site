@@ -5,7 +5,7 @@
   "updated": "2026-09-24",
   "intro": [
     "Bu politika, AI Solution House (ASH) tarafından işletilen bu web sitesinde gizliliğin nasıl ele alındığını anlatır.",
-    "Kısa özet: bu site bir tanıtım sitesidir. Üye girişi, ödeme veya kullanıcı hesabı yoktur. Sizden kişisel veri yalnızca iletişim formunu gönderdiğinizde ve talebinizi yanıtlayabilmek için alınır."
+    "Kısa özet: bu site bir tanıtım sitesidir. Üye girişi, ödeme veya kullanıcı hesabı yoktur. Sizden kişisel veri yalnızca iletişim formunu gönderdiğinizde ya da toplantı planladığınızda alınır; onay vermeniz hâlinde ayrıca Google Analytics ile ziyaret istatistikleri toplanır."
   ],
   "sections": [
     {
@@ -14,6 +14,7 @@
         "Sitede iki form vardır: iletişim formu ve bülten kayıt alanı.",
         "İletişim formunu gönderdiğinizde ad soyadınız, e-posta adresiniz, isteğe bağlı telefon numaranız ve mesajınız e-posta olarak kurumsal adresimize (hello@aisolutionhouse.com) iletilir. Bu bilgiler sitenin sunucularında ayrı bir veri tabanında saklanmaz; mesaj kurumsal e-posta hesabımızda tutulur.",
         "Sitedeki toplantı planlama ekranından (ana sayfa, iletişim ve ürün sayfaları) randevu aldığınızda ad soyadınız, e-posta adresiniz ve varsa notunuz Google Takvim aracılığıyla kurumsal takvimimize iletilir.",
+        "Çerez şeridinde onay vermeniz hâlinde Google Analytics; ziyaret ettiğiniz sayfalar, ziyaret süresi, siteye nereden geldiğiniz, cihaz, tarayıcı ve yaklaşık konum gibi kullanım verilerini çerezler aracılığıyla toplar. Onay vermezseniz bu veriler toplanmaz.",
         "Bülten kayıt alanı henüz bir servise bağlı değildir; bu alana yazdığınız e-posta adresi tarafımıza iletilmez.",
         "Siteyi barındıran altyapı, bağlantının kurulabilmesi için IP adresi ve tarayıcı bilgisi gibi teknik kayıtlar oluşturabilir."
       ]
@@ -24,7 +25,8 @@
         "İletişim formuyla ilettiğiniz talebi yanıtlamak ve sizinle iletişim kurmak",
         "Sitenin çalışır ve güvenli kalmasını sağlamak",
         "Hataları tespit etmek ve gidermek",
-        "Kötüye kullanım ve otomatik saldırı girişimlerini önlemek"
+        "Kötüye kullanım ve otomatik saldırı girişimlerini önlemek",
+        "Onay vermeniz hâlinde, sitenin nasıl kullanıldığını toplu istatistiklerle anlamak ve iyileştirmek"
       ]
     },
     {
@@ -32,7 +34,7 @@
       "bullets": [
         "Kişisel verilerinizi satmıyor, kiralamıyor veya pazarlama amacıyla devretmiyoruz",
         "Sitede reklam ağı veya profilleme amaçlı izleme kullanmıyoruz",
-        "Ziyaretçi davranışını kişiye bağlayan bir analitik çözümü çalıştırmıyoruz"
+        "Onayınız olmadan analitik çalıştırmıyoruz; Google Analytics'in reklam ve kişiselleştirme özellikleri kapalıdır"
       ]
     },
     {
@@ -48,6 +50,7 @@
         "Sitenin barındırılması için hizmet sağlayıcılardan yararlanılır. Bu sağlayıcılar, hizmetin sunulması için gereken teknik kayıtlara erişebilir.",
         "İletişim formu mesajları, e-posta gönderim hizmeti sağlayıcımız Resend (Resend, Inc., ABD) aracılığıyla iletilir ve kurumsal e-posta hizmetimiz Google Workspace üzerinde saklanır. Bu sağlayıcıların sunucuları yurt dışında bulunabilir.",
         "Toplantı planlama ekranı Google Takvim (Google Workspace) tarafından sunulur; ana sayfada toplantı bölümüne yaklaştığınızda, iletişim ve ürün sayfalarında ise butona tıkladığınızda yüklenir. Bu ekranda Google'ın gizlilik politikası geçerlidir.",
+        "Onay vermeniz hâlinde kullanılan Google Analytics, Google tarafından sağlanır; toplanan kullanım verileri Google'ın yurt dışındaki sunucularında işlenebilir. Onayınızı sayfanın altındaki \"Çerez tercihleri\" bağlantısından istediğiniz zaman geri alabilirsiniz.",
         "Sitede yer alan dış bağlantılara tıkladığınızda ilgili sitenin kendi gizlilik uygulamaları geçerli olur; bu politikanın kapsamı dışındadır."
       ]
     },

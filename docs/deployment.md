@@ -113,6 +113,20 @@ Kontrol: formu sitede doldurup gönderin; "mesajınız bize ulaştı" yazmalı v
 `hello@` kutusuna düşmelidir. Gelmezse Resend → **Emails** ekranında gönderim ve
 Vercel → Logs ekranında `[iletisim]` ile başlayan satırlar hatanın nedenini gösterir.
 
+## Google Analytics (onaya bağlı)
+
+`NEXT_PUBLIC_GA_ID` (GA4 ölçüm kimliği, `G-…`) tanımlanınca sayfanın altında çerez onay
+şeridi çıkar; Analytics yalnızca "Kabul et" denirse yüklenir, onaydan önce Google'a istek
+gitmez. Reklam ve kişiselleştirme izinleri kapalıdır. Seçim tarayıcıda saklanır, footer'daki
+"Çerez tercihleri" şeridi yeniden açar; onay geri alınınca `_ga` çerezleri silinir.
+Kod: `src/components/consent/`. Çerez, gizlilik ve KVKK metinleri bu davranışı anlatır;
+kimlik kaldırılırsa metinler de güncellenmelidir.
+
+Kurulum: analytics.google.com → Yönetici → Mülk oluştur → Web veri akışı
+(`https://www.aisolutionhouse.com`, "Gelişmiş ölçüm" açık kalsın: sayfa geçişleri buradan
+sayılır) → ölçüm kimliğini Vercel'de `NEXT_PUBLIC_GA_ID` olarak Production'a ekleyin ve
+yeniden dağıtın (değişken derleme sırasında okunur).
+
 Kaynaklar: [Vercel domain kurulumu](https://vercel.com/docs/domains/set-up-custom-domain),
 [Vercel Git entegrasyonu](https://vercel.com/docs/git),
 [Cloudflare nameserver geçişi](https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/).

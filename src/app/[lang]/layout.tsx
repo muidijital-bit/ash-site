@@ -10,6 +10,8 @@ import { getBrandSettings } from "@/lib/cms/public";
 import { SiteSettingsProvider } from "@/components/cms/SiteSettingsProvider";
 import { BlogLanguageProvider } from "@/components/blog/BlogLanguageLinks";
 import { inter } from "../fonts";
+import { Analytics } from "@/components/consent/Analytics";
+import { ConsentBanner } from "@/components/consent/ConsentBanner";
 import "../globals.css";
 import "../brand.css";
 // blog.css tek yerden: 404 siniri kok duzenle birlikte yuklendigi icin bu dosya
@@ -67,6 +69,9 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
           {children}
         </SiteFrame>
         </BlogLanguageProvider></SiteSettingsProvider>
+        {/* Cerez onayi ve onaya bagli Google Analytics (NEXT_PUBLIC_GA_ID yoksa ikisi de calismaz). */}
+        <ConsentBanner locale={lang} />
+        <Analytics />
       </body>
     </html>
   );

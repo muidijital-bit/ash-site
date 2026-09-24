@@ -5,7 +5,7 @@
   "updated": "2026-09-24",
   "intro": [
     "This policy explains how cookies and similar browser storage technologies are used on this website.",
-    "In short: no analytics or advertising cookies are used on this site. The site itself only uses the functional browser storage it needs to work; a Google Calendar booking screen is shown for meeting booking."
+    "In short: no advertising cookies are used on this site. Google Analytics cookies run only if you give your consent; otherwise the site only uses the functional browser storage it needs to work."
   ],
   "sections": [
     {
@@ -22,7 +22,17 @@
       ],
       "bullets": [
         "Saving the text you write in the contact form as a draft when it cannot be sent, and restoring it when you return to the page",
-        "Keeping the email address you enter in the newsletter field in your browser in the same way"
+        "Keeping the email address you enter in the newsletter field in your browser in the same way",
+        "Saving your cookie choice (accept or reject)"
+      ]
+    },
+    {
+      "heading": "Analytics cookies (Google Analytics)",
+      "paragraphs": [
+        "If you click \"Accept\" in the cookie bar at the bottom of the page, Google Analytics runs so that we can understand how the site is used and improve it. Information such as the pages visited, visit duration, where visitors come from, device, browser and approximate location (country/city) is measured as aggregate statistics.",
+        "For this purpose, cookies named \"_ga\" and \"_ga_<ID>\" are stored in your browser, for up to two years. Google Analytics' advertising, remarketing and ad personalization features are turned off.",
+        "If you don't consent or click \"Reject\", Google Analytics is not loaded and no request is sent to Google for this purpose. You can change your choice at any time via the \"Cookie preferences\" link at the bottom of the page; when you withdraw consent, the Google Analytics cookies are deleted.",
+        "Google Analytics is provided by Google; the collected data may be processed on Google's servers abroad. See our privacy policy and KVKK privacy notice for details."
       ]
     },
     {
@@ -35,17 +45,17 @@
     {
       "heading": "What this site doesn't use",
       "bullets": [
-        "Analytics or measurement cookies",
+        "Analytics or measurement cookies that run without your consent",
         "Advertising, retargeting or profiling cookies",
         "Social media tracking pixels",
-        "Third-party tracking scripts"
+        "Third-party tracking scripts that load without your consent"
       ]
     },
     {
       "heading": "Is consent required?",
       "paragraphs": [
-        "Because the site itself only uses the functional storage strictly necessary to provide the service, no separate cookie consent banner is shown. When the Google Calendar booking screen loads, Google's own cookie practices apply on that screen.",
-        "If an analytics or marketing technology is added in the future, it will only run after your explicit consent has been obtained, and this policy will be updated."
+        "No consent is requested for the functional storage the site needs to work. Google Analytics cookies, however, run only if you click \"Accept\" in the cookie bar at the bottom of the page; clicking \"Reject\" does not affect your use of the site in any way.",
+        "You can change your choice at any time via the \"Cookie preferences\" link at the bottom of the page. When the Google Calendar booking screen loads, Google's own cookie practices apply on that screen."
       ]
     },
     {
