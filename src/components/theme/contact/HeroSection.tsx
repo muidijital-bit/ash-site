@@ -4,7 +4,7 @@ import Image from "next/image";
 import type { Locale } from "@/i18n/config";
 import { getUi } from "@/i18n/ui";
 import { ContactForm } from "./ContactForm";
-import { MeetingButton } from "./MeetingButton";
+import { MeetingButton } from "@/components/theme/shared/MeetingButton";
 import tr from "./HeroSection.content.json";
 import en from "./HeroSection.content.en.json";
 import "./HeroSection.css";

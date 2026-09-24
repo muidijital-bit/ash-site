@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { contact } from "@/content/contact";
 import type { Locale } from "@/i18n/config";
 import { getUi } from "@/i18n/ui";
-import { lockPageScroll } from "@/components/theme/shared/lockPageScroll";
+import { lockPageScroll } from "./lockPageScroll";
 import "./MeetingButton.css";
 
 /**

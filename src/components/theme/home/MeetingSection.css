@@ -1,0 +1,194 @@
+/* ==================================================================
+   Anasayfa toplanti karti
+   ------------------------------------------------------------------
+   Surec bolumunun (beyaz) altinda, blogun (acik gri) ustunde. Beyaz
+   serit icinde koyu lacivert kart: sayfadaki tek koyu vurgu, cagriyi
+   one cikarir. Sagdaki takvim kodla cizilmis bir susleme.
+   ================================================================== */
+
+.ash-meet {
+  padding: 0 var(--spacing-layout-horizontal) var(--spacing-layout-vertical);
+  background: #ffffff;
+}
+
+.ash-meet__card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: grid;
+  gap: 2.5rem;
+  max-width: var(--site-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  border-radius: 1.75rem;
+  color: #f8f8f6;
+  background:
+    radial-gradient(55% 75% at 100% 0%, rgba(116, 72, 232, 0.38), transparent 70%),
+    radial-gradient(50% 70% at 0% 100%, rgba(47, 107, 255, 0.3), transparent 70%),
+    #050a2b;
+}
+@media (min-width: 48rem) {
+  .ash-meet__card { padding: 3.5rem; }
+}
+@media (min-width: 64rem) {
+  .ash-meet__card {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 4.5rem;
+  }
+}
+
+/* --- metin ------------------------------------------------------------ */
+
+.ash-meet__eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: rgba(248, 248, 246, 0.66);
+}
+.ash-meet__title {
+  margin: 0;
+  font-size: clamp(2rem, 1.25rem + 2.2vw, 3rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.022em;
+  text-wrap: balance;
+}
+.ash-meet__lead {
+  max-width: 36rem;
+  margin: 1.25rem 0 0;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: rgba(248, 248, 246, 0.74);
+}
+
+.ash-meet__points {
+  display: grid;
+  gap: 0.625rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.ash-meet__points li {
+  position: relative;
+  padding-left: 1.875rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgba(248, 248, 246, 0.88);
+}
+/* Gradyan daire icinde onay isareti. */
+.ash-meet__points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.1875rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  background: var(--ash-gradient);
+}
+.ash-meet__points li::after {
+  content: "";
+  position: absolute;
+  left: 0.4rem;
+  top: 0.4rem;
+  width: 0.3rem;
+  height: 0.55rem;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.ash-meet__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.75rem;
+  margin-top: 2rem;
+}
+.ash-meet__actions .ash-meeting-button { margin-top: 0; }
+.ash-meet__write {
+  font-weight: 600;
+  color: #f8f8f6;
+  text-decoration: none;
+}
+.ash-meet__write:hover { text-decoration: underline; }
+
+/* --- takvim cizimi --------------------------------------------------- */
+
+.ash-meet__visual { display: flex; justify-content: center; }
+.ash-meet__cal {
+  width: min(100%, 26rem);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  background: #ffffff;
+  color: #0a143d;
+  box-shadow: 0 2.5rem 5rem -2rem rgba(0, 0, 0, 0.65);
+  transform: rotate(-2deg);
+}
+.ash-meet__cal-title {
+  margin: 0 0 1rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+.ash-meet__cal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+.ash-meet__cal-col { display: grid; gap: 0.5rem; }
+.ash-meet__cal-day {
+  margin-bottom: 0.25rem;
+  text-align: center;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #5d6688;
+}
+.ash-meet__slot {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0;
+  border: 1px solid #c9d3f5;
+  border-radius: 999px;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1e4fd8;
+  font-variant-numeric: tabular-nums;
+}
+.ash-meet__slot.is-picked {
+  border-color: transparent;
+  background: var(--ash-gradient);
+  color: #ffffff;
+  box-shadow: 0 0.75rem 1.5rem -0.75rem rgba(116, 72, 232, 0.85);
+}
+.ash-meet__slot.is-picked::after {
+  content: "✓";
+  position: absolute;
+  right: 0.625rem;
+  top: 50%;
+  translate: 0 -50%;
+  font-size: 0.75rem;
+}
+.ash-meet__cal-foot {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.25rem 0 0;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  color: #5d6688;
+}
+.ash-meet__cal-foot i {
+  flex: none;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background: #28af6e;
+}
+@media (max-width: 30rem) {
+  .ash-meet__cal { padding: 1.125rem; transform: none; }
+  .ash-meet__slot.is-picked::after { display: none; }
+}

@@ -7,6 +7,7 @@ import { WhatWeDoSection } from "@/components/theme/home/WhatWeDoSection";
 import { InvestmentsSection } from "@/components/theme/home/InvestmentsSection";
 import { HowWeWorkSection } from "@/components/theme/home/HowWeWorkSection";
 import { ProcessSection } from "@/components/theme/home/ProcessSection";
+import { MeetingSection } from "@/components/theme/home/MeetingSection";
 import { LatestNewsSection } from "@/components/theme/home/LatestNewsSection";
 import { SITE_URL } from "@/content/site";
 import { contact } from "@/content/contact";
@@ -68,6 +69,7 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
       <InvestmentsSection locale={locale} />
       <HowWeWorkSection locale={locale} />
       <ProcessSection locale={locale} />
+      <MeetingSection locale={locale} />
       <LatestNewsSection locale={locale} />
     </HomeMotion>
   </>);

@@ -1,0 +1,19 @@
+{
+  "eyebrow": "Toplantı planlayın",
+  "title": "Kurumsal yapay zekâ projenizi",
+  "titleAccent": "birlikte planlayalım",
+  "lead": "Takviminizden size uygun saati seçin. SAP ve iş süreçlerinizi dinleyelim, yapay zekânın en hızlı değer üreteceği yeri birlikte belirleyelim.",
+  "points": [
+    "Google Meet ile online görüşme",
+    "Size uygun gün ve saat",
+    "Kısa bir brief yeterli"
+  ],
+  "write": "veya bize yazın",
+  "calTitle": "Bir randevu zamanı seçin",
+  "calFoot": "Google Meet bağlantısı rezervasyondan sonra eklenir",
+  "days": [
+    "Pzt",
+    "Sal",
+    "Çar"
+  ]
+}

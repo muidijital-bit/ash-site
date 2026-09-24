@@ -1,0 +1,19 @@
+{
+  "eyebrow": "Book a meeting",
+  "title": "Let's plan your enterprise AI project",
+  "titleAccent": "together",
+  "lead": "Pick a time that suits you from the calendar. We'll listen to your SAP landscape and business processes and work out where AI can deliver value fastest.",
+  "points": [
+    "Online meeting on Google Meet",
+    "A day and time that suits you",
+    "A short brief is enough"
+  ],
+  "write": "or write to us",
+  "calTitle": "Pick a time",
+  "calFoot": "Google Meet link is added after booking",
+  "days": [
+    "Mon",
+    "Tue",
+    "Wed"
+  ]
+}
