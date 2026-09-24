@@ -1,6 +1,7 @@
 import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { MeetingButton } from "@/components/theme/shared/MeetingButton";
 import Link from "next/link";
 import type { CSSProperties } from "react";
 import { getProductMedia } from "@/components/product/media";
@@ -91,9 +92,12 @@ export default async function Page({ params }: PageProps<"/[lang]/products">) {
       <section className="pp-contact">
         <div className="pp-container pp-contact__inner">
           <p className="pp-contact__text">{productsIndex.strip}</p>
-          <Link href={localePath(locale, "/contact")} className="pp-contact__link">
-            {ui.getInTouch} <span aria-hidden="true">→</span>
-          </Link>
+          <div className="pp-contact__actions">
+            <MeetingButton locale={locale} tone="dark" />
+            <Link href={localePath(locale, "/contact")} className="pp-contact__link">
+              {ui.getInTouch} <span aria-hidden="true">→</span>
+            </Link>
+          </div>
         </div>
       </section>
     </main>

@@ -12,7 +12,8 @@ import "./MeetingButton.css";
  * yukluyordu; burada Google'a yalnizca pencere acilinca (iframe) baglanilir.
  * Cerez ve gizlilik metinleri bu davranisi anlatir.
  */
-export function MeetingButton({ locale }: { locale: Locale }) {
+/** tone: koyu zeminde "light" (beyaz buton), acik zeminde "dark" (lacivert buton). */
+export function MeetingButton({ locale, tone = "light" }: { locale: Locale; tone?: "light" | "dark" }) {
   const ui = getUi(locale).contact;
   const [open, setOpen] = useState(false);
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -38,7 +39,7 @@ export function MeetingButton({ locale }: { locale: Locale }) {
         ref={triggerRef}
         type="button"
         onClick={() => setOpen(true)}
-        className="Button_button__30ukX Button_button--variant-filled-light__vqIaI Button_button--radius-large__M_ook ash-meeting-button"
+        className={`Button_button__30ukX ${tone === "dark" ? "Button_button--variant-filled-dark__wXoAl" : "Button_button--variant-filled-light__vqIaI"} Button_button--radius-large__M_ook ash-meeting-button`}
       >
         <div className="Button_button__children__eLy5L">{ui.bookMeeting}</div>
       </button>

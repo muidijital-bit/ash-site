@@ -18,7 +18,7 @@
       "heading": "İşlenen kişisel veriler ve toplama yöntemi",
       "paragraphs": [
         "Sitedeki iletişim formu ad soyad, e-posta adresi, isteğe bağlı telefon numarası ve serbestçe yazdığınız mesaj metnini içerir. Bu veriler, formu doldurup göndermenizle elektronik ortamda toplanır ve e-posta yoluyla tarafımıza iletilir.",
-        "Sitedeki toplantı planlama ekranını (ana sayfa ve iletişim sayfası) kullandığınızda ad soyad, e-posta adresi ve varsa randevu notunuz Google Takvim randevu sayfası aracılığıyla elektronik ortamda toplanır ve kurumsal takvimimize iletilir.",
+        "Sitedeki toplantı planlama ekranını (ana sayfa, iletişim ve ürün sayfaları) kullandığınızda ad soyad, e-posta adresi ve varsa randevu notunuz Google Takvim randevu sayfası aracılığıyla elektronik ortamda toplanır ve kurumsal takvimimize iletilir.",
         "Bültene kayıt alanı yalnızca e-posta adresinizi ister; ancak bu alan henüz bir servise bağlı değildir ve girdiğiniz adres tarafımıza ulaşmaz.",
         "Siteyi ziyaret ettiğinizde, sitenin barındırıldığı altyapı tarafından bağlantının teknik olarak kurulabilmesi için IP adresi, tarayıcı ve işletim sistemi bilgisi, talep edilen adres ve zaman damgası gibi teknik kayıtlar oluşabilir."
       ]

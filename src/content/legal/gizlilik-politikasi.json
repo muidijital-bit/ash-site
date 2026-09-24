@@ -13,7 +13,7 @@
       "paragraphs": [
         "Sitede iki form vardır: iletişim formu ve bülten kayıt alanı.",
         "İletişim formunu gönderdiğinizde ad soyadınız, e-posta adresiniz, isteğe bağlı telefon numaranız ve mesajınız e-posta olarak kurumsal adresimize (hello@aisolutionhouse.com) iletilir. Bu bilgiler sitenin sunucularında ayrı bir veri tabanında saklanmaz; mesaj kurumsal e-posta hesabımızda tutulur.",
-        "Sitedeki toplantı planlama ekranından (ana sayfa ve iletişim sayfası) randevu aldığınızda ad soyadınız, e-posta adresiniz ve varsa notunuz Google Takvim aracılığıyla kurumsal takvimimize iletilir.",
+        "Sitedeki toplantı planlama ekranından (ana sayfa, iletişim ve ürün sayfaları) randevu aldığınızda ad soyadınız, e-posta adresiniz ve varsa notunuz Google Takvim aracılığıyla kurumsal takvimimize iletilir.",
         "Bülten kayıt alanı henüz bir servise bağlı değildir; bu alana yazdığınız e-posta adresi tarafımıza iletilmez.",
         "Siteyi barındıran altyapı, bağlantının kurulabilmesi için IP adresi ve tarayıcı bilgisi gibi teknik kayıtlar oluşturabilir."
       ]
@@ -47,7 +47,7 @@
       "paragraphs": [
         "Sitenin barındırılması için hizmet sağlayıcılardan yararlanılır. Bu sağlayıcılar, hizmetin sunulması için gereken teknik kayıtlara erişebilir.",
         "İletişim formu mesajları, e-posta gönderim hizmeti sağlayıcımız Resend (Resend, Inc., ABD) aracılığıyla iletilir ve kurumsal e-posta hizmetimiz Google Workspace üzerinde saklanır. Bu sağlayıcıların sunucuları yurt dışında bulunabilir.",
-        "Toplantı planlama ekranı Google Takvim (Google Workspace) tarafından sunulur; ana sayfada toplantı bölümüne yaklaştığınızda, iletişim sayfasında ise butona tıkladığınızda yüklenir. Bu ekranda Google'ın gizlilik politikası geçerlidir.",
+        "Toplantı planlama ekranı Google Takvim (Google Workspace) tarafından sunulur; ana sayfada toplantı bölümüne yaklaştığınızda, iletişim ve ürün sayfalarında ise butona tıkladığınızda yüklenir. Bu ekranda Google'ın gizlilik politikası geçerlidir.",
         "Sitede yer alan dış bağlantılara tıkladığınızda ilgili sitenin kendi gizlilik uygulamaları geçerli olur; bu politikanın kapsamı dışındadır."
       ]
     },

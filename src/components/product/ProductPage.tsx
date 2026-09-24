@@ -12,6 +12,7 @@ import { Ambient, Blueprint, Crosshair, FeatureMock, HeroSignature } from "./vis
 import "./product.css";
 import { ProductName, ProductEyebrow } from "@/components/theme/shared/ProductName";
 import { jsonLdString } from "@/lib/seo";
+import { MeetingButton } from "@/components/theme/shared/MeetingButton";
 
 /**
  * Basligin vurgulanacak kismini ayirir.
@@ -289,9 +290,12 @@ export function ProductPage({ product, content, locale }: { product: Product; co
       <section className="pp-contact">
         <div className="pp-container pp-contact__inner">
           <p className="pp-contact__text">{ui.product.talkAbout(product.name)}</p>
-          <Link href={localePath(locale, "/contact")} className="pp-contact__link">
-            {ui.getInTouch} <span aria-hidden="true">→</span>
-          </Link>
+          <div className="pp-contact__actions">
+            <MeetingButton locale={locale} tone="dark" />
+            <Link href={localePath(locale, "/contact")} className="pp-contact__link">
+              {ui.getInTouch} <span aria-hidden="true">→</span>
+            </Link>
+          </div>
         </div>
       </section>
 

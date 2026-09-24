@@ -13,7 +13,7 @@
       "paragraphs": [
         "The site has two forms: the contact form and the newsletter sign-up field.",
         "When you submit the contact form, your full name, email address, optional phone number and message are sent by email to our corporate address (hello@aisolutionhouse.com). This information is not stored in a separate database on the site's servers; the message is kept in our corporate email account.",
-        "When you book a meeting through the site's booking screen (on the home page or the contact page), your full name, email address and any note you add are sent to our corporate calendar through Google Calendar.",
+        "When you book a meeting through the site's booking screen (on the home page, the contact page or the product pages), your full name, email address and any note you add are sent to our corporate calendar through Google Calendar.",
         "The newsletter sign-up field is not yet connected to a service; the email address you enter there is not sent to us.",
         "The infrastructure hosting the site may create technical logs such as your IP address and browser information so that the connection can be established."
       ]
@@ -47,7 +47,7 @@
       "paragraphs": [
         "Service providers are used to host the site. These providers may access the technical logs needed to deliver the service.",
         "Contact form messages are delivered through our email delivery provider Resend (Resend, Inc., USA) and stored on our corporate email service, Google Workspace. These providers' servers may be located abroad.",
-        "The meeting booking screen is provided by Google Calendar (Google Workspace); it loads as you approach the meeting section of the home page, and on the contact page when you click the button. Google's privacy policy applies on that screen.",
+        "The meeting booking screen is provided by Google Calendar (Google Workspace); it loads as you approach the meeting section of the home page, and on the contact and product pages when you click the button. Google's privacy policy applies on that screen.",
         "When you click external links on the site, that site's own privacy practices apply; they are outside the scope of this policy."
       ]
     },

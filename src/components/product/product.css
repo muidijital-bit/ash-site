@@ -952,6 +952,9 @@
   text-decoration: none;
   white-space: nowrap;
 }
+/* Toplanti butonu ve iletisim baglantisi yan yana (dar ekranda alt alta). */
+.pp-contact__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.5rem; }
+.pp-contact__actions .ash-meeting-button { margin-top: 0; }
 .pp-contact__link span { display: inline-block; transition: transform 200ms ease; }
 .pp-contact__link:hover span { transform: translateX(4px); }
 .pp-contact__link:focus-visible { outline: 2px solid var(--p-accent-2); outline-offset: 3px; border-radius: 0.25rem; }

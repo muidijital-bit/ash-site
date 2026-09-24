@@ -28,7 +28,7 @@
     {
       "heading": "Meeting booking (Google Calendar)",
       "paragraphs": [
-        "In the meeting section of the home page, the Google Calendar (Google) booking screen is shown within the page; it loads from Google as you approach that section. On the contact page, the booking screen opens only when you click the \"Book a Meeting\" button. No connection to Google is made in any other case.",
+        "In the meeting section of the home page, the Google Calendar (Google) booking screen is shown within the page; it loads from Google as you approach that section. On the contact and product pages, the booking screen opens only when you click the \"Book a Meeting\" button. No connection to Google is made in any other case.",
         "Once the booking screen opens, Google may use its own cookies and similar technologies; Google's privacy policy and cookie practices apply on that screen. The details you enter to book are sent to us through Google Calendar; see our KVKK privacy notice for details."
       ]
     },
