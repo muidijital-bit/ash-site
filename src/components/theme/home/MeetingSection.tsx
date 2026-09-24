@@ -7,10 +7,11 @@ import en from "./MeetingSection.content.en.json";
 import "./MeetingSection.css";
 
 /**
- * Anasayfada blogun ustundeki toplanti karti: solda davet, sagda dogrudan
- * Google Takvim randevu ekrani (gomulu). Cerceve loading="lazy": ziyaretci
- * bolume yaklasmadan Google'a istek gitmez. Cerez ve gizlilik metinleri bu
- * davranisi anlatir. Randevu adresi tanimli degilse bolum hic gosterilmez.
+ * Anasayfada blogun ustundeki toplanti bolumu: kisa baslik ve altinda
+ * Google Takvim randevu ekrani, Google'in kendi gomme gorunumuyle (cerceve,
+ * golge, arka plan tasarimi yok). Cerceve loading="lazy": ziyaretci bolume
+ * yaklasmadan Google'a istek gitmez; cerez ve gizlilik metinleri buna gore.
+ * Randevu adresi tanimli degilse bolum hic gosterilmez.
  */
 export function MeetingSection({ locale }: { locale: Locale }) {
   if (!contact.meetingUrl) return null;
@@ -18,27 +19,20 @@ export function MeetingSection({ locale }: { locale: Locale }) {
   const ui = getUi(locale).contact;
   return (
     <section className="ash-meet" aria-labelledby="ash-meet-title">
-      <div className="ash-meet__card">
-        <div className="ash-meet__text">
+      <div className="ash-meet__inner">
+        <header className="ash-meet__head">
           <p className="ash-meet__eyebrow">{content.eyebrow}</p>
           <h2 id="ash-meet-title" className="ash-meet__title">
             {content.title} <span className="ash-grad-text">{content.titleAccent}</span>
           </h2>
           <p className="ash-meet__lead">{content.lead}</p>
-          <ul className="ash-meet__points">
-            {content.points.map((point) => <li key={point}>{point}</li>)}
-          </ul>
-          <div className="ash-meet__actions">
-            <Link className="ash-meet__write" href={localePath(locale, "/contact")}>
-              {content.write} <span aria-hidden="true">→</span>
-            </Link>
-          </div>
-        </div>
-
-        <div className="ash-meet__calendar">
-          <iframe className="ash-meet__frame" src={contact.meetingUrl} title={ui.bookMeeting} loading="lazy" />
-          <a className="ash-meet__newtab" href={contact.meetingUrl} target="_blank" rel="noopener noreferrer">{ui.meetingNewTab}</a>
-        </div>
+        </header>
+        <iframe className="ash-meet__frame" src={contact.meetingUrl} title={ui.bookMeeting} loading="lazy" />
+        <p className="ash-meet__foot">
+          <a href={contact.meetingUrl} target="_blank" rel="noopener noreferrer">{ui.meetingNewTab}</a>
+          <span aria-hidden="true"> · </span>
+          <Link href={localePath(locale, "/contact")}>{content.write}</Link>
+        </p>
       </div>
     </section>
   );

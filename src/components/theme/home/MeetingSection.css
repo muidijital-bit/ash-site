@@ -1,147 +1,60 @@
 /* ==================================================================
-   Anasayfa toplanti karti
+   Anasayfa toplanti bolumu
    ------------------------------------------------------------------
-   Surec bolumunun (beyaz) altinda, blogun (acik gri) ustunde. Beyaz
-   serit icinde koyu lacivert kart: sayfadaki tek koyu vurgu, cagriyi
-   one cikarir. Sagda Google Takvim randevu ekrani gomulu durur.
+   Surec bolumunun (beyaz) altinda, blogun (acik gri) ustunde. Kisa bir
+   baslik ve Google Takvim randevu ekrani; ekran Google'in gomme kodundaki
+   gibi cercevesiz durur, Google'dan geldigi belli olsun diye uzerine
+   tasarim eklenmez.
    ================================================================== */
 
 .ash-meet {
   padding: 0 var(--spacing-layout-horizontal) var(--spacing-layout-vertical);
   background: #ffffff;
 }
+.ash-meet__inner { max-width: var(--site-width); margin: 0 auto; }
 
-.ash-meet__card {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  display: grid;
-  gap: 2.5rem;
-  max-width: var(--site-width);
-  margin: 0 auto;
-  padding: 2.5rem 1.5rem;
-  border-radius: 1.75rem;
-  color: #f8f8f6;
-  background:
-    radial-gradient(55% 75% at 100% 0%, rgba(116, 72, 232, 0.38), transparent 70%),
-    radial-gradient(50% 70% at 0% 100%, rgba(47, 107, 255, 0.3), transparent 70%),
-    #050a2b;
-}
-@media (min-width: 48rem) {
-  .ash-meet__card { padding: 3.5rem; }
-}
-@media (min-width: 64rem) {
-  .ash-meet__card {
-    grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
-    align-items: center;
-    gap: 3rem;
-    padding: 3.5rem;
-  }
-}
-
-/* --- metin ------------------------------------------------------------ */
-
+.ash-meet__head { max-width: 46rem; margin: 0 auto 2rem; text-align: center; }
 .ash-meet__eyebrow {
   margin: 0 0 0.75rem;
   font-size: 1.0625rem;
   font-weight: 500;
   line-height: 1.4;
-  color: rgba(248, 248, 246, 0.66);
+  color: #5d6688;
 }
 .ash-meet__title {
   margin: 0;
-  font-size: clamp(1.875rem, 1rem + 1.6vw, 2.5rem);
+  font-size: clamp(1.875rem, 1rem + 1.8vw, 2.75rem);
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.022em;
   text-wrap: balance;
+  color: #0a143d;
 }
 .ash-meet__lead {
-  max-width: 36rem;
-  margin: 1.25rem 0 0;
+  margin: 1rem 0 0;
   font-size: 1.125rem;
   line-height: 1.6;
-  color: rgba(248, 248, 246, 0.74);
+  color: rgba(10, 20, 61, 0.72);
 }
 
-.ash-meet__points {
-  display: grid;
-  gap: 0.625rem;
-  margin: 1.5rem 0 0;
-  padding: 0;
-  list-style: none;
-}
-.ash-meet__points li {
-  position: relative;
-  padding-left: 1.875rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: rgba(248, 248, 246, 0.88);
-}
-/* Gradyan daire icinde onay isareti. */
-.ash-meet__points li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.1875rem;
-  width: 1.125rem;
-  height: 1.125rem;
-  border-radius: 50%;
-  background: var(--ash-gradient);
-}
-.ash-meet__points li::after {
-  content: "";
-  position: absolute;
-  left: 0.4rem;
-  top: 0.4rem;
-  width: 0.3rem;
-  height: 0.55rem;
-  border: solid #ffffff;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-}
-
-.ash-meet__actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1rem 1.75rem;
-  margin-top: 2rem;
-}
-.ash-meet__write {
-  font-weight: 600;
-  color: #f8f8f6;
-  text-decoration: none;
-}
-.ash-meet__write:hover { text-decoration: underline; }
-
-/* --- gomulu randevu takvimi ---------------------------------------------
-   Google'in ekrani ~700px altinda tek sutuna geciyor; masaustunde metin
-   sutunu daraltilip takvime genis yer birakilir. */
-
-.ash-meet__calendar { position: relative; min-width: 0; }
+/* Google'in gomme kodu: border 0, tam genislik. */
 .ash-meet__frame {
-  position: relative;
   display: block;
   width: 100%;
-  height: 42rem;
+  /* Google'in alttaki "... tarafindan desteklenir" satirlari dahil tamami. */
+  height: 47rem;
   border: 0;
-  border-radius: 1.25rem;
-  /* Google sayfasinin bazi alanlari saydam; koyu kart arkadan sizmasin. */
-  background: #ffffff;
-  box-shadow: 0 2.5rem 5rem -2rem rgba(0, 0, 0, 0.65);
 }
-.ash-meet__newtab {
-  display: inline-block;
-  margin-top: 0.75rem;
-  font-size: 0.875rem;
-  color: rgba(248, 248, 246, 0.72);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-.ash-meet__newtab:hover { color: #ffffff; }
 /* Telefonda Google ekrani tek sutun ve ~1350px uzunlukta; cerceve icinde
    ikinci bir kaydirma cubugu olusmasin diye tamamina yer acilir. */
 @media (max-width: 47.99rem) {
   .ash-meet__frame { height: 85rem; }
 }
+
+.ash-meet__foot {
+  margin: 1rem 0 0;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #5d6688;
+}
+.ash-meet__foot a { color: #1e4fd8; text-decoration: underline; text-underline-offset: 2px; }
