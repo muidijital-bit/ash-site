@@ -6,6 +6,7 @@ import { FooterMarkup } from "@/components/theme/shared/FooterMarkup";
 import { SiteFrame } from "@/components/theme/shared/SiteFrame";
 import { defaultLocale, hasLocale, localePath } from "@/i18n/config";
 import { getUi } from "@/i18n/ui";
+import { getBrandSettings } from "@/lib/cms/public";
 import { inter } from "./fonts";
 import "./globals.css";
 import "./brand.css";
@@ -20,6 +21,7 @@ export default async function GlobalNotFound() {
   const header = (await headers()).get("x-ash-locale") ?? defaultLocale;
   const locale = hasLocale(header) ? header : defaultLocale;
   const ui = getUi(locale);
+  const settings = await getBrandSettings();
   const links: [string, string][] = [
     ["/", ui.nav.home],
     ["/products", ui.nav.products],
@@ -30,13 +32,15 @@ export default async function GlobalNotFound() {
   return (
     <html lang={locale} className={inter.variable}>
       <head>
+        {/* Kok layout atlandigi icin sekme simgesi de burada verilir. */}
+        <link rel="icon" href={settings.favicon} />
         <title>{`${ui.notFound.metaTitle} — AI Solution House`}</title>
         {/* Kok layout atlandigi icin tema stilleri burada yuklenir. */}
         <link rel="stylesheet" href="/theme/css/65b096ee3798f49e-9605c14cc6.css" precedence="base" />
         <link rel="stylesheet" href="/theme/css/653b5fc3396b8f10-19b9ef9de6.css" precedence="page" />
       </head>
       <body>
-        <SiteFrame locale={locale} header={<HeaderMarkup locale={locale} />} footer={<FooterMarkup locale={locale} />}>
+        <SiteFrame locale={locale} header={<HeaderMarkup locale={locale} langHref={localePath(locale === "en" ? "tr" : "en", "/")} />} footer={<FooterMarkup locale={locale} />}>
         <main className="blog">
           <header className="blog-band">
             <div className="blog-wrap">

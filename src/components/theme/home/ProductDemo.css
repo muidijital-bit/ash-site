@@ -15,7 +15,8 @@
   --accent-2: var(--ash-violet, #7448e8);
   --ink: #f8f8f6;
   --ink-2: rgba(248, 248, 246, 0.66);
-  --ink-3: rgba(248, 248, 246, 0.42);
+  /* Soluk yazi koyu zeminde 4.5:1 kontrastin altinda kaliyordu (0.42 -> 3.85:1). */
+  --ink-3: rgba(248, 248, 246, 0.52);
   --hair: rgba(248, 248, 246, 0.1);
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   width: 100%;

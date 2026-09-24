@@ -164,7 +164,8 @@
 .ash-flow__row span {
   font-size: 0.875rem;
   font-weight: 600;
-  color: rgba(10, 20, 61, 0.55);
+  /* 0.55 acik zeminde 3.97:1 kaliyordu; 4.5:1 icin koyulastirildi. */
+  color: rgba(10, 20, 61, 0.66);
 }
 .ash-flow__row q { color: #0a143d; }
 .ash-flow__row--avoid { border-left-color: rgba(10, 20, 61, 0.18); }
