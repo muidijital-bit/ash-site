@@ -8,12 +8,5 @@
     "A day and time that suits you",
     "A short brief is enough"
   ],
-  "write": "or write to us",
-  "calTitle": "Pick a time",
-  "calFoot": "Google Meet link is added after booking",
-  "days": [
-    "Mon",
-    "Tue",
-    "Wed"
-  ]
+  "write": "or write to us"
 }

@@ -5,7 +5,7 @@
   "updated": "2026-09-24",
   "intro": [
     "This policy explains how cookies and similar browser storage technologies are used on this website.",
-    "In short: no analytics or advertising cookies are used on this site. There is only the functional browser storage needed for the site to work; the Google Calendar booking screen loads only when you open it."
+    "In short: no analytics or advertising cookies are used on this site. The site itself only uses the functional browser storage it needs to work; a Google Calendar booking screen is shown for meeting booking."
   ],
   "sections": [
     {
@@ -28,7 +28,7 @@
     {
       "heading": "Meeting booking (Google Calendar)",
       "paragraphs": [
-        "When you click the \"Book a Meeting\" button on the contact page, the booking screen is loaded from Google Calendar (Google) in a window on this site. No connection to Google is made unless you click the button.",
+        "In the meeting section of the home page, the Google Calendar (Google) booking screen is shown within the page; it loads from Google as you approach that section. On the contact page, the booking screen opens only when you click the \"Book a Meeting\" button. No connection to Google is made in any other case.",
         "Once the booking screen opens, Google may use its own cookies and similar technologies; Google's privacy policy and cookie practices apply on that screen. The details you enter to book are sent to us through Google Calendar; see our KVKK privacy notice for details."
       ]
     },
@@ -44,7 +44,7 @@
     {
       "heading": "Is consent required?",
       "paragraphs": [
-        "Because only the functional storage strictly necessary to provide the service is used when pages load, no separate cookie consent banner is shown on this site. The Google Calendar booking screen does not load with the page; it loads only when you click the button.",
+        "Because the site itself only uses the functional storage strictly necessary to provide the service, no separate cookie consent banner is shown. When the Google Calendar booking screen loads, Google's own cookie practices apply on that screen.",
         "If an analytics or marketing technology is added in the future, it will only run after your explicit consent has been obtained, and this policy will be updated."
       ]
     },

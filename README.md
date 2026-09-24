@@ -66,6 +66,8 @@ src/i18n/ui.ts                              menü, etiket, erişim metinleri (ik
    Kurumsal telefon eklenirse `src/content/contact.ts` üzerinden yayınlanabilir; boş alanlar gizlenir.
    İletişim sayfasındaki "Toplantı Planlayın" butonu aynı dosyadaki `meetingUrl` (Google Takvim
    randevu sayfası) adresini site içinde bir pencerede açar; Google'a yalnızca tıklanınca bağlanılır.
+   Anasayfadaki toplantı bölümü aynı randevu ekranını gömülü gösterir (`loading="lazy"`: bölüme
+   yaklaşılınca yüklenir). Davranış değişirse çerez/gizlilik/KVKK metinleri de güncellenmelidir.
 4. **İletişim formu Resend ile `hello@aisolutionhouse.com` adresine mail atar**
    (`src/app/[lang]/contact/actions.ts`). Vercel'de `RESEND_API_KEY` tanımlı olmalı;
    kurulum [yayın rehberinde](docs/deployment.md#iletişim-formu-resend). Bülten kaydı
