@@ -2,16 +2,16 @@
   "key": "hubai-x",
   "name": "HubAI-X",
   "hero": {
-    "eyebrow": "HUBAI-X · KURUMSAL YAPAY ZEKÂ",
+    "eyebrow": "HUBAI-X · KURUMSAL AI PLATFORMU",
     "title": "Kurumunuzun Yapay Zekâ Merkezi. <span>Tüm Yapay Zekâ İhtiyaçlarınızı Tek Platformda Birleştiriyoruz!</span>",
-    "lead": "HubAI-X, kurumunuzun tüm yapay zekâ ihtiyaçlarını; modeller, uygulamalar, kütüphaneler, entegrasyonlar ve token yönetimiyle tek bir merkezden yönetmenizi sağlar.",
+    "lead": "HubAI-X, kurum içi yapay zekâ ihtiyaçlarınızı tek bir kurumsal AI platformunda toplar: kurumsal AI asistanları, yapay zekâ ajanları, bilgi bankası, modeller, entegrasyonlar ve token yönetimi tek merkezden yönetilir.",
     "cta": "Demo Planlayın",
     "visual": "Deep Navy #050A2B zemin. Arkada 132px blueprint ızgarası (rgba(248,248,246,.05), 1px) + mask-image radial-gradient(ellipse 70% 60% at 50% 40%) ile merkezden sönüm + sol üstte 480px Electric Blue (opacity .16) ve sağ altta 360px Violet (opacity .10) blur(120px) küre. Ortalanmış 11px mono eyebrow, iki satırlık H1 (ikinci satır 135deg marka gradyanı, background-clip:text), altında soldan sağa sönen 1px hairline ve tek satır dönen kelime: 'Tek merkez. Her [model / departman / belge / bütçe].' — son kelime 2,8 sn'de rise keyframe ile değişir. CTA ikilisi yan yana: gradyan dolgulu 'Demo Planlayın' (mavi glow) + şeffaf 1px kenarlıklı 'Platformu Keşfedin'. Altında 900px <BrowserFrame url=\"hubai-x.com/calisma-alani\">: solda 156px #080D35 sidebar (Asistanlar, Sohbetler, Belgeler, Konsol; aktif 'Asistanlar' 3px Electric Blue sol çubuk + 5px nokta); ortada sohbet alanı — üstte model seçici hap 'Kurum içi model ▾', kullanıcı balonu 'Devreden yıllık izin hakkım nasıl hesaplanıyor?', yanıt balonunda 3 satır metin ve altında kaynak chip'i 'IK_Yonetmeligi_2026.pdf · s.34'; sağda 180px rail: 'Bu ay · Operasyon · 148 kullanıcı' başlığı ve İK / Finans / Satış / BT için width transition ile dolan 4 yatay bar. Mockup'ın sol üst köşesinde cam chip (backdrop-filter blur(14px), rgba(248,248,246,.06)) 'Yanıt kaynağı: 3 kurumsal belge', sağ alt köşede 'Veri konumu: Özel bulut · Şifreli'. Mockup metinleri 8–10px mono, tabular-nums, aria-hidden. Panelin altında tek geniş yumuşak gölge (0 40px 120px -60px rgba(0,0,0,.85))."
   },
   "sections": [
     {
       "kind": "nasil-calisir",
-      "eyebrow": "Token yönetimi",
+      "eyebrow": "Yapay zekâ token yönetimi",
       "heading": "Yapay Zekâ Token Maliyetlerinizi HubAI-X ile <span>Kontrol Altına Alın</span>",
       "sub": "Tüm AI modellerinizin token kullanımını tek merkezden izleyin, yönetin ve optimize edin. Gereksiz tüketimi azaltın, yapay zekâ maliyetlerinizi daha öngörülebilir hale getirin.",
       "items": [
@@ -219,6 +219,10 @@
           "body": "Ticari sağlayıcıların modelleriyle, açık kaynak modellerle ve kurum içinde barındırdığınız kendi modelinizle (BYOM) çalışır. Model listesi konsoldan yönetilir; yeni bir model eklemek mevcut asistanları ve akışları bozmaz."
         },
         {
+          "title": "Yapay zekâ token yönetimi nedir, HubAI-X bunu nasıl yapar?",
+          "body": "Token yönetimi, yapay zekâ modellerinin kullanımını ve maliyetini kurum genelinde izleyip sınırlamaktır. HubAI-X hangi modelin hangi ekipte ne kadar token harcadığını tek tabloda gösterir; departman ve kullanıcı bazında bütçe ve limit tanımlamanızı sağlar. Böylece yapay zekâ maliyetleri sağlayıcı faturası gelmeden görünür ve öngörülebilir olur."
+        },
+        {
           "title": "Kurumsal verilerimiz model eğitiminde kullanılır mı?",
           "body": "HubAI-X kurumsal verinizi model eğitimi amacıyla kullanmaz. Harici bir sağlayıcıya hangi verinin gidebileceğini yönlendirme kurallarıyla siz belirlersiniz; hassas veri sınıfları yalnızca kurum içi modelde işlenecek şekilde yapılandırılabilir."
         },
@@ -278,6 +282,6 @@
       "visual": "Deep Navy zemin; hero'nun arka plan üçlüsü birebir tekrarlanır (132px blueprint ızgara + radial maske + sol üst Electric Blue ve sağ alt Violet blur(120px) küre) ve merkeze doğru ısınan rgba(47,107,255,.12) radyal hale eklenir. Ortalanmış 11px mono eyebrow 'KURUMSAL YAPAY ZEKÂ MERKEZİ', iki satırlık büyük başlık (ikinci satır 'Merkezinizi Kurun.' marka gradyanlı), tek paragraf lead, yan yana iki hap buton: gradyan dolgulu 'Demo Planlayın' (0 10px 28px -12px rgba(47,107,255,.65) glow, hover'da -2px) ve şeffaf 1px kenarlıklı 'Platformu Keşfedin'. Butonların altında 12px, rgba(248,248,246,.45) güvence satırı, maddeler arasında orta nokta. Blueprint alanının altında 'Keşfetmeye devam edin' şeridi: 3 ince kart yan yana — her kartın üst kenarında ortası parlak uçları saydam 1px gradyan çizgi (SAPAI-X Violet, Masraf-X Magenta, CRM-X Soft Pink), 28px outline ürün ikonu, ürün adı, tek satır konum cümlesi ve 10px mono alt domain etiketi; hover'da -4px yükselme, kenarlık kendi aksanına döner, 'İncele →' satırı belirir ve ok 4px salınır. Mobilde kartlar tek sütun."
     }
   ],
-  "seoTitle": "HubAI-X | Kurumsal Yapay Zekâ Platformu — ASH",
-  "seoDescription": "HubAI-X ile modelleri, kurumsal belgeleri, departman asistanlarını ve token maliyetlerini tek merkezden yönetin. On-premise kurulum, SSO, RBAC ve iz kaydı."
+  "seoTitle": "HubAI-X | Kurumsal AI Platformu ve Kurum İçi Yapay Zekâ",
+  "seoDescription": "Kurumsal AI platformu HubAI-X: kurumsal AI asistanı, yapay zekâ ajanları ve bilgi bankası tek merkezde. Token yönetimi, on-premise kurulum, SSO ve RBAC."
 }

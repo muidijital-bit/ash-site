@@ -1,5 +1,6 @@
-import { pageMetadata } from "@/lib/seo";
+import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { HeroSection } from "@/components/theme/our-dna/HeroSection";
 import { OurMissionSection } from "@/components/theme/our-dna/OurMissionSection";
 import { ValuesSection } from "@/components/theme/our-dna/ValuesSection";
@@ -18,6 +19,7 @@ export default async function Page({ params }: PageProps<"/[lang]/why-ash">) {
   const locale = (await params).lang as Locale;
   return (<>
     <link rel="stylesheet" href="/theme/css/aa8a819d9c67563a-0133a7d1e7.css" precedence="page" />
+    <JsonLd data={breadcrumbJsonLd(locale, [[getUi(locale).nav.why, "/why-ash"]])} />
     <main>
       <HeroSection locale={locale} />
       <OurMissionSection locale={locale} />

@@ -240,6 +240,9 @@ export function ProductPage({ product, content, locale }: { product: Product; co
             <span className="pp-hero-title__eyebrow">
               <ProductEyebrow text={content.hero.eyebrow || `${product.name} · ${product.title}`} />
             </span>
+            {/* Blok ogeler ekranda ayri satirda; metin olarak okununca ("SAP YAPAY ZEKÂSAP
+                Uzmanligini") yapismasin diye aralarinda bosluk birakilir. */}
+            {" "}
             <span className="pp-hero-title__main">
               {heroLead}<span className="pp-grad-text">{heroAccent}</span>
             </span>

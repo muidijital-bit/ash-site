@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SITE_URL } from "@/content/site";
-import { internalPath, pageAlternates, type Locale } from "@/i18n/config";
+import { internalPath, localePath, pageAlternates, type Locale } from "@/i18n/config";
 import { getUi } from "@/i18n/ui";
 
 /** Complete per-page metadata: nested Open Graph fields are not merged by Next. */
@@ -40,4 +40,22 @@ export function pageMetadata({ locale, path, title, description, absolute = fals
 
 export function jsonLdString(value: unknown): string {
   return JSON.stringify(value).replace(/</g, "\\u003c");
+}
+
+/**
+ * Sayfanin site icindeki yeri ("Ana sayfa > Urunler > SAPAI-X"); Google arama
+ * sonucunda adres yerine bu izi gosterebilir. items: [ad, mantiksal yol].
+ */
+export function breadcrumbJsonLd(locale: Locale, items: [string, string][]) {
+  const all: [string, string][] = [[getUi(locale).nav.home, "/"], ...items];
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: all.map(([name, path], i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name,
+      item: `${SITE_URL}${localePath(locale, path)}`,
+    })),
+  };
 }

@@ -6,14 +6,28 @@ import type { BlogPost as Post } from "@/content/blog/types";
 import { localePath, type Locale } from "@/i18n/config";
 import { getUi } from "@/i18n/ui";
 import { SITE_URL } from "@/content/site";
-import { jsonLdString } from "@/lib/seo";
+import { breadcrumbJsonLd, jsonLdString } from "@/lib/seo";
+import { getProduct } from "@/content/products";
 
 export function formatDate(iso: string, locale: Locale) {
   return new Intl.DateTimeFormat(getUi(locale).dateLocale, { day: "numeric", month: "long", year: "numeric" })
     .format(new Date(`${iso}T00:00:00`));
 }
 
-/** Arama motorlari icin makale ve SSS semasi. */
+/**
+ * Yazinin konusuna en yakin urun. Panelden yazilan yazilarda da calissin diye
+ * elle eslestirme yerine kategori ve basliga bakilir; hicbiri tutmazsa genel
+ * kurumsal yapay zeka platformu (HubAI-X) onerilir.
+ */
+function relatedProductSlug(post: Post): string {
+  const text = `${post.category} ${post.title}`.toLocaleLowerCase("tr");
+  if (/\bsap\b|abap/.test(text)) return "sapai-x";
+  if (/crm|satış|sales/.test(text)) return "crm-x";
+  if (/masraf|harcama|expense|spend/.test(text)) return "masraf-x";
+  return "hubai-x";
+}
+
+/** Arama motorlari icin makale, SSS ve sayfa izi (breadcrumb) semasi. */
 async function JsonLd({ post, locale }: { post: Post; locale: Locale }) {
   const settings = await getBrandSettings();
   const article = {
@@ -47,12 +61,14 @@ async function JsonLd({ post, locale }: { post: Post; locale: Locale }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdString(article) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdString(faq) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdString(breadcrumbJsonLd(locale, [[getUi(locale).nav.blog, "/blog"], [post.title, `/blog/${post.slug}`]])) }} />
     </>
   );
 }
 
 export function BlogPost({ post, locale }: { post: Post; locale: Locale }) {
   const { blog } = getUi(locale);
+  const product = getProduct(relatedProductSlug(post), locale);
   return (
     <main className="blog">
       <JsonLd post={post} locale={locale} />
@@ -98,6 +114,19 @@ export function BlogPost({ post, locale }: { post: Post; locale: Locale }) {
               {post.takeaways.map((t) => <li key={t}>{t}</li>)}
             </ul>
           </section>
+        )}
+
+        {/* Yazidan ilgili urun sayfasina baglanti: okuyucuyu cozume, arama
+            motorlarini da konu ile urun arasindaki iliskiye goturur. */}
+        {product && (
+          <aside className="blog-product blog-body">
+            <p className="blog-product__label">{blog.relatedProduct}</p>
+            <p className="blog-product__name">{product.name} · {product.title}</p>
+            <p className="blog-product__summary">{product.summary}</p>
+            <Link className="blog-product__link" href={localePath(locale, `/products/${product.slug}`)}>
+              {blog.viewProduct}: {product.name} <span aria-hidden="true">→</span>
+            </Link>
+          </aside>
         )}
 
         {post.faq.length > 0 && (

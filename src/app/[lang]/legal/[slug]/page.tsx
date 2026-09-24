@@ -1,5 +1,6 @@
-import { pageMetadata } from "@/lib/seo";
+import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { notFound } from "next/navigation";
 import { LegalPage } from "@/components/legal/LegalPage";
 import { getLegalDoc, getLegalDocs } from "@/content/legal";
@@ -29,6 +30,7 @@ export default async function Page({ params }: PageProps<"/[lang]/legal/[slug]">
     <>
       {/* Header, menu ve footer stilleri tema CSS'inde sayfa dosyalarina gomulu. */}
       <link rel="stylesheet" href="/theme/css/653b5fc3396b8f10-19b9ef9de6.css" precedence="page" />
+      <JsonLd data={breadcrumbJsonLd(locale, [[doc.title, `/legal/${doc.key}`]])} />
       <LegalPage doc={doc} locale={locale} />
     </>
   );

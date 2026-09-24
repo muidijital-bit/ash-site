@@ -2,15 +2,15 @@
   "key": "hubai-x",
   "name": "HubAI-X",
   "hero": {
-    "eyebrow": "HUBAI-X · ENTERPRISE AI",
+    "eyebrow": "HUBAI-X · ENTERPRISE AI PLATFORM",
     "title": "Your Organization's AI Hub. <span>Every AI Need on a Single Platform.</span>",
-    "lead": "HubAI-X lets you run every AI need in your organization — models, applications, libraries, integrations and token management — from one place.",
+    "lead": "HubAI-X brings your organization's AI into one enterprise AI platform: AI assistants for the enterprise, enterprise AI agents, an AI knowledge base, models, integrations and token management, all run from one hub.",
     "cta": "Book a Demo"
   },
   "sections": [
     {
       "kind": "nasil-calisir",
-      "eyebrow": "Token management",
+      "eyebrow": "AI token management",
       "heading": "Bring Your AI Token Costs <span>Under Control with HubAI-X.</span>",
       "sub": "Monitor, govern and optimise token usage across every AI model from one place. Cut needless consumption and make your AI costs predictable.",
       "items": [
@@ -212,6 +212,10 @@
           "body": "It works with commercial providers' models, open-source models and your own model hosted in-house (BYOM). The model list is managed from the console; adding a new model doesn't break existing assistants or workflows."
         },
         {
+          "title": "What is AI token management, and how does HubAI-X handle it?",
+          "body": "Token management means tracking and limiting how much your AI models are used, and what they cost, across the organization. HubAI-X shows in one table how many tokens each model uses, in which team and for what; you can set budgets and limits per department and per user. AI costs become visible and predictable before the provider's invoice arrives."
+        },
+        {
           "title": "Is our company data used to train models?",
           "body": "HubAI-X doesn't use your company data for model training. You decide with routing rules which data may go to an external provider; sensitive data classes can be configured to be processed only by the in-house model."
         },
@@ -269,6 +273,6 @@
       ]
     }
   ],
-  "seoTitle": "HubAI-X | Enterprise AI Platform — ASH",
-  "seoDescription": "Manage models, company documents, department assistants and token costs from one hub with HubAI-X. On-premise deployment, SSO, RBAC and activity logs."
+  "seoTitle": "HubAI-X | Enterprise AI Platform and AI Agent Platform",
+  "seoDescription": "HubAI-X enterprise AI platform: a corporate AI assistant, enterprise AI agents and an AI knowledge base in one hub, with token management and on-premise deployment."
 }

@@ -1,5 +1,6 @@
-import { pageMetadata } from "@/lib/seo";
+import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/seo/JsonLd";
 import Link from "next/link";
 import type { CSSProperties } from "react";
 import { getProductMedia } from "@/components/product/media";
@@ -7,7 +8,7 @@ import { ProductMedia } from "@/components/product/ProductMedia";
 import { Ambient, HeroSignature } from "@/components/product/visuals";
 import { getProductPage } from "@/content/product-pages";
 import { getProducts } from "@/content/products";
-import { SHOW_PRODUCT_DOMAINS } from "@/content/site";
+import { SHOW_PRODUCT_DOMAINS, SITE_URL } from "@/content/site";
 import { hasLocale, localePath, type Locale } from "@/i18n/config";
 import { getUi } from "@/i18n/ui";
 import "@/components/product/product.css";
@@ -30,6 +31,9 @@ export default async function Page({ params }: PageProps<"/[lang]/products">) {
     <>
     {/* Header, menu ve footer stilleri tema CSS'inde sayfa dosyalarina gomulu; urun sayfalari bunu yuklemezse header stilsiz kalir. */}
     <link rel="stylesheet" href="/theme/css/653b5fc3396b8f10-19b9ef9de6.css" precedence="page" />
+    <JsonLd data={breadcrumbJsonLd(locale, [[ui.nav.products, "/products"]])} />
+    {/* Urun ailesi listesi: dort urunun adi ve sayfasi. */}
+    <JsonLd data={{ "@context": "https://schema.org", "@type": "ItemList", itemListElement: getProducts(locale).map((p, i) => ({ "@type": "ListItem", position: i + 1, name: `${p.name} — ${p.title}`, url: `${SITE_URL}${localePath(locale, `/products/${p.slug}`)}` })) }} />
     {/* pp--bands: bolumler beyaz/acik gri sirayla (anasayfadaki serit duzeni). */}
     <main className="pp pp--bands" style={{ "--p-accent": "#2f6bff", "--p-accent-2": "#7448e8" } as CSSProperties}>
       {/* Anasayfadaki "Neler Yapiyoruz" blogu gibi ortalanmis giris. */}

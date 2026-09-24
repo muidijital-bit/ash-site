@@ -9,6 +9,7 @@ import { HowWeWorkSection } from "@/components/theme/home/HowWeWorkSection";
 import { ProcessSection } from "@/components/theme/home/ProcessSection";
 import { LatestNewsSection } from "@/components/theme/home/LatestNewsSection";
 import { SITE_URL } from "@/content/site";
+import { contact } from "@/content/contact";
 import { hasLocale, type Locale } from "@/i18n/config";
 import { getUi } from "@/i18n/ui";
 
@@ -35,6 +36,18 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
         url: SITE_URL,
         logo: new URL(settings.logoLight, SITE_URL).toString(),
         description: ui.siteDescription,
+        email: contact.email,
+        address: contact.offices.map(({ address: a }) => ({
+          "@type": "PostalAddress",
+          streetAddress: a.street,
+          addressLocality: a.locality,
+          ...(a.region ? { addressRegion: a.region } : {}),
+          postalCode: a.postalCode,
+          addressCountry: a.country,
+        })),
+        contactPoint: { "@type": "ContactPoint", contactType: "sales", email: contact.email, availableLanguage: ["tr", "en"] },
+        areaServed: ["TR", "GB"],
+        knowsAbout: ui.knowsAbout,
       },
       {
         "@type": "WebSite",

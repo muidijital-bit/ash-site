@@ -2,9 +2,9 @@
   "key": "crm-x",
   "name": "CRM-X",
   "hero": {
-    "eyebrow": "CRM-X · SALES AND CUSTOMER MANAGEMENT",
-    "title": "Put an End to Scattered Records. Manage Every Opportunity on One Screen.",
-    "lead": "CRM-X brings customer information, sales opportunities and team activities together on one platform. AI flags the opportunities waiting for follow-up and takes over repetitive work, so your team can focus on talking to customers and closing deals.",
+    "eyebrow": "CRM-X · AI CRM",
+    "title": "AI CRM That Helps You <span>Manage Every Opportunity on One Screen.</span>",
+    "lead": "CRM-X is AI CRM and sales automation software that brings customer information, sales opportunities and team activities together on one platform. AI flags the opportunities waiting for follow-up and takes over repetitive work, so your team can focus on closing deals.",
     "cta": "Book a Demo"
   },
   "sections": [
@@ -241,6 +241,6 @@
       ]
     }
   ],
-  "seoTitle": "CRM-X | AI-Powered CRM and Sales Management — ASH",
-  "seoDescription": "Manage customer records, sales opportunities and team activities on one platform with CRM-X. AI reminds you of follow-ups and suggests the next step with its reasoning."
+  "seoTitle": "CRM-X | AI CRM and Sales Automation Software",
+  "seoDescription": "CRM-X is an AI CRM: customer records, sales opportunities and team activity on one platform. CRM automation reminds you of follow-ups and suggests next steps."
 }

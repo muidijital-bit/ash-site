@@ -142,6 +142,22 @@
 }
 .blog-sum li::marker { color: var(--blog-accent); }
 
+/* --- ilgili urun ---
+   .blog-body p kurallari (yazi boyu, paragraf araligi) kartin icine sizmasin
+   diye secicilerin hepsi .blog-product ile baslar. */
+.blog-product {
+  margin-top: 3.5rem;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid var(--blog-hair);
+  border-radius: 0.875rem;
+  background: #f7f8fc;
+}
+.blog-product .blog-product__label { margin: 0; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.02em; line-height: 1.4; color: var(--blog-ink-3); }
+.blog-product .blog-product__name { margin: 0.375rem 0 0; font-size: 1.25rem; font-weight: 700; line-height: 1.35; color: var(--blog-ink); }
+.blog-product .blog-product__summary { margin: 0.5rem 0 0; font-size: 1rem; line-height: 1.6; color: var(--blog-ink-2); }
+.blog-product .blog-product__link { display: inline-block; margin-top: 0.875rem; font-weight: 600; color: var(--blog-accent); text-decoration: none; }
+.blog-product .blog-product__link:hover { text-decoration: underline; }
+
 /* --- sss --- */
 .blog-faq { margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--blog-hair); }
 

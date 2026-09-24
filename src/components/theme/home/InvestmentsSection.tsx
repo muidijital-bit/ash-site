@@ -2,6 +2,7 @@ import Link from "next/link";
 import tr from "./InvestmentsSection.content.json";
 import en from "./InvestmentsSection.content.en.json";
 import { localePath, type Locale } from "@/i18n/config";
+import { getProduct } from "@/content/products";
 import assets from "./InvestmentsSection.assets.json";
 import { ProductName } from "@/components/theme/shared/ProductName";
 import "./InvestmentsSection.css";
@@ -38,7 +39,7 @@ export function InvestmentsSection({ locale }: { locale: Locale }) {
                   <div>
                     <span className="capture-04520533a0">
                       <span className="capture-d3e536b2a1" />
-                      <img alt="" src={product.image} loading="lazy" decoding="async" className="capture-77bda95619" />
+                      <img alt={`${product.name}: ${getProduct(product.slug, locale)?.title ?? ""}`} src={product.image} loading="lazy" decoding="async" className="capture-77bda95619" />
                     </span>
                   </div>
                 </div>

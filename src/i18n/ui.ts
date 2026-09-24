@@ -8,10 +8,12 @@ import type { Locale } from "./config";
 const tr = {
   dateLocale: "tr-TR",
   openGraphLocale: "tr_TR",
-  siteTitle: "AI Solution House — Kurumsal Yapay Zekâ ve SAP Çözümleri",
+  siteTitle: "Kurumsal Yapay Zekâ Çözümleri ve SAP AI | AI Solution House",
   siteDescription:
-    "Pilot projede kalmayan kurumsal yapay zekâ çözümleri: SAP ve ERP entegrasyonu, süreç otomasyonu, harcama ve müşteri yönetimi. HubAI-X, SAPAI-X, Masraf-X, CRM-X.",
+    "Türkiye'de kurumsal yapay zekâ çözümleri geliştiren AI Solution House: kurumsal AI platformu, SAP yapay zekâ, yapay zekâ CRM ve dijital masraf yönetimi.",
 
+  /** Kurum semasindaki uzmanlik alanlari (arama motorlari icin) */
+  knowsAbout: ["Kurumsal yapay zekâ", "Kurumsal AI platformu", "SAP yapay zekâ", "ABAP geliştirme", "Yapay zekâ destekli masraf yönetimi", "Yapay zekâ CRM", "Yapay zekâ token yönetimi"],
   nav: { home: "Anasayfa", products: "Ürünler", why: "Neden ASH", blog: "Blog", contact: "İletişim" },
   skipToContent: "İçeriğe geç",
   homeAria: "ana sayfa",
@@ -32,13 +34,13 @@ const tr = {
   askPlaceholder: "Bir soru yazın…",
 
   productsIndex: {
-    metaTitle: "Kurumsal Yapay Zekâ Ürünleri",
+    metaTitle: "Yapay Zekâ Çözümleri ve Ürünleri",
     metaDescription:
-      "Kurumsal yapay zekâ, SAP, masraf ve müşteri yönetimi için ASH ürün ailesi: HubAI-X, SAPAI-X, Masraf-X ve CRM-X.",
+      "Kurumlar için yapay zekâ çözümleri: kurumsal AI platformu HubAI-X, SAP yapay zekâ SAPAI-X, yapay zekâ destekli masraf yönetimi Masraf-X ve yapay zekâ CRM'i CRM-X.",
     label: "Ürün ailemiz",
-    title: ["Kurumsal süreçleri yeniden ", "tasarlayan ürünler"],
+    title: ["Kurumsal süreçleri yeniden ", "tasarlayan yapay zekâ ürünleri"],
     lead:
-      "Her biri kurumsal bir ihtiyaçtan doğdu, sahada çalışan ekiplerle birlikte olgunlaştı. Dört ürün, tek bir yaklaşım: mevcut sisteminizi anlayan, onayınız olmadan işlem yapmayan yapay zekâ.",
+      "Her biri kurumsal bir ihtiyaçtan doğdu, sahada çalışan ekiplerle birlikte olgunlaştı. Dört kurumsal yapay zekâ çözümü, tek bir yaklaşım: mevcut sisteminizi anlayan, onayınız olmadan işlem yapmayan yapay zekâ.",
     viewProduct: "Ürünü keşfet",
     strip: "Hangi ürünün size uygun olduğunu birlikte belirleyelim.",
   },
@@ -61,9 +63,11 @@ const tr = {
   blog: {
     metaTitle: "Kurumsal Yapay Zekâ ve SAP Blogu",
     metaDescription:
-      "Kurumsal yapay zekâ, SAP, masraf ve müşteri yönetimi üzerine ASH ekibinin sahadan çıkardığı notlar.",
+      "Kurumsal yapay zekâ, SAP yapay zekâ, dijital masraf yönetimi ve yapay zekâ CRM üzerine ASH ekibinin sahadan notları: gölge AI, ABAP geliştirme, satış otomasyonu.",
     label: "Blog",
     title: "Kurumsal yapay zekâya dair saha notları",
+    relatedProduct: "Bu yazıyla ilgili ürün",
+    viewProduct: "Ürünü inceleyin",
     lead: "Projelerde tekrar tekrar karşımıza çıkan sorular, tıkanma noktaları ve işe yarayan yaklaşımlar.",
     readingTime: (min: number) => `${min} dk okuma`,
     takeaways: "Özetle",
@@ -84,7 +88,7 @@ const tr = {
   contact: {
     metaTitle: "İletişim | İstanbul ve Londra",
     metaDescription:
-      "Kurumsal yapay zekâ ve SAP projeleriniz için ASH ile iletişime geçin. İstanbul ve Londra ofislerimizle ihtiyacınıza uygun çözümü birlikte belirleyelim.",
+      "Kurumsal yapay zekâ ve SAP yapay zekâ projeleriniz için ASH ile iletişime geçin. İstanbul ve Londra ofislerimizle size uygun AI çözümünü belirleyelim.",
     email: "E-posta",
     phone: "Telefon",
     address: "Adres",
@@ -102,9 +106,9 @@ const tr = {
     mapAria: "Ofis konumu",
   },
   why: {
-    metaTitle: "Neden ASH? SAP ve Yapay Zekâ Uzmanlığı",
+    metaTitle: "Neden ASH? Kurumsal Yapay Zekâ Firması",
     metaDescription:
-      "Mevcut sisteminizi okuyarak başlayan, pilotta kalmayan ve devredilebilir iş bırakan bir çalışma biçimi. ASH'in altı değeri ve keşiften canlı sonrasına beş adımı.",
+      "Türkiye'de kurumsal yapay zekâ çözümleri geliştiren ASH, SAP danışmanlık deneyimini yapay zekâ ile birleştirir. Keşiften canlıya beş adımda üretimde çalışan AI.",
     toMission: "Misyonumuza geç",
   },
   video: { dialog: "ASH'i keşfedin", close: "Videoyu kapat", title: "ASH tanıtım videosu", unavailable: "Bu video şu anda kullanılamıyor." },
@@ -115,10 +119,11 @@ type Dictionary = typeof tr;
 const en: Dictionary = {
   dateLocale: "en-GB",
   openGraphLocale: "en_US",
-  siteTitle: "AI Solution House — Enterprise AI and SAP Solutions",
+  siteTitle: "Enterprise AI Solutions and SAP AI | AI Solution House",
   siteDescription:
-    "Enterprise AI that reaches production, not just a pilot: SAP and ERP integration, process automation, spend and customer management. HubAI-X, SAPAI-X, Masraf-X, CRM-X.",
+    "AI Solution House builds enterprise AI solutions: an enterprise AI platform, SAP AI, AI CRM and AI expense management, built to reach production, not stay a pilot.",
 
+  knowsAbout: ["Enterprise AI", "Enterprise AI platform", "SAP AI", "ABAP development", "AI expense management", "AI CRM", "AI token management"],
   nav: { home: "Home", products: "Products", why: "Why ASH", blog: "Blog", contact: "Contact" },
   skipToContent: "Skip to content",
   homeAria: "home page",
@@ -138,13 +143,13 @@ const en: Dictionary = {
   askPlaceholder: "Type a question…",
 
   productsIndex: {
-    metaTitle: "Enterprise AI Products",
+    metaTitle: "AI Solutions for Enterprises",
     metaDescription:
-      "The ASH product family for enterprise AI, SAP, expense and customer management: HubAI-X, SAPAI-X, Masraf-X and CRM-X.",
+      "AI solutions for enterprises: the HubAI-X enterprise AI platform, SAPAI-X for SAP AI, Masraf-X for AI expense management and the CRM-X AI CRM.",
     label: "Our product family",
-    title: ["Products that redesign ", "enterprise processes"],
+    title: ["Enterprise AI products that ", "redesign how you work"],
     lead:
-      "Each one was born from a real enterprise need and matured alongside teams in the field. Four products, one approach: AI that understands your existing system and never acts without your approval.",
+      "Each one was born from a real enterprise need and matured alongside teams in the field. Four enterprise AI solutions, one approach: AI that understands your existing system and never acts without your approval.",
     viewProduct: "Explore product",
     strip: "Let's work out together which product fits you best.",
   },
@@ -167,9 +172,11 @@ const en: Dictionary = {
   blog: {
     metaTitle: "Enterprise AI and SAP Blog",
     metaDescription:
-      "Field notes from the ASH team on enterprise AI, SAP, expense management and customer management.",
+      "Field notes from the ASH team on enterprise AI, SAP AI, AI expense management and AI CRM: shadow AI, ABAP development and sales automation.",
     label: "Blog",
     title: "Field notes on enterprise AI",
+    relatedProduct: "Related product",
+    viewProduct: "Explore the product",
     lead: "The questions, bottlenecks and working approaches we run into again and again on real projects.",
     readingTime: (min: number) => `${min} min read`,
     takeaways: "Key takeaways",
@@ -190,7 +197,7 @@ const en: Dictionary = {
   contact: {
     metaTitle: "Contact | Istanbul and London",
     metaDescription:
-      "Contact ASH for enterprise AI and SAP projects. Talk to our Istanbul and London offices to find the right technology and solution for your business.",
+      "Contact ASH for enterprise AI and SAP AI projects. Talk to our Istanbul and London offices to find the right AI solution for your organization.",
     email: "Email",
     phone: "Phone",
     address: "Address",
@@ -207,9 +214,9 @@ const en: Dictionary = {
     mapAria: "Office location",
   },
   why: {
-    metaTitle: "Why ASH? SAP and AI Expertise",
+    metaTitle: "Why ASH? Enterprise AI and SAP AI Experts",
     metaDescription:
-      "Discover how ASH combines SAP project experience with enterprise AI expertise, from understanding your systems to integration and production support.",
+      "ASH builds enterprise AI solutions and SAP AI from Istanbul and London, combining SAP consulting experience with enterprise AI that reaches production.",
     toMission: "Skip to our mission",
   },
   video: { dialog: "Discover ASH", close: "Close video", title: "ASH introduction video", unavailable: "This video is currently unavailable." },

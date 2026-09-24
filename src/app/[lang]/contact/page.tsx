@@ -1,5 +1,6 @@
-import { pageMetadata } from "@/lib/seo";
+import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { HeroSection } from "@/components/theme/contact/HeroSection";
 import { MapSection } from "@/components/theme/contact/MapSection";
 import { hasLocale, type Locale } from "@/i18n/config";
@@ -16,6 +17,7 @@ export default async function Page({ params }: PageProps<"/[lang]/contact">) {
   const locale = (await params).lang as Locale;
   return (<>
     <link rel="stylesheet" href="/theme/css/e78a177f763a2d41-fa7ea74400.css" precedence="page" />
+    <JsonLd data={breadcrumbJsonLd(locale, [[getUi(locale).nav.contact, "/contact"]])} />
     <main>
       <HeroSection locale={locale} />
       <MapSection locale={locale} />

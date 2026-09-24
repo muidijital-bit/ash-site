@@ -2,9 +2,9 @@
   "key": "masraf-x",
   "name": "Masraf-X",
   "hero": {
-    "eyebrow": "MASRAF-X · SPEND MANAGEMENT",
-    "title": "Enterprise Spend <span>Management Platform</span>",
-    "lead": "Win back the hours you spend on manual processes. Catch hidden spending, prevent policy violations and speed up your month-end close.",
+    "eyebrow": "MASRAF-X · AI EXPENSE MANAGEMENT",
+    "title": "AI Expense <span>Management Software</span>",
+    "lead": "Win back the hours your team spends on manual expense entry. AI expense management catches hidden spending, prevents policy violations and speeds up your month-end close.",
     "cta": "Book a Demo",
     "media": "masraf-akis",
     "feature": {
@@ -237,6 +237,6 @@
       ]
     }
   ],
-  "seoTitle": "Masraf-X | AI-Powered Expense Management — ASH",
-  "seoDescription": "Photograph the receipt and let AI create the expense record. Masraf-X brings policy checks, duplicate detection, multi-level approval and ERP transfer together on one platform."
+  "seoTitle": "Masraf-X | AI Expense Management Software",
+  "seoDescription": "AI expense management software: snap the receipt and let AI create the expense entry. Policy checks, duplicate detection, multi-level approval and ERP transfer."
 }

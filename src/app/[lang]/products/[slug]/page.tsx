@@ -1,5 +1,7 @@
-import { pageMetadata } from "@/lib/seo";
+import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
+import { getUi } from "@/i18n/ui";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { notFound } from "next/navigation";
 import { ProductPage } from "@/components/product/ProductPage";
 import { getProductPage } from "@/content/product-pages";
@@ -30,6 +32,7 @@ export default async function Page({ params }: PageProps<"/[lang]/products/[slug
     <>
       {/* Header, menu ve footer stilleri tema CSS'inde sayfa dosyalarina gomulu; urun sayfalari bunu yuklemezse header stilsiz kalir. */}
       <link rel="stylesheet" href="/theme/css/653b5fc3396b8f10-19b9ef9de6.css" precedence="page" />
+      <JsonLd data={breadcrumbJsonLd(locale, [[getUi(locale).nav.products, "/products"], [product.name, `/products/${slug}`]])} />
       <ProductPage product={product} content={content} locale={locale} />
     </>
   );

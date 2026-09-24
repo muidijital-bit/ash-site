@@ -1,5 +1,6 @@
-import { pageMetadata } from "@/lib/seo";
+import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/seo/JsonLd";
 import Link from "next/link";
 import { formatDate } from "@/components/blog/BlogPost";
 import { getPosts } from "@/content/blog";
@@ -20,6 +21,7 @@ export default async function Page({ params }: PageProps<"/[lang]/blog">) {
     <>
       {/* Header, menu ve footer stilleri tema CSS'inde sayfa dosyalarina gomulu. */}
       <link rel="stylesheet" href="/theme/css/653b5fc3396b8f10-19b9ef9de6.css" precedence="page" />
+      <JsonLd data={breadcrumbJsonLd(locale, [[getUi(locale).nav.blog, "/blog"]])} />
       <main className="blog blog-index">
         {/* Koyu ust bant: header bunun uzerinde duruyor. */}
         <header className="blog-band">

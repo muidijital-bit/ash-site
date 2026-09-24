@@ -4,7 +4,7 @@
   "hero": {
     "eyebrow": "SAPAI-X · SAP AI",
     "title": "SAP Expertise, <span>Reimagined with AI.</span>",
-    "lead": "SAPAI-X gives your team instant access to senior-level SAP expertise and ABAP development. From solving complex SAP problems to building new developments, simply describe what you need and let AI turn it into action.",
+    "lead": "SAPAI-X brings AI for SAP to your team: senior-level SAP expertise and AI-assisted ABAP development on demand. Describe what you need in plain language and let SAP AI turn it into support answers and real developments.",
     "cta": "Book a Demo"
   },
   "sections": [
@@ -229,6 +229,6 @@
       ]
     }
   ],
-  "seoTitle": "SAPAI-X: AI-Powered SAP Support and ABAP Development | ASH",
-  "seoDescription": "SAPAI-X resolves first-level SAP requests with AI and brings ABAP developments tailored to your Z objects and standards to your approval in minutes."
+  "seoTitle": "SAPAI-X | SAP AI Solutions for ABAP Development and Support",
+  "seoDescription": "SAPAI-X is AI for SAP: it resolves first-level SAP requests and brings ABAP development tailored to your Z objects and standards to your approval in minutes."
 }
