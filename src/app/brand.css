@@ -151,6 +151,22 @@
   .Header_header__omCkM .Header_header__container__3CAEl > :nth-child(2) { margin-right: 0; }
 }
 
+/* Sag uc (masaustu): "Toplanti Planlayin" butonu ve en sagda dil secimi.
+   Yan sutunlar icerigi kadar genisleyebilir; menu dar masaustunde de
+   butona binmez. Telefonda bu alan gizli, dil secimi hamburger menude. */
+.ash-header-actions { display: none; }
+@media (min-width: 64rem) {
+  .Header_header__omCkM .Header_header__container__3CAEl {
+    grid-template-columns: minmax(max-content, 1fr) auto minmax(max-content, 1fr);
+    column-gap: 2rem;
+  }
+  .ash-header-actions { display: flex; align-items: center; justify-self: end; }
+  .ash-header-actions .ash-meeting-button { margin-top: 0; min-height: 2.5rem; padding-inline: 1.125rem; font-size: 0.9375rem; }
+  .ash-header-actions .ash-meeting-button .Button_button__children__eLy5L { padding-block: 0.375rem; }
+  .NavLink_nav-link__i4vnc.ash-lang-switch--menu { display: none; }
+  .NavLink_nav-link__i4vnc.ash-lang-switch--bar { margin-left: 1rem; }
+}
+
 /* ============================================================
    Dil degistirici (TR / EN)
    Menunun son ogesi; masaustunde ince bir ayracla ayrilir.
