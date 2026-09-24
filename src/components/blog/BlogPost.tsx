@@ -1,5 +1,6 @@
 import { getBrandSettings } from "@/lib/cms/public";
 import { MarkdownBody } from "./MarkdownBody";
+import { createProductLinker } from "./productLinks";
 import Link from "next/link";
 import Image from "next/image";
 import type { BlogPost as Post } from "@/content/blog/types";
@@ -69,6 +70,7 @@ async function JsonLd({ post, locale }: { post: Post; locale: Locale }) {
 export function BlogPost({ post, locale }: { post: Post; locale: Locale }) {
   const { blog } = getUi(locale);
   const product = getProduct(relatedProductSlug(post), locale);
+  const linker = createProductLinker(locale);
   return (
     <main className="blog">
       <JsonLd post={post} locale={locale} />
@@ -93,15 +95,15 @@ export function BlogPost({ post, locale }: { post: Post; locale: Locale }) {
         <Image className="blog-cover" src={post.cover} alt={post.coverAlt ?? ""} width={1200} height={600} sizes="(min-width: 64rem) 960px, calc(100vw - 48px)" loading="eager" />
 
         <div className="blog-body">
-          {post.bodyMarkdown !== undefined ? <MarkdownBody content={post.bodyMarkdown} /> : <>
+          {post.bodyMarkdown !== undefined ? <MarkdownBody content={post.bodyMarkdown} locale={locale} /> : <>
           {post.intro.map((p, i) => (
-            <p key={p} className={i === 0 ? "blog-lead" : undefined}>{p}</p>
+            <p key={p} className={i === 0 ? "blog-lead" : undefined}>{linker.text(p)}</p>
           ))}
 
           {post.sections.map((s) => (
             <section key={s.heading}>
               <h2>{s.heading}</h2>
-              {s.paragraphs.map((p) => <p key={p}>{p}</p>)}
+              {s.paragraphs.map((p) => <p key={p}>{linker.text(p)}</p>)}
             </section>
           ))}
           </>}

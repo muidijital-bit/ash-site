@@ -155,6 +155,10 @@
    Yan sutunlar icerigi kadar genisleyebilir; menu dar masaustunde de
    butona binmez. Telefonda bu alan gizli, dil secimi hamburger menude. */
 .ash-header-actions { display: none; }
+/* Telefon menusu: baglantilarin altinda, dil seciminin ustunde toplanti butonu. */
+.ash-menu-meeting { padding: 1.25rem 0 0.75rem; }
+.ash-menu-meeting .ash-meeting-button { margin-top: 0; }
+@media (min-width: 64rem) { .ash-menu-meeting { display: none; } }
 @media (min-width: 64rem) {
   .Header_header__omCkM .Header_header__container__3CAEl {
     grid-template-columns: minmax(max-content, 1fr) auto minmax(max-content, 1fr);

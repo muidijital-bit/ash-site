@@ -25,6 +25,9 @@ bilgi değil. Doğrulanınca SAPAI-X sayfasına eklenebilir.
 - Yapılandırılmış veri: ana sayfada kurum (adres, e-posta, uzmanlık alanları);
   alt sayfalarda breadcrumb (`breadcrumbJsonLd`, `src/lib/seo.ts`); ürünler
   dizininde ürün listesi; ürün ve blog sayfalarında SSS; blog yazılarında makale.
+- Blog yazılarının metninde her ürün adının (HubAI-X, SAPAI-X, Masraf-X, CRM-X) ilk geçtiği
+  yer ürün sayfasına bağlanır (`src/components/blog/productLinks.tsx`); panelden yazılan
+  Markdown yazılarda da çalışır, başlıklara ve mevcut bağlantılara dokunmaz.
 - Blog yazılarının altındaki "ilgili ürün" kartı, kategori ve başlığa bakarak
   ürünü seçer (`relatedProductSlug`, `src/components/blog/BlogPost.tsx`); panelden
   yazılan yazılarda da çalışır.

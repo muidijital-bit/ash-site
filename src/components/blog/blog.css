@@ -142,6 +142,10 @@
 }
 .blog-sum li::marker { color: var(--blog-accent); }
 
+/* --- metin ici baglantilar (urun adlari vb.) --- */
+.blog-body p a { color: var(--blog-accent); font-weight: 500; text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+.blog-body p a:hover { text-decoration-thickness: 2px; }
+
 /* --- ilgili urun ---
    .blog-body p kurallari (yazi boyu, paragraf araligi) kartin icine sizmasin
    diye secicilerin hepsi .blog-product ile baslar. */
